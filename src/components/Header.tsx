@@ -3,9 +3,8 @@
 import React from "react";
 import Link from "next/link";
 
-
 import { cn } from "@/lib/utils";
-import Logo from "@/assets/Logo.png"
+import Logo from "@/assets/Logo.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -60,12 +59,14 @@ const Header: React.FC = () => {
   return (
     <div className="flex items-center justify-between px-10">
       <div>
-        <Image src={Logo} width={150} height={100} alt="logo"  />
+        <Image src={Logo} width={150} height={100} alt="logo" />
       </div>
-      <NavigationMenu >
+      <NavigationMenu>
         <NavigationMenuList className="border border-[#00413E] rounded-full">
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="rounded-full">Getting started</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="rounded-full">
+              Getting started
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
@@ -124,7 +125,7 @@ const Header: React.FC = () => {
         </NavigationMenuList>
       </NavigationMenu>
       <div>
-      <LineButton text="Get Started" />
+        <LineButton text="Get Started" />
       </div>
     </div>
   );
