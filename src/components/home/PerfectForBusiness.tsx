@@ -22,6 +22,10 @@ const Box1: React.FC = () => {
     </div>
   );
 };
+
+
+
+
 const Box2: React.FC = () => {
   return (
     <div className="flex flex-col gap-4">
@@ -33,6 +37,10 @@ const Box2: React.FC = () => {
     </div>
   );
 };
+
+
+
+
 const Box3: React.FC = () => {
   return (
     <div className="flex flex-col gap-4">

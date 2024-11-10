@@ -57,15 +57,26 @@ const components: { title: string; href: string; description: string }[] = [
 
 const Header: React.FC = () => {
   return (
-    <div className="flex items-center justify-between px-10">
+    <div className="flex items-center justify-between px-10 fixed w-full top-0 z-20 ">
       <div>
         <Image src={Logo} width={150} height={100} alt="logo" />
       </div>
-      <NavigationMenu>
-        <NavigationMenuList className="border border-[#00413E] rounded-full">
+      <NavigationMenu className="bg-white rounded-full">
+        <NavigationMenuList className="border border-[#00413E] rounded-full p-2">
+
+
+        <NavigationMenuItem className="rounded-full  text-white bg-[#00413E] hover:bg-white">
+            <Link href="/docs" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                About us
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+
+
           <NavigationMenuItem>
             <NavigationMenuTrigger className="rounded-full">
-              Getting started
+              For Businesses
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -99,8 +110,10 @@ const Header: React.FC = () => {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+
+
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (
@@ -115,13 +128,35 @@ const Header: React.FC = () => {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+
+
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>For Customers</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                {components.map((component) => (
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.href}
+                  >
+                    {component.description}
+                  </ListItem>
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+
           <NavigationMenuItem>
             <Link href="/docs" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Documentation
+                Pricing
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
+
+
         </NavigationMenuList>
       </NavigationMenu>
       <div>
