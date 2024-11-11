@@ -7,7 +7,7 @@ import magicArrow from "../../assets/magicArrow.png";
 const PlayToWatch: React.FC = () => {
   return (
     <div className="bg-[#F3CCE7]">
-      <div className="flex">
+      {/* <div className="flex">
         <div className="w-[692px] pl-32 pt-28">
           <Image src={magicText} alt="Watch The Magic" className="w-[700px]" />
           <p className="font-medium text-[20px] leading-7">
@@ -17,19 +17,19 @@ const PlayToWatch: React.FC = () => {
             Watch now to see the magic unfold.
           </p>
         </div>
-        <div className="pb-20 pt-20 w-[700px]">
+        <div className="pb-20 pt-20 w-[40%]">
           <Image src={magicFrame} alt="Magic Frame" />
         </div>
       </div>
       <div>
-        <div className="relative w-[950px]">
+        <div className="relative w-[55%]">
           <Image
             src={magicArrow}
             alt="Magic Arrow"
             className="absolute -bottom-64 left-0 "
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

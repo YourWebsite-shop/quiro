@@ -11,12 +11,12 @@ import services from "../../assets/home/AbsoluteImages/services.png";
 
 const Control: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-2 mx-60">
+    <div className="flex flex-col justify-center items-center gap-2 mx-40">
       <div className="flex flex-col justify-center items-center">
         <div className="w-[80px] mr-[750px]">
           <Image src={services} alt="services" />
         </div>
-        <h1 className="font-[600] text-[48px] leading-[57px] mb-4">
+        <h1 className="font-[600] lg:text-[48px] md:text-[24px] lg:leading-[57px] md:leading-[29px] mb-4">
           A Product That Puts You in Control
         </h1>
         <p className="font-[500] text-[20px] leading-[30px]">

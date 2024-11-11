@@ -93,37 +93,30 @@ const Box1: React.FC = () => {
 
 const Box2: React.FC = () => {
   return (
-    <div className="flex flex-col w-full">
-      <div
-        className="flex flex-col gap-4 p-8 bg-cover bg-center rounded-2xl m-10"
-        style={{ backgroundImage: `url(${perfectBox2BG.src})` }}
-      >
-        {/* Flex container to center the child div */}
-        <div className="flex flex-col items-center justify-center w-full h-auto">
-          {/* Content div */}
-          <div
-            className="flex flex-col items-center justify-center bg-[#F5F3ED] rounded-2xl 
-        lg:h-[600px] lg:w-[908px] lg:my-14 lg:mx-36 
-        md:h-[400px] md:w-[500px] md:my-6 md:mx-8 
-        sm:h-[320px] sm:w-[225px] sm:my-4 sm:mx-4
-        p-4" // Added padding for better spacing
-          >
-            <div className="flex items-center justify-center lg:w-full sm:w-[100px] h-auto">
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="w-full h-auto">
+        <div
+          className="flex flex-col bg-cover bg-center rounded-2xl min-w-[90vw] min-h-[85vh] items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10"
+          style={{ backgroundImage: `url(${perfectBox2BG.src})` }}
+        >
+          {/* Flex container to center the child div */}
+          <div className="flex flex-col items-center justify-center bg-[#F5F3ED] rounded-2xl p-6 sm:py-8 sm:px-10 md:py-10 md:px-12 lg:py-16 lg:px-20 mx-4 sm:mx-6 md:mx-8 lg:mx-10">
+            <div className="flex items-center justify-center w-full max-w-xs lg:max-w-full">
               <Image
                 src={masterYourOPerations}
                 alt="master"
                 width={250}
                 height={250}
-                className="w-full max-w-[250px] h-auto" 
+                className="w-full max-w-[250px] h-auto"
               />
             </div>
 
-            <div className="flex flex-col items-center justify-center text-center">
-              <h1 className="font-[600] lg:text-[40px] md:text-[28px] sm:text-[16px] lg:leading-[48px] md:leading-[32px] sm:leading-[18px]">
+            <div className="flex flex-col items-center justify-center text-center mt-4 gap-4 lg:w-[750px] md:w-[600px] sm:w-[400px]">
+              <h1 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
                 Less ‘just a second’
                 <br /> More done in just a few seconds
               </h1>
-              <p className="font-[400] lg:text-[16px] md:text-[14px] sm:text-[8px] lg:leading-[24px] md:leading-[18px] sm:leading-[16px] text-center lg:w-3/5 p-4">
+              <p className="font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-4">
                 We’re your partner in business growth. We help increase
                 revisiting customers, and maximize brand visibility to boost
                 revenue. Experience 40% faster turnaround times, 30% higher
@@ -141,45 +134,50 @@ const Box2: React.FC = () => {
 
 const Box3: React.FC = () => {
   return (
-    <div className="flex flex-col w-full">
-      <div
-        className="flex flex-col gap-4 px-16 bg-cover bg-center rounded-2xl py-28 m-10"
-        style={{ backgroundImage: `url(${perfectBox3BG.src})` }}
-      >
-        {/* Adjusted the flex-row container for consistent spacing */}
-        <div className="flex flex-row gap-6 mt-8 mb-8">
-          {/* Text content section */}
-          <div className="flex items-center justify-center">
-            <div className="text-start">
-              {/* Smaller logo/image section */}
-              <div className="w-[312px] mb-4">
-                <Image src={oneStopSolution} alt="choose" />
-              </div>
+    <div className="flex justify-center items-center">
+  <div className="w-full h-auto">
+    <div
+      className="flex flex-col lg:flex-row md:flex-row sm:flex-col bg-cover bg-center rounded-2xl min-w-[90vw] min-h-[50vh] items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10"
+      style={{ backgroundImage: `url(${perfectBox3BG.src})` }}
+    >
+      {/* Adjusted the flex-row container for consistent spacing */}
+      <div className="flex flex-col lg:flex-row md:flex-row sm:flex-col gap-6 mt-8 mb-8 w-full sm:text-center sm:mx-auto">
+        {/* Text content section */}
+        <div className="flex items-center justify-center sm:text-center sm:mx-auto w-full lg:w-[50%] md:w-[50%] sm:h-[50%]">
+          <div className="text-start sm:text-center">
+            {/* Smaller logo/image section */}
+            <div className="flex lg:w-[312px] md:w-[165px] sm:w-[200px] mb-4 mx-auto justify-center lg:items-start md:items-start sm:items-center">
+              <Image src={oneStopSolution} alt="choose" />
+            </div>
 
-              {/* Text content with heading and paragraph */}
-              <div className="w-[573px]">
-                <h1 className="font-[600] text-[38px] leading-[48px] text-[#F5F3ED]">
-                  Join Our Growing Community <br />
-                  of Partners
-                </h1>
-                <p className="font-[400] text-[16px] leading-[24px] text-[#F5F3ED] my-4 w-[560px]">
-                  What sets us apart is our commitment to your growth. We
-                  believe in cultivating long-term relationships and helping you
-                  thrive in a competitive landscape. At Quiro, you’re not just
-                  adopting a tool – you’re gaining a dedicated ally who’s
-                  invested in your success
-                </p>
+            {/* Text content with heading and paragraph */}
+            <div className="w-full flex flex-col justify-center items-start sm:items-center sm:w-[70%]">
+              <h1 className="font-[600] lg:text-[38px] md:text-[16px] sm:text-[20px] lg:leading-[48px] md:leading-[20px] sm:leading-[24px] text-[#F5F3ED] lg:text-start md:text-start sm:text-center">
+                Join Our Growing Community of Partners
+              </h1>
+              <p className="font-[400] lg:text-[16px] md:text-[11px] sm:text-[10px] lg:leading-[24px] md:leading-[16px] sm:leading-[15px] text-[#F5F3ED] sm:text-center lg:text-start md:text-start lg:py-10 md:py-8 sm:py-6">
+                What sets us apart is our commitment to your growth. We
+                believe in cultivating long-term relationships and helping
+                you thrive in a competitive landscape. At Quiro, you’re not
+                just adopting a tool – you’re gaining a dedicated ally who’s
+                invested in your success.
+              </p>
+              <div className="sm:items-center">
                 <ShadowButton text="Learn More" />
               </div>
             </div>
           </div>
-          {/* Image container with a defined width */}
-          <div className="w-[700px] h-auto">
-            <Image src={perfectBox3} alt="box3" />
-          </div>
+        </div>
+
+        {/* Image container with a defined width */}
+        <div className="w-full flex lg:w-[50%] sm:h-[50%] md:w-[50%] sm:w-[70%] sm:items-center sm:mx-auto">
+          <Image src={perfectBox3} alt="box3" />
         </div>
       </div>
     </div>
+  </div>
+</div>
+
   );
 };
 

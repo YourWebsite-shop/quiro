@@ -70,7 +70,7 @@ const Faq: React.FC = () => {
       <div className="max-w-7xl w-full">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center mb-8">
-          <div className="w-[100px] mb-4" style={{ marginLeft: '-650px' }}>
+          <div className="w-[100px] mb-4" style={{ marginLeft: "-650px" }}>
             <Image src={problem} alt="problem" />
           </div>
           <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center">
@@ -95,7 +95,7 @@ const Faq: React.FC = () => {
                       <FaChevronDown className="text-gray-600" />
                     )}
                   </div>
-                  <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:text-xl truncate whitespace-nowrap overflow-hidden">
+                  <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[16px] sm:leading-[18px]  break-words">
                     {faq.question}
                   </h2>
                 </div>
