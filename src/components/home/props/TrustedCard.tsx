@@ -10,19 +10,14 @@ interface TrustedCardType {
 
 const TrustedCard: React.FC<TrustedCardType> = ({ img, name, company }) => {
   return (
-    <div className="flex  items-center gap-4 border-[3px] border-[#00413E] w-[337px] bg-white rounded-2xl px-2 py-2 relative">
+    <div className="border-2 relative border-[#00413E] gap-2 w-[135px] lg:w-[237px] rounded-xl flex items-center pr-10 pl-4 py-2">
+      <div><Image src={img} height={50} width={50} className="" alt="profile" /></div>
       <div>
-        <Image src={img} alt="userprofile" width={64} height={64} />
+        <h5 className="font-[400] text-[10px] lg:text-[15px]">{name}</h5>
+        <p className="text-[#00413E] font-[600] text-[10px] lg:text-[15px]">{company}</p>
       </div>
-      <div className="text-[15px] pr-10">
-        <p className="font-[400]">{name}</p>
-        <p className="text-[#006B66] font-[600]">{company}</p>
-      </div>
-      <Image
-        src={curvedLine}
-        alt="curved line"
-        className="absolute -bottom-4 left-4"
-      />
+
+      <Image src={curvedLine} alt="curved line" className="absolute -bottom-2 left-2 lg:-bottom-3 lg:left-2 w-full" />
     </div>
   );
 };

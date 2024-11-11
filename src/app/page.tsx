@@ -15,7 +15,7 @@ const page: React.FC = () => {
       <Hero />
       <PlayToWatch />
       <Trusted />
-      <PerfectForBusiness />
+      {/* <PerfectForBusiness /> */}
       <Control />
       <Efficiency />
       <WallOfLove />

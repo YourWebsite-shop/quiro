@@ -5,6 +5,8 @@ import Img1 from "@/assets/home/EfficiencyImg1.png";
 import Img2 from "@/assets/home/EfficiencyImg2.png";
 import Img3 from "@/assets/home/EfficiencyImg3.png";
 import LineButton from "../LineButton";
+import ShadowButton from "../ShadowButton";
+
 
 /* ---------------- Efficiency Component ---------------- */
 const Efficiency: React.FC = () => {
@@ -41,12 +43,12 @@ const Efficiency: React.FC = () => {
       <EfficiencyCardList data={efficiencyData} />
 
       {/* Action Buttons */}
-      <div className="md:flex flex-col  gap-10">
+      <div className="flex flex-col sm:flex-row sm:pl-10 sm:py-4 gap-6 items-center">
         <div>
-        <LineButton text="Learn More" />
+          <LineButton  text="Learn More"/>
         </div>
         <div>
-        <LineButton text="Contact Us" />
+          <ShadowButton text="Contact Us" />
         </div>
       </div>
     </div>
@@ -58,8 +60,8 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
   title,
   description,
 }) => (
-  <div className="sm:flex lg:px-10 px-4 lg:py-6">
-    <div className="relative w-full sm:w-[60%] text-[20px] text-center sm:text-start sm:text-[24px] lg:text-[48px] font-[600] lg:leading-[48px] ">
+  <div className="sm:flex lg:px-10 px-4 lg:py-12">
+    <div className="relative w-full sm:w-[60%] text-[20px] text-center sm:text-start sm:text-[24px] lg:text-[44px] font-[600] lg:leading-[48px] ">
       {title}
       <Image
         src={EfficiencytextImg}
@@ -79,7 +81,7 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
 const EfficiencyCardList: React.FC<{ data: EfficiencyCardProps[] }> = ({
   data,
 }) => (
-  <div className="sm:flex sm:gap-2 lg:gap-10 py-10 px-4 sm:px-0">
+  <div className="sm:flex sm:gap-2 lg:gap-10 pb-10 px-8 sm:px-0">
     {data.map((item, index) => (
       <EfficiencyCard key={index} {...item} />
     ))}
