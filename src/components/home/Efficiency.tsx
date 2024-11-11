@@ -30,12 +30,12 @@ const Efficiency: React.FC = () => {
   ];
 
   return (
-    <div className="py-20 lg:px-10 sm:px-6">
+    <div className="py-20 lg:px-16 sm:px-4 ">
       {/* Section Heading */}
       <SectionHeader
         title="We Are More Than Just Another Software Company"
         description="From owners to admins and guests, our solutions go beyond streamlining
-          operations. We’re here to solve your challenges, enhance efficiency,
+          operations. We&apos;re here to solve your challenges, enhance efficiency,
           and ensure satisfaction at every level"
       />
 
@@ -43,7 +43,7 @@ const Efficiency: React.FC = () => {
       <EfficiencyCardList data={efficiencyData} />
 
       {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row sm:pl-10 sm:py-4 gap-5 items-center">
+      <div className="flex flex-col sm:flex-row lg:pl-10 sm:py-4 gap-5 items-center">
         <div>
           <LineButton  text="Learn More"/>
         </div>
@@ -60,8 +60,8 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
   title,
   description,
 }) => (
-  <div className="sm:flex lg:px-10 px-7 lg:py-12">
-    <div className="relative w-full sm:w-[60%] text-[20px] text-center sm:text-start sm:text-[24px] lg:text-[44px] font-[600] lg:leading-[48px] ">
+  <div className="sm:flex lg:px-10 px-7  sm:py-12">
+    <div className="relative w-full sm:w-[60%] text-[20px] text-center sm:text-start sm:text-[24px] lg:text-[44px] font-[600] sm:leading-8 lg:leading-[48px] ">
       {title}
       <Image
         src={EfficiencytextImg}
@@ -71,7 +71,7 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
         className="absolute -top-8 lg:-top-12 w-[65px] h-[35px] sm:w-[45px] sm:h-[25px] lg:w-[96px] lg:h-[54px] sm:-top-5"
       />
     </div>
-    <p className="  w-full text-center sm:text-start sm:w-[40%] sm:text-[12px] font-[500] text-[13px] py-3 sm:py-0 lg:text-base">
+    <p className="  w-full text-center sm:text-start sm:w-[40%] sm:text-[11px] font-[500] text-[13px] py-3 sm:py-0 lg:text-base">
       {description}
     </p>
   </div>
@@ -100,7 +100,7 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
   heading,
   text,
 }) => (
-  <div className="sm:border-4 border-2 border-[#006B66] rounded-2xl w-fit p-5 my-5 sm:my-0">
+  <div className="sm:border-4 border-2 border-[#006B66] rounded-2xl w-fit mx-auto max-w-[491px] p-5 sm:p-3 lg:p-5 my-5  sm:my-0">
     <Image
       src={img}
       alt="efficiency img"
@@ -108,7 +108,7 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
       height={311}
       className="rounded "
     />
-    <h5 className="font-[600] sm:text-[14px] lg:text-[32px] text-center lg:leading-[41px] lg:py-8 py-4">
+    <h5 className="font-[600] sm:text-[14px] sm:py-3 lg:text-[32px] text-center lg:leading-[40px] lg:py-8 py-4">
       {heading}
     </h5>
     <p className="text-center font-[400] text-[10px] lg:text-[16px] lg:leading-[24px] lg:pb-10 sm:pb-4">
