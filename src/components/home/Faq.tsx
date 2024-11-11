@@ -66,7 +66,7 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center p-8">
+    <div className="flex justify-center items-center p-8 lg:py-24">
       <div className="max-w-7xl w-full">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center mb-8">
@@ -88,7 +88,7 @@ const Faq: React.FC = () => {
               {/* Question */}
               <div className="flex justify-between items-center cursor-pointer">
                 <div className="flex items-center">
-                  <div className="w-8 h-8 rounded-full border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
+                  <div className="w-8 h-8 rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
                     {expandedIndex === index ? (
                       <FaChevronUp className="text-gray-600" />
                     ) : (

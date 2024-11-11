@@ -57,11 +57,11 @@ const components: { title: string; href: string; description: string }[] = [
 
 const Header: React.FC = () => {
   return (
-    <div className="flex items-center justify-between px-10 fixed w-full top-0 z-20 ">
+    <div className="flex items-center justify-between px-10  w-full top-0 bg-[#F5F3ED] ">
       <div>
         <Image src={Logo} width={150} height={100} alt="logo" />
       </div>
-      <NavigationMenu className="bg-white rounded-full">
+      <NavigationMenu className="bg-white rounded-full fixed translate-x-1/2 z-20 right-1/2">
         <NavigationMenuList className="border border-[#00413E] rounded-full p-2">
 
 
