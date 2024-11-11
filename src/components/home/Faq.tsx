@@ -1,7 +1,8 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import problem from "../../assets/problem.png";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const Faq: React.FC = () => {
   const faqData = [
@@ -46,7 +47,8 @@ const Faq: React.FC = () => {
         "Quiro is regularly updated with new features, security enhancements, and performance improvements based on user feedback and industry trends.",
     },
     {
-      question: "Can hotels customize the Quiro interface to fit their branding?",
+      question:
+        "Can hotels customize the Quiro interface to fit their branding?",
       answer:
         "Yes, Quiro can be customized to match your hotel's branding, including logo placement, color schemes, and other design elements.",
     },
@@ -57,20 +59,18 @@ const Faq: React.FC = () => {
     },
   ];
 
-  
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  
   const toggleFaq = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
   return (
     <div className="flex justify-center items-center p-8">
-      <div className="max-w-5xl w-full">
+      <div className="max-w-7xl w-full">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center mb-8">
-          <div className="w-[100px] mb-4">
+          <div className="w-[100px] mb-4" style={{ marginLeft: '-650px' }}>
             <Image src={problem} alt="problem" />
           </div>
           <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center">
@@ -82,26 +82,28 @@ const Faq: React.FC = () => {
         </div>
 
         {/* FAQ List in Two Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {faqData.map((faq, index) => (
-            <div
-              key={index}
-              className=" pb-4"
-              onClick={() => toggleFaq(index)}
-            >
+            <div key={index} className="pb-1" onClick={() => toggleFaq(index)}>
               {/* Question */}
               <div className="flex justify-between items-center cursor-pointer">
-                <h2 className="text-lg md:text-xl font-semibold">
-                  {faq.question}
-                </h2>
-                <span className="text-2xl">
-                  {expandedIndex === index ? "-" : "+"}
-                </span>
+                <div className="flex items-center">
+                  <div className="w-8 h-8 rounded-full border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
+                    {expandedIndex === index ? (
+                      <FaChevronUp className="text-gray-600" />
+                    ) : (
+                      <FaChevronDown className="text-gray-600" />
+                    )}
+                  </div>
+                  <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:text-xl truncate whitespace-nowrap overflow-hidden">
+                    {faq.question}
+                  </h2>
+                </div>
               </div>
 
               {/* Answer */}
               {expandedIndex === index && (
-                <p className="mt-2 text-base md:text-lg text-gray-600">
+                <p className="text-[18px] font-[400] leading-[23px] ml-12 md:text-lg text-gray-600">
                   {faq.answer}
                 </p>
               )}
