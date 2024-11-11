@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
           />
         </div>
       </h2>
-      <p className=" sm:text-[16px] lg:text-[20px] text-center font-[600] max-w-[90vw] sm:max-w-[80vw]  z-10 lg:py-10 sm:py-10 text-[13.9px]">
+      <p className=" sm:text-[16px] lg:text-[20px] text-center font-[500] max-w-[90vw] sm:max-w-[80vw]  z-10 lg:py-10 sm:py-10 text-[13.9px]">
         At Quiro, we&apos;re revolutionising the industry with a platform designed by
         HoReCa Community, for the community. Our all-in-one solution empowers
         your team to effortlessly manage everything
