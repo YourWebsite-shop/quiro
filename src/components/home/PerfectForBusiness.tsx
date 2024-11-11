@@ -91,7 +91,6 @@ const Box1: React.FC = () => {
   );
 };
 
-
 const Box2: React.FC = () => {
   return (
     <div className="flex flex-col w-full">
@@ -100,17 +99,31 @@ const Box2: React.FC = () => {
         style={{ backgroundImage: `url(${perfectBox2BG.src})` }}
       >
         {/* Flex container to center the child div */}
-        <div className="flex flex-col items-center justify-center w-full h-full">
+        <div className="flex flex-col items-center justify-center w-full h-auto">
           {/* Content div */}
-          <div className="flex flex-col items-center justify-center bg-[#F5F3ED] lg:h-[600px] lg:w-[908px] md:h-[300px] md:w-[500px] sm:h-[320px] sm:w-[225px] rounded-2xl lg:my-14 lg:mx-56 md:my-10px md:mx-40px sm:my-8px sm:mx-30px">
-            <div className="flex items-center justify-center lg:w-[250px] md:w-[120px] sm:w-[80px]">
-              <Image src={masterYourOPerations} alt="master" />
+          <div
+            className="flex flex-col items-center justify-center bg-[#F5F3ED] rounded-2xl 
+        lg:h-[600px] lg:w-[908px] lg:my-14 lg:mx-36 
+        md:h-[400px] md:w-[500px] md:my-6 md:mx-8 
+        sm:h-[320px] sm:w-[225px] sm:my-4 sm:mx-4
+        p-4" // Added padding for better spacing
+          >
+            <div className="flex items-center justify-center lg:w-full sm:w-[100px] h-auto">
+              <Image
+                src={masterYourOPerations}
+                alt="master"
+                width={250}
+                height={250}
+                className="w-full max-w-[250px] h-auto" 
+              />
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <h1 className="font-[600] lg:text-[40px] md:text-[16px] sm:text-[16px] lg:leading-[48px] md:leading-[19.2px] sm:leading-[19.2px] text-center">
-                Less ‘just a second’<br /> More done in just a few seconds
+
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="font-[600] lg:text-[40px] md:text-[28px] sm:text-[16px] lg:leading-[48px] md:leading-[32px] sm:leading-[18px]">
+                Less ‘just a second’
+                <br /> More done in just a few seconds
               </h1>
-              <p className="font-[400] lg:text-[16px] md:text-[11px] sm:text-[10px] lg:leading-[24px] md:leading-[16.5px] sm:leading-[15px] text-center w-3/5 p-8">
+              <p className="font-[400] lg:text-[16px] md:text-[14px] sm:text-[8px] lg:leading-[24px] md:leading-[18px] sm:leading-[16px] text-center lg:w-3/5 p-4">
                 We’re your partner in business growth. We help increase
                 revisiting customers, and maximize brand visibility to boost
                 revenue. Experience 40% faster turnaround times, 30% higher
