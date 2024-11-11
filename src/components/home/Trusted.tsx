@@ -11,33 +11,33 @@ const Trusted: React.FC = () => {
         Trusted by the best in the industry
       </h5>
 
-      <div className="flex gap-10 justify-center py-6">
-        <div>
-          <TrustedCard img={user1} name="Rocky Tomar" company="Hub of Joys" />
+      <div className="flex md:gap-10 justify-center py-6">
+        <div className="scale-75 md:scale-100">
+          <TrustedCard img={user1} name="Rocky Tomar" company="Hub of Joys"  />
         </div>
-        <div>
+        <div className="scale-75 md:scale-100">
           <TrustedCard img={user2} name="Nitin Bhardwaj" company="Luji Grand" />
         </div>
-        <div className="lg:block sm:hidden">
+        <div className="lg:block hidden scale">
           <TrustedCard img={user3} name="Pradeep" company="Devpaga Group" />
         </div>
       </div>
-      <div className="flex gap-10 justify-center py-6 lg:pr-0 pr-24">
-        <div>
+      <div className="flex md:gap-10 justify-center py-6 lg:pr-0 pr-24 scale">
+        <div className="scale-75 md:scale-100">
           <TrustedCard img={user1} name="Rocky Tomar" company="Hub of Joys" />
         </div>
-        <div>
+        <div className="scale-75 md:scale-100">
           <TrustedCard img={user2} name="Nitin Bhardwaj" company="Luji Grand" />
         </div>
       </div>
-      <div className="flex gap-10 justify-center py-6">
-        <div>
+      <div className="flex md:gap-10 justify-center py-6 scale">
+        <div className="scale-75 md:scale-100">
           <TrustedCard img={user1} name="Rocky Tomar" company="Hub of Joys" />
         </div>
-        <div>
+        <div className="scale-75 md:scale-100">
           <TrustedCard img={user2} name="Nitin Bhardwaj" company="Luji Grand" />
         </div>
-        <div className="lg:block sm:hidden">
+        <div className="lg:block hidden scale">
           <TrustedCard img={user3} name="Pradeep" company="Devpaga Group" />
         </div>
       </div>

@@ -21,6 +21,13 @@ const page: React.FC = () => {
       <WallOfLove />
       <Faq />
       <GetStarted />
+      <div className="border border-green-700 relative w-fit p-20 rounded-xl">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ad.
+
+        <div className="w-20 h-20  absolute border-r-4 border-t-4 right-0 top-1/2 bg-white -translate-y-1/2 translate-x-1/2 outline-1  rounded-full">
+
+        </div>
+      </div>
     </div>
   );
 };
