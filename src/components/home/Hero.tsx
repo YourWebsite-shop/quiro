@@ -25,20 +25,20 @@ import ShadowButton from "../ShadowButton";
 const Hero: React.FC = () => {
   return (
     <>
-    <div className="relative flex flex-col  items-center justify-center py-44 sm:h-[70vh] lg:h-[100vh]">
-      <Image src={gradientBg}  alt="gradietnBg" className="absolute sm:top-44 sm:scale-150 lg:scale-100 lg:-top-10" />
-      <h2 className="font-[600] sm:text-[36px] lg:text-6xl text-center z-10 sm:leading-[43px] lg:leading-[70px] text-[20px] py-6">
+    <div className="relative flex flex-col  items-center justify-center py-24  sm:h-[90vh] lg:h-[100vh]">
+      <Image src={gradientBg}  alt="gradietnBg" className="absolute sm:top-44 scale-150 sm:scale-150 lg:scale-100 lg:-top-10" />
+      <h2 className="font-[600] sm:text-[36px] sm:py-2 lg:text-6xl text-center z-10 sm:leading-[43px] lg:leading-[70px] text-[24px] py-6">
         Redifining Your <br /> Stay & Dining{" "}
         <div className="text-[#00413E] inline relative">
           Experience{" "}
           <Image
             src={doubleLine}
             alt="doubelLine"
-            className="absolute  right-0 lg:-bottom-8 -bottom-2"
+            className="absolute sm:-bottom-4  right-0 lg:-bottom-8 -bottom-2"
           />
         </div>
       </h2>
-      <p className=" sm:text-[16px] lg:text-[20px] text-center font-[500] max-w-[90vw] sm:max-w-[80vw]  z-10 lg:py-10 sm:py-10 text-[13px]">
+      <p className=" sm:text-[16px] lg:text-[20px] text-center font-[600] max-w-[90vw] sm:max-w-[80vw]  z-10 lg:py-10 sm:py-10 text-[13.9px]">
         At Quiro, we&apos;re revolutionising the industry with a platform designed by
         HoReCa Community, for the community. Our all-in-one solution empowers
         your team to effortlessly manage everything
@@ -81,9 +81,9 @@ const Carousel = () => {
 
 const Partners = () => {
   return (
-    <div>
-      <h5 className="font-[600] text-[24px] text-center lg:py-12 sm:pb-8 pt-20 pb-10 sm:pt-16">Discover our partners from around the world</h5>
-      <Marquee className="sm:max-w-[60vw] mx-auto" direction="right">
+    <div >
+      <h5 className="font-[600] text-[14px] sm:text-[20px]  text-center lg:py-12 sm:pb-20 pt-20 pb-10 sm:pt-120">Discover our partners from around the world</h5>
+      <Marquee className="sm:max-w-[60vw] mx-auto pb-16 sm:pb-20" direction="right">
       <Image src={partner1} alt="Carousel Imag 1" height={121} width={73} className="mx-10" />
       <Image src={partner2} alt="Carousel Imag 1" height={121} width={73} className="mx-10" />
       <Image src={partner1} alt="Carousel Imag 1" height={121} width={73} className="mx-10" />
