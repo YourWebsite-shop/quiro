@@ -70,10 +70,11 @@ const Faq: React.FC = () => {
       <div className="max-w-7xl w-full">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center mb-8">
-          <div className="w-[100px] mb-4" style={{ marginLeft: "-650px" }}>
+          <div className="w-[100px] mb-4 hidden lg:block" style={{ marginLeft: "-650px" }}>
             <Image src={problem} alt="problem" />
           </div>
-          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center">
+          <h1 className="font-bold relative text-3xl md:text-4xl lg:text-5xl text-center">
+            <Image src={problem} alt="problem" width={100} className="lg:hidden absolute left-0 -top-10" />
             Frequently Asked Questions
           </h1>
           <p className="font-medium text-lg md:text-xl text-center mt-2">
