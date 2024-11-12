@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
 import LineButton from "./LineButton";
+import { Menu } from "lucide-react";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -56,23 +57,47 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="flex items-center justify-between px-10 fixed w-full top-0 z-20">
+    <div className="flex items-center justify-between px-4 md:px-10 w-full top-0 bg-[#F5F3ED] py-4">
       <div>
-        <Image src={Logo} width={150} height={100} alt="logo" />
+        <Image src={Logo} width={300} height={70} alt="logo" className="w-[100px] h-[70px] md:w-[150px] md:h-[100px]" />
       </div>
-      <NavigationMenu className="bg-white rounded-full">
+
+      {/* Mobile Menu Button */}
+      <button 
+        className="xl:hidden z-30 bg-white text-[#00403f] p-2 rounded-[15px]"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <Menu size={24} />
+      </button>
+
+      {/* Mobile Menu */}
+      <div className={`fixed inset-0 bg-white z-20 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 xl:hidden`}>
+        <div className="flex flex-col p-8 space-y-4">
+          <Link href="/docs" className="text-lg">About us</Link>
+          <Link href="/business" className="text-lg">For Businesses</Link>
+          <Link href="/resources" className="text-lg">Resources</Link>
+          <Link href="/customers" className="text-lg">For Customers</Link>
+          <Link href="/pricing" className="text-lg">Pricing</Link>
+          <div className="pt-4">
+            <LineButton text="Get Started" />
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Menu */}
+      <NavigationMenu className="bg-white rounded-full fixed translate-x-1/2 z-20 right-1/2 hidden xl:block">
         <NavigationMenuList className="border border-[#00413E] rounded-full p-2">
 
-
-        <NavigationMenuItem className="rounded-full  text-white bg-[#00413E] hover:bg-white">
+          <NavigationMenuItem className="rounded-full text-white bg-[#00413E] hover:bg-white">
             <Link href="/docs" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 About us
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-
 
           <NavigationMenuItem>
             <NavigationMenuTrigger className="rounded-full">
@@ -86,7 +111,6 @@ const Header: React.FC = () => {
                       className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                       href="/"
                     >
-                      {/* <Icons.logo className="h-6 w-6" /> */}
                       <div className="mb-2 mt-4 text-lg font-medium">
                         shadcn/ui
                       </div>
@@ -111,7 +135,6 @@ const Header: React.FC = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
 
-
           <NavigationMenuItem>
             <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -128,7 +151,6 @@ const Header: React.FC = () => {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-
 
           <NavigationMenuItem>
             <NavigationMenuTrigger>For Customers</NavigationMenuTrigger>
@@ -147,7 +169,6 @@ const Header: React.FC = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
 
-
           <NavigationMenuItem>
             <Link href="/docs" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -156,10 +177,10 @@ const Header: React.FC = () => {
             </Link>
           </NavigationMenuItem>
 
-
         </NavigationMenuList>
       </NavigationMenu>
-      <div>
+
+      <div className="hidden xl:block">
         <LineButton text="Get Started" />
       </div>
     </div>

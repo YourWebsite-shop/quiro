@@ -9,106 +9,82 @@ import footer from "../assets/footerbg.png";
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex flex-row justify-center items-center bg-[#F5F3ED] p-8 pt-20">
-      <div className="w-1/2">
-        {/* Logo and Company Name */}
-        <div className="flex flex-col justify-center items-start w-full mb-4">
-          <Image src={logo} alt="logo" width={250} height={100} />
+    <div className="flex flex-col sm:flex-row justify-center items-start bg-[#F5F3ED] p-8 pt-20 lg:px-20 space-y-8 lg:space-y-0 lg:space-x-8">
+      {/* Left Section */}
+      <div className="lg:w-1/2 w-full px-2 lg:px-0">
+        {/* Logo */}
+        <div className="flex flex-col items-start justify-start w-full sm:mb-0 mb-16">
+          <Image src={logo} alt="logo" width={200} height={80} className=" mx-auto sm:mx-0 w-auto h-auto" />
         </div>
 
         {/* Company and Resources Sections */}
-        <div className="flex flex-row  items-start  w-full gap-60 mb-20 ml-5">
+        <div className="flex justify-between sm:justify-start lg:gap-28 sm:gap-10 md:flex-row items-start w-full gap-8   mb-16 lg:mb-20">
           <div className="flex flex-col items-start space-y-2">
-            <h1 className="font-[600] text-[24px] leading-[36px] text-[#00413E] mb-3">
-              Company
-            </h1>
+            <h1 className="font-semibold text-lg lg:text-xl text-[#00413E] mb-3">Company</h1>
             <ul className="space-y-2">
-              <li className="font-[400] text-[24px] leading-[36px] text-[#00413ECC]">
-                About us
-              </li>
-              <li className="font-[400] text-[24px] leading-[36px] text-[#00413ECC]">
-                For Businesses
-              </li>
-              <li className="font-[400] text-[24px] leading-[36px] text-[#00413ECC]">
-                For Customers
-              </li>
+              <li className="text-md lg:text-lg text-[#00413ECC]">About us</li>
+              <li className="text-md lg:text-lg text-[#00413ECC]">For Businesses</li>
+              <li className="text-md lg:text-lg text-[#00413ECC]">For Customers</li>
             </ul>
           </div>
           <div className="flex flex-col items-start space-y-2">
-            <h1 className="font-[600] text-[24px] leading-[36px] text-[#00413E] mb-3">
-              Resources
-            </h1>
+            <h1 className="font-semibold text-lg lg:text-xl text-[#00413E] mb-3">Resources</h1>
             <ul className="space-y-2">
-              <li className="font-[400] text-[24px] leading-[36px] text-[#00413ECC]">
-                Documentation
-              </li>
-              <li className="font-[400] text-[24px] leading-[36px] text-[#00413ECC]">
-                Pricing
-              </li>
+              <li className="text-md lg:text-lg text-[#00413ECC]">Documentation</li>
+              <li className="text-md lg:text-lg text-[#00413ECC]">Pricing</li>
             </ul>
           </div>
         </div>
 
-        {/* Social Logos and Description */}
-        <div className="flex flex-col items-start mb-8 ml-5">
-          <div className="flex space-x-4">
-            <FaFacebook className="text-2xl cursor-pointer text-[#00413E]" />
-            <AiFillInstagram className="text-2xl cursor-pointer text-[#00413E]" />
-            <BsTwitterX className="text-2xl cursor-pointer text-[#00413E]" />
-
-            <FaLinkedin className="text-2xl cursor-pointer text-[#00413E]" />
-            <GrMail className="text-2xl cursor-pointer text-[#00413E]" />
+        {/* Social Icons and Description */}
+        <div className="flex flex-col items-start  sm:mb-8">
+          <div className="flex space-x-4 mx-auto sm:mx-0">
+            <FaFacebook className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
+            <AiFillInstagram className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
+            <BsTwitterX className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
+            <FaLinkedin className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
+            <GrMail className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
           </div>
-          <p className="text-start mt-4 max-w-md text-[#00413ECC]">
-            Quiro is a platform built with the HoReCa community, for business
-            owners & their guests.
+          <p className="text-sm  text-center sm:text-start lg:text-base mt-4  text-[#00413ECC]">
+            Quiro is a platform built with the HoReCa community, for business owners & their guests.
           </p>
         </div>
       </div>
 
-      {/* Footer Background Section with Address and Contact Info */}
-      <div className="w-1/2 justify-start items-center flex flex-col ">
-        {/* Background Image Section at the Top */}
+      {/* Right Section with Background and Address */}
+      <div className="lg:w-1/2   w-full sm:flex flex-col items-start lg:items-end lg:pt-6">
         <div
-          className="w-full bg-cover bg-center rounded-[20px] p-10"
+          className="w-full bg-cover bg-center rounded-xl hidden sm:block p-6 lg:p-10 mb-8 "
           style={{ backgroundImage: `url(${footer.src})` }}
         >
-          <div className="flex flex-col justify-around w-full gap-4">
-            <div className="mb-4">
-              <h1 className="font-[600] text-[24px] leading-[36px] text-[#F5F3ED]">Address</h1>
-              <p className="font-[400] text-[24px] leading-[36px] text-[#F5F3ED]">
-                1330, Sector 57, Gurugram, Haryana <br />
-                India – 122003
+          <div className="flex flex-col space-y-4">
+            <div>
+              <h1 className="font-semibold text-lg lg:text-xl text-[#F5F3ED]">Address</h1>
+              <p className="text-sm lg:text-base text-[#F5F3ED]">
+                1330, Sector 57, Gurugram, Haryana, India – 122003
               </p>
             </div>
-            <div className="mb-4 md:mb-0">
-              <h1 className="font-[600] text-[24px] leading-[36px] text-[#F5F3ED]">Email</h1>
-              <p className="font-[400] text-[24px] leading-[36px] text-[#F5F3ED]">info@witsome.in</p>
+            <div>
+              <h1 className="font-semibold text-lg lg:text-xl text-[#F5F3ED]">Email</h1>
+              <p className="text-sm lg:text-base text-[#F5F3ED]">info@witsome.in</p>
             </div>
             <div>
-              <p className="font-[400] text-[20px] leading-[30px] text-[#F5F3ED] opacity-60">
-                CIN: U62099HR2023PTC116609 | DPIIT Recognition number:
-                DIPP165445
+              <p className="text-xs lg:text-sm text-[#F5F3ED] opacity-60">
+                CIN: U62099HR2023PTC116609 | DPIIT Recognition number: DIPP165445
               </p>
             </div>
           </div>
         </div>
 
-        {/* Footer Bottom Section with Policies */}
-        <div className="flex flex-col items-end mt-8 ml-64">
-          <p className="text-[#00413ECC]">
+        {/* Footer Bottom Section */}
+        <div className="flex flex-col sm:text-right sm:jusitfy-end items-center  lg:items-end w-full text-center lg:text-right ">
+          <p className="text-sm  lg:text-base text-[#00413ECC] sm:self-end">
             © 2024 Witsome Tech Private Limited. All rights reserved.
           </p>
-          <ul className="flex space-x-4 mt-2">
-            <li className="cursor-pointer hover:underline text-[#00413ECC]">
-              Refund Policy
-            </li>
-            <li className="cursor-pointer hover:underline text-[#00413ECC]">
-              Terms & Condition
-            </li>
-            <li className="cursor-pointer hover:underline text-[#00413ECC]">
-              Privacy Policy
-            </li>
+          <ul className="flex space-x-4 mt-2 self-end">
+            <li className="cursor-pointer hover:underline text-[#00413ECC] text-xs lg:text-sm">Refund Policy</li>
+            <li className="cursor-pointer hover:underline text-[#00413ECC] text-xs lg:text-sm">Terms & Condition</li>
+            <li className="cursor-pointer hover:underline text-[#00413ECC] text-xs lg:text-sm">Privacy Policy</li>
           </ul>
         </div>
       </div>

@@ -11,15 +11,15 @@ import services from "../../assets/home/AbsoluteImages/services.png";
 
 const Control: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-2 mx-60">
-      <div className="flex flex-col justify-center items-center">
-        <div className="w-[80px] mr-[750px]">
-          <Image src={services} alt="services" />
-        </div>
-        <h1 className="font-[600] text-[48px] leading-[57px] mb-4">
+    <div className="flex flex-col justify-center items-center py-20 gap-2 lg:px-40">
+      <div className="flex flex-col justify-center items-center px-10">
+        
+
+        <h1 className="font-[600] text-[24px]  text-center lg:text-[48px] md:text-[24px] lg:leading-[57px] relative md:leading-[29px] mb-4">
+          <Image src={services} alt="services" width={65} />
           A Product That Puts You in Control
         </h1>
-        <p className="font-[500] text-[20px] leading-[30px]">
+        <p className="font-[500] text-[13px] text-center leading-[19.5px]">
           All-in-one software that helps you take charge of your operations
           and unlock more revenue
         </p>
@@ -53,8 +53,7 @@ const Control: React.FC = () => {
                 src={control3}
                 alt="control"
                 layout="responsive"
-                objectFit="cover"
-                className="w-full h-full"
+               
               />
             </div>
           </div>
@@ -62,8 +61,7 @@ const Control: React.FC = () => {
             <Image
               src={control4}
               alt="control"
-              layout="responsive"
-              objectFit="cover"
+              
               className="w-full h-full"
             />
           </div>
@@ -75,8 +73,7 @@ const Control: React.FC = () => {
             <Image
               src={control5}
               alt="control"
-              layout="responsive"
-              objectFit="cover"
+              
               className="w-full h-full"
             />
           </div>
@@ -86,8 +83,7 @@ const Control: React.FC = () => {
                 src={control6}
                 alt="control"
                 layout="responsive"
-                objectFit="cover"
-                className="w-full h-full"
+               
               />
             </div>
             <div className="w-1/2 h-full">
@@ -95,8 +91,7 @@ const Control: React.FC = () => {
                 src={control7}
                 alt="control"
                 layout="responsive"
-                objectFit="cover"
-                className="w-full h-full"
+               
               />
             </div>
           </div>

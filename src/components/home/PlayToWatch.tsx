@@ -9,7 +9,7 @@ import magicarrowtab from "@/assets/home/magicarrtab.png";
 
 const PlayToWatch: React.FC = () => {
   return (
-    <div className="bg-[#F3CCE7]  p-20 sm:p-10  flex flex-col items-center justify-center sm:justify-start sm:items-start sm:relative sm:min-h-[50vh] lg:min-h-[90vh]">
+    <div className="bg-[#F3CCE7]  p-20 lg:pt-20 sm:p-10  flex flex-col items-center justify-center sm:justify-start sm:items-start sm:relative sm:min-h-[50vh] lg:min-h-[80vh]">
       {/* Mobile Images */}
       <Image src={magictextmobile} alt="magic text" className="sm:hidden" />
       <Image
@@ -22,15 +22,15 @@ const PlayToWatch: React.FC = () => {
 
       {/* Tablet and Desktop Screens */}
       <div className="sm:flex w-full ">
-        <div className="w-[70vw] lg:w-[50vw] xl:px-44">
+        <div className="w-[70vw] lg:w-[50vw]  xl:px-44">
           <Image
             src={magictext}
             alt="magic text"
             width={273}
-            className="hidden sm:block"
+            className="hidden sm:block "
           />
-          <p className="text-[12px] w-[273px] sm:w-[334px]  lg:w-full lg:text-[15px] hidden sm:block">
-            Explore how Quiro’s management software transforms your operations
+          <p className="text-[12px] w-[273px] sm:w-[334px]   lg:w-full lg:text-[15px] hidden sm:block">
+            Explore how Quiro&apos;s management software transforms your operations
             in just 2 minutes. Experience faster order processing, instant guest
             request handling, and automated payment solutions. Watch now to see
             the magic unfold
@@ -61,12 +61,12 @@ const PlayToWatch: React.FC = () => {
         alt="magic arrow"
         width={500}
         
-        className="hidden sm:block absolute left-0 -bottom-10 w-[64vw] h-[500px] lg:hidden"
+        className="hidden sm:block absolute left-0 -bottom-10 w-[63vw] h-[500px] lg:hidden"
       />
 
 
       {/* Magic arrow for desktop */}
-      <Image src={magicarraow} alt="magic arrow" width={800} className="absolute w-[64vw] h-[800px] left-0 -bottom-20 hidden lg:block" />
+      <Image src={magicarraow} alt="magic arrow" width={800} className="absolute w-[66vw] h-[840px] left-0 -bottom-52 hidden lg:block" />
 
 
 
