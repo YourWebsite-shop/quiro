@@ -25,8 +25,8 @@ import ShadowButton from "../ShadowButton";
 const Hero: React.FC = () => {
   return (
     <>
-    <div className="relative flex flex-col  items-center justify-center py-24  sm:h-[90vh] lg:h-[100vh]">
-      <Image src={gradientBg}  alt="gradietnBg" className="absolute sm:top-44 scale-150 sm:scale-150 lg:scale-100 lg:-top-10" />
+    <div className="relative flex flex-col  items-center  pb-24 lg:py-24  sm:h-[50vh] lg:h-[100vh]">
+      <Image src={gradientBg}  alt="gradietnBg" className="absolute sm:top-20 scale-150 sm:scale-150 lg:scale-100 lg:-top-24" />
       <h2 className="font-[600] sm:text-[36px] sm:py-2 lg:text-6xl text-center z-10 sm:leading-[43px] lg:leading-[70px] text-[24px] py-6">
         Redifining Your <br /> Stay & Dining{" "}
         <div className="text-[#00413E] inline relative">

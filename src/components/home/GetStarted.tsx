@@ -11,7 +11,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const GetStarted: React.FC = () => {
   return (
-    <div className=" p-8 bg-[#F3CCE7] w-full h-[65vh] sm:h-auto sm:py-16 relative">
+    <div className=" p-8 bg-[#F3CCE7] w-full h-[55vh] sm:h-auto sm:py-16 relative">
       <div className="flex lg:flex-row md:flex-row sm:flex-col  w-full max-w-[1300px]">
         {/* Magic start mobile */}
         <div className="sm:hidden w-full relative">
@@ -49,7 +49,7 @@ const GetStarted: React.FC = () => {
           <Image
             src={magicArrow}
             alt="arrow"
-            className="relative sm:rotate-12 lg:rotate-0 sm:top-20 sm:left-10 lg:left-full lg:-translate-x-1/2 lg:top-6"
+            className="relative sm:rotate-12 lg:rotate-0 sm:top-20 sm:left-10 lg:left-full lg:-translate-x-1/2 xl:top-6"
           />
 
           {/* Buttons on the Right */}
