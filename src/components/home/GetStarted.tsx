@@ -54,7 +54,7 @@ const GetStarted: React.FC = () => {
 
           {/* Buttons on the Right */}
           <div className=" hidden sm:flex absolute w-full sm:left-full  lg:right-4 lg:translate-x-1/2 lg:top-1/2 lg:translate-y-4  items-end  space-y-4 gap-4 mb-10 ml-4    ">
-            <button className="bg-black relative text-white py-3 px-4 sm:px-8 md:px-10 rounded-lg flex items-center text-sm sm:text-base whitespace-nowrap">
+            <button className="bg-black relative text-white  py-[13px] px-4 sm:px-8 md:px-10 rounded-lg flex items-center text-sm sm:text-base whitespace-nowrap">
               Learn More
               <FaLongArrowAltRight className="ml-2 text-white" />
               <Image
