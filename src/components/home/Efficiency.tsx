@@ -30,7 +30,7 @@ const Efficiency: React.FC = () => {
   ];
 
   return (
-    <div className="py-20 lg:px-16 sm:px-4 ">
+    <div className="py-20 lg:px-24 sm:px-4 ">
       {/* Section Heading */}
       <SectionHeader
         title="We Are More Than Just Another Software Company"
@@ -108,7 +108,7 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
       height={311}
       className="rounded "
     />
-    <h5 className="font-[600] sm:text-[14px] sm:py-3 lg:text-[32px] text-center lg:leading-[40px] lg:py-8 py-4">
+    <h5 className="font-[600] sm:text-[14px] sm:py-3 lg:text-[28px] text-center lg:leading-[35px] lg:py-7 py-4">
       {heading}
     </h5>
     <p className="text-center font-[400] text-[10px] lg:text-[16px] lg:leading-[24px] lg:pb-10 sm:pb-4">
