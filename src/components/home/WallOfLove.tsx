@@ -28,24 +28,14 @@ const WallOfLove: React.FC = () => {
         </p>
       </div>
 
-      <Image
-        src={woldesk}
-        width={10000}
-        alt="woldesk"
-        className="hidden lg:block h-auto w-full"
-      />
       <div className="flex gap-3 p-2 sm:px-10 lg:hidden">
         <div className="flex flex-col w-1/2 gap-4">
-
-          
-            <Image
-              src={wolimgcus}
-              width={1000}
-              alt="wolimgcus"
-              className="relative"
-            />
-            
-         
+          <Image
+            src={wolimgcus}
+            width={1000}
+            alt="wolimgcus"
+            className="relative"
+          />
 
           <div className="border-[3px] p-4 sm:mr-8 rounded-xl   border-[#006B66] bg-white  ">
             <p className="text-[8px] sm:text-[14px]">
@@ -73,7 +63,14 @@ const WallOfLove: React.FC = () => {
 
           <div className="border-[3px] p-4 sm:mr-8 rounded-xl   border-[#006B66] bg-white">
             <Image src={wolimg1} alt="wolimg1" width={70} className="mx-auto" />
-            <p className=" text-center py-2"><Image src={fstars} alt="5 stars" width={1000} className="w-2/3 mx-auto" /></p>
+            <p className=" text-center py-2">
+              <Image
+                src={fstars}
+                alt="5 stars"
+                width={1000}
+                className="w-2/3 mx-auto"
+              />
+            </p>
             <p className="text-[10px] sm:text-[14px] font-[500] text-center">
               "It was difficult to manage guest requests earlier. Quiro took the
               stress out of managing guest requests. It&apos;s so quick and
@@ -86,17 +83,15 @@ const WallOfLove: React.FC = () => {
               className="mx-auto my-4"
             />
           </div>
-
         </div>
 
-
         <div className="flex flex-col w-1/2 gap-4 ">
-        <Image
-              src={wolimgcus2}
-              width={1000}
-              alt="wolimgcus"
-              className="relative sm:pl-8"
-            />
+          <Image
+            src={wolimgcus2}
+            width={1000}
+            alt="wolimgcus"
+            className="relative sm:pl-8"
+          />
 
           <div className="border-[3px] p-4 rounded-xl   border-[#006B66] bg-white relative">
             <Image src={wolimg2} width={111} alt="wolimg2" className="w-full" />
@@ -133,12 +128,62 @@ const WallOfLove: React.FC = () => {
               className="absolute right-0 -bottom-4 sm:w-[71px] sm:-bottom-10"
             />
           </div>
-
         </div>
+      </div>
 
 
 
 
+
+
+
+
+
+
+      <div className="hidden lg:flex justify-between">
+        <div className="w-[45%] flex items-center">
+          <div className="w-1/2 flex flex-col gap-2">
+
+          <Image
+            src={wolimgcus}
+            width={1000}
+            alt="wolimgcus"
+            className="relative"
+          />
+          <div className="border-[3px] p-4 sm:mr-8 rounded-xl   border-[#006B66] bg-white  ">
+            <p className="text-[8px] sm:text-[14px]">
+              "Quiro has transformed how we manage our hotel operations. The
+              QR-based ordering and request systems are a game-changer, allowing
+              us to provide prompt service that our guests absolutely love!"
+            </p>
+            <div className="flex justify-between pt-10">
+              <div>
+                <h6 className="text-[10px] sm:text-[16px] font-[400]">Uttam</h6>
+                <p className="text-[10px] sm:text-[16px] font-[600] text-green-600">
+                  utaam zaika
+                </p>
+              </div>
+              <div>
+                <Image
+                  src={wolimg1}
+                  width={40}
+                  alt="wolimg1"
+                  className="sm:w-[70px]"
+                />
+              </div>
+            </div>
+          </div>
+
+          </div>
+          <Image
+            src={wolimgcus2}
+            width={1000}
+            alt="wolimgcus"
+            className="relative w-1/2"
+          />
+        </div>
+        <div className="w-[20%]"></div>
+        <div className="w-[35%]"></div>
       </div>
     </div>
   );
