@@ -57,7 +57,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 const Header: React.FC = () => {
   return (
-    <div className="flex items-center justify-between px-10 fixed w-full top-0 z-20 ">
+    <div className="flex items-center justify-between px-10 fixed w-full top-0 z-20">
       <div>
         <Image src={Logo} width={150} height={100} alt="logo" />
       </div>
