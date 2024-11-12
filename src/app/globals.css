@@ -8,8 +8,6 @@ body {
   width: 100vw !important;
 }
 
-
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -78,5 +76,11 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .custom-magic-arr-desk {
+    border: 1px sold red !important;
   }
 }

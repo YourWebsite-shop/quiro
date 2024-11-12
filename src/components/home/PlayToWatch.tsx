@@ -4,7 +4,7 @@ import magictextmobile from "@/assets/home/magictextmobile.png";
 import arrowmobile from "@/assets/home/arrowmobile.png";
 import magicFrame from "@/assets/magicFrame.png"; // Background frame
 import magictext from "@/assets/watchTheMagic.png";
-import magicarraow from "@/assets/magicArrow.png"
+import magicarraow from "@/assets/magicArrow.png";
 import magicarrowtab from "@/assets/home/magicarrtab.png";
 
 const PlayToWatch: React.FC = () => {
@@ -30,10 +30,10 @@ const PlayToWatch: React.FC = () => {
             className="hidden sm:block "
           />
           <p className="text-[12px] w-[273px] sm:w-[334px]   lg:w-full lg:text-[15px] hidden sm:block">
-            Explore how Quiro&apos;s management software transforms your operations
-            in just 2 minutes. Experience faster order processing, instant guest
-            request handling, and automated payment solutions. Watch now to see
-            the magic unfold
+            Explore how Quiro&apos;s management software transforms your
+            operations in just 2 minutes. Experience faster order processing,
+            instant guest request handling, and automated payment solutions.
+            Watch now to see the magic unfold
           </p>
         </div>
         <div
@@ -60,16 +60,16 @@ const PlayToWatch: React.FC = () => {
         src={magicarrowtab}
         alt="magic arrow"
         width={500}
-        
         className="hidden sm:block absolute left-0 -bottom-10 w-[63vw] h-[500px] lg:hidden"
       />
 
-
       {/* Magic arrow for desktop */}
-      <Image src={magicarraow} alt="magic arrow" width={800} className="absolute w-[66vw] h-[840px] left-0 -bottom-52 hidden lg:block" />
-
-
-
+      <Image
+        src={magicarraow}
+        alt="magic arrow"
+        width={800}
+        className="absolute lg:w-[60vw] lg:h-[700px] xl:w-[64vw] xl:h-[840px] left-0 lg:-bottom-44 xl:-bottom-52 hidden lg:block"
+      />
 
       {/* Video player with frame */}
       <div
