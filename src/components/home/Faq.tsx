@@ -70,11 +70,19 @@ const Faq: React.FC = () => {
       <div className="max-w-7xl w-full">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center mb-8">
-          <div className="w-[100px] mb-4 hidden lg:block" style={{ marginLeft: "-650px" }}>
+          <div
+            className="w-[100px] mb-4 hidden lg:block"
+            style={{ marginLeft: "-650px" }}
+          >
             <Image src={problem} alt="problem" />
           </div>
           <h1 className="font-bold relative text-3xl md:text-4xl lg:text-5xl text-center">
-            <Image src={problem} alt="problem" width={100} className="lg:hidden absolute left-0 -top-10" />
+            <Image
+              src={problem}
+              alt="problem"
+              width={100}
+              className="lg:hidden absolute left-0 -top-10"
+            />
             Frequently Asked Questions
           </h1>
           <p className="font-medium text-lg md:text-xl text-center mt-2">
@@ -83,33 +91,72 @@ const Faq: React.FC = () => {
         </div>
 
         {/* FAQ List in Two Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {faqData.map((faq, index) => (
-            <div key={index} className="pb-1" onClick={() => toggleFaq(index)}>
-              {/* Question */}
-              <div className="flex justify-between items-center cursor-pointer">
-                <div className="flex items-center">
-                  <div className="w-8 h-8 rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
-                    {expandedIndex === index ? (
-                      <FaChevronUp className="text-gray-600" />
-                    ) : (
-                      <FaChevronDown className="text-gray-600" />
-                    )}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-4 md:gap-4">
+          {/* Left Column */}
+          <div>
+            {faqData.slice(0, faqData.length / 2).map((faq, index) => (
+              <div key={index} className="pb-1">
+                {/* Question */}
+                <div
+                  className="flex justify-between items-center cursor-pointer"
+                  onClick={() => toggleFaq(index)} 
+                >
+                  <div className="flex items-center">
+                    <div className="w-8 h-8 rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
+                      {expandedIndex === index ? (
+                        <FaChevronUp className="text-gray-600" />
+                      ) : (
+                        <FaChevronDown className="text-gray-600" />
+                      )}
+                    </div>
+                    <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[16px] sm:leading-[18px] break-words">
+                      {faq.question}
+                    </h2>
                   </div>
-                  <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[16px] sm:leading-[18px]  break-words">
-                    {faq.question}
-                  </h2>
                 </div>
-              </div>
 
-              {/* Answer */}
-              {expandedIndex === index && (
-                <p className="text-[18px] font-[400] leading-[23px] ml-12 md:text-lg text-gray-600">
-                  {faq.answer}
-                </p>
-              )}
-            </div>
-          ))}
+                {/* Answer */}
+                {expandedIndex === index && (
+                  <p className="text-[18px] font-[400] leading-[23px] ml-12 md:text-lg text-gray-600">
+                    {faq.answer}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Right Column */}
+          <div>
+            {faqData.slice(faqData.length / 2).map((faq, index) => (
+              <div key={index} className="pb-1">
+                {/* Question */}
+                <div
+                  className="flex justify-between items-center cursor-pointer"
+                  onClick={() => toggleFaq(index + faqData.length / 2)} // Offset index for second column
+                >
+                  <div className="flex items-center">
+                    <div className="w-8 h-8 rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
+                      {expandedIndex === index + faqData.length / 2 ? (
+                        <FaChevronUp className="text-gray-600" />
+                      ) : (
+                        <FaChevronDown className="text-gray-600" />
+                      )}
+                    </div>
+                    <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[16px] sm:leading-[18px] break-words">
+                      {faq.question}
+                    </h2>
+                  </div>
+                </div>
+
+                {/* Answer */}
+                {expandedIndex === index + faqData.length / 2 && (
+                  <p className="text-[18px] font-[400] leading-[23px] ml-12 md:text-lg text-gray-600">
+                    {faq.answer}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
