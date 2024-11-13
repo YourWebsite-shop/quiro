@@ -8,10 +8,11 @@ import magicstartmobile from "@/assets/home/AbsoluteImages/magicstartmobile.png"
 import arrowmobile from "@/assets/home/arrowmobile.png";
 import line2 from "@/assets/buttonLine2.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import "./styles/getstarted.css";
 
 const GetStarted: React.FC = () => {
   return (
-    <div className=" p-8 bg-[#F3CCE7] w-full h-[55vh] sm:h-auto sm:py-16 relative">
+    <div className=" p-8 bg-[#F3CCE7] w-full h-[80vh] sm:h-[30vh] md:h-[40vh] lg:h-auto sm:pt-16 relative">
       <div className="flex lg:flex-row md:flex-row sm:flex-col  w-full max-w-[1300px]">
         {/* Magic start mobile */}
         <div className="sm:hidden w-full relative">
@@ -49,12 +50,12 @@ const GetStarted: React.FC = () => {
           <Image
             src={magicArrow}
             alt="arrow"
-            className="relative sm:rotate-12 lg:rotate-0 sm:top-20 sm:left-10 lg:left-full lg:-translate-x-1/2 xl:top-6"
+            className="relative custom-arr-desk sm:rotate-12 lg:rotate-0 sm:top-20 sm:left-10 lg:left-full lg:-translate-x-1/2 xl:top-6"
           />
 
           {/* Buttons on the Right */}
-          <div className=" hidden sm:flex absolute w-full sm:left-full sm:-translate-x-5  lg:right-4 sm:scale-75 md:scale-75 lg:scale-100 lg:translate-x-1/2 lg:top-1/2 lg:translate-y-4  items-end  space-y-4 gap-4 mb-10 ml-4    ">
-            <button className="bg-black relative text-white  py-[13px] px-4 sm:px-8 md:px-10 rounded-lg flex items-center text-sm sm:text-base whitespace-nowrap">
+          <div className=" hidden sm:flex custom-btn-desk absolute w-full sm:left-full sm:-translate-x-5  lg:right-4 sm:scale-75 md:scale-75 lg:scale-100 lg:translate-x-1/2 lg:top-1/2 lg:translate-y-4  items-end  space-y-4 gap-4 mb-10 ml-4    ">
+            <button className="bg-black relative  text-white  py-[13px] px-4 sm:px-8 md:px-10 rounded-lg flex items-center text-sm sm:text-base whitespace-nowrap">
               Learn More
               <FaLongArrowAltRight className="ml-2 text-white" />
               <Image
@@ -67,9 +68,8 @@ const GetStarted: React.FC = () => {
             </button>
 
             <button className="bg-[#F5F3ED] justify-center border-2 border-[#00413E] text-center text-sm sm:text-base shadow-[4px_4px_0_rgba(0,0,0,1)] sm:py-3 sm:px-10 px-6 py-2 rounded-lg flex items-center active:bg-[#E2E0D9] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none whitespace-nowrap">
-  Contact Us
-</button>
-
+              Contact Us
+            </button>
           </div>
         </div>
       </div>

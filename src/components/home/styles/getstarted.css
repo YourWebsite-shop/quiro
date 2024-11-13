@@ -1,0 +1,12 @@
+/* @media (min-width: 1280px) and (max-width: 1400px){
+    .custom-arr-desk{
+        top: 30px;
+        transform: translateX(-200px);
+        left: full;
+    }
+
+    .custom-btn-desk{
+        transform: scale(0) translateX();
+    }
+}
+ */

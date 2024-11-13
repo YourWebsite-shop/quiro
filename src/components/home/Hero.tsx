@@ -5,6 +5,7 @@ import Image from "next/image";
 import doubleLine from "@/assets/home/doubleunderline.png";
 import LineButton from "../LineButton";
 import Marquee from "react-fast-marquee";
+import "./styles/hero.css"
 
 
 
@@ -25,7 +26,7 @@ import ShadowButton from "../ShadowButton";
 const Hero: React.FC = () => {
   return (
     <>
-    <div className="relative flex flex-col  items-center  pb-24 lg:py-24  sm:h-[50vh] lg:h-[100vh]">
+    <div className="relative flex flex-col custom-hero  items-center  pb-24 lg:py-24  sm:h-[50vh] lg:h-[100vh]">
       <Image src={gradientBg}  alt="gradietnBg" className="absolute sm:top-20 scale-150 sm:scale-150 lg:scale-100 lg:-top-24" />
       <h2 className="font-[600] sm:text-[36px] sm:py-2 lg:text-6xl text-center z-10 sm:leading-[43px] lg:leading-[70px] text-[24px] py-6">
         Redifining Your <br /> Stay & Dining{" "}
@@ -38,7 +39,7 @@ const Hero: React.FC = () => {
           />
         </div>
       </h2>
-      <p className=" sm:text-[16px] lg:text-[20px] text-center font-[500] max-w-[90vw] sm:max-w-[80vw]  z-10 lg:py-10 sm:py-10 text-[13.9px]">
+      <p className=" sm:text-[16px] hero-text lg:text-[20px] text-center font-[500] max-w-[90vw] sm:max-w-[80vw]  z-10 lg:py-10 sm:py-10 text-[13.9px]">
         At Quiro, we&apos;re revolutionising the industry with a platform designed by
         HoReCa Community, for the community. Our all-in-one solution empowers
         your team to effortlessly manage everything

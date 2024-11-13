@@ -1,0 +1,35 @@
+@media (min-width: 1280px) and (max-width: 1400px){
+    .custom-magic-arrow{
+        height: 800px ;
+        
+    }
+
+    .custom-ptw-box{
+        padding: 120px 0px ;
+    }
+
+
+    .custom-iframe-box-desk{
+        width: 550px !important;
+        transform: translateY(-100px) translateX(-100px);
+      
+    }
+
+    .custom-ptw-content{
+        width: 60vw;
+    }
+}
+
+
+@media (min-width: 640px) and (max-width: 1024px){
+    .custom-ptw-content{
+        width: 70vw;
+    }
+
+    .custom-magic-arrow-tab{
+        width: 65vw;
+        height: 400px;
+    }
+
+   
+}
