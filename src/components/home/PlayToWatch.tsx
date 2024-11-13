@@ -23,14 +23,14 @@ const PlayToWatch: React.FC = () => {
 
       {/* Tablet and Desktop Screens */}
       <div className="sm:flex w-full ">
-        <div className="w-[70vw] sm:w-[50vw] lg:w-[50vw] custom-ptw-content  xl:px-44">
+        <div className="w-[70vw] sm:w-[50vw] lg:w-[52vw] custom-ptw-content  xl:px-44">
           <Image
             src={magictext}
             alt="magic text"
             width={1000}
             className="hidden sm:block "
           />
-          <p className="text-[12px] w-[273px] sm:w-[254px]   lg:w-full lg:text-[15px] hidden sm:block">
+          <p className="text-[12px] w-[273px] sm:w-[254px]   lg:w-full  lg:text-[15px] hidden sm:block">
             Explore how Quiro&apos;s management software transforms your
             operations in just 2 minutes. Experience faster order processing,
             instant guest request handling, and automated payment solutions.
@@ -38,7 +38,7 @@ const PlayToWatch: React.FC = () => {
           </p>
         </div>
         <div
-          className="w-2/3 max-w-[620px] sm:translate-x-4 lg:translate-x-0 custom-iframe-box-desk  items-center justify-center  hidden sm:block bg-center bg-cover mt-6 p-4 lg:p-8 -translate-y-10"
+          className="w-2/3 max-w-[620px] sm:translate-x-4 lg:-translate-x-10 custom-iframe-box-desk  items-center justify-center  hidden sm:block bg-center bg-cover mt-6 p-4 lg:p-8 -translate-y-10"
           style={{
             
             minWidth: "140px",

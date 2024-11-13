@@ -15,7 +15,7 @@ import LineButton from "../LineButton";
 
 const PerfectForBusiness: React.FC = () => {
   return (
-    <div className="flex justify-center items-center px-20 sm:px-2">
+    <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-10">
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
           
@@ -26,12 +26,12 @@ const PerfectForBusiness: React.FC = () => {
             <Image
               src={empower}
               alt="empower"
-              width={212}
-              height={212}
-              className="absolute -top-5 left-0 w-[70px]"
+              width={1000}
+              height={1000}
+              className="absolute -top-5 left-0 w-[70px] lg:-left-8 lg:scale-125"
             />
           </p>
-          <p className="font-[500] text-[13px] text-center sm:text-[20px] sm:leading-[30px] py-6 pb-12">
+          <p className="font-semibold text-[13px] text-center sm:text-[20px] sm:leading-[30px] py-6 ">
             Built with inputs from the HoReCa community for everyone involved
           </p>
         </div>
@@ -51,7 +51,7 @@ const Box1: React.FC = () => {
         backgroundImage: `url(${perfectBox1BG.src})`,
         backgroundSize: "cover",
       }}
-      className="rounded-xl sm:flex flex-row-reverse items-center sm:py-12 lg:py-0 lg:max-h-[90vh] lg:my-14"
+      className="rounded-xl sm:flex flex-row-reverse items-center sm:py-12 lg:py-0 lg:max-h-[90vh] lg:my-14 lg:max-w-[95vw]"
     >
       <div className="text-center sm:text-start  pt-8 sm:w-1/2 sm:px-8">
         <Image
@@ -60,7 +60,7 @@ const Box1: React.FC = () => {
           width={122}
           className="mx-auto sm:mx-0 sm:w-[125px] lg:w-[177px]"
         />
-        <h5 className="text-[18px] text-[#F5F3ED] font-700 sm:text-[16px] lg:text-[40px] ">
+        <h5 className="text-[18px] text-[#F5F3ED] font-[600] sm:text-[16px] lg:text-[40px] ">
           Say Goodbye to Service Delays
         </h5>
         <p className="text-[#F5F3ED] text-center sm:text-start text-[10px] sm:text-[11px] lg:text-[16px] py-8 px-6 sm:px-0 sm:py-2">
@@ -68,7 +68,7 @@ const Box1: React.FC = () => {
           experiences—from seamless check-ins to memorable stays. We tackle core
           issues like service delays, eliminate errors, and handle much more
         </p>
-        <div className="flex justify-center sm:block pb-10 sm:scale-90 sm:-translate-x-3 sm:py-4">
+        <div className="flex justify-center sm:block pb-10 sm:scale-90 sm:-translate-x-3 lg:translate-x-0 lg:scale-100 sm:py-4">
           <ShadowButton text="Learn More" />
         </div>
       </div>
@@ -87,10 +87,10 @@ const Box1: React.FC = () => {
 
 const Box2: React.FC = () => {
   return (
-    <div className="flex justify-center items-center h-[90vh] lg:h-[90vh] lg:my-14">
+    <div className="flex justify-center items-center h-[90vh] lg:h-[90vh] lg:my-0 lg:max-w-[95vw] ">
       <div className="w-full h-auto">
         <div
-          className="flex flex-col bg-cover bg-center rounded-2xl min-w-[90vw] lg:min-w-[99vw] min-h-[87vh] items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10"
+          className="flex flex-col bg-cover bg-center rounded-2xl min-w-[90vw] lg:min-w-[95vw]  min-h-[87vh] items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10"
           style={{ backgroundImage: `url(${perfectBox2BG.src})` }}
         >
           {/* Flex container to center the child div */}

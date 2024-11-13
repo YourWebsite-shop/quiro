@@ -16,19 +16,19 @@ const Control: React.FC = () => {
         
 
         <h1 className="font-[600] text-[24px]  text-center lg:text-[48px] md:text-[24px] lg:leading-[57px] relative md:leading-[29px] mb-4">
-          <Image src={services} alt="services" width={65} />
+          <Image src={services} alt="services" width={100} />
           A Product That Puts You in Control
         </h1>
-        <p className="font-[500] text-[13px] text-center leading-[19.5px]">
+        <p className="font-[500] text-[13px] text-center leading-[19.5px] lg:text-[20px] lg:py-4">
           All-in-one software that helps you take charge of your operations
           and unlock more revenue
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center w-full">
+      <div className="flex flex-col justify-center items-center w-full lg:pt-8">
         {/* Upper Half */}
         <div className="flex flex-row justify-center items-center m-6">
           <div className="w-[72%]  flex flex-col space-y-4">
-            <div className="flex flex-row justify-center items-center w-full">
+            <div className="flex flex-row justify-center items-center w-full lg:gap-2">
               <div className="w-[71%]">
                 <Image
                   src={control1}

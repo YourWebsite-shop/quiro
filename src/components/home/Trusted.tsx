@@ -6,7 +6,7 @@ import user3 from "@/assets/home/trusted/trusteduser3.png";
 
 const Trusted: React.FC = () => {
   return (
-    <div className="lg:pt-20  py-20 lg:pb-20">
+    <div className="lg:pt-32  py-20 lg:pb-52">
       <h5 className="font-[600] text-[15px] sm:text-[20px] lg:text-[24px] py-10 text-center">
         Trusted by the best in the industry
       </h5>
