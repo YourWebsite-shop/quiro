@@ -43,7 +43,7 @@ const Efficiency: React.FC = () => {
       <EfficiencyCardList data={efficiencyData} />
 
       {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row lg:pl-10 sm:py-4 gap-5 items-center">
+      <div className="flex flex-col sm:flex-row lg:pl-10 lg:py-10 sm:py-4 gap-5 items-center">
         <div>
           <LineButton  text="Learn More"/>
         </div>
@@ -60,7 +60,7 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
   title,
   description,
 }) => (
-  <div className="sm:flex lg:px-10 px-7  sm:py-12">
+  <div className="sm:flex lg:px-10 px-7  sm:py-12 lg:pb-24">
     <div className="relative w-full sm:w-[60%] text-[20px] text-center sm:text-start sm:text-[24px] lg:text-[44px] font-[600] sm:leading-8 lg:leading-[48px] ">
       {title}
       <Image
@@ -81,7 +81,7 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
 const EfficiencyCardList: React.FC<{ data: EfficiencyCardProps[] }> = ({
   data,
 }) => (
-  <div className="sm:flex sm:gap-2 lg:gap-10 pb-6 px-6 sm:px-0">
+  <div className="sm:flex sm:gap-2 lg:gap-7 pb-6 px-6 sm:px-0">
     {data.map((item, index) => (
       <EfficiencyCard key={index} {...item} />
     ))}
@@ -108,10 +108,10 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
       height={311}
       className="rounded "
     />
-    <h5 className="font-[600] sm:text-[14px] sm:py-3 lg:text-[28px] text-center lg:leading-[35px] lg:py-7 py-4">
+    <h5 className="font-[600] sm:text-[14px] sm:py-3 lg:text-[28px] text-center lg:leading-[35px] lg:py-6 py-4">
       {heading}
     </h5>
-    <p className="text-center font-[400] text-[10px] lg:text-[16px] lg:leading-[24px] lg:pb-10 sm:pb-4">
+    <p className="text-center font-[400] text-[10px] lg:text-[14.5px] lg:leading-[24px] lg:pb-6 sm:pb-4">
       {text}
     </p>
   </div>

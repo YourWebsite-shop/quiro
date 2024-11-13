@@ -13,14 +13,14 @@ const Footer: React.FC = () => {
       {/* Left Section */}
       <div className="lg:w-1/2 w-full px-2 lg:px-0">
         {/* Logo */}
-        <div className="flex flex-col items-start justify-start w-full sm:mb-0 mb-16">
-          <Image src={logo} alt="logo" width={200} height={80} className=" mx-auto sm:mx-0 w-auto h-auto" />
+        <div className="flex flex-col items-start justify-start w-full sm:mb-0 mb-16 lg:pb-10">
+          <Image src={logo} alt="logo" width={200} height={80} className=" mx-auto sm:mx-0 w-auto h-auto lg:scale-125" />
         </div>
 
         {/* Company and Resources Sections */}
-        <div className="flex justify-between sm:justify-start lg:gap-28 sm:gap-10 md:flex-row items-start w-full gap-8   mb-16 lg:mb-20">
+        <div className="flex justify-between sm:justify-start lg:gap-32 sm:gap-10 md:flex-row items-start w-full gap-8   mb-16 lg:mb-20">
           <div className="flex flex-col items-start space-y-2">
-            <h1 className="font-semibold text-lg lg:text-xl text-[#00413E] mb-3">Company</h1>
+            <h1 className="font-semibold text-lg lg:text-xl text-[#00413E] mb-3 lg:text-[24px]">Company</h1>
             <ul className="space-y-2">
               <li className="text-md lg:text-lg text-[#00413ECC]">About us</li>
               <li className="text-md lg:text-lg text-[#00413ECC]">For Businesses</li>
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             <FaLinkedin className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
             <GrMail className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
           </div>
-          <p className="text-sm  text-center sm:text-start lg:text-base mt-4  text-[#00413ECC]">
+          <p className="text-sm  text-center sm:text-start lg:text-base mt-4  text-[#00413ECC] lg:max-w-[65%]">
             Quiro is a platform built with the HoReCa community, for business owners & their guests.
           </p>
         </div>
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
           className="w-full bg-cover bg-center rounded-xl hidden sm:block p-6 lg:p-10 mb-8 "
           style={{ backgroundImage: `url(${footer.src})` }}
         >
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-4 lg:py-4">
             <div>
               <h1 className="font-semibold text-lg lg:text-xl text-[#F5F3ED]">Address</h1>
               <p className="text-sm lg:text-base text-[#F5F3ED]">
@@ -82,9 +82,9 @@ const Footer: React.FC = () => {
             © 2024 Witsome Tech Private Limited. All rights reserved.
           </p>
           <ul className="flex space-x-4 mt-2 self-end">
-            <li className="cursor-pointer hover:underline text-[#00413ECC] text-xs lg:text-sm">Refund Policy</li>
-            <li className="cursor-pointer hover:underline text-[#00413ECC] text-xs lg:text-sm">Terms & Condition</li>
-            <li className="cursor-pointer hover:underline text-[#00413ECC] text-xs lg:text-sm">Privacy Policy</li>
+            <li className="cursor-pointer hover:underline text-[#00413ECC] text-xs lg:text-sm border-b border-b-[#00413ECC]">Refund Policy</li>
+            <li className="cursor-pointer hover:underline text-[#00413ECC] text-xs lg:text-sm border-b border-b-[#00413ECC]">Terms & Condition</li>
+            <li className="cursor-pointer hover:underline text-[#00413ECC] text-xs lg:text-sm border-b border-b-[#00413ECC]">Privacy Policy</li>
           </ul>
         </div>
       </div>

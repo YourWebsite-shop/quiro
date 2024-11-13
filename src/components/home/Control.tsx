@@ -26,8 +26,8 @@ const Control: React.FC = () => {
       </div>
       <div className="flex flex-col justify-center items-center w-full lg:pt-8">
         {/* Upper Half */}
-        <div className="flex flex-row justify-center items-center m-6">
-          <div className="w-[72%]  flex flex-col space-y-4">
+        <div className="flex flex-row justify-center items-center m-6 lg:gap-2">
+          <div className="w-[72%]  flex flex-col space-y-4 lg:gap-1">
             <div className="flex flex-row justify-center items-center w-full lg:gap-2">
               <div className="w-[71%]">
                 <Image
@@ -57,7 +57,7 @@ const Control: React.FC = () => {
               />
             </div>
           </div>
-          <div className=" w-[28%] h-full">
+          <div className=" w-[28%] h-full ">
             <Image
               src={control4}
               alt="control"
@@ -68,7 +68,7 @@ const Control: React.FC = () => {
         </div>
 
         {/* Lower Half */}
-        <div className="flex flex-col space-y-4 mx-6">
+        <div className="flex flex-col space-y-4 mx-6 lg:gap-2">
           <div className="w-full h-full">
             <Image
               src={control5}
@@ -77,7 +77,8 @@ const Control: React.FC = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="flex flex-row w-full space-x-4">
+
+          <div className="flex flex-row w-full space-x-4 lg:gap-1">
             <div className="w-1/2 h-full">
               <Image
                 src={control6}
@@ -95,6 +96,7 @@ const Control: React.FC = () => {
               />
             </div>
           </div>
+
         </div>
       </div>
     </div>

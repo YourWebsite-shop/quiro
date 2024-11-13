@@ -15,6 +15,8 @@ import fstars from "@/assets/home/5star.png";
 import wolarr from "@/assets/home/walloflove/wolarr.png"
 import pradeep from "@/assets/home/walloflove/pradeep.png"
 import imggroup from "@/assets/home/walloflove/imggroup.png"
+import wolcusimg3desk from "@/assets/home/walloflove/wolcusimg3desk.png"
+import rajesh from "@/assets/home/AbsoluteImages/Rajesh.png"
 const WallOfLove: React.FC = () => {
   return (
     <div className="py-10">
@@ -145,9 +147,9 @@ const WallOfLove: React.FC = () => {
 
 
 
-      <div className="hidden lg:flex justify-between p-10">
+      <div className="hidden lg:flex justify-between p-10 lg:pb-56">
         <div className="w-[45%] flex flex-col gap-10 items-center">
-          <div className="flex items-center">
+          <div className="flex items-center  gap-6 h-full">
             <div className="w-1/2 flex flex-col gap-20">
 
               <Image
@@ -165,7 +167,7 @@ const WallOfLove: React.FC = () => {
                 <div className="flex justify-between pt-10">
                   <div>
                     <h6 className="text-[10px] sm:text-[16px] font-[400]">Uttam</h6>
-                    <p className="text-[10px] sm:text-[16px] font-[600] text-green-600">
+                    <p className="text-[10px] sm:text-[16px] font-[600] text-[#006B66]">
                       utaam zaika
                     </p>
                   </div>
@@ -186,20 +188,21 @@ const WallOfLove: React.FC = () => {
               src={wolimgcus2desk}
               width={1000}
               alt="wolimgcus"
-              className=" w-1/2"
+              className=" w-1/2 lg:translate-y-[10%]"
             />
 
 
           </div>
           <div className="relative">
           <Image src={wolarr} alt="wolarr" width={1000} />
-          <div className="absolute top-4 text-center">
+          <div className="absolute top-5 left-1/2 -translate-x-1/2 w-full text-center">
             <p className="font-semibold">"I was very impressed"</p>
-            <p className="text-sm p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione.</p>
+            <p className="text-[16px] p-4">"Quiro made a big difference right from day one. And the best thing is it is really easy for the staff to use it”</p>
           </div>
-          <Image src={imggroup} alt="imggroup" width={1000} />
+          <Image src={imggroup} alt="imggroup" width={1000} className="absolute top-full" />
           </div>
         </div>
+
         <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4">
 
 
@@ -244,33 +247,36 @@ const WallOfLove: React.FC = () => {
           </div>
 
         </div>
-        <div className="w-[28%] p-4 flex flex-col items-center gap-6">
+
+        <div className="w-[28%] p-1 flex flex-col items-center gap-6">
           <Image
-            src={wolimgcus2}
+            src={wolcusimg3desk }
             width={1000}
             alt="wolimgcus"
-            className="relative p-10"
+            className="relative "
           />
-          <div className="border-2 border-green-600 flex gap-4 items-center text-[10px] p-4 bg-white rounded-2xl">
+          <div className="border-2 border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 bg-white rounded-2xl">
             <div className="w-1/2"><Image src={wolimgcus3desk} alt="wolimgcus3desk" /></div>
             <div className="w-1/2">
               <p>"The team at Quiro just gets what their partners need. From setup to daily use, everything has been smooth and simple!”</p>
             </div>
+            <Image   src={rajesh} width={1000} className="absolute w-11 bottom-6 right-8"/>
           </div>
 
 
-          <div className="flex items-center bg-white border-2 border-green-500 rounded-2xl p-4">
+          <div className="flex items-center bg-white border-2 border-[#006B66] rounded-2xl p-4">
             <div className="w-1/2 text-[12px] font-500">
               "We used to struggle with order tracking, but Quiro has made it effortless. It’s a game-changer for us.”</div>
             <div className="w-1/2">
               <Image src={pradeep} alt="pradeep" width={1000} className="p-4" />
               <div className="text-center">
                 <p>Pradeep</p>
-                <p className="text-green-600 font-[600]">Hotel Pride Inn</p>
+                <p className="text-[#006B66] font-[600]">Hotel Pride Inn</p>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );
