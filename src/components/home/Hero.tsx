@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
 
 const Carousel = () => {
   return (
-    <Marquee className="lg:pb-20" >
+    <Marquee className="lg:pb-20 sm:py-24 lg:py-0" >
       <Image src={CarouselImg1} alt="Carousel Imag 1" height={184} width={143} className="mx-3" />
       <Image src={CarouselImg2} alt="Carousel Imag 1" height={184} width={143} className="mx-3" />
       <Image src={CarouselImg3} alt="Carousel Imag 1" height={184} width={143} className="mx-3" />

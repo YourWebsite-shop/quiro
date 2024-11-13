@@ -12,15 +12,12 @@ import oneStopSolution from "../../assets/oneStopSolution.png";
 import masterYourOPerations from "../../assets/masterYourOperations.png";
 import ShadowButton from "../ShadowButton";
 import LineButton from "../LineButton";
-
+import "./styles/perfectForBusiness.css";
 const PerfectForBusiness: React.FC = () => {
   return (
     <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-10">
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
-          
-            
-         
           <p className="font-[600]  relative text-center text-[20px] lg:text-[48px] sm:leading-[58px]">
             Perfect For Businesses Like Yours
             <Image
@@ -31,7 +28,7 @@ const PerfectForBusiness: React.FC = () => {
               className="absolute -top-5 left-0 w-[70px] lg:-left-8 lg:scale-125"
             />
           </p>
-          <p className="font-semibold text-[13px] text-center sm:text-[20px] sm:leading-[30px] py-6 ">
+          <p className="font-semibold text-[13px] text-center sm:text-[20px] sm:leading-[30px] py-6  custom-pfb">
             Built with inputs from the HoReCa community for everyone involved
           </p>
         </div>
@@ -51,7 +48,7 @@ const Box1: React.FC = () => {
         backgroundImage: `url(${perfectBox1BG.src})`,
         backgroundSize: "cover",
       }}
-      className="rounded-xl sm:flex flex-row-reverse items-center sm:py-12 lg:py-0 lg:max-h-[90vh] lg:my-14 lg:max-w-[95vw]"
+      className="rounded-xl sm:flex flex-row-reverse items-center sm:py-12 lg:py-0 lg:max-h-[90vh] lg:my-14 lg:max-w-[95vw] custom-height"
     >
       <div className="text-center sm:text-start  pt-8 sm:w-1/2 sm:px-8">
         <Image
@@ -87,41 +84,43 @@ const Box1: React.FC = () => {
 
 const Box2: React.FC = () => {
   return (
-    <div className="flex justify-center items-center h-[90vh] lg:h-[90vh] lg:my-0 lg:max-w-[95vw] ">
-      <div className="w-full h-auto">
-        <div
-          className="flex flex-col bg-cover bg-center rounded-2xl min-w-[90vw] lg:min-w-[95vw]  min-h-[87vh] items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10"
-          style={{ backgroundImage: `url(${perfectBox2BG.src})` }}
-        >
-          {/* Flex container to center the child div */}
-          <div className="flex flex-col items-center justify-center bg-[#F5F3ED] rounded-2xl p-6 sm:py-8 sm:px-10 md:py-10 md:px-12 lg:py-16 lg:px-20 mx-4 sm:mx-6 md:mx-8 lg:m-10">
-            <div className="flex items-center justify-center w-full max-w-xs lg:max-w-full">
-              <Image
-                src={masterYourOPerations}
-                alt="master"
-                width={250}
-                height={250}
-                className="w-full max-w-[250px] h-auto"
-              />
-            </div>
+    <div
+      className="flex justify-center items-center my-10 lg:my-0 sm:w-[98vw] sm:py-10 lg:max-w-[95vw] custom-height saurabh-bug"
+      style={{
+        backgroundImage: `url(${perfectBox2BG.src})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "100% 100%",
+      }}
+    >
+  
+        {/* Flex container to center the child div */}
+        <div className="flex flex-col items-center scale-75 justify-center bg-[#F5F3ED] custom-box-2-scale rounded-2xl p-6 sm:py-8 sm:px-10 md:py-10 md:px-12 lg:py-16 lg:px-20 mx-4 sm:mx-6 md:mx-8 lg:m-10">
+          <div className="flex items-center justify-center w-full max-w-xs lg:max-w-full">
+            <Image
+              src={masterYourOPerations}
+              alt="master"
+              width={250}
+              height={250}
+              className="w-full max-w-[250px] h-auto"
+            />
+          </div>
 
-            <div className="flex flex-col items-center justify-center text-center mt-4 gap-4 lg:w-[750px] md:w-[600px] sm:w-[400px]">
-              <h1 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
-                Less ‘just a second’
-                <br /> More done in just a few seconds
-              </h1>
-              <p className="font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-4">
-                We’re your partner in business growth. We help increase
-                revisiting customers, and maximize brand visibility to boost
-                revenue. Experience 40% faster turnaround times, 30% higher
-                average order value, 35% improved guest satisfaction, and double
-                staff efficiency.
-              </p>
-              <LineButton text="Start for Free" />
-            </div>
+          <div className="flex flex-col items-center justify-center text-center mt-4 gap-4 lg:w-[750px] md:w-[600px] sm:w-[400px]">
+            <h1 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
+              Less ‘just a second’
+              <br /> More done in just a few seconds
+            </h1>
+            <p className="font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-4">
+              We’re your partner in business growth. We help increase revisiting
+              customers, and maximize brand visibility to boost revenue.
+              Experience 40% faster turnaround times, 30% higher average order
+              value, 35% improved guest satisfaction, and double staff
+              efficiency.
+            </p>
+            <LineButton text="Start for Free" />
           </div>
         </div>
-      </div>
+      
     </div>
   );
 };
@@ -129,7 +128,7 @@ const Box2: React.FC = () => {
 const Box3: React.FC = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row md:flex-row sm:flex-row bg-cover bg-center rounded-2xl min-w-[90vw] min-h-[50vh] items-center justify-center p-4 py-10 sm:p-6 md:p-8 lg:p-10 lg:h-[90vh] lg:my-14"
+      className="flex flex-col lg:flex-row md:flex-row sm:flex-row bg-cover bg-center rounded-2xl min-w-[90vw] min-h-[50vh] items-center justify-center p-4 py-10 sm:p-6 md:p-8 lg:p-10 lg:h-[90vh] lg:my-14 custom-height"
       style={{ backgroundImage: `url(${perfectBox3BG.src})` }}
     >
       {/* Text content section */}
@@ -137,7 +136,12 @@ const Box3: React.FC = () => {
       <div className="text-start sm:w-1/2 sm:px-4 lg:px-14">
         {/* Smaller logo/image section */}
         <div className="flex lg:w-[312px] sm:w-[165px] mb-2 mx-auto sm:justify-start sm:mx-0 justify-center lg:items-start sm:items-start ">
-          <Image src={oneStopSolution} width={202} alt="choose" className="sm:w-full" />
+          <Image
+            src={oneStopSolution}
+            width={202}
+            alt="choose"
+            className="sm:w-full"
+          />
         </div>
 
         {/* Text content with heading and paragraph */}

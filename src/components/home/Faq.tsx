@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import problem from "../../assets/problem.png";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import accdown from "@/assets/home/accdown.png"
+import accup from "@/assets/home/accup.png"
 
 const Faq: React.FC = () => {
   const faqData = [
@@ -104,12 +106,12 @@ const Faq: React.FC = () => {
                   <div className="flex items-center">
                     <div className="w-8 h-8 rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
                       {expandedIndex === index ? (
-                        <FaChevronUp className="text-gray-600" />
+                         <Image src={accup} alt="accdown" width={1000} className="w-3" />
                       ) : (
-                        <FaChevronDown className="text-gray-600" />
+                        <Image src={accdown} alt="accdown" width={1000} className="w-3" />
                       )}
                     </div>
-                    <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[16px] sm:leading-[18px] break-words">
+                    <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[12px] sm:leading-[18px] break-words">
                       {faq.question}
                     </h2>
                   </div>
@@ -137,12 +139,12 @@ const Faq: React.FC = () => {
                   <div className="flex items-center">
                     <div className="w-8 h-8 rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
                       {expandedIndex === index + faqData.length / 2 ? (
-                        <FaChevronUp className="text-gray-600" />
+                        <Image src={accup} alt="accdown" width={1000} className="w-3" />
                       ) : (
-                        <FaChevronDown className="text-gray-600" />
+                        <Image src={accdown} alt="accdown" width={1000} className="w-3" />
                       )}
                     </div>
-                    <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[16px] sm:leading-[18px] break-words">
+                    <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[12px] sm:leading-[18px] break-words">
                       {faq.question}
                     </h2>
                   </div>
@@ -157,6 +159,10 @@ const Faq: React.FC = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="text-center text-[#006B66] font-semibold underline lg:block hidden">
+          View More
         </div>
       </div>
     </div>

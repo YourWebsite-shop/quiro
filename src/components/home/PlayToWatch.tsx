@@ -28,7 +28,7 @@ const PlayToWatch: React.FC = () => {
             src={magictext}
             alt="magic text"
             width={1000}
-            className="hidden sm:block "
+            className="hidden sm:block"
           />
           <p className="text-[12px] w-[273px] sm:w-[254px]   lg:w-full  lg:text-[15px] hidden sm:block">
             Explore how Quiro&apos;s management software transforms your
@@ -73,7 +73,7 @@ const PlayToWatch: React.FC = () => {
 
       {/* Video player with frame */}
       <div
-        className="w-full max-w-[720px] flex items-center justify-center min-w-[240px] sm:hidden  bg-center bg-cover mt-6 p-4 -translate-y-10 rounded-3xl"
+        className="w-full max-w-[720px] flex items-center justify-center min-w-[240px] sm:hidden  bg-center bg-cover  p-4 -translate-y-10 rounded-3xl"
         style={{
         
           minWidth: "340px",
@@ -81,7 +81,7 @@ const PlayToWatch: React.FC = () => {
         }}
       >
         <iframe
-          className="w-full max-w-[530px] min-w-[200px] h-auto aspect-video p-2"
+          className="w-full max-w-[530px] min-w-[200px] h-auto aspect-video p-2 rounded-xl"
           src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=VPn-v5LdsouPChNW"
           title="YouTube video player"
           frameBorder="0"
