@@ -1,9 +1,6 @@
 import React from "react";
 import TrustedCard from "./props/TrustedCard";
 import user1 from "@/assets/home/trusted/trusteduser1.png";
-import user2 from "@/assets/home/trusted/trusteduser2.png";
-import user3 from "@/assets/home/trusted/trusteduser3.png";
-
 const Trusted: React.FC = () => {
   return (
     <div className="lg:pt-32 mb-14  py-20 lg:pb-52">

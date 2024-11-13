@@ -6,7 +6,6 @@ import wolimg2 from "@/assets/home/walloflove/wolimg2.png";
 import mayank from "@/assets/home/AbsoluteImages/Mayank.png";
 import apos2 from "@/assets/home/AbsoluteImages/apos2.png";
 import kamal from "@/assets/home/AbsoluteImages/Kamal.png";
-import woldesk from "@/assets/home/walloflove/woldesk.png";
 import wolimgcus from "@/assets/home/walloflove/wolimgcus.png";
 import wolimgcus2desk from "@/assets/home/walloflove/wolcus2desk.png";
 import wolimgcus2 from "@/assets/home/walloflove/wolimgcus2.png";
@@ -51,9 +50,9 @@ const WallOfLove: React.FC = () => {
 
           <div className="border-[2px] p-4 sm:mr-8 rounded-xl   border-[#006B66] bg-white  ">
             <p className="lg:text-[14px] text-[10px] font-semibold">
-              "Quiro has transformed how we manage our hotel operations. The
+              &quot;Quiro has transformed how we manage our hotel operations. The
               QR-based ordering and request systems are a game-changer, allowing
-              us to provide prompt service that our guests absolutely love!"
+              us to provide prompt service that our guests absolutely love!&quot;
             </p>
             <div className="flex justify-between pt-10">
               <div>
@@ -84,9 +83,9 @@ const WallOfLove: React.FC = () => {
               />
             </p>
             <p className="text-[10px] sm:text-[14px] font-semibold text-center">
-              "It was difficult to manage guest requests earlier. Quiro took the
+            &quot;It was difficult to manage guest requests earlier. Quiro took the
               stress out of managing guest requests. It&apos;s so quick and
-              easy—exactly what we needed!”
+              easy—exactly what we needed!&quot;
             </p>
             <Image
               src={kamal}
@@ -109,8 +108,8 @@ const WallOfLove: React.FC = () => {
             <Image src={wolimg2} width={111} alt="wolimg2" className="w-full" />
 
             <p className="text-[10px] sm:text-[12px] font-[500] py-2 sm:py-4 w-full ">
-              "Quiro&apos;s menu management feature has simplified our dining
-              service."
+            &quot;Quiro&apos;s menu management feature has simplified our dining
+              service.&quot;
             </p>
 
             <Image
@@ -124,8 +123,8 @@ const WallOfLove: React.FC = () => {
           <div className="border-[2px] p-4 sm:ml-8 rounded-xl   border-[#006B66] bg-white relative">
             <Image src={wolimg2} width={111} alt="wolimg2" className="w-full" />
             <p className="text-[10px]  sm:text-[10px] font-[500] py-2 w-full text-center ">
-              "The team at Quiro just gets what their partners need. From setup
-              to daily use, everything has been smooth and simple!”
+            &quot;The team at Quiro just gets what their partners need. From setup
+              to daily use, everything has been smooth and simple!&quot;
             </p>
 
             <Image
@@ -167,10 +166,10 @@ const WallOfLove: React.FC = () => {
               />
               <div className="border-[3px] p-4 sm:mr-8 rounded-xl   border-[#006B66] bg-white  ">
                 <p className="text-[8px] sm:text-[14px] font-semibold">
-                  "Quiro has transformed how we manage our hotel operations. The
+                &quot;Quiro has transformed how we manage our hotel operations. The
                   QR-based ordering and request systems are a game-changer,
                   allowing us to provide prompt service that our guests
-                  absolutely love!"
+                  absolutely love!&quot;
                 </p>
                 <div className="flex justify-between pt-10">
                   <div>
@@ -205,8 +204,8 @@ const WallOfLove: React.FC = () => {
             <div className="absolute top-5 left-1/2 -translate-x-1/2 w-full text-center">
               <p className="font-semibold">"I was very impressed"</p>
               <p className="text-[16px] p-4">
-                "Quiro made a big difference right from day one. And the best
-                thing is it is really easy for the staff to use it”
+              &quot;Quiro made a big difference right from day one. And the best
+                thing is it is really easy for the staff to use it&quot;
               </p>
             </div>
             <Image
@@ -223,8 +222,8 @@ const WallOfLove: React.FC = () => {
           <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative">
             <Image src={wolimg2} width={111} alt="wolimg2" className="w-full" />
             <p className="text-[6px] sm:text-[12px] font-semibold py-2 sm:py-4 w-full ">
-              "Quiro&apos;s menu management feature has simplified our dining
-              service."
+            &quot;Quiro&apos;s menu management feature has simplified our dining
+              service.&quot;
             </p>
 
             <Image
@@ -247,9 +246,9 @@ const WallOfLove: React.FC = () => {
               />
             </p>
             <p className="text-[10px] font-semibold sm:text-[14px]  text-center">
-              "It was difficult to manage guest requests earlier. Quiro took the
+            &quot;It was difficult to manage guest requests earlier. Quiro took the
               stress out of managing guest requests. It&apos;s so quick and
-              easy—exactly what we needed!”
+              easy—exactly what we needed!&quot;
             </p>
             <Image
               src={kamal}
@@ -273,8 +272,8 @@ const WallOfLove: React.FC = () => {
             </div>
             <div className="w-1/2">
               <p className="lg:text-[12px] font-semibold">
-                "The team at Quiro just gets what their partners need. From
-                setup to daily use, everything has been smooth and simple!”
+              &quot;The team at Quiro just gets what their partners need. From
+                setup to daily use, everything has been smooth and simple!&quot;
               </p>
             </div>
             <Image
@@ -287,8 +286,8 @@ const WallOfLove: React.FC = () => {
 
           <div className="flex items-center bg-white border-2 border-[#006B66] rounded-2xl p-4">
             <div className="w-1/2 text-[12px] font-semibold">
-              "We used to struggle with order tracking, but Quiro has made it
-              effortless. It’s a game-changer for us.”
+            &quot;We used to struggle with order tracking, but Quiro has made it
+              effortless. It’s a game-changer for us.&quot;
             </div>
             <div className="w-1/2">
               <Image src={pradeep} alt="pradeep" width={1000} className="p-4" />

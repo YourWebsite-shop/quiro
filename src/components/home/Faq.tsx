@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import problem from "../../assets/problem.png";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import accdown from "@/assets/home/accdown.png"
 import accup from "@/assets/home/accup.png"
 
