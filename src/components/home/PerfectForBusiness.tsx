@@ -3,7 +3,7 @@ import empower from "../../assets/Empower.png";
 import Image from "next/image";
 import perfectBox1 from "@/assets/perfectBox1.png";
 import perfectBox1sm from "@/assets/perfectBox1sm.png";
-import perfectBox3 from "../../assets/perfectBox3.png";
+import boxperfect3 from "@/assets/boxperfect3.png"
 import perfectBox1BG from "@/assets/perfectBox1BG.png";
 import perfectBox2BG from "@/assets/perfectBox2BG.png";
 import perfectBox3BG from "@/assets/perfectBox3BG.png";
@@ -161,7 +161,7 @@ const Box3: React.FC = () => {
 
       {/* Image container with a defined width */}
       <div className="w-full flex lg:w-[50%] sm:h-[50%] md:w-[50%] sm:w-[50%] sm:items-center sm:mx-auto px-6 sm:px-4 lg:px-10">
-        <Image src={perfectBox3} alt="box3" />
+        <Image src={boxperfect3} width={1000} alt="box3" />
       </div>
     </div>
   );
