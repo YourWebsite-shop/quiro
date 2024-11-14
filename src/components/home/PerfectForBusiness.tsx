@@ -18,14 +18,14 @@ const PerfectForBusiness: React.FC = () => {
     <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-10">
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
-          <p className="font-[600]  relative text-center text-[20px] lg:text-[48px] sm:leading-[58px]">
+          <p className="font-[600] px-10 sm:px-0  relative text-center text-[20px] lg:text-[48px] sm:leading-[58px]">
             Perfect For Businesses Like Yours
             <Image
               src={empower}
               alt="empower"
               width={1000}
               height={1000}
-              className="absolute -top-5 left-0 w-[70px] lg:-left-8 lg:scale-125"
+              className="absolute -top-5 left-4 sm:px-0 w-[70px] lg:-left-8 lg:scale-125"
             />
           </p>
           <p className="font-semibold text-[13px] text-center sm:text-[20px] sm:leading-[30px] py-6  custom-pfb">
@@ -85,7 +85,7 @@ const Box1: React.FC = () => {
 const Box2: React.FC = () => {
   return (
     <div
-      className="flex justify-center items-center my-10 lg:my-0 sm:w-[98vw] sm:py-10 lg:max-w-[95vw] custom-height saurabh-bug"
+      className="flex justify-center items-center my-10 lg:my-0 sm:w-[98vw] sm:py-10 lg:max-w-[95vw] custom-height saurabh-bug lg:max-h-[90vh]"
       style={{
         backgroundImage: `url(${perfectBox2BG.src})`,
         backgroundRepeat: "no-repeat",
@@ -93,23 +93,23 @@ const Box2: React.FC = () => {
       }}
     >
       {/* Flex container to center the child div */}
-      <div className="flex flex-col items-center scale-75 justify-center bg-[#F5F3ED] custom-box-2-scale rounded-2xl p-6 sm:py-8 sm:px-10 md:py-10 md:px-12 lg:py-16 lg:px-20 mx-4 sm:mx-6 md:mx-8 lg:m-10">
+      <div className="flex flex-col items-center scale-75 justify-center bg-[#F5F3ED] custom-box-2-scale rounded-2xl p-6 py-14 sm:py-8 sm:px-10 md:py-10 md:px-12 lg:py-36 lg:px-20 mx-4 sm:mx-6 md:mx-8 lg:m-10">
         <div className="flex items-center justify-center w-full max-w-xs lg:max-w-full">
           <Image
             src={masterYourOPerations}
             alt="master"
             width={250}
             height={250}
-            className="w-full max-w-[250px] h-auto"
+            className="sm:w-full max-w-[250px] w-[156px] h-auto"
           />
         </div>
 
         <div className="flex flex-col items-center justify-center text-center mt-4 gap-4 lg:w-[750px] md:w-[600px] sm:w-[400px]">
-          <h1 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
+          <h1 className="font-semibold text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
             Less ‘just a second’
             <br /> More done in just a few seconds
           </h1>
-          <p className="font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-4">
+          <p className="font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-[16px] lg:px-16 leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-2">
             We’re your partner in business growth. We help increase revisiting
             customers, and maximize brand visibility to boost revenue.
             Experience 40% faster turnaround times, 30% higher average order
@@ -146,13 +146,13 @@ const Box3: React.FC = () => {
         <h1 className="font-[600] lg:text-[38px] text-[20px] sm:text-[20px] lg:leading-[48px] md:leading-[20px] sm:leading-[24px] text-[#F5F3ED] lg:text-start md:text-start text-center sm:text-start">
           Join Our Growing Community of Partners
         </h1>
-        <p className="font-[400] lg:text-[16px] sm:text-[11px]  lg:leading-[24px] md:leading-[16px] sm:leading-[15px] text-[#F5F3ED] sm:text-start lg:text-start md:text-start lg:py-10 py-6 sm:py-2 text-center text-[12px]">
+        <p className="font-[400] lg:text-[16px] sm:text-[11px]  lg:leading-[24px] md:leading-[16px] sm:leading-[15px] text-[#F5F3ED] sm:text-start lg:text-start md:text-start lg:py-6 py-6 sm:py-2 text-center text-[12px]">
           What sets us apart is our commitment to your growth. We believe in
           cultivating long-term relationships and helping you thrive in a
           competitive landscape. At Quiro, you’re not just adopting a tool –
           you’re gaining a dedicated ally who’s invested in your success.
         </p>
-        <div className="flex justify-center w-full sm:justify-start sm:pt-10">
+        <div className="flex justify-center w-full sm:justify-start sm:pt-10 lg:pt-3">
           <ShadowButton text="Learn More" />
         </div>
       </div>

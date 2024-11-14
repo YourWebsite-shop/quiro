@@ -4,6 +4,7 @@ import Image from "next/image";
 import problem from "../../assets/problem.png";
 import accdown from "@/assets/home/accdown.png"
 import accup from "@/assets/home/accup.png"
+import help from "@/assets/home/AbsoluteImages/help.png"
 
 const Faq: React.FC = () => {
   const faqData = [
@@ -76,13 +77,21 @@ const Faq: React.FC = () => {
             style={{ marginLeft: "-650px" }}
           >
             <Image src={problem} alt="problem" />
+        
+
           </div>
-          <h1 className="font-bold relative text-3xl md:text-4xl lg:text-5xl text-center">
-            <Image
+          <h1 className="font-bold relative text-3xl md:text-4xl lg:text-5xl mx:auto max-w-1/2 text-center">
+            {/* <Image
               src={problem}
               alt="problem"
               width={100}
-              className="lg:hidden absolute left-0 -top-10"
+              className="lg:block hidden absolute left-0 -top-10"
+            /> */}
+            <Image
+              src={help}
+              alt="problem"
+              width={1000}
+              className="block lg:hidden absolute sm:-left-8  -top-6 sm:-top-10 w-8 sm:w-10"
             />
             Frequently Asked Questions
           </h1>
@@ -103,11 +112,11 @@ const Faq: React.FC = () => {
                   onClick={() => toggleFaq(index)} 
                 >
                   <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
+                    <div className="w-[22px] h-[22px] rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
                       {expandedIndex === index ? (
-                         <Image src={accup} alt="accdown" width={1000} className="w-3" />
+                         <Image src={accup} alt="accdown" width={1000} className="w-[10px]" />
                       ) : (
-                        <Image src={accdown} alt="accdown" width={1000} className="w-3" />
+                        <Image src={accdown} alt="accdown" width={1000} className="w-[10px]" />
                       )}
                     </div>
                     <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[12px] sm:leading-[18px] break-words">
@@ -118,7 +127,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index && (
-                  <p className="text-[18px] font-[400] leading-[23px] ml-12 md:text-lg text-gray-600">
+                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-lg text-gray-600">
                     {faq.answer}
                   </p>
                 )}
@@ -136,11 +145,11 @@ const Faq: React.FC = () => {
                   onClick={() => toggleFaq(index + faqData.length / 2)} // Offset index for second column
                 >
                   <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
+                    <div className="w-[22px] h-[22px] rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
                       {expandedIndex === index + faqData.length / 2 ? (
-                        <Image src={accup} alt="accdown" width={1000} className="w-3" />
+                        <Image src={accup} alt="accdown" width={1000} className="w-[10px]" />
                       ) : (
-                        <Image src={accdown} alt="accdown" width={1000} className="w-3" />
+                        <Image src={accdown} alt="accdown" width={1000} className="w-[10px]" />
                       )}
                     </div>
                     <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[12px] sm:leading-[18px] break-words">
@@ -151,7 +160,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index + faqData.length / 2 && (
-                  <p className="text-[18px] font-[400] leading-[23px] ml-12 md:text-lg text-gray-600">
+                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-lg text-gray-600">
                     {faq.answer}
                   </p>
                 )}
@@ -160,9 +169,7 @@ const Faq: React.FC = () => {
           </div>
         </div>
 
-        <div className="text-center text-[#006B66] font-semibold underline lg:block hidden">
-          View More
-        </div>
+       
       </div>
     </div>
   );

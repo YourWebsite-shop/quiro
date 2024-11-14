@@ -18,10 +18,10 @@ const Control: React.FC = () => {
     <div className="flex flex-col justify-center items-center py-20 gap-2 lg:px-40">
       <div className="flex flex-col justify-center items-center px-10">
         <h1 className="font-[600] text-[24px]  text-center lg:text-[48px] md:text-[24px] lg:leading-[57px] relative md:leading-[29px] mb-4">
-          <Image src={services} alt="services" width={100} />A Product That Puts
+          <Image src={services} alt="services" width={1000} className="w-16 md:w-[65px] lg:w-[81px]" />A Product That Puts
           You in Control
         </h1>
-        <p className="font-[500] text-[13px] text-center leading-[19.5px] lg:text-[20px] lg:py-4">
+        <p className="font-[500] text-[13px] text-center leading-[19.5px] pb-6 lg:text-[20px] lg:py-4 lg:pb-16">
           All-in-one software that helps you take charge of your operations
           and unlock more revenue
         </p>

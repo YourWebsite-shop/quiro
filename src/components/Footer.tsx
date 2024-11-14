@@ -9,7 +9,7 @@ import footer from "../assets/footerbg.png";
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-start bg-[#F5F3ED] p-8 pt-10 lg:px-20 space-y-8 lg:space-y-0 lg:space-x-8">
+    <div className="flex flex-col sm:flex-row justify-center items-start bg-[#F5F3ED] p-8 lg:pb-0 lg:pt-28 pt-10 lg:px-20 space-y-8 lg:space-y-0 lg:space-x-8">
       {/* Left Section */}
       <div className="lg:w-1/2 w-full px-2 lg:px-0">
         {/* Logo */}
