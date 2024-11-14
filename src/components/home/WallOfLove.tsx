@@ -18,7 +18,7 @@ const WallOfLove: React.FC = () => {
         <p className='text-[13px] lg:text-[20px] font-[500]'>Less from us, more from our happy customers</p>
       </div>
 
-        <Image src={woldesk} width={10000} alt='woldesk' className='hidden lg:block h-auto w-full' />
+        <Image src={woldesk} width={100000} alt='woldesk' className='hidden lg:block h-auto w-full' />
       <div className='flex gap-3 p-2 sm:px-10 lg:hidden'>
         <div className='flex flex-col w-1/2 gap-4'>
           <div className='border-2 p-4 rounded-xl border-green-600 '>
