@@ -46,4 +46,12 @@
     width: 64vw;
     height: 500px;
   }
+
+  .custom-iframe-box-desk{
+    width: 520px;
+    }
+
+   .ptw-desc{
+    width: 40vw;
+   }
 }

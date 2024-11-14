@@ -67,7 +67,7 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center p-8 lg:py-36">
+    <div className="flex justify-center items-center p-8 lg:py-36 pb-20 ">
       <div className="max-w-7xl w-full">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center mb-8">

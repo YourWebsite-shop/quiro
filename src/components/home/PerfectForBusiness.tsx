@@ -92,35 +92,32 @@ const Box2: React.FC = () => {
         backgroundSize: "100% 100%",
       }}
     >
-  
-        {/* Flex container to center the child div */}
-        <div className="flex flex-col items-center scale-75 justify-center bg-[#F5F3ED] custom-box-2-scale rounded-2xl p-6 sm:py-8 sm:px-10 md:py-10 md:px-12 lg:py-16 lg:px-20 mx-4 sm:mx-6 md:mx-8 lg:m-10">
-          <div className="flex items-center justify-center w-full max-w-xs lg:max-w-full">
-            <Image
-              src={masterYourOPerations}
-              alt="master"
-              width={250}
-              height={250}
-              className="w-full max-w-[250px] h-auto"
-            />
-          </div>
-
-          <div className="flex flex-col items-center justify-center text-center mt-4 gap-4 lg:w-[750px] md:w-[600px] sm:w-[400px]">
-            <h1 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
-              Less ‘just a second’
-              <br /> More done in just a few seconds
-            </h1>
-            <p className="font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-4">
-              We’re your partner in business growth. We help increase revisiting
-              customers, and maximize brand visibility to boost revenue.
-              Experience 40% faster turnaround times, 30% higher average order
-              value, 35% improved guest satisfaction, and double staff
-              efficiency.
-            </p>
-            <LineButton text="Start for Free" />
-          </div>
+      {/* Flex container to center the child div */}
+      <div className="flex flex-col items-center scale-75 justify-center bg-[#F5F3ED] custom-box-2-scale rounded-2xl p-6 sm:py-8 sm:px-10 md:py-10 md:px-12 lg:py-16 lg:px-20 mx-4 sm:mx-6 md:mx-8 lg:m-10">
+        <div className="flex items-center justify-center w-full max-w-xs lg:max-w-full">
+          <Image
+            src={masterYourOPerations}
+            alt="master"
+            width={250}
+            height={250}
+            className="w-full max-w-[250px] h-auto"
+          />
         </div>
-      
+
+        <div className="flex flex-col items-center justify-center text-center mt-4 gap-4 lg:w-[750px] md:w-[600px] sm:w-[400px]">
+          <h1 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
+            Less ‘just a second’
+            <br /> More done in just a few seconds
+          </h1>
+          <p className="font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-4">
+            We’re your partner in business growth. We help increase revisiting
+            customers, and maximize brand visibility to boost revenue.
+            Experience 40% faster turnaround times, 30% higher average order
+            value, 35% improved guest satisfaction, and double staff efficiency.
+          </p>
+          <LineButton text="Start for Free" />
+        </div>
+      </div>
     </div>
   );
 };
