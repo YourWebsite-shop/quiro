@@ -108,7 +108,7 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
       height={311}
       className="rounded "
     />
-    <h5 className="font-[600] sm:text-[14px] sm:py-3 lg:text-[28px] text-center lg:leading-[35px] lg:py-6 py-4">
+    <h5 className=" text-[16px] font-[600] sm:text-[14px] sm:py-3 lg:text-[28px] text-center lg:leading-[35px] lg:py-6 py-4">
       {heading}
     </h5>
     <p className="text-center font-[400] text-[10px] lg:text-[14.5px] lg:leading-[24px] lg:pb-6 sm:pb-4">

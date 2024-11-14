@@ -20,18 +20,18 @@ const Footer: React.FC = () => {
         {/* Company and Resources Sections */}
         <div className="flex justify-between sm:justify-start lg:gap-32 sm:gap-10 md:flex-row items-start w-full gap-8   mb-16 lg:mb-20">
           <div className="flex flex-col items-start space-y-2">
-            <h1 className="font-semibold text-lg lg:text-xl text-[#00413E] mb-3 lg:text-[24px]">Company</h1>
+            <h1 className="font-semibold text-[16px]lg:text-xl text-[#00413E] mb-3 lg:text-[24px]">Company</h1>
             <ul className="space-y-2">
-              <li className="text-md lg:text-lg text-[#00413ECC]">About us</li>
-              <li className="text-md lg:text-lg text-[#00413ECC]">For Businesses</li>
-              <li className="text-md lg:text-lg text-[#00413ECC]">For Customers</li>
+              <li className="text-[16px] lg:text-lg text-[#00413ECC]">About us</li>
+              <li className="text-[16px] lg:text-lg text-[#00413ECC]">For Businesses</li>
+              <li className="text-[16px] lg:text-lg text-[#00413ECC]">For Customers</li>
             </ul>
           </div>
           <div className="flex flex-col items-start space-y-2">
-            <h1 className="font-semibold text-lg lg:text-xl text-[#00413E] mb-3">Resources</h1>
+            <h1 className="font-semibold text-[16px] lg:text-xl text-[#00413E] mb-3">Resources</h1>
             <ul className="space-y-2">
-              <li className="text-md lg:text-lg text-[#00413ECC]">Documentation</li>
-              <li className="text-md lg:text-lg text-[#00413ECC]">Pricing</li>
+              <li className="text-[16px] lg:text-lg text-[#00413ECC]">Documentation</li>
+              <li className="text-[16px] lg:text-lg text-[#00413ECC]">Pricing</li>
             </ul>
           </div>
         </div>
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             <FaLinkedin className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
             <GrMail className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
           </div>
-          <p className="text-sm  text-center sm:text-start lg:text-base mt-4  text-[#00413ECC] lg:max-w-[65%]">
+          <p className="text-[12px]  text-center sm:text-start lg:text-base mt-4  text-[#00413ECC] lg:max-w-[65%]">
             Quiro is a platform built with the HoReCa community, for business owners & their guests.
           </p>
         </div>

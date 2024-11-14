@@ -28,7 +28,7 @@ const PerfectForBusiness: React.FC = () => {
               className="absolute -top-5 left-4 sm:px-0 w-[70px] lg:-left-8 lg:scale-125"
             />
           </p>
-          <p className="font-semibold text-[13px] text-center sm:text-[20px] sm:leading-[30px] py-6  custom-pfb">
+          <p className="text-[13px] font-[500] text-center sm:text-[20px] sm:leading-[30px] py-6  custom-pfb">
             Built with inputs from the HoReCa community for everyone involved
           </p>
         </div>
@@ -57,17 +57,19 @@ const Box1: React.FC = () => {
           width={122}
           className="mx-auto sm:mx-0 sm:w-[125px] lg:w-[177px]"
         />
-        <h5 className="text-[18px] text-[#F5F3ED] font-[600] sm:text-[16px] lg:text-[40px] ">
+        <h5 className="text-[16px] text-[#F5F3ED] font-[600] sm:text-[16px] lg:text-[40px] ">
           Say Goodbye to Service Delays
         </h5>
-        <p className="text-[#F5F3ED] text-center sm:text-start text-[10px] sm:text-[11px] lg:text-[16px] py-8 px-6 sm:px-0 sm:py-2">
-          & yes, to more revenue! We’re redefining the future of guest
+        <p className="text-[#F5F3ED] font-[500] text-center sm:text-start text-[10px] sm:text-[11px] lg:text-[16px] py-8 px-6 sm:px-0 sm:py-2">
+          & yes, to more revenue! We&apos;re redefining the future of guest
           experiences—from seamless check-ins to memorable stays. We tackle core
           issues like service delays, eliminate errors, and handle much more
         </p>
+
         <div className="flex justify-center sm:block pb-10 sm:scale-90 sm:-translate-x-3 lg:translate-x-0 lg:scale-100 sm:py-4">
           <ShadowButton text="Learn More" />
         </div>
+
       </div>
       <div className="px-4 sm:w-1/2 sm:px-10  ">
         <Image src={perfectBox1sm} alt="img" className="sm:hidden" />
@@ -105,12 +107,12 @@ const Box2: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center text-center mt-4 gap-4 lg:w-[750px] md:w-[600px] sm:w-[400px]">
-          <h1 className="font-semibold text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
+          <h1 className=" text-[16px] font-[600] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
             Less ‘just a second’
             <br /> More done in just a few seconds
           </h1>
-          <p className="font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-[16px] lg:px-16 leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-2">
-            We’re your partner in business growth. We help increase revisiting
+          <p className="font-[500] text-[10px] sm:text-base md:text-lg lg:text-xl xl:text-[16px] lg:px-16 leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-2">
+            We&apos;re your partner in business growth. We help increase revisiting
             customers, and maximize brand visibility to boost revenue.
             Experience 40% faster turnaround times, 30% higher average order
             value, 35% improved guest satisfaction, and double staff efficiency.
@@ -143,10 +145,10 @@ const Box3: React.FC = () => {
 
         {/* Text content with heading and paragraph */}
 
-        <h1 className="font-[600] lg:text-[38px] text-[20px] sm:text-[20px] lg:leading-[48px] md:leading-[20px] sm:leading-[24px] text-[#F5F3ED] lg:text-start md:text-start text-center sm:text-start">
+        <h1 className="font-[600] lg:text-[38px] text-[16px] sm:text-[20px] lg:leading-[48px] md:leading-[20px] sm:leading-[24px] text-[#F5F3ED] lg:text-start md:text-start text-center sm:text-start">
           Join Our Growing Community of Partners
         </h1>
-        <p className="font-[400] lg:text-[16px] sm:text-[11px]  lg:leading-[24px] md:leading-[16px] sm:leading-[15px] text-[#F5F3ED] sm:text-start lg:text-start md:text-start lg:py-6 py-6 sm:py-2 text-center text-[12px]">
+        <p className="font-[500] lg:text-[16px] sm:text-[11px]  lg:leading-[24px] md:leading-[16px] sm:leading-[15px] text-[#F5F3ED] sm:text-start lg:text-start md:text-start lg:py-6 py-6 sm:py-2 text-center text-[10px]">
           What sets us apart is our commitment to your growth. We believe in
           cultivating long-term relationships and helping you thrive in a
           competitive landscape. At Quiro, you’re not just adopting a tool –

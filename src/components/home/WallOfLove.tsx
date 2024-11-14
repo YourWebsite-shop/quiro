@@ -35,23 +35,6 @@ const WallOfLove: React.FC = () => {
         </p>
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       {/* Mobile screen masonry */}
 
       <div className="flex gap-4 p-2 text-[20px] sm:px-10 lg:hidden md:px-20">
@@ -64,7 +47,7 @@ const WallOfLove: React.FC = () => {
           />
 
           <div className="border-[2px] p-4 py-6 sm:mr-8 rounded-xl   border-[#006B66] bg-white  ">
-            <p className="lg:text-[14px] text-[10px] sm:text-[14px] font-semibold">
+            <p className="lg:text-[14px] text-[8px] sm:text-[14px] font-[500]">
               &quot;Quiro has transformed how we manage our hotel operations.
               The QR-based ordering and request systems are a game-changer,
               allowing us to provide prompt service that our guests absolutely
@@ -72,8 +55,8 @@ const WallOfLove: React.FC = () => {
             </p>
             <div className="flex justify-between pt-10">
               <div>
-                <h6 className="text-[14px] sm:text-[16px] font-[400]">Uttam</h6>
-                <p className="text-[14px] sm:text-[16px] font-[600] text-[#006B66]">
+                <h6 className="text-[10px] sm:text-[16px] font-[400]">Uttam</h6>
+                <p className="text-[10px] sm:text-[16px] font-[600] text-[#006B66]">
                   Utaam zaika
                 </p>
               </div>
@@ -99,9 +82,8 @@ const WallOfLove: React.FC = () => {
               />
             </p>
             <p className="text-[10px] sm:text-[14px] font-semibold text-center">
-              &quot;It was difficult to manage guest requests earlier. Quiro
-              took the stress out of managing guest requests. It&apos;s so quick
-              and easy—exactly what we needed!&quot;
+              "Switching to Quiro&apos;s supply management has been a relief.
+              Inventory tracking is straightforward”
             </p>
             <Image
               src={kamal}
@@ -121,9 +103,14 @@ const WallOfLove: React.FC = () => {
           />
 
           <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative">
-            <Image src={wolimg2} width={1000} alt="wolimg2" className="w-full" />
+            <Image
+              src={wolimg2}
+              width={1000}
+              alt="wolimg2"
+              className="w-full"
+            />
 
-            <p className="text-[10px] sm:text-[12px] font-[500] sm:font-semibold py-2 sm:py-4 w-full ">
+            <p className="text-[6px] sm:text-[12px] font-[500] sm:font-semibold py-2 sm:py-4 w-full ">
               &quot;Quiro&apos;s menu management feature has simplified our
               dining service.&quot;
             </p>
@@ -137,7 +124,13 @@ const WallOfLove: React.FC = () => {
           </div>
 
           <div className="border-[2px] p-4 sm:ml-8 rounded-xl   border-[#006B66] bg-white relative">
-            <Image src={wolimg2} width={1000} alt="wolimg2" className="w-full" />
+            <Image
+              src={wolimg2}
+              width={1000}
+              alt="wolimg2"
+              className="w-full"
+            />
+
             <p className="text-[10px]  sm:text-[10px] font-[500] sm:font-semibold py-2 w-full text-center ">
               &quot;The team at Quiro just gets what their partners need. From
               setup to daily use, everything has been smooth and simple!&quot;
@@ -159,7 +152,7 @@ const WallOfLove: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center text-[#006B66] font-semibold border-b border-[#006B66] lg:hidden py-10 w-fit mx-auto">
+      <div className="text-center text-[#006B66] font-semibold border-b border-[#006B66] lg:hidden my-8 w-fit mx-auto">
         View More
       </div>
 
@@ -231,7 +224,12 @@ const WallOfLove: React.FC = () => {
         <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4">
           {/*  */}
           <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative">
-            <Image src={wolimg2} width={1000} alt="wolimg2" className="w-full" />
+            <Image
+              src={wolimg2}
+              width={1000}
+              alt="wolimg2"
+              className="w-full"
+            />
             <p className="text-[6px] sm:text-[12px] font-semibold py-2 sm:py-4 w-full ">
               &quot;Quiro&apos;s menu management feature has simplified our
               dining service.&quot;

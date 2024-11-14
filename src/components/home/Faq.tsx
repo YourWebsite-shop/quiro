@@ -80,7 +80,7 @@ const Faq: React.FC = () => {
         
 
           </div>
-          <h1 className="font-bold relative text-3xl md:text-4xl lg:text-5xl mx:auto max-w-1/2 text-center">
+          <h1 className="font-bold relative text-[20px] md:text-4xl lg:text-5xl mx:auto max-w-1/2 text-center">
             {/* <Image
               src={problem}
               alt="problem"
@@ -95,7 +95,7 @@ const Faq: React.FC = () => {
             />
             Frequently Asked Questions
           </h1>
-          <p className="font-medium text-lg md:text-xl text-center mt-2">
+          <p className="font-medium text[13px] md:text-xl text-center mt-2">
             Get all your questions answered here
           </p>
         </div>
