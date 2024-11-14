@@ -63,8 +63,8 @@ const WallOfLove: React.FC = () => {
             className="relative"
           />
 
-          <div className="border-[2px] p-4 sm:mr-8 rounded-xl   border-[#006B66] bg-white  ">
-            <p className="lg:text-[14px] text-[10px] font-semibold">
+          <div className="border-[2px] p-4 py-6 sm:mr-8 rounded-xl   border-[#006B66] bg-white  ">
+            <p className="lg:text-[14px] text-[10px] sm:text-[14px] font-semibold">
               &quot;Quiro has transformed how we manage our hotel operations.
               The QR-based ordering and request systems are a game-changer,
               allowing us to provide prompt service that our guests absolutely
@@ -123,7 +123,7 @@ const WallOfLove: React.FC = () => {
           <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative">
             <Image src={wolimg2} width={111} alt="wolimg2" className="w-full" />
 
-            <p className="text-[10px] sm:text-[12px] font-[500] py-2 sm:py-4 w-full ">
+            <p className="text-[10px] sm:text-[12px] font-[500] sm:font-semibold py-2 sm:py-4 w-full ">
               &quot;Quiro&apos;s menu management feature has simplified our
               dining service.&quot;
             </p>
@@ -138,7 +138,7 @@ const WallOfLove: React.FC = () => {
 
           <div className="border-[2px] p-4 sm:ml-8 rounded-xl   border-[#006B66] bg-white relative">
             <Image src={wolimg2} width={111} alt="wolimg2" className="w-full" />
-            <p className="text-[10px]  sm:text-[10px] font-[500] py-2 w-full text-center ">
+            <p className="text-[10px]  sm:text-[10px] font-[500] sm:font-semibold py-2 w-full text-center ">
               &quot;The team at Quiro just gets what their partners need. From
               setup to daily use, everything has been smooth and simple!&quot;
             </p>
@@ -159,7 +159,7 @@ const WallOfLove: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center text-[#006B66] font-semibold underline lg:hidden py-10">
+      <div className="text-center text-[#006B66] font-semibold border-b border-[#006B66] lg:hidden py-10 w-fit mx-auto">
         View More
       </div>
 

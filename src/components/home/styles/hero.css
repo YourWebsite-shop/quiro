@@ -11,8 +11,14 @@
     }
 }
 
-@media (min-width:1000px) and (max-width:1200px) and (min-height:1200) and (max-height:1400px){
+@media (min-width:1024px) and (max-width:1200px) and (min-height:1200) and (max-height:1400px){
     .custom-hero{
-        height: 50vh;
+        height: 50vh !important;
+    }
+}
+
+@media (min-width:910px) and (max-width:914px) and (min-height:1360) and (max-height:1370px){
+    .custom-hero{
+        height: 20vh !important;
     }
 } 

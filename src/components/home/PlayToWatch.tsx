@@ -80,7 +80,7 @@ const PlayToWatch: React.FC = () => {
         }}
       >
         <iframe
-          className="w-full max-w-[530px] min-w-[200px] h-auto aspect-video p-2 rounded-xl"
+          className="w-full max-w-[530px] min-w-[200px] h-auto aspect-video p-2 rounded-3xl"
           src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=VPn-v5LdsouPChNW"
           title="YouTube video player"
           frameBorder="0"
