@@ -3,7 +3,7 @@ import empower from "../../assets/Empower.png";
 import Image from "next/image";
 import perfectBox1 from "@/assets/perfectBox1.png";
 import perfectBox1sm from "@/assets/perfectBox1sm.png";
-import perfectBox3 from "@/assets/perfectBox3.png";
+import perfectBox3 from "../../assets/perfectBox3.png";
 import perfectBox1BG from "@/assets/perfectBox1BG.png";
 import perfectBox2BG from "@/assets/perfectBox2BG.png";
 import perfectBox3BG from "@/assets/perfectBox3BG.png";
