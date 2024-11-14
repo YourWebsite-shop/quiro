@@ -29,7 +29,7 @@ const PlayToWatch: React.FC = () => {
             width={1000}
             className="hidden sm:block"
           />
-          <p className="text-[12px] w-[273px] sm:w-[254px]   lg:w-full  lg:text-[15px] hidden sm:block ptw-desc">
+          <p className="text-[12px] w-[273px] sm:w-[254px]   lg:w-full  lg:text-[20px] hidden sm:block ptw-desc">
             Explore how Quiro&apos;s management software transforms your
             operations in just 2 minutes. Experience faster order processing,
             instant guest request handling, and automated payment solutions.

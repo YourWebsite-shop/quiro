@@ -1,9 +1,9 @@
 import React from "react";
 import curvedLine from "@/assets/home/trusted/curvedline.png";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface TrustedCardType {
-  img: string | any;
+  img: string | StaticImageData;
   name: string;
   company: string;
 }

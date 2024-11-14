@@ -80,7 +80,7 @@ const Faq: React.FC = () => {
         
 
           </div>
-          <h1 className="font-bold relative text-[20px] md:text-4xl lg:text-5xl mx:auto max-w-1/2 text-center">
+          <h1 className="font-bold relative text-[20px] sm:text-[24px] lg:text-5xl mx:auto max-w-1/2 text-center">
             {/* <Image
               src={problem}
               alt="problem"
@@ -95,7 +95,7 @@ const Faq: React.FC = () => {
             />
             Frequently Asked Questions
           </h1>
-          <p className="font-medium text[13px] md:text-xl text-center mt-2">
+          <p className="font-medium text[13px] sm:text-[12px] md:text-xl lg:text-[20px] lg:pb-12 text-center mt-2">
             Get all your questions answered here
           </p>
         </div>
@@ -105,7 +105,7 @@ const Faq: React.FC = () => {
           {/* Left Column */}
           <div>
             {faqData.slice(0, faqData.length / 2).map((faq, index) => (
-              <div key={index} className="pb-1">
+              <div key={index} className=" pb-1 sm:pb-2 lg:pb-4">
                 {/* Question */}
                 <div
                   className="flex justify-between items-center cursor-pointer"
@@ -127,7 +127,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index && (
-                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-lg text-gray-600">
+                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-[14px] text-gray-600">
                     {faq.answer}
                   </p>
                 )}
@@ -138,7 +138,7 @@ const Faq: React.FC = () => {
           {/* Right Column */}
           <div>
             {faqData.slice(faqData.length / 2).map((faq, index) => (
-              <div key={index} className="pb-1">
+              <div key={index} className=" pb-1 sm:pb-2 lg:pb-4">
                 {/* Question */}
                 <div
                   className="flex justify-between items-center cursor-pointer"
@@ -160,7 +160,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index + faqData.length / 2 && (
-                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-lg text-gray-600">
+                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-[14px] text-gray-600">
                     {faq.answer}
                   </p>
                 )}

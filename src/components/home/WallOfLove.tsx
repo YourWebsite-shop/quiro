@@ -21,7 +21,7 @@ const WallOfLove: React.FC = () => {
   return (
     <div className="py-10">
       <div className="text-center py-6">
-        <h5 className="text-[20px] lg:text-[48px] font-[600]  w-fit mx-auto relative">
+        <h5 className="text-[20px] sm:text-[24px] lg:text-[48px] font-[600]  w-fit mx-auto relative">
           Wall of Love
           <Image
             src={cheers}
@@ -82,8 +82,8 @@ const WallOfLove: React.FC = () => {
               />
             </p>
             <p className="text-[10px] sm:text-[14px] font-semibold text-center">
-              "Switching to Quiro&apos;s supply management has been a relief.
-              Inventory tracking is straightforward”
+              &quot;Switching to Quiro&apos;s supply management has been a relief.
+              Inventory tracking is straightforward&quot;
             </p>
             <Image
               src={kamal}
@@ -152,7 +152,7 @@ const WallOfLove: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center text-[#006B66] font-semibold border-b border-[#006B66] lg:hidden my-8 w-fit mx-auto">
+      <div className="text-center sm:text-[20px] text-[#006B66] font-semibold border-b border-[#006B66] lg:hidden my-8 w-fit mx-auto">
         View More
       </div>
 
@@ -169,7 +169,7 @@ const WallOfLove: React.FC = () => {
                 className="relative"
               />
               <div className="border-[3px] p-4 sm:mr-8 rounded-xl   border-[#006B66] bg-white  ">
-                <p className="text-[8px] sm:text-[14px] font-semibold">
+                <p className="text-[8px] sm:text-[16px] font-semibold">
                   &quot;Quiro has transformed how we manage our hotel
                   operations. The QR-based ordering and request systems are a
                   game-changer, allowing us to provide prompt service that our
@@ -206,7 +206,7 @@ const WallOfLove: React.FC = () => {
           <div className="relative">
             <Image src={wolarr} alt="wolarr" width={1000} />
             <div className="absolute top-5 left-1/2 -translate-x-1/2 w-full text-center">
-              <p className="font-semibold">"I was very impressed"</p>
+              <p className="font-semibold">&quot;I was very impressed&quot;</p>
               <p className="text-[16px] p-4">
                 &quot;Quiro made a big difference right from day one. And the
                 best thing is it is really easy for the staff to use it&quot;

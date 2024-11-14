@@ -107,11 +107,11 @@ const Box2: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center text-center mt-4 gap-4 lg:w-[750px] md:w-[600px] sm:w-[400px]">
-          <h1 className=" text-[16px] font-[600] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
+          <h1 className=" text-[16px] font-[600] sm:text-xl md:text-2xl lg:text-[40px]  leading-tight md:leading-snug lg:leading-snug xl:leading-tight">
             Less ‘just a second’
             <br /> More done in just a few seconds
           </h1>
-          <p className="font-[500] text-[10px] sm:text-base md:text-lg lg:text-xl xl:text-[16px] lg:px-16 leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-2">
+          <p className="font-[500] text-[10px] sm:text-[11px] md:text-lg lg:text-[16px] xl:text-[16px] lg:px-16 leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-2">
             We&apos;re your partner in business growth. We help increase revisiting
             customers, and maximize brand visibility to boost revenue.
             Experience 40% faster turnaround times, 30% higher average order
@@ -145,7 +145,7 @@ const Box3: React.FC = () => {
 
         {/* Text content with heading and paragraph */}
 
-        <h1 className="font-[600] lg:text-[38px] text-[16px] sm:text-[20px] lg:leading-[48px] md:leading-[20px] sm:leading-[24px] text-[#F5F3ED] lg:text-start md:text-start text-center sm:text-start">
+        <h1 className="font-[600] lg:text-[40px] text-[16px] sm:text-[16px] lg:leading-[48px] md:leading-[20px] sm:leading-[24px] text-[#F5F3ED] lg:text-start md:text-start text-center sm:text-start">
           Join Our Growing Community of Partners
         </h1>
         <p className="font-[500] lg:text-[16px] sm:text-[11px]  lg:leading-[24px] md:leading-[16px] sm:leading-[15px] text-[#F5F3ED] sm:text-start lg:text-start md:text-start lg:py-6 py-6 sm:py-2 text-center text-[10px]">

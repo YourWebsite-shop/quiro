@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
           alt="gradietnBg"
           className="absolute  sm:top-20 scale-150 sm:scale-150 lg:scale-100 lg:-top-36"
         />
-        <h2 className="font-[600] sm:text-[36px] sm:py-2 lg:text-6xl text-center z-10 sm:leading-[43px] lg:leading-[70px] text-[20px] py-6 lg:py-4">
+        <h2 className="font-[600] sm:text-[36px] sm:py-2 lg:text-[64px] text-center z-10 sm:leading-[43px] lg:leading-[70px] text-[20px] py-6 lg:py-4">
           Redifining Your <br /> Stay & Dining{" "}
           <div className="text-[#00413E] inline relative">
             Experience{" "}
@@ -139,7 +139,7 @@ const Carousel = () => {
 const Partners = () => {
   return (
     <div>
-      <h5 className="font-[600] text-[15px] sm:text-[20px]  text-center lg:py-12 lg:pb-20 sm:pb-20 pt-20 pb-10 sm:pt-120">
+      <h5 className="font-[600] text-[15px] sm:text-[20px] lg:text-[24p]  text-center lg:py-12 lg:pb-20 sm:pb-20 pt-20 pb-10 sm:pt-120">
         Discover our partners from around the world
       </h5>
       <Marquee
