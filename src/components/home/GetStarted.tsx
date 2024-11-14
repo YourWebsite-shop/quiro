@@ -26,14 +26,14 @@ const GetStarted: React.FC = () => {
             src={arrowmobile}
             alt="magicarr"
             height={370}
-            className="absolute left-1/2 h-[40vh] -translate-x-2/3  top-10"
+            className="absolute left-1/2 h-[40vh] -translate-x-24  top-12"
           />
         </div>
 
         {/* Mobile buttons */}
-        <div className="absolute bottom-14 flex flex-col left-1/2 w-max -translate-x-1/2  sm:hidden gap-2 ">
-          <ShadowButton text="Contact Us" />
+        <div className="absolute bottom-20 flex flex-col left-1/2 w-max -translate-x-1/2  sm:hidden gap-4 ">
           <LineButton text="Start For Free" />
+          <ShadowButton text="Contact Us" />
         </div>
 
         {/* Magic Started Image on the Left */}

@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       <div className="lg:w-1/2 w-full px-2 lg:px-0">
         {/* Logo */}
         <div className="flex flex-col items-start justify-start w-full sm:mb-0 mb-16 lg:pb-10">
-          <Image src={logo} alt="logo" width={200} height={80} className=" mx-auto sm:mx-0 w-auto h-auto lg:scale-125" />
+          <Image src={logo} alt="logo" width={200} height={80} className=" mx-auto sm:mx-0  h-auto  w-[102px] lg:w-[125px]" />
         </div>
 
         {/* Company and Resources Sections */}

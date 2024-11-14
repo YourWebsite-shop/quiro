@@ -121,7 +121,7 @@ const WallOfLove: React.FC = () => {
           />
 
           <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative">
-            <Image src={wolimg2} width={111} alt="wolimg2" className="w-full" />
+            <Image src={wolimg2} width={1000} alt="wolimg2" className="w-full" />
 
             <p className="text-[10px] sm:text-[12px] font-[500] sm:font-semibold py-2 sm:py-4 w-full ">
               &quot;Quiro&apos;s menu management feature has simplified our
@@ -137,7 +137,7 @@ const WallOfLove: React.FC = () => {
           </div>
 
           <div className="border-[2px] p-4 sm:ml-8 rounded-xl   border-[#006B66] bg-white relative">
-            <Image src={wolimg2} width={111} alt="wolimg2" className="w-full" />
+            <Image src={wolimg2} width={1000} alt="wolimg2" className="w-full" />
             <p className="text-[10px]  sm:text-[10px] font-[500] sm:font-semibold py-2 w-full text-center ">
               &quot;The team at Quiro just gets what their partners need. From
               setup to daily use, everything has been smooth and simple!&quot;
@@ -231,7 +231,7 @@ const WallOfLove: React.FC = () => {
         <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4">
           {/*  */}
           <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative">
-            <Image src={wolimg2} width={111} alt="wolimg2" className="w-full" />
+            <Image src={wolimg2} width={1000} alt="wolimg2" className="w-full" />
             <p className="text-[6px] sm:text-[12px] font-semibold py-2 sm:py-4 w-full ">
               &quot;Quiro&apos;s menu management feature has simplified our
               dining service.&quot;
