@@ -76,7 +76,7 @@ const Header: React.FC = () => {
       {/* Mobile Menu */}
       <div className={`fixed inset-0 bg-white z-20 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 xl:hidden`}>
         <div className="flex flex-col p-8 space-y-4">
-          <Link href="/docs" className="text-lg">About us</Link>
+          <Link href="/aboutus" className="text-lg">About us</Link>
           <Link href="/business" className="text-lg">For Businesses</Link>
           <Link href="/resources" className="text-lg">Resources</Link>
           <Link href="/customers" className="text-lg">For Customers</Link>
