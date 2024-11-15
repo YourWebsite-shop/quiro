@@ -12,7 +12,7 @@ import "./styles/getstarted.css";
 
 const GetStarted: React.FC = () => {
   return (
-    <div className=" p-8 custom-gs bg-[#F3CCE7] w-full h-[70vh] sm:h-[25vh] md:h-[30vh] lg:h-auto sm:pt-16 relative lg:px-24">
+    <div className=" p-8 custom-gs bg-[#F3CCE7] w-full h-[78vh] sm:h-[25vh] md:h-[30vh] lg:h-auto sm:pt-16 relative lg:px-24">
       <div className="flex lg:flex-row md:flex-row sm:flex-col  w-full max-w-[1300px]">
         {/* Magic start mobile */}
         <div className="sm:hidden w-full relative">

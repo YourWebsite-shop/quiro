@@ -7,6 +7,10 @@ body {
   overflow-x: hidden !important;
   width: 100vw !important;
 }
+body, html {
+  overflow-x: hidden !important;
+  width: 100vw !important;
+}
 
 @layer utilities {
   .text-balance {
