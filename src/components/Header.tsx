@@ -92,7 +92,7 @@ const Header: React.FC = () => {
         <NavigationMenuList className="border border-[#00413E] rounded-full p-2">
 
           <NavigationMenuItem className="rounded-full text-white bg-[#00413E] hover:bg-white">
-            <Link href="/docs" legacyBehavior passHref>
+            <Link href="/aboutus" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 About us
               </NavigationMenuLink>
