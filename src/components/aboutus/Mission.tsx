@@ -17,7 +17,7 @@ const Mission: React.FC = () => {
       </div>
       <div className="flex justify-end w-full">
         <div className="flex items-center sm:items-end justify-center sm:justify-end  pr-2">
-          <p className="text-[#000000] text-[20px] sm:text-[18px] font-[300] leading-[32px] sm:leading-[29px] sm:text-end text-center block lg:hidden sm:w-[40%]">
+          <p className="text-[#000000] text-[20px] sm:text-[18px] font-[300] leading-[32px] sm:leading-[29px] sm:text-end text-center block lg:hidden sm:w-[45%] md:w-[50%]">
             At Quiro, our mission is to uplift the entire{" "}
             <span className="text-[#F58121] font-[700]">HoReCa industry</span>{" "}
             from boutique hotels to bustling resorts and every business in
