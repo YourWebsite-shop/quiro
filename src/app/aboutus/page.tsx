@@ -3,7 +3,9 @@ import Hero from "@/components/aboutus/Hero";
 import Journey from "@/components/aboutus/Journey";
 import Mission from "@/components/aboutus/Mission";
 import Team from "@/components/aboutus/Team";
+import GetStarted from "@/components/home/GetStarted";
 import React from "react";
+
 
 
 
@@ -16,6 +18,7 @@ const Page = () => {
       <Approach />
       <Team />
       <Journey />
+      <GetStarted />
     </div>
   );
 };

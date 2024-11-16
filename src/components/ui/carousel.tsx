@@ -246,7 +246,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <VscChevronRight className="h-4 w-4" />
+      <VscChevronRight className="h-4 w-4 bg-transparent" />
       <span className="sr-only">Next slide</span>
     </Button>
   )

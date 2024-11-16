@@ -53,7 +53,7 @@ const chunkedTeamMembers = chunkArray(teamMembers, 4);
 
 const Team: React.FC = () => {
   return (
-    <div className="relative flex flex-col justify-center items-center">
+    <div className="relative flex flex-col justify-center items-center pb-6">
       <div className="flex flex-col justify-center items-start sm:items-center sm:justify-start">
         <h1 className="relative text-left sm:text-center text-[20px] sm:text-[32px] lg:text-[48px] font-[600] leading-[21px] sm:leading-[38.4px] lg:leading-[57.6px] text-[#000000] pt-5 lg:pt-16">
           <Image
@@ -77,7 +77,7 @@ const Team: React.FC = () => {
                       <Card className="border-0 shadow-none">
                         <CardContent className="flex flex-col items-center justify-center bg-[#F5F3ED] p-6">
                           <div className="relative h-fit w-fit">
-                            <FaLinkedin className="absolute top-10 right-28 text-4xl text-[#000000] cursor-pointer border-2 border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1 z-20" />
+                            <FaLinkedin className="absolute top-10 right-28 text-4xl bg-white text-[#000000] cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1 z-20" />
                             <Image
                               src={member.profileImage}
                               alt={`${member.name}'s Profile`}
@@ -121,7 +121,7 @@ const Team: React.FC = () => {
                 <div className="p-1">
                   <Card className="border-0 shadow-none">
                     <CardContent className="flex flex-col items-center justify-center bg-[#F5F3ED] p-6">
-                      <FaLinkedin className="absolute top-8 right-24 text-3xl text-[#000000] cursor-pointer border-2 border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1" />
+                      <FaLinkedin className="absolute top-8 right-24 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1" />
                       <Image
                         src={member.profileImage}
                         alt={`${member.name}'s Profile`}
@@ -161,7 +161,7 @@ const Team: React.FC = () => {
               <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6">
                 {/* LinkedIn Icon positioned at the top-right corner */}
 
-                <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] cursor-pointer border-2 border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+                <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
 
                 <Image
                   src={member.profileImage}

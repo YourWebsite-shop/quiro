@@ -6,15 +6,15 @@ import LineButton from "../LineButton";
 
 const Journey: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center border-2 border-[#006B66] rounded-[15px] lg:gap-20 m-4 sm:m-6 lg:m-10 p-6 sm:p-8 lg:p-12 h-full">
+    <div className="flex flex-col mb-20 lg:flex-row justify-between items-center border-2 border-[#006B66] rounded-[15px] lg:gap-20 m-4 sm:m-6 lg:m-10 p-6 sm:p-8 lg:p-12 h-full">
       <div className="flex flex-col justify-center items-center lg:items-start lg:w-1/2 lg:h-[500px]">
-        <h1 className="relative text-[20px] sm:text-[32px] lg:text-[40px] font-[600] leading-[26px] sm:leading-[38.4px] lg:leading-[48px] text-[#000000]">
+        <h1 className="relative pt-6 text-[20px] sm:text-[32px] lg:text-[40px] font-[600] leading-[26px] sm:leading-[38.4px] lg:leading-[48px] text-[#000000]">
           <p className="billyOhioText text-[#006B66] text-[24px] lg:text-[40px] font-[400] leading-[29px] lg:leading-[48px] sm:-translate-x-4 lg:translate-x-0 -mb-1">
             Careers
           </p>
           Be Part of Our Journey
         </h1>
-        <p className="text-[13px] font-[400] leading-[19.5px] text-[#000000] block sm:hidden text-center py-8">
+        <p className="text-[13px] font-[400] leading-[19.5px] text-[#000000] block sm:hidden text-center py-5 pb-7">
           At Quiro, we’re transforming hospitality with impactful solutions.
           Join us to create meaningful change and shape the industry's future.
         </p>
@@ -25,7 +25,7 @@ const Journey: React.FC = () => {
           make a difference, we’d love to have you on our team. Join us and be
           part of a journey that shapes the future of hospitality.
         </p>
-        <div className="flex mb-8">
+        <div className="flex mb-8 scale-95" >
           <LineButton text="See open positions" />
         </div>
       </div>

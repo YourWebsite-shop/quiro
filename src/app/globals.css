@@ -92,3 +92,7 @@ body, html {
 .billyOhioText {
   font-family: var(--billy-ohio), sans-serif;
 }
+
+font-300{
+  font-weight: 300 !important;
+}

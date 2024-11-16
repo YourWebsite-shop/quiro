@@ -72,10 +72,10 @@ const Approach: React.FC = () => {
   };
 
   return (
-    <div className="py-20 lg:px-20">
+    <div className="pb-20 pt-8 lg:px-20">
       <div className="text-center sm:text-start">
-        <h3 className="text-[20px] sm:text-[32px] lg:text-[48px] sm:px-8 font-[600] relative">
-          <p className="text-[#006B66] billyOhioText text-[24px] sm:text-[26px] lg:text-[40px] pr-44">
+        <h3 className="text-[20px] sm:text-[32px] pb-4 lg:text-[48px] sm:px-8 font-[600] relative">
+          <p className="text-[#006B66] billyOhioText text-[24px] sm:text-[26px] lg:text-[40px] pr-44 translate-y-2">
             From Vision to Reality
           </p>
           Our Approach
@@ -101,8 +101,8 @@ const Approach: React.FC = () => {
               className="border-b border-black"
             >
               <AccordionTrigger>
-                <div className="flex justify-between w-full px-4 sm:px-12">
-                  <div className="text-[#F58121] font-[600] text-[20px]">
+                <div className="flex justify-between w-full px-4 sm:px-12 ">
+                  <div className="text-[#F58121] font-[600] text-[20px] ">
                     {item.number}
                   </div>
                   <div className="text-[12px] sm:text-[18px] font-[600]">
@@ -120,7 +120,7 @@ const Approach: React.FC = () => {
                       {item.description}
                     </p>
                   </div>
-                  <div className="px-4 sm:p-0 sm:mx-6 pt-10 sm:rounded-xl sm:mt-10 sm:mb-4  overflow-hidden sm:h-[257px] flex items-center justify-center">
+                  <div className="px-4 sm:p-0 sm:mx-6 pt-8 sm:rounded-xl sm:mt-10 sm:mb-4  overflow-hidden sm:h-[257px] flex items-center justify-center">
                     <Image
                       src={item.image}
                       alt={item.title}
@@ -169,7 +169,7 @@ const Approach: React.FC = () => {
 
               {/* Content */}
               {isOpen && (
-                <div className="py-10 px-4 opacity-100 transition-opacity duration-500 min-w-[497px] -z-20">
+                <div className={`py-10 px-4 opacity-100 transition-opacity duration-500 min-w-[497px] -z-20 ${isOpen? "opacity-100":"opacity-0"}`}>
                   <h5 className="text-[40px] text-[#006B66] font-[400] text-center billyOhioText">
                     {item.heading}
                   </h5>
