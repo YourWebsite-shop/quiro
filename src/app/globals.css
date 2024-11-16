@@ -88,3 +88,7 @@ body, html {
     border: 1px sold red !important;
   }
 }
+
+.billyOhioText {
+  font-family: var(--billy-ohio), sans-serif;
+}
