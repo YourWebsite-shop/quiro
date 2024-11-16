@@ -1,11 +1,14 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
 import approach1 from "@/assets/aboutus/Approach/approach1.png";
 import approach2 from "@/assets/aboutus/Approach/approach2.png";
 import approach3 from "@/assets/aboutus/Approach/approach3.png";
@@ -26,7 +29,7 @@ const approachData = [
   {
     id: "item-2",
     number: "02",
-    title: "Cusotmized Strategy Development",
+    title: "Customized Strategy Development",
     heading: "Craft the Perfect Plan",
     description:
       "Based on the identified challenges, we craft a tailored strategy aligned with the client’s specific goals, maximizing efficiency and potential revenue streams.",
@@ -44,7 +47,7 @@ const approachData = [
   {
     id: "item-4",
     number: "04",
-    title: "Continous Monitoring & Support",
+    title: "Continuous Monitoring & Support",
     heading: "Monitor & Enhance",
     description:
       "We provide ongoing monitoring and support, adapting to evolving needs with real-time insights and adjustments to optimize performance and satisfaction.",
@@ -53,7 +56,7 @@ const approachData = [
   {
     id: "item-5",
     number: "05",
-    title: "Feddback & Improvement",
+    title: "Feedback & Improvement",
     heading: "Evolve with Feedback",
     description:
       "We believe in continuous improvement; we regularly gather feedback, assess outcomes, and refine our approach to elevate the client experience and deliver exceptional results.",
@@ -62,15 +65,26 @@ const approachData = [
 ];
 
 const Approach: React.FC = () => {
+  const [openItemId, setOpenItemId] = useState<string>("item-1");
+
+  const handleToggle = (id: string) => {
+    setOpenItemId((prevId) => (prevId === id ? "" : id));
+  };
+
   return (
-    <div className="py-20">
+    <div className="py-20 lg:px-20">
       <div className="text-center sm:text-start">
-        <h3 className="text-[20px] sm:text-[32px] sm:px-8 font-[600] relative">
-          <p className="text-[#006B66] billyOhioText text-[24px] sm:text-[26px] pr-44">From Vision to Reality</p>
+        <h3 className="text-[20px] sm:text-[32px] lg:text-[48px] sm:px-8 font-[600] relative">
+          <p className="text-[#006B66] billyOhioText text-[24px] sm:text-[26px] lg:text-[40px] pr-44">
+            From Vision to Reality
+          </p>
           Our Approach
         </h3>
       </div>
 
+
+{/* Mobile View below */}
+<div>
       {/* Mobile and tab accordion */}
       <div className="p-4 lg:hidden">
         {/* Use defaultValue to open the first item by default */}
@@ -121,11 +135,60 @@ const Approach: React.FC = () => {
           ))}
         </Accordion>
       </div>
+    </div>
+{/* Mobile View above*/}
+
+
+    
 
       {/* Desktop Accordion */}
+      <div className="px-0 hidden lg:flex border border-black justify-between lg:max-w-[90vw] xl:max-w-[1376px] mx-auto overflow-hidden">
+        {approachData.map((item) => {
+          const isOpen = openItemId === item.id;
+          return (
+            <div
+              key={item.id}
+              onClick={() => handleToggle(item.id)}
+              className={`border relative border-black  h-[700px] bg-[#F5F3ED] ${
+                isOpen ? "w-2/3" : "w-[300px]"
+              }  p-8 cursor-pointer transition-all duration-700 ease-in-out`}
+            >
+              {/* Number */}
+              <div className="text-[#F58121] text-[48px] font-[600]">
+                {item.number}
+              </div>
 
-      <div className="px-4 hidden lg:block">
-        hello world
+              {/* Rotated Title */}
+              <div
+                className={`-rotate-90 absolute left-6 top-1/2 -translate-x-1/2  text-[24px] font-[600] transition-all duration-300 ${
+                  isOpen ? "w-full translate-y-[20px]" : "w-[500px] translate-y-[50px]"
+                }`}
+              >
+                {item.title}
+              </div>
+
+              {/* Content */}
+              {isOpen && (
+                <div className="py-10 px-4 opacity-100 transition-opacity duration-500 min-w-[497px] -z-20">
+                  <h5 className="text-[40px] text-[#006B66] font-[400] text-center billyOhioText">
+                    {item.heading}
+                  </h5>
+                  <p className="text-[18px] leading-[27px] font-[500] text-center lg:pb-10">
+                    {item.description}
+                  </p>
+                  <div className="flex justify-center">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      width={1000}
+                      className="w-[395px]"
+                    />
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
