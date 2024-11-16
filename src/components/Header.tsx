@@ -60,7 +60,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between px-4 md:px-10 w-full top-0 bg-[#F5F3ED] py-4">
+    <div className="flex items-center justify-between px-4 md:px-10 w-full top-0 bg-[#F5F3ED] py-4 z-50">
       <div>
         <Image src={Logo} width={300} height={70} alt="logo" className="w-[100px] h-[70px] md:w-[150px] md:h-[100px]" />
       </div>
