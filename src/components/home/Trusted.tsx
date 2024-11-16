@@ -4,7 +4,7 @@ import user1 from "@/assets/home/trusted/trusteduser1.png";
 const Trusted: React.FC = () => {
   return (
     <div className="lg:pt-24 mb-14  py-16 lg:pb-44">
-      <h5 className="font-[600] text-[15px] sm:text-[20px] lg:text-[24px] py-10 text-center">
+      <h5 className="font-[600] text-[15px] leading-[22.5px] sm:text-[20px] sm:leading-[30px] lg:text-[24px] lg:leading-[36px] py-10 text-center">
         Trusted by the best in the industry
       </h5>
 

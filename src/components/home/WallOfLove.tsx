@@ -21,16 +21,13 @@ const WallOfLove: React.FC = () => {
   return (
     <div className="py-10">
       <div className="text-center py-6">
-        <h5 className="text-[20px] sm:text-[24px] lg:text-[48px] font-[600]  w-fit mx-auto relative">
+        <h5 className="text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] font-[600]  w-fit mx-auto relative">
+          <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-0 lg:-left-8 lg:-top-10 sm:-left-6 -left-4 -top-6">
+            Cheers
+          </span>
           Wall of Love
-          <Image
-            src={cheers}
-            alt="cheers"
-            width={44}
-            className="absolute -left-8 -top-5"
-          />
         </h5>
-        <p className="text-[13px] py-2 lg:text-[20px] font-[500]">
+        <p className="text-[13px] leading-[19.5px] py-2 lg:text-[20px] lg:leading-[30px] font-[500]">
           Less from us, more from our happy customers
         </p>
       </div>
@@ -82,8 +79,8 @@ const WallOfLove: React.FC = () => {
               />
             </p>
             <p className="text-[10px] sm:text-[14px] font-semibold text-center">
-              &quot;Switching to Quiro&apos;s supply management has been a relief.
-              Inventory tracking is straightforward&quot;
+              &quot;Switching to Quiro&apos;s supply management has been a
+              relief. Inventory tracking is straightforward&quot;
             </p>
             <Image
               src={kamal}

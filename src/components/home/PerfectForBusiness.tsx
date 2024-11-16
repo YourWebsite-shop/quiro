@@ -3,7 +3,7 @@ import empower from "../../assets/Empower.png";
 import Image from "next/image";
 import perfectBox1 from "@/assets/perfectBox1.png";
 import perfectBox1sm from "@/assets/perfectBox1sm.png";
-import boxperfect3 from "@/assets/boxperfect3.png"
+import boxperfect3 from "@/assets/boxperfect3.png";
 import perfectBox1BG from "@/assets/perfectBox1BG.png";
 import perfectBox2BG from "@/assets/perfectBox2BG.png";
 import perfectBox3BG from "@/assets/perfectBox3BG.png";
@@ -18,17 +18,14 @@ const PerfectForBusiness: React.FC = () => {
     <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-10">
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
-          <p className="font-[600] px-10 sm:px-0  relative text-center text-[20px] lg:text-[48px] sm:leading-[58px]">
+          <p className="relative text-center font-[600] px-10 sm:px-0 text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px]">
+            <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[40px] lg:leading-[48px] sm:text-[24px] sm:leading-[28.8px] sm:px-0 lg:-left-8  sm:-left-8 left-8 -top-6">
+              Empower
+            </span>
             Perfect For Businesses Like Yours
-            <Image
-              src={empower}
-              alt="empower"
-              width={1000}
-              height={1000}
-              className="absolute -top-5 left-4 sm:px-0 w-[70px] lg:-left-8 lg:scale-125"
-            />
           </p>
-          <p className="text-[13px] font-[500] text-center sm:text-[20px] sm:leading-[30px] py-6  custom-pfb">
+
+          <p className="text-[13px] leading-[19.5px] font-[500] text-center sm:text-[14px] sm:leading-[21px] lg:text-[20px] lg:leading-[30px] py-6  custom-pfb">
             Built with inputs from the HoReCa community for everyone involved
           </p>
         </div>
@@ -69,7 +66,6 @@ const Box1: React.FC = () => {
         <div className="flex justify-center sm:block pb-10 sm:scale-90 sm:-translate-x-3 lg:translate-x-0 lg:scale-100 sm:py-4">
           <ShadowButton text="Learn More" />
         </div>
-
       </div>
       <div className="px-4 sm:w-1/2 sm:px-10  ">
         <Image src={perfectBox1sm} alt="img" className="sm:hidden" />
@@ -112,10 +108,11 @@ const Box2: React.FC = () => {
             <br /> More done in just a few seconds
           </h1>
           <p className="font-[500] text-[10px] sm:text-[11px] md:text-lg lg:text-[16px] xl:text-[16px] lg:px-16 leading-relaxed md:leading-normal lg:leading-relaxed xl:leading-snug text-center mt-2">
-            We&apos;re your partner in business growth. We help increase revisiting
-            customers, and maximize brand visibility to boost revenue.
-            Experience 40% faster turnaround times, 30% higher average order
-            value, 35% improved guest satisfaction, and double staff efficiency.
+            We&apos;re your partner in business growth. We help increase
+            revisiting customers, and maximize brand visibility to boost
+            revenue. Experience 40% faster turnaround times, 30% higher average
+            order value, 35% improved guest satisfaction, and double staff
+            efficiency.
           </p>
           <LineButton text="Start for Free" />
         </div>

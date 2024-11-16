@@ -7,7 +7,6 @@ import Img3 from "@/assets/home/EfficiencyImg3.png";
 import LineButton from "../LineButton";
 import ShadowButton from "../ShadowButton";
 
-
 /* ---------------- Efficiency Component ---------------- */
 const Efficiency: React.FC = () => {
   // Data for efficiency cards
@@ -35,7 +34,7 @@ const Efficiency: React.FC = () => {
       <SectionHeader
         title="We Are More Than Just Another Software Company"
         description="From owners to admins and guests, our solutions go beyond streamlining
-          operations. We&apos;re here to solve your challenges, enhance efficiency,
+          operations. We're here to solve your challenges, enhance efficiency,
           and ensure satisfaction at every level"
       />
 
@@ -45,7 +44,7 @@ const Efficiency: React.FC = () => {
       {/* Action Buttons */}
       <div className="flex flex-col sm:flex-row lg:pl-10 lg:py-10 sm:py-4 gap-5 items-center">
         <div>
-          <LineButton  text="Learn More"/>
+          <LineButton text="Learn More" />
         </div>
         <div>
           <ShadowButton text="Contact Us" />
@@ -61,17 +60,13 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
   description,
 }) => (
   <div className="sm:flex lg:px-10 px-7  sm:py-12 lg:pb-24">
-    <div className="relative w-full sm:w-[60%] text-[20px] text-center sm:text-start sm:text-[24px] lg:text-[44px] font-[600] sm:leading-8 lg:leading-[48px] ">
+    <div className="relative w-full text-[#000000] sm:w-[60%] text-[20px] leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[48px] font-[600] sm:leading-[28.8px] lg:leading-[57.6px] ">
       {title}
-      <Image
-        src={EfficiencytextImg}
-        alt="decorative text image"
-        width={96}
-        height={54}
-        className="absolute -top-8 lg:-top-12 w-[65px] h-[35px] sm:w-[45px] sm:h-[25px] lg:w-[96px] lg:h-[54px] sm:-top-5"
-      />
+      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-1 -top-6">
+        Efficiency
+      </span>
     </div>
-    <p className="  w-full text-center sm:text-start sm:w-[40%] sm:text-[11px] font-[500] text-[13px] py-3 sm:py-0 lg:text-base">
+    <p className="  w-full text-[#000000] text-center sm:text-start sm:w-[40%] sm:text-[11px] sm:leading-[16.5px] lg:text-[20px] lg:leading-[30px] font-[500] text-[13px] leading-[19.5px] py-3 sm:py-0 lg:text-base ">
       {description}
     </p>
   </div>
@@ -100,18 +95,21 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
   heading,
   text,
 }) => (
-  <div className="sm:border-4 border-2 border-[#006B66] rounded-2xl w-fit mx-auto max-w-[491px] p-5 sm:p-3 lg:p-5 my-5  sm:my-0">
+  <div
+    className="sm:border-4 border-2 border-[#006B66] rounded-2xl w-fit mx-auto max-w-[491px] p-5 sm:p-3 lg:p-5 my-5 sm:my-0"
+    style={{ boxShadow: "0px 4px 14px 0px rgba(0, 107, 102, 0.25)" }}
+  >
     <Image
       src={img}
       alt="efficiency img"
       width={452}
       height={311}
-      className="rounded "
+      className="rounded"
     />
-    <h5 className=" text-[16px] font-[600] sm:text-[14px] sm:py-3 lg:text-[28px] text-center lg:leading-[35px] lg:py-6 py-4">
+    <h5 className="text-[#000000] text-[16px] leading-[20.8px] font-[600] sm:text-[12px] sm:leading-[15.6px] sm:py-3 lg:text-[24px] text-center lg:leading-[31.2px] lg:py-6 py-4">
       {heading}
     </h5>
-    <p className="text-center font-[400] text-[10px] lg:text-[14.5px] lg:leading-[24px] lg:pb-6 sm:pb-4">
+    <p className="text-[#000000] text-center font-[400] text-[10px] leading-[15px] sm:text-[8px] sm:leading-[12px] lg:text-[16px] lg:leading-[24px] lg:pb-6 sm:pb-4">
       {text}
     </p>
   </div>

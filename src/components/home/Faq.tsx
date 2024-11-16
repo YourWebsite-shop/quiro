@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import problem from "../../assets/problem.png";
-import accdown from "@/assets/home/accdown.png"
-import accup from "@/assets/home/accup.png"
-import help from "@/assets/home/AbsoluteImages/help.png"
+import accdown from "@/assets/home/accdown.png";
+import accup from "@/assets/home/accup.png";
+import help from "@/assets/home/AbsoluteImages/help.png";
 
 const Faq: React.FC = () => {
   const faqData = [
@@ -72,30 +72,16 @@ const Faq: React.FC = () => {
       <div className="max-w-7xl w-full">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center mb-8">
-          <div
-            className="w-[100px] mb-4 hidden lg:block"
-            style={{ marginLeft: "-650px" }}
-          >
-            <Image src={problem} alt="problem" />
-        
-
-          </div>
-          <h1 className="font-bold relative text-[20px] sm:text-[24px] lg:text-5xl mx:auto max-w-1/2 text-center">
-            {/* <Image
-              src={problem}
-              alt="problem"
-              width={100}
-              className="lg:block hidden absolute left-0 -top-10"
-            /> */}
-            <Image
-              src={help}
-              alt="problem"
-              width={1000}
-              className="block lg:hidden absolute sm:-left-8  -top-6 sm:-top-10 w-8 sm:w-10"
-            />
+          <h1 className=" font-[600] relative text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] mx:auto max-w-1/2 text-center">
+            <span className="billyOhioText text-[#006B66] absolute font-[400] text-[36px] leading-[54px] sm:px-0 lg:-left-10 lg:-top-10 sm:-left-6 left-1 -top-6 hidden lg:block">
+              Problem?
+            </span>
+            <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] sm:text-[24px] sm:leading-[36px]  sm:px-0 lg:-left-0 lg:-top-10 sm:-left-2 -left-5 -top-7 block lg:hidden">
+              Help
+            </span>
             Frequently Asked Questions
           </h1>
-          <p className="font-medium text[13px] sm:text-[12px] md:text-xl lg:text-[20px] lg:pb-12 text-center mt-2">
+          <p className="font-medium text[13px] sm:text-[12px] sm:leading-[18px] text-[13px] leading-[19.5px] lg:text-[20px] lg:leading-[30px] lg:pb-12 text-center mt-2">
             Get all your questions answered here
           </p>
         </div>
@@ -109,17 +95,27 @@ const Faq: React.FC = () => {
                 {/* Question */}
                 <div
                   className="flex justify-between items-center cursor-pointer"
-                  onClick={() => toggleFaq(index)} 
+                  onClick={() => toggleFaq(index)}
                 >
                   <div className="flex items-center">
-                    <div className="w-[22px] h-[22px] rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
+                    <div className="w-[22px] h-[22px] lg:w-[38px] lg:h-[38px] sm:w-[18px] sm:h-[18px] rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
                       {expandedIndex === index ? (
-                         <Image src={accup} alt="accdown" width={1000} className="w-[10px]" />
+                        <Image
+                          src={accup}
+                          alt="accdown"
+                          width={1000}
+                          className="w-[10px] sm:w-[6px] lg:w-[13px] "
+                        />
                       ) : (
-                        <Image src={accdown} alt="accdown" width={1000} className="w-[10px]" />
+                        <Image
+                          src={accdown}
+                          alt="accdown"
+                          width={1000}
+                          className="w-[10px] sm:w-[6px]  lg:w-[13px] "
+                        />
                       )}
                     </div>
-                    <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[12px] sm:leading-[18px] break-words">
+                    <h2 className="lg:text-[18px] font-[600] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words">
                       {faq.question}
                     </h2>
                   </div>
@@ -145,14 +141,24 @@ const Faq: React.FC = () => {
                   onClick={() => toggleFaq(index + faqData.length / 2)} // Offset index for second column
                 >
                   <div className="flex items-center">
-                    <div className="w-[22px] h-[22px] rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
+                    <div className="w-[22px] h-[22px] lg:w-[38px] lg:h-[38px] sm:w-[18px] sm:h-[18px] rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
                       {expandedIndex === index + faqData.length / 2 ? (
-                        <Image src={accup} alt="accdown" width={1000} className="w-[10px]" />
+                        <Image
+                          src={accup}
+                          alt="accdown"
+                          width={1000}
+                          className="w-[10px] sm:w-[6px] lg:w-[13px] "
+                        />
                       ) : (
-                        <Image src={accdown} alt="accdown" width={1000} className="w-[10px]" />
+                        <Image
+                          src={accdown}
+                          alt="accdown"
+                          width={1000}
+                          className="w-[10px] sm:w-[6px] lg:w-[13px] "
+                        />
                       )}
                     </div>
-                    <h2 className="lg:text-[18px] font-[600] lg:leading-[26px] md:leading-[16px] md:text-[12px] sm:text-[14px] text-[12px] sm:leading-[18px] break-words">
+                    <h2 className="lg:text-[18px] font-[600] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words">
                       {faq.question}
                     </h2>
                   </div>
@@ -168,8 +174,6 @@ const Faq: React.FC = () => {
             ))}
           </div>
         </div>
-
-       
       </div>
     </div>
   );

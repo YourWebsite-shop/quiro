@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
           className="absolute  sm:top-20 scale-150 sm:scale-150 lg:scale-100 lg:-top-36 max-w-[100vw]"
           priority={true}
         />
-        <h2 className="font-[600] sm:text-[36px] sm:py-2 lg:text-[64px] text-center z-10 sm:leading-[43px] lg:leading-[70px] text-[20px] py-6 lg:py-4">
+        <h2 className="text-[#000000] font-[600] sm:text-[36px] sm:py-2 lg:text-[56px] text-center z-10 sm:leading-[43.2px] lg:leading-[67.2px] text-[32px] leading-[24px] py-6 lg:py-4">
           Redifining Your <br /> Stay & Dining{" "}
           <div className="text-[#00413E] inline relative">
             Experience{" "}
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
             />
           </div>
         </h2>
-        <p className=" sm:text-[16px] hero-text lg:text-[20px] text-center font-[500] max-w-[90vw] sm:max-w-[80vw]  z-10 lg:py-10 sm:py-10 text-[13px]">
+        <p className="text-[#000000] sm:text-[16px] hero-text lg:text-[18px] lg:leading-[27px] sm:leading-[24px] text-center font-[500] max-w-[90vw] sm:max-w-[80vw]  z-10 lg:py-10 sm:py-10 text-[13px] leading-[19.5px]">
           At Quiro, we&apos;re revolutionising the industry with a platform
           designed by HoReCa Community, for the community. Our all-in-one
           solution empowers your team to effortlessly manage everything
@@ -140,7 +140,7 @@ const Carousel = () => {
 const Partners = () => {
   return (
     <div>
-      <h5 className="font-[600] text-[15px] sm:text-[20px] lg:text-[24p]  text-center lg:py-12 lg:pb-20 sm:pb-20 pt-20 pb-10 sm:pt-120">
+      <h5 className="text-[#000000] font-[600] text-[15px] sm:text-[20px] lg:text-[24px] lg:leading-[28.8px] sm:leading-[24px] leading-[18px] text-center lg:py-12 lg:pb-20 sm:pb-20 pt-20 pb-10 sm:pt-120">
         Discover our partners from around the world
       </h5>
       <Marquee
