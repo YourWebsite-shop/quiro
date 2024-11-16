@@ -1,5 +1,4 @@
 import React from "react";
-import Vision from "@/assets/aboutus/AbsoluteImages/VisionToReality.png";
 import Image from "next/image";
 import {
   Accordion,
@@ -65,19 +64,15 @@ const approachData = [
 const Approach: React.FC = () => {
   return (
     <div className="py-20">
-      <div className="text-center">
-        <h3 className="text-[20px] font-[600] relative">
-          <Image
-            src={Vision}
-            alt="visiontoreality"
-            width={1000}
-            className="absolute w-[148px] -top-5 left-12"
-          />
+      <div className="text-center sm:text-start">
+        <h3 className="text-[20px] sm:text-[32px] sm:px-8 font-[600] relative">
+          <p className="text-[#006B66] billyOhioText text-[24px] sm:text-[26px] pr-44">From Vision to Reality</p>
           Our Approach
         </h3>
       </div>
 
-      <div className="p-4">
+      {/* Mobile and tab accordion */}
+      <div className="p-4 lg:hidden">
         {/* Use defaultValue to open the first item by default */}
         <Accordion
           type="single"
@@ -92,11 +87,13 @@ const Approach: React.FC = () => {
               className="border-b border-black"
             >
               <AccordionTrigger>
-                <div className="flex justify-between w-full px-4">
+                <div className="flex justify-between w-full px-4 sm:px-12">
                   <div className="text-[#F58121] font-[600] text-[20px]">
                     {item.number}
                   </div>
-                  <div className="text-[12px] font-[600]">{item.title}</div>
+                  <div className="text-[12px] sm:text-[18px] font-[600]">
+                    {item.title}
+                  </div>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
@@ -105,7 +102,7 @@ const Approach: React.FC = () => {
                     <p className="billyOhioText text-[32px] sm:text-[36px] text-[#006B66] text-center py-6">
                       {item.heading}
                     </p>
-                    <p className="text-[13px] font-[500] sm:text-[18px] leading-[19.5px] text-center px-5 sm:px-12">
+                    <p className="text-[13px] font-[500] sm:text-[18px] leading-[19.5px] sm:leading-[27px] text-center px-5 sm:px-12">
                       {item.description}
                     </p>
                   </div>
@@ -123,6 +120,12 @@ const Approach: React.FC = () => {
             </AccordionItem>
           ))}
         </Accordion>
+      </div>
+
+      {/* Desktop Accordion */}
+
+      <div className="px-4 hidden lg:block">
+        hello world
       </div>
     </div>
   );
