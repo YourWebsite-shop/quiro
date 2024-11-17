@@ -68,10 +68,10 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center p-8 lg:py-36 pb-20 ">
+    <div className="flex justify-center items-center  lg:pb-[142px] sm:pb-[100px] pb-[80px]">
       <div className="max-w-7xl w-full">
         {/* Header Section */}
-        <div className="flex flex-col justify-center items-center mb-8">
+        <div className="flex flex-col justify-center items-center">
           <h1 className=" font-[600] relative text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] mx:auto max-w-1/2 text-center">
             <span className="billyOhioText text-[#006B66] absolute font-[400] text-[36px] leading-[54px] sm:px-0 lg:-left-10 lg:-top-10 sm:-left-6 left-1 -top-6 hidden lg:block">
               Problem?
@@ -81,13 +81,13 @@ const Faq: React.FC = () => {
             </span>
             Frequently Asked Questions
           </h1>
-          <p className="font-medium text[13px] sm:text-[12px] sm:leading-[18px] text-[13px] leading-[19.5px] lg:text-[20px] lg:leading-[30px] lg:pb-12 text-center mt-2">
+          <p className="font-medium text[13px] sm:text-[12px] sm:leading-[18px] text-[13px] leading-[19.5px] lg:text-[20px] lg:leading-[30px] lg:pb-[96px] sm:pb-[39px] pb-[40px] text-center lg:mt-[16px] sm:mt-[7px] mt-[11px]">
             Get all your questions answered here
           </p>
         </div>
 
         {/* FAQ List in Two Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-4 md:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-4 md:gap-4 lg:mx-[41px] sm:mx-[25px] mx-[20px]">
           {/* Left Column */}
           <div>
             {faqData.slice(0, faqData.length / 2).map((faq, index) => (
@@ -115,7 +115,7 @@ const Faq: React.FC = () => {
                         />
                       )}
                     </div>
-                    <h2 className="lg:text-[18px] font-[600] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words">
+                    <h2 className="lg:text-[18px] font-[600] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words lg:mx-[24px] sm:mx-[8px] mx-[4px]">
                       {faq.question}
                     </h2>
                   </div>
@@ -158,7 +158,7 @@ const Faq: React.FC = () => {
                         />
                       )}
                     </div>
-                    <h2 className="lg:text-[18px] font-[600] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words">
+                    <h2 className="lg:text-[18px] font-[600] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words lg:mx-[24px] sm:mx-[8px] mx-[4px]">
                       {faq.question}
                     </h2>
                   </div>

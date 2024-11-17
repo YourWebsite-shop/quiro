@@ -25,15 +25,15 @@ const Hero: React.FC = () => {
   return (
     <>
       <div
-        className={`relative flex flex-col  custom-hero items-center pb-24 lg:py-24 sm:h-[50vh] lg:h-[100vh]`}
+        className={`relative flex flex-col  custom-hero items-center lg:pt-[73px] sm:h-[50vh] lg:h-[75vh] `}
       >
         <Image
           src={gradientBg}
           alt="gradietnBg"
-          className="absolute  sm:top-20 scale-150 sm:scale-150 lg:scale-100 lg:-top-36 max-w-[100vw]"
+          className="absolute sm:top-20 scale-150 sm:scale-150 lg:scale-100 lg:-top-36 max-w-[100vw]"
           priority={true}
         />
-        <h2 className="text-[#000000] font-[600] sm:text-[36px] sm:py-2 lg:text-[56px] text-center z-10 sm:leading-[43.2px] lg:leading-[67.2px] text-[32px] leading-[24px] py-6 lg:py-4">
+        <h2 className="text-[#000000] font-[600] sm:text-[36px] lg:text-[56px] text-center z-10 sm:leading-[43.2px] lg:leading-[67.2px] text-[32px] leading-[38px] sm:pb-[45px] lg:pb-[41px] pb-[23px]">
           Redifining Your <br /> Stay & Dining{" "}
           <div className="text-[#00413E] inline relative">
             Experience{" "}
@@ -44,12 +44,12 @@ const Hero: React.FC = () => {
             />
           </div>
         </h2>
-        <p className="text-[#000000] sm:text-[16px] hero-text lg:text-[18px] lg:leading-[27px] sm:leading-[24px] text-center font-[500] max-w-[90vw] sm:max-w-[80vw]  z-10 lg:py-10 sm:py-10 text-[13px] leading-[19.5px]">
+        <p className="text-[#000000] sm:text-[16px] hero-text lg:text-[18px] lg:leading-[27px] sm:leading-[24px] text-center font-[500] max-w-[90vw] sm:max-w-[80vw] sm:pb-[30px]  z-10 lg:pb-[45px] pb-[31px] text-[13px] leading-[19.5px]">
           At Quiro, we&apos;re revolutionising the industry with a platform
           designed by HoReCa Community, for the community. Our all-in-one
           solution empowers your team to effortlessly manage everything
         </p>
-        <div className="flex flex-col gap-4 sm:flex-row pt-8 sm:pt-0 z-10">
+        <div className="flex flex-col gap-4 sm:flex-row sm:pt-0 z-10 lg:pb-[150px] sm:pb-[105px] pb-[112px]">
           <LineButton text="Get Started" />
           <ShadowButton text="Contact us" />
         </div>
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
 
 const Carousel = () => {
   return (
-    <Marquee className="lg:pb-20 sm:py-24 lg:py-0">
+    <Marquee className="lg:pb-[150px] sm:pb-[105px] lg:py-0 pb-[80px]">
       <Image
         src={CarouselImg1}
         alt="Carousel Imag 1"
@@ -139,12 +139,12 @@ const Carousel = () => {
 
 const Partners = () => {
   return (
-    <div>
-      <h5 className="text-[#000000] font-[600] text-[15px] sm:text-[20px] lg:text-[24px] lg:leading-[28.8px] sm:leading-[24px] leading-[18px] text-center lg:py-12 lg:pb-20 sm:pb-20 pt-20 pb-10 sm:pt-120">
+    <div >
+      <h5 className="text-[#000000] font-[600] text-[15px] sm:text-[20px] lg:text-[24px] lg:leading-[28.8px] sm:leading-[24px] leading-[18px] text-center lg:pb-[50px]  sm:pb-[65px] pb-[40px]">
         Discover our partners from around the world
       </h5>
       <Marquee
-        className="sm:max-w-[60vw] mx-auto pb-16 sm:pb-20 lg:pb-36"
+        className="sm:max-w-[60vw] mx-auto lg:pb-[150px] sm:pb-[128px] pb-[80px]"
         direction="right"
       >
         <Image

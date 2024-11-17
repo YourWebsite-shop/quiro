@@ -15,17 +15,17 @@ import LineButton from "../LineButton";
 import "./styles/perfectForBusiness.css";
 const PerfectForBusiness: React.FC = () => {
   return (
-    <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-10">
+    <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-10 lg:pb-[190px] sm:pb-[126px] pb-[107px]">
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
-          <p className="relative text-center font-[600] px-10 sm:px-0 text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px]">
-            <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[40px] lg:leading-[48px] sm:text-[24px] sm:leading-[28.8px] sm:px-0 lg:-left-8  sm:-left-8 left-8 -top-6">
+          <p className="relative text-center font-[600] px-10 sm:px-0 lg:pb-[16px] sm:pb-[0px] pb-[11px] text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px]">
+            <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[40px] lg:leading-[48px] sm:text-[24px] sm:leading-[28.8px] sm:px-0 lg:-left-12  sm:-left-10 left-8 lg:-top-9 sm:-top-7 -top-6">
               Empower
             </span>
             Perfect For Businesses Like Yours
           </p>
 
-          <p className="text-[13px] leading-[19.5px] font-[500] text-center sm:text-[14px] sm:leading-[21px] lg:text-[20px] lg:leading-[30px] py-6  custom-pfb">
+          <p className="text-[13px] leading-[19.5px] font-[500] text-center sm:text-[14px] sm:leading-[21px] lg:text-[20px] lg:leading-[30px] sm:pb-[50px] pb-[36px] custom-pfb">
             Built with inputs from the HoReCa community for everyone involved
           </p>
         </div>
@@ -45,7 +45,7 @@ const Box1: React.FC = () => {
         backgroundImage: `url(${perfectBox1BG.src})`,
         backgroundSize: "cover",
       }}
-      className="rounded-xl sm:flex flex-row-reverse items-center sm:py-12 lg:py-0 lg:max-h-[90vh] lg:my-14 lg:max-w-[95vw] custom-height"
+      className="rounded-xl sm:flex flex-row-reverse items-center sm:py-12 lg:py-0 lg:max-h-[90vh] lg:mb-[24px] mb-[21px] lg:max-w-[95vw] custom-height"
     >
       <div className="text-center sm:text-start  pt-8 sm:w-1/2 sm:px-8">
         <Image
@@ -83,7 +83,7 @@ const Box1: React.FC = () => {
 const Box2: React.FC = () => {
   return (
     <div
-      className="flex justify-center items-center my-10 lg:my-0 sm:w-[98vw] sm:py-10 lg:max-w-[95vw] custom-height saurabh-bug lg:max-h-[90vh]"
+      className="flex justify-center items-center sm:w-[98vw] lg:mb-[24px] mb-[21px] lg:max-w-[95vw] custom-height saurabh-bug lg:max-h-[90vh]"
       style={{
         backgroundImage: `url(${perfectBox2BG.src})`,
         backgroundRepeat: "no-repeat",
@@ -124,7 +124,7 @@ const Box2: React.FC = () => {
 const Box3: React.FC = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row md:flex-row sm:flex-row bg-cover bg-center rounded-2xl min-w-[90vw] min-h-[50vh] items-center justify-center p-4 py-10 sm:p-6 md:p-8 lg:p-10 lg:h-[90vh] lg:my-14 custom-height"
+      className="flex flex-col lg:flex-row md:flex-row sm:flex-row bg-cover bg-center rounded-2xl min-w-[90vw] min-h-[50vh] items-center justify-center p-4 py-10 sm:p-6 md:p-8 lg:p-10 lg:h-[90vh]  custom-height"
       style={{ backgroundImage: `url(${perfectBox3BG.src})` }}
     >
       {/* Text content section */}

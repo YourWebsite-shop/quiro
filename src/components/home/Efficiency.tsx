@@ -29,7 +29,7 @@ const Efficiency: React.FC = () => {
   ];
 
   return (
-    <div className="py-20 lg:px-24 sm:px-4 ">
+    <div className=" lg:px-24 sm:px-4 lg:pb-[185px] sm:pb-[126px] pb-[106px]">
       {/* Section Heading */}
       <SectionHeader
         title="We Are More Than Just Another Software Company"
@@ -42,7 +42,7 @@ const Efficiency: React.FC = () => {
       <EfficiencyCardList data={efficiencyData} />
 
       {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row lg:pl-10 lg:py-10 sm:py-4 gap-5 items-center">
+      <div className="flex flex-col sm:flex-row lg:pl-10 lg:pt-[61px] sm:pt-[30px] gap-[16px] items-center">
         <div>
           <LineButton text="Learn More" />
         </div>
@@ -59,10 +59,10 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
   title,
   description,
 }) => (
-  <div className="sm:flex lg:px-10 px-7  sm:py-12 lg:pb-24">
-    <div className="relative w-full text-[#000000] sm:w-[60%] text-[20px] leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[48px] font-[600] sm:leading-[28.8px] lg:leading-[57.6px] ">
+  <div className="sm:flex lg:px-10 px-7 lg:pb-[96px] sm:pb-[50px] ">
+    <div className="relative w-full text-[#000000] sm:w-[60%] text-[20px] leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[48px] font-[600] sm:leading-[28.8px] lg:leading-[57.6px] pb-[11px] sm:pb-[0px]">
       {title}
-      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-1 -top-6">
+      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-1 -top-7 sm:-top-8">
         Efficiency
       </span>
     </div>
@@ -76,7 +76,7 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
 const EfficiencyCardList: React.FC<{ data: EfficiencyCardProps[] }> = ({
   data,
 }) => (
-  <div className="sm:flex sm:gap-2 lg:gap-7 pb-6 px-6 sm:px-0">
+  <div className="sm:flex sm:gap-[10px] lg:gap-[20px] px-6 sm:px-0">
     {data.map((item, index) => (
       <EfficiencyCard key={index} {...item} />
     ))}
@@ -96,8 +96,7 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
   text,
 }) => (
   <div
-    className="sm:border-4 border-2 border-[#006B66] rounded-2xl w-fit mx-auto max-w-[491px] p-5 sm:p-3 lg:p-5 my-5 sm:my-0"
-    style={{ boxShadow: "0px 4px 14px 0px rgba(0, 107, 102, 0.25)" }}
+    className="sm:border-[1.5px] border-2 border-[#006B66] rounded-2xl w-fit mx-auto max-w-[491px] p-5 sm:p-3 lg:p-5 my-5 sm:my-0 lg:shadow-[0px_4px_14px_0px_rgba(0,107,102,0.25)]"
   >
     <Image
       src={img}

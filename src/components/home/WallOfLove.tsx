@@ -19,15 +19,15 @@ import rajesh from "@/assets/home/AbsoluteImages/Rajesh.png";
 import wolimgcus1desk from "@/assets/home/walloflove/wolimgcus1desk.png";
 const WallOfLove: React.FC = () => {
   return (
-    <div className="py-10">
-      <div className="text-center py-6">
-        <h5 className="text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] font-[600]  w-fit mx-auto relative">
+    <div className="lg:pb-[185px] sm:pb-[100px] pb-[33px]">
+      <div className="text-center pb-6">
+        <h5 className="text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] font-[600] w-fit mx-auto relative">
           <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-0 lg:-left-8 lg:-top-10 sm:-left-6 -left-4 -top-6">
             Cheers
           </span>
           Wall of Love
         </h5>
-        <p className="text-[13px] leading-[19.5px] py-2 lg:text-[20px] lg:leading-[30px] font-[500]">
+        <p className="text-[13px] leading-[19.5px] lg:pt-[16px] sm:pt-[0px] pt-[11px] lg:text-[20px] lg:leading-[30px] font-[500]">
           Less from us, more from our happy customers
         </p>
       </div>

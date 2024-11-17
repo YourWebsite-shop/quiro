@@ -15,15 +15,15 @@ import services from "../../assets/home/AbsoluteImages/services.png";
 
 const Control: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-20 gap-2 lg:px-44">
+    <div className="flex flex-col justify-center items-center gap-2 lg:pb-[185px] sm:pb-[118px] pb-[103px] lg:px-44">
       <div className="flex flex-col justify-center items-center px-10">
-        <h1 className=" font-[600] text-[20px]  text-center lg:text-[48px] sm:text-[24px] sm:leading-[28.8px] lg:leading-[57.6px] relative md:leading-[29px] mb-4">
-          <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-1 -top-6">
+        <h1 className=" font-[600] text-[20px]  text-center lg:text-[48px] sm:text-[24px] sm:leading-[28.8px] lg:leading-[57.6px] relative md:leading-[29px] lg:mb-[16px] sm:mb-[0px] mb-[11px]">
+          <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-3 -top-6 ">
             Services
           </span>
           A Product That Puts You in Control
         </h1>
-        <p className="font-[500] text-[13px]  text-center leading-[19.5px] pb-6 lg:text-[20px] lg:leading-[30px] lg:py-4 lg:pb-16">
+        <p className="font-[500] text-[13px]  text-center leading-[19.5px] lg:text-[20px] lg:leading-[30px] sm:pb-[50px] pb-[40px]">
           All-in-one software that helps you take charge of your operations
           and unlock more revenue
         </p>
