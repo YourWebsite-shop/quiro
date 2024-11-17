@@ -11,7 +11,6 @@ import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
-import empower from "../../assets/Empower.png";
 import profile1 from "../../assets/aboutus/Team/profile.1.png";
 import profile2 from "../../assets/aboutus/Team/profile2.png";
 import profile3 from "../../assets/aboutus/Team/profile3.png";
@@ -40,7 +39,7 @@ const teamMembers = [
 ];
 
 // Helper function to chunk the team members into groups of 4
-const chunkArray = (array, chunkSize) => {
+const chunkArray = (array: any, chunkSize: any) => {
   const chunks = [];
   for (let i = 0; i < array.length; i += chunkSize) {
     chunks.push(array.slice(i, i + chunkSize));
@@ -53,31 +52,29 @@ const chunkedTeamMembers = chunkArray(teamMembers, 4);
 
 const Team: React.FC = () => {
   return (
-    <div className="relative flex flex-col justify-center items-center pb-6">
-      <div className="flex flex-col justify-center items-start sm:items-center sm:justify-start">
-        <h1 className="relative text-left sm:text-center text-[20px] sm:text-[32px] lg:text-[48px] font-[600] leading-[21px] sm:leading-[38.4px] lg:leading-[57.6px] text-[#000000] pt-5 lg:pt-16">
-          <Image
-            src={empower}
-            alt="career"
-            className="absolute w-[61px] sm:w-[63px] lg:w-[113px] bottom-6 sm:bottom-9 lg:bottom-12 -left-6 lg:left-0"
-          />
+    <div className="relative flex flex-col justify-center items-center  sm:px-[52px] ">
+      <div className="pb-2 lg:pb-[100px] sm:self-start lg:self-center">
+        <p className="billyOhioText -translate-x-4 sm:-translate-x-0  font-[400] text-[24px] leading-[28.8px] sm:text-[26px] sm:leading-[31.2px] lg:text-[40px] lg:leading-[48px]  text-[#006B66]">
+          Empower
+        </p>
+        <h5 className="text-[20px] font-[600] leading-[24px] sm:text-[32px] lg:text-[48px] lg:leading-[57.6px] sm:leading-[38.4px]">
           Meet the Dream Team
-        </h1>
+        </h5>
       </div>
 
       {/* Carousel for md and larger screens */}
-      <div className="hidden md:block lg:hidden">
+      <div className="hidden sm:block lg:hidden">
         <Carousel className="w-full max-w-none">
           <CarouselContent>
             {chunkedTeamMembers.map((group, index) => (
               <CarouselItem key={index}>
                 <div className="grid grid-cols-2 gap-4">
-                  {group.map((member , idx) => (
+                  {group.map((member: any, idx: any) => (
                     <div key={idx} className="p-1">
                       <Card className="border-0 shadow-none">
                         <CardContent className="flex flex-col items-center justify-center bg-[#F5F3ED] p-6">
                           <div className="relative h-fit w-fit">
-                            <FaLinkedin className="absolute top-10 right-28 text-4xl bg-white text-[#000000] cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1 z-20" />
+                            <FaLinkedin className="absolute top-10 sm:top-0 sm:right-3 right-28 text-4xl bg-white text-[#000000] cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1 z-20" />
                             <Image
                               src={member.profileImage}
                               alt={`${member.name}'s Profile`}
@@ -113,7 +110,7 @@ const Team: React.FC = () => {
       </div>
 
       {/* Carousel for smaller screens */}
-      <div className="block md:hidden lg:hidden">
+      <div className="block sm:hidden lg:hidden">
         <Carousel className="w-full max-w-xs">
           <CarouselContent>
             {teamMembers.map((member, index) => (
@@ -127,7 +124,7 @@ const Team: React.FC = () => {
                         alt={`${member.name}'s Profile`}
                         className="w-[203px] h-[206px] "
                       />
-                      <p className="billyOhioText mt-2 text-[24px] font-[400] leading-[29px] text-[#006B66]">
+                      <p className="billyOhioText mt-[20px] text-[24px] font-[400] leading-[29px] text-[#006B66]">
                         {member.name}
                       </p>
                       <p className="mt-1 text-center text-[13px] font-[500] leading-[15.6px] text-[#333333]">
@@ -158,7 +155,7 @@ const Team: React.FC = () => {
         {teamMembers.map((member, index) => (
           <div key={index} className="p-6">
             <Card className="border-0 shadow-none">
-              <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6">
+              <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
                 {/* LinkedIn Icon positioned at the top-right corner */}
 
                 <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />

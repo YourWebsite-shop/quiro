@@ -78,10 +78,10 @@ const Footer: React.FC = () => {
 
         {/* Footer Bottom Section */}
         <div className="flex flex-col sm:text-right sm:jusitfy-end items-center  lg:items-end w-full text-center lg:text-right ">
-          <p className="text-sm sm:text-[12px]  lg:text-base text-[#00413ECC] sm:self-end">
+          <p className="text-[12px]  lg:text-base text-[#00413ECC] sm:self-end">
             © 2024 Witsome Tech Private Limited. All rights reserved.
           </p>
-          <ul className="flex mx-auto sm:mx-0 space-x-4 mt-2 self-end ">
+          <ul className="flex mx-auto sm:mx-0 space-x-4 mt-6 self-end ">
             <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC]">Refund Policy</li>
             <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC]">Terms & Condition</li>
             <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC]">Privacy Policy</li>
