@@ -4,7 +4,7 @@ import revolutionize from "../../assets/aboutus/AbsoluteImages/Revolutionize.png
 
 const Mission: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center  px-[23px] sm:pl-[49px] sm:pr-[54px] sm:pb-10 lg:pb-[80px] lg:px-20 mt-[80px] sm:mt-[100px] lg:mt-[150px]">
+    <div className="flex flex-col justify-center items-center  px-[23px] sm:pl-[49px] lg:px-[160px] sm:pr-[54px] sm:pb-10 lg:pb-[80px]  mt-[80px] sm:mt-[100px] lg:mt-[150px]">
       <div className="w-full ">
         <p className="billyOhioText text-[#006B66] text-[24px] sm:text-[26px] lg:text-[40px] text-center sm:text-start sm:-translate-x-0 -translate-x-14 translate-y-1">Revolutionize</p>
         <h1 className="relative text-[#000000] text-[20px] sm:text-[32px] lg:text-[80px] font-semibold leading-[24px] sm:leading-[38px] lg:leading-[96px] mb-[24px] flex items-center justify-center sm:justify-start">

@@ -72,10 +72,10 @@ const Approach: React.FC = () => {
   };
 
   return (
-    <div className="pb-[80px] sm:pb-[100px] lg:pb-[150px] pt-[60px] lg:p-[70px] lg:px-20">
+    <div className="pb-[80px] sm:pb-[100px] lg:pb-[150px] pt-[60px] ">
       <div className="text-center sm:text-start">
-        <h3 className="text-[20px] sm:text-[32px] pb-[32px] sm:pb-[54px] lg:text-[48px] sm:px-8 font-[600] relative">
-          <p className="text-[#006B66] billyOhioText text-[24px] sm:text-[26px] lg:text-[40px] pr-44 translate-y-2">
+        <h3 className="text-[20px] sm:text-[32px] pb-[32px] sm:pb-[54px] lg:text-[48px] sm:pl-[49px] font-[600] relative lg:px-[160px]">
+          <p className="text-[#006B66] billyOhioText text-[24px] sm:text-[26px] lg:text-[40px] pr-40 translate-y-2">
             From Vision to Reality
           </p>
           Our Approach
@@ -98,6 +98,7 @@ const Approach: React.FC = () => {
                 key={item.id}
                 value={item.id}
                 className="border-b border-black"
+                
               >
                 <AccordionTrigger>
                   <div className="flex justify-between w-full px-4 sm:px-12 ">
@@ -138,7 +139,7 @@ const Approach: React.FC = () => {
       {/* Mobile View above*/}
 
       {/* Desktop Accordion */}
-      <div className="px-0 hidden lg:flex border border-black justify-between lg:max-w-[90vw] xl:max-w-[1376px] mx-auto overflow-hidden">
+      <div className="px-0 hidden lg:mx-[160px] lg:flex border border-black justify-between lg:max-w-[90vw] xl:max-w-[1376px] mx-auto overflow-hidden">
         {approachData.map((item) => {
           const isOpen = openItemId === item.id;
           return (
