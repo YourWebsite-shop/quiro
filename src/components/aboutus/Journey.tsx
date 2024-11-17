@@ -26,7 +26,7 @@ const Journey: React.FC = () => {
           on our team. Join us and be part of a journey that shapes the future
           of hospitality.
         </p>
-        <div className="flex mb-8 sm:mb-14 scale-95">
+        <div className="flex mb-8 sm:mb-14 scale-95 lg:scale-100">
           <LineButton text="See open positions" />
         </div>
       </div>
