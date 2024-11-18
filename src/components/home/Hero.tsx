@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
   return (
     <>
       <div
-        className={`relative flex flex-col  custom-hero items-center lg:pt-[73px] sm:h-[50vh] lg:h-[75vh] `}
+        className={`relative flex flex-col  custom-hero items-center lg:pt-[73px] sm:h-[50vh] lg:h-[100vh] `}
       >
         <Image
           src={gradientBg}
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
             />
           </div>
         </h2>
-        <p className="text-[#000000] sm:text-[16px] hero-text lg:text-[18px] lg:leading-[27px] sm:leading-[24px] text-center font-[500] max-w-[90vw] sm:max-w-[80vw] sm:pb-[30px]  z-10 lg:pb-[45px] pb-[31px] text-[13px] leading-[19.5px]">
+        <p className="text-[#000000] sm:text-[16px] hero-text lg:text-[18px] lg:leading-[27px] sm:leading-[24px] text-center font-[500] max-w-[90vw] sm:px-[106px] sm:pb-[30px]  z-10 lg:pb-[45px] pb-[31px] text-[13px] leading-[19.5px]">
           At Quiro, we&apos;re revolutionising the industry with a platform
           designed by HoReCa Community, for the community. Our all-in-one
           solution empowers your team to effortlessly manage everything
@@ -139,12 +139,12 @@ const Carousel = () => {
 
 const Partners = () => {
   return (
-    <div >
-      <h5 className="text-[#000000] font-[600] text-[15px] sm:text-[20px] lg:text-[24px] lg:leading-[28.8px] sm:leading-[24px] leading-[18px] text-center lg:pb-[50px]  sm:pb-[65px] pb-[40px]">
+    <div className="">
+      <h5 className="text-[#000000] font-[600] text-[15px] sm:text-[20px] lg:text-[24px] lg:leading-[28.8px] sm:leading-[24px] leading-[18px] text-center lg:pb-[50px]  sm:pb-[65px] pb-[20px]">
         Discover our partners from around the world
       </h5>
       <Marquee
-        className="sm:max-w-[60vw] mx-auto lg:pb-[150px] sm:pb-[128px] pb-[80px]"
+        className="sm:max-w-[60vw] mx-auto lg:pb-[150px] sm:pb-[128px] pb-[60px]"
         direction="right"
       >
         <Image

@@ -152,31 +152,185 @@ const Team: React.FC = () => {
 
       {/* Grid for lg screens */}
       <div className="hidden lg:grid lg:grid-cols-3 lg:gap-4">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="p-6">
-            <Card className="border-0 shadow-none">
-              <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-                {/* LinkedIn Icon positioned at the top-right corner */}
+        <div className="p-6">
+          <Card className="border-0 shadow-none">
+            <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
+              <FaLinkedin className="absolute top-1 right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <Image
+                src={profile1}
+                alt="Yash Kumar's Profile"
+                width={1000}
+                className="w-[358px] h-[358px]"
+              />
+              <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
+                Yash Kumar
+              </p>
+              <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
+                Founder & CEO
+              </p>
+            </CardContent>
+          </Card>
+        </div>
 
-                <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+        <div className="p-6">
+          <Card className="border-0 shadow-none">
+            <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
+              <FaLinkedin className="absolute top-1 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <Image
+                src={profile2}
+                alt="Gurman Singh's Profile"
+                width={1000}
+                className="w-[358px] h-[358px]"
+              />
+              <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
+                Gurman Singh
+              </p>
+              <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
+                Founder's Office
+              </p>
+            </CardContent>
+          </Card>
+        </div>
 
-                <Image
-                  src={member.profileImage}
-                  alt={`${member.name}'s Profile`}
-                  width={1000}
-                  className="w-[358px] h-[358px] "
-                />
-                <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
-                  {member.name}
-                </p>
+        <div className="p-6">
+          <Card className="border-0 shadow-none">
+            <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
+              <FaLinkedin className="absolute top-1 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <Image
+                src={profile3}
+                alt="Shikhir Kalia's Profile"
+                width={1000}
+                className="w-[358px] h-[358px]"
+              />
+              <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
+                Shikhir Kalia
+              </p>
+              <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
+                Fractional CTO
+              </p>
+            </CardContent>
+          </Card>
+        </div>
 
-                <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                  {member.text}
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        ))}
+        <div className="p-6">
+          <Card className="border-0 shadow-none">
+            <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
+              <FaLinkedin className="absolute top-11 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <Image
+                src={profile4}
+                alt="Sumit Jain's Profile"
+                width={1000}
+                className="w-[358px] h-[358px]"
+              />
+              <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
+                Sumit Jain
+              </p>
+              <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
+                Partner
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="p-6">
+          <Card className="border-0 shadow-none">
+            <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
+              <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <Image
+                src={profile5}
+                alt="Guneet Singh's Profile"
+                width={1000}
+                className="w-[358px] h-[358px]"
+              />
+              <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
+                Guneet Singh
+              </p>
+              <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
+                Partner
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="p-6">
+          <Card className="border-0 shadow-none">
+            <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
+              <FaLinkedin className="absolute top-10 right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <Image
+                src={profile6}
+                alt="Aanchal Patel's Profile"
+                width={1000}
+                className="w-[358px] h-[358px]"
+              />
+              <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
+                Aanchal Patel
+              </p>
+              <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
+                Brand & Product Designer
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="p-6">
+          <Card className="border-0 shadow-none">
+            <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
+              <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <Image
+                src={profile7}
+                alt="Vikrant Vasu's Profile"
+                width={1000}
+                className="w-[358px] h-[358px]"
+              />
+              <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
+                Vikrant Vasu
+              </p>
+              <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
+                Operations Team
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="p-6">
+          <Card className="border-0 shadow-none">
+            <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
+              <FaLinkedin className="absolute top-10 right-20 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <Image
+                src={profile8}
+                alt="Shruti Chauhan's Profile"
+                width={1000}
+                className="w-[358px] h-[358px]"
+              />
+              <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
+                Shruti Chauhan
+              </p>
+              <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
+                Founder's Office
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="p-6">
+          <Card className="border-0 shadow-none">
+            <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
+              <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <Image
+                src={profile9}
+                alt="Raunak Arora's Profile"
+                width={1000}
+                className="w-[358px] h-[358px]"
+              />
+              <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
+                Raunak Arora
+              </p>
+              <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
+                Founder's Office
+              </p>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </div>
   );

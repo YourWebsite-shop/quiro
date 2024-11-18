@@ -108,7 +108,7 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
     <h5 className="text-[#000000] text-[16px] leading-[20.8px] font-[600] sm:text-[12px] sm:leading-[15.6px] sm:py-3 lg:text-[24px] text-center lg:leading-[31.2px] lg:py-6 py-4">
       {heading}
     </h5>
-    <p className="text-[#000000] text-center font-[400] text-[10px] leading-[15px] sm:text-[8px] sm:leading-[12px] lg:text-[16px] lg:leading-[24px] lg:pb-6 sm:pb-4">
+    <p className="text-[#000000] pb-[20px] text-center font-[400] text-[10px] leading-[15px] sm:text-[8px] sm:leading-[12px] lg:text-[16px] lg:leading-[24px] lg:pb-6 sm:pb-4">
       {text}
     </p>
   </div>
