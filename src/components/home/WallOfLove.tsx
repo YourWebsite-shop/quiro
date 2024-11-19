@@ -386,7 +386,7 @@ const WallOfLove: React.FC = () => {
             </div>
 
             {/*  */}
-            <div className="relative w-[322px] border-2  translate-y-[100px]">
+            <div className="relative w-[322px] border-2  translate-y-[80px] -translate-x-8">
               <Image
                 src={wolimgcus2desk}
                 width={1000}

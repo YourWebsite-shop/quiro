@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
   return (
     <>
       <div
-        className={`relative flex flex-col  custom-hero items-center lg:pt-[73px] sm:h-[50vh] lg:h-[100vh] `}
+        className={`relative flex flex-col  custom-hero items-center lg:pt-[73px] sm:h-[50vh] lg:h-[100vh] 3xl:h-[60vh]`}
       >
         <Image
           src={gradientBg}
@@ -128,6 +128,20 @@ const Carousel = () => {
       />
       <Image
         src={CarouselImg3}
+        alt="Carousel Imag 1"
+        height={184}
+        width={143}
+        className="mx-3"
+      />
+      <Image
+        src={CarouselImg4}
+        alt="Carousel Imag 1"
+        height={184}
+        width={143}
+        className="mx-3"
+      />
+      <Image
+        src={CarouselImg5}
         alt="Carousel Imag 1"
         height={184}
         width={143}
