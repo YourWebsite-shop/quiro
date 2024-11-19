@@ -328,7 +328,7 @@ const WallOfLove: React.FC = () => {
       {/* For desktop screens */}
 
       <div className="hidden lg:flex justify-between p-10 lg:pb-56 lg:w-[1572px] 3xl:mx-auto ">
-        <div className="w-[45%] flex flex-col gap-10 items-center">
+        <div className="w-[45%] flex flex-col items-center">
           <div className="flex items-center  gap-6 h-full">
             <div className="w-1/2 flex flex-col gap-[37px]">
               {/* first row first column */}
@@ -419,11 +419,11 @@ const WallOfLove: React.FC = () => {
 
             {/*  */}
           </div>
-          <div className="relative">
+          <div className="relative w-[749px]">
             <Image src={wolarr} alt="wolarr" width={1000} />
-            <div className="absolute top-5 left-1/2 -translate-x-1/2 w-full text-center">
+            <div className="absolute top-[31px] left-1/2 -translate-x-1/2 w-full text-center">
               <p className="font-semibold">&quot;I was very impressed&quot;</p>
-              <p className="text-[16px] p-4">
+              <p className="text-[16px] pt-[26px] pl-[33px] pr-[41px]">
                 &quot;Quiro made a big difference right from day one. And the
                 best thing is it is really easy for the staff to use it&quot;
               </p>
@@ -509,18 +509,26 @@ const WallOfLove: React.FC = () => {
             />
           </div>
 
-          <div className="flex items-center bg-white border-2 border-[#006B66] rounded-2xl p-4">
-            <div className="w-1/2 text-[12px] font-semibold">
-              &quot;We used to struggle with order tracking, but Quiro has made
-              it effortless. It’s a game-changer for us.&quot;
-            </div>
+          <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-2 border-[#006B66] rounded-2xl  h-[220px] relative">
             <div className="w-1/2">
-              <Image src={pradeep} alt="pradeep" width={1000} className="p-4" />
-              <div className="text-center">
-                <p>Pradeep</p>
-                <p className="text-[#006B66] font-[600]">Hotel Pride Inn</p>
+              <div className=" text-[12px] font-[500] leading-[18px]">
+                &quot;We used to struggle with order tracking, but Quiro has
+                made it effortless. It’s a game-changer for us.&quot;
+              </div>
+              <div className="text-start text-[20px] pt-8">
+                <p className="font-[400]leading-[30px]">Pradeep</p>
+                <p className="text-[#006B66] font-[600] leading-[30px]">Hotel Pride Inn</p>
               </div>
             </div>
+            <div className="w-fit pr-[37px]">
+              <Image
+                src={pradeep}
+                alt="pradeep"
+                width={1000}
+                className="w-[142px] h-[132px]"
+              />
+            </div>
+            <Image  src={apos2} alt="apos2" width={1000} className="w-[125px] aspect-square absolute bottom-0 right-0 translate-y-1/2" />
           </div>
         </div>
       </div>
