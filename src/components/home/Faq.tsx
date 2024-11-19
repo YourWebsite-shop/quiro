@@ -123,7 +123,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index && (
-                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-[14px] text-gray-600">
+                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-[14px] text-gray-600 lg:pl-8">
                     {faq.answer}
                   </p>
                 )}
@@ -166,7 +166,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index + faqData.length / 2 && (
-                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-[14px] text-gray-600">
+                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-[14px] text-gray-600 lg:pl-8">
                     {faq.answer}
                   </p>
                 )}
