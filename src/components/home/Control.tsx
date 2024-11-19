@@ -17,7 +17,7 @@ import control7 from "../../assets/home/control/control7.png";
 
 const Control: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-2 lg:pb-[185px] sm:pb-[118px] pb-[103px] lg:px-44">
+    <div className="flex flex-col justify-center items-center gap-2 lg:pb-[185px] sm:pb-[118px] pb-[103px] xl:px-22 2xl:px-44 ">
       <div className="flex flex-col justify-center items-center ">
         <h1 className=" font-[600] text-[20px] px-10  text-center lg:text-[48px] sm:text-[24px] sm:leading-[28.8px] lg:leading-[57.6px] relative md:leading-[29px] lg:mb-[16px] sm:mb-[0px] mb-[11px]">
           <span className="billyOhioText text-[#006B66] px-10 absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-3 -top-6 ">
@@ -94,10 +94,10 @@ const Control: React.FC = () => {
                     className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-[6px]"
                   />
                   <div className="relative z-10 pt-[6px] lg:pt-[10px]  pl-[4px] lg:pl-[10px] pr-[10px]">
-                    <p className="text-[8px]  lg:text-[13px] leading-[8px] font-[500] rounded-[6px] py-[2px] px-[6px] flex items-center gap-2 bg-[#F5F3ED] lg:py-[4px] lg:pr-[14px] justify-between lg:mb-[177px]">
+                    <div className="text-[8px]  lg:text-[13px] leading-[8px] font-[500] rounded-[6px] py-[2px] px-[6px] flex items-center gap-2 bg-[#F5F3ED] lg:py-[4px] lg:pr-[14px] justify-between lg:mb-[177px]">
                       Qr Based Ordering
                       <ChevronCircle variant="dark" />
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -174,10 +174,10 @@ const Control: React.FC = () => {
                   className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-[6px]"
                 />
                 <div className="relative z-10 pt-[6px] pl-[4px] pr-[10px]">
-                  <p className="text-[8px] leading-[8px] font-[500] rounded-[6px] py-[2px] flex items-center justify-between w-full max-w-[120px]  px-[6px] bg-[#F5F3ED]">
+                  <div className="text-[8px] leading-[8px] font-[500] rounded-[6px] py-[2px] flex items-center justify-between w-full max-w-[120px]  px-[6px] bg-[#F5F3ED]">
                     Qr Based Ordering
                     <ChevronCircle variant="dark" />
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>

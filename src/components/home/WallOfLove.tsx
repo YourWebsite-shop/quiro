@@ -22,6 +22,12 @@ import wolimgcus1desk from "@/assets/home/walloflove/wolimgcus1desk.png";
 import g1mob from "@/assets/home/walloflove/g1mob.png";
 import g2mob from "@/assets/home/walloflove/g2mob.png";
 import uttamzaika from "@/assets/home/walloflove/uttamzaika.png";
+
+// Tab imports
+import g1tab from "@/assets/home/walloflove/g1tab.png";
+import g2tab from "@/assets/home/walloflove/g2tab.png";
+import wolimg2tablelandscape from "@/assets/home/walloflove/wolimg2tablandscape.png";
+
 const WallOfLove: React.FC = () => {
   return (
     <div className="lg:pb-[185px] sm:pb-[100px] pb-[33px]">
@@ -39,7 +45,7 @@ const WallOfLove: React.FC = () => {
 
       {/* Mobile screen masonry */}
 
-      <div className="flex gap-[16px]  max-w-[330px] mx-auto lg:hidden">
+      <div className="flex gap-[16px]  max-w-[330px] sm:hidden mx-auto lg:hidden">
         {/* First column */}
         <div className="w-[55%] flex flex-col gap-[20px]">
           {/* Row 1 */}
@@ -96,7 +102,9 @@ const WallOfLove: React.FC = () => {
                 className="w-[70px] h-[70px] mx-auto"
               />
             </div>
-            <div className="pb-[6px]"><Image src={fstars} alt="stars" className="w-[83px] mx-auto" /></div>
+            <div className="pb-[6px]">
+              <Image src={fstars} alt="stars" className="w-[83px] mx-auto" />
+            </div>
             <div className="text-[10px] leading-[15px] font-[500] text-center pb-[6px]">
               "Switching to Quiro&apos;s supply management has been a relief.
               Inventory tracking is straightforward”
@@ -154,16 +162,164 @@ const WallOfLove: React.FC = () => {
           {/* Thirs row */}
           <div className="pt-[8px] px-[7px] bg-white rounded-[10px] border border-[#006B66] relative">
             <div className="h-[94px] overflow-hidden rounded-[6px]">
-            <Image src={wolimg2} alt="wolimg2"  />
+              <Image src={wolimg2} alt="wolimg2" />
             </div>
-            <p className="text-[6px] font-[500] text-center pt-[13px]">&quot;The team at Quiro just gets what their partners need. From setup to daily use, everything has been smooth and simple!&quot;</p>
-            <p className="billyOhioText text-[#006B66] text-[12px] text-center pb-[11px]">Rajesh</p>
-            <Image src={apos2} width={1000} alt="apos2" className="absolute w-[35px] bottom-1 right-1 translate-y-1/2" />
+            <p className="text-[6px] font-[500] text-center pt-[13px]">
+              &quot;The team at Quiro just gets what their partners need. From
+              setup to daily use, everything has been smooth and simple!&quot;
+            </p>
+            <p className="billyOhioText text-[#006B66] text-[12px] text-center pb-[11px]">
+              Rajesh
+            </p>
+            <Image
+              src={apos2}
+              width={1000}
+              alt="apos2"
+              className="absolute w-[35px] bottom-1 right-1 translate-y-1/2"
+            />
           </div>
         </div>
       </div>
 
       {/* Mobile Masonry Above */}
+
+      {/* Tab masonry below */}
+      <div className="sm:flex hidden lg:hidden max-w-[625px] mx-auto ">
+        {/* First coloumn */}
+        <div className="w-[57.6%] flex flex-col gap-[40px]">
+          {/* First row */}
+          <div className="relative mb-[20px] ">
+            <Image src={g1tab} alt="g1tab" className="absolute w-full z-0 " />
+
+            <div className="pt-28 relative z-10 pl-[24px] pr-[120px]">
+              <p className="text-[12px] leading-[18px] font-[500]">
+                "Quiro has transformed how we manage our hotel operations. The
+                QR-based ordering and request “
+              </p>
+              <p className="text-[15px] leading-[22.5px] font-[400] pt-[38px]">
+                Gaurav,{" "}
+                <span className="font-[600] text-[#006B66]">Hiker's House</span>
+              </p>
+            </div>
+          </div>
+
+          {/* Second row */}
+          <div className="border-2 bg-white border-[#006B66] rounded-[15px] pl-[30px] pt-[34px] pr-[35px] w-[319px]">
+            <p className="text-[14px] font-[500] leading-[21px]">
+              "Quiro has transformed how we manage our hotel operations. The
+              QR-based ordering and request systems are a game-changer, allowing
+              us to provide prompt service that our guests absolutely love!"
+            </p>
+            <div className="flex justify-between pb-[36px] pt-[40px]">
+              <div className="text-[16px] leading-[24px]">
+                <p className="font-[400]">Uttam</p>
+                <p className="font-[600] text-[#006B66]">Uttam Zaika</p>
+              </div>
+              <div>
+                <Image
+                  src={uttamzaika}
+                  alt="uttamzaika"
+                  width={1000}
+                  className="w-[70px] h-[70px]"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Third row */}
+          <div className="border-2 border-[#006B66] bg-white rounded-[15px] pt-[39px] w-[325px]">
+            <div>
+              <Image
+                src={wolimg1}
+                alt="wolimg1"
+                width={1000}
+                className="w-[130px] mx-auto h-[130px]"
+              />
+            </div>
+            <div>
+              <Image
+                src={fstars}
+                alt="fstars"
+                width={1000}
+                className="w-[205px] mx-auto pt-[19px] pb-[14px]"
+              />
+            </div>
+            <p className="text-[14px] font-[400] leading-[21px] text-center px-[15px]">
+              "It was difficult to manage guest requests earlier. Quiro took the
+              stress out of managing guest requests. It’s so quick and
+              easy—exactly what we needed!”
+            </p>
+            <p className="billyOhioText font-[400] text-[24px] text-center text-[#006B66] pt-[12px] pb-[18px]">
+              Kumar
+            </p>
+          </div>
+        </div>
+
+        {/* Second column */}
+
+        <div className="w-[42.4%] flex flex-col items-end pt-[20px]">
+          {/* first row */}
+          <div className="relative w-[236px]">
+            <Image
+              src={g2tab}
+              alt="g2tab"
+              width={1000}
+              className="w-[236px] absolute right-0"
+            />
+
+            <div className="relative z-10 pt-[150px] text-center ">
+              <p className="text-[12px] leading-[18px] font-[600]">
+                “I really appreciate”
+              </p>
+              <p className="pt-[21px] text-[12px] pl-[25px] pr-[32px] font-[500] pb-[10px]">
+                “The onboarding is seamless, they came, installed QRs & all, and
+                we were live before you know it!”{" "}
+              </p>
+              <p>
+                Nitin,{" "}
+                <span className="text-[#006B66] font-[600]">
+                  Hotel Lujo Grand
+                </span>
+              </p>
+            </div>
+          </div>
+
+          {/* Second row */}
+          <div className="border-2 border-[#006B66] bg-white rounded-[15px] px-[15px] mt-[37px]">
+            <div className="pt-[17px]">
+              <Image src={wolimg2} alt="wolimg2" className="h-[279px]" />
+            </div>
+            <p className="pt-[16px] font-[500] text-[12px] leading-[18px]">
+              "Quiro&apos;s menu management feature has simplified our dining
+              service.”
+            </p>
+            <p className="text-[20px] leading-[30px] font-[400] billyOhioText text-[#006B66] text-end pb-[10px]">
+              Mayank
+            </p>
+          </div>
+
+          {/* Third row */}
+          <div className="border relative border-[#006B66] rounded-[10px] px-[18px] pt-[17px] bg-white w-[236px] mt-[19px]">
+            <div>
+              <Image src={wolimg2tablelandscape} alt="wolimg2tablelandscape" />
+            </div>
+            <p className="text-[10px] leading-[15px] font-[500] text-center">
+              "The team at Quiro just gets what their partners need. From setup
+              to daily use, everything has been smooth and simple!”
+            </p>
+            <p className="billyOhioText text-[#006B66] text-center pb-[23px]">
+              Rajesh
+            </p>
+            <Image
+              src={apos2}
+              alt="apos2"
+              width={1000}
+              className="absolute w-[71px] bottom-0 right-2 translate-y-1/2"
+            />
+          </div>
+        </div>
+      </div>
+      {/* Tab masonry above */}
 
       <div className="text-center sm:text-[20px] text-[#006B66] font-semibold border-b border-[#006B66] lg:hidden my-8 w-fit mx-auto">
         View More
@@ -171,36 +327,56 @@ const WallOfLove: React.FC = () => {
 
       {/* For desktop screens */}
 
-      <div className="hidden lg:flex justify-between p-10 lg:pb-56">
+      <div className="hidden lg:flex justify-between p-10 lg:pb-56 lg:w-[1572px] 3xl:mx-auto ">
         <div className="w-[45%] flex flex-col gap-10 items-center">
           <div className="flex items-center  gap-6 h-full">
-            <div className="w-1/2 flex flex-col gap-20">
-              <Image
-                src={wolimgcus1desk}
-                width={1000}
-                alt="wolimgcus"
-                className="relative"
-              />
-              <div className="border-[3px] p-4 sm:mr-8 rounded-xl   border-[#006B66] bg-white  ">
-                <p className="text-[8px] sm:text-[16px] font-semibold">
+            <div className="w-1/2 flex flex-col gap-[37px]">
+              {/* first row first column */}
+              <div className="relative w-[394px]">
+                <Image
+                  src={wolimgcus1desk}
+                  width={1000}
+                  alt="wolimgcus"
+                  className="absolute top-0 -translate-y-16 "
+                />
+
+                <div className="relative z-10">
+                  <p className="text-[12px] leading-[18px] font-[500] pl-[27px] pt-[63px] pr-[124px]">
+                    "Quiro has transformed how we manage our hotel operations.
+                    The QR-based ordering and request systems are a
+                    game-changer, allowing us to provide prompt service that our
+                    guests absolutely love!"
+                  </p>
+                  <p className="text-[16px] pt-[7.52px] leading-[24px] font-[400] pl-[27px] pb-[12px]">
+                    Gaurav,{" "}
+                    <span className="font-[600] text-[#006B66]">
+                      Hiker’s House
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              {/* First col second row */}
+              <div className="border-[2px]  pt-[44px] pl-[42px] pr-[30px] sm:mr-8 rounded-[20px]   border-[#006B66] bg-white  ">
+                <p className="text-[12px] leading-[18px] font-[500] ">
                   &quot;Quiro has transformed how we manage our hotel
                   operations. The QR-based ordering and request systems are a
                   game-changer, allowing us to provide prompt service that our
                   guests absolutely love!&quot;
                 </p>
-                <div className="flex justify-between pt-10">
+                <div className="flex justify-between pt-[20px] pb-[38px]">
                   <div>
                     <h6 className="text-[10px] sm:text-[16px] font-[400]">
                       Uttam
                     </h6>
                     <p className="text-[10px] sm:text-[16px] font-[600] text-[#006B66]">
-                      utaam zaika
+                      uttam zaika
                     </p>
                   </div>
                   <div>
                     <Image
-                      src={wolimg1}
-                      width={40}
+                      src={uttamzaika}
+                      width={1000}
                       alt="wolimg1"
                       className="sm:w-[70px]"
                     />
@@ -209,12 +385,39 @@ const WallOfLove: React.FC = () => {
               </div>
             </div>
 
-            <Image
-              src={wolimgcus2desk}
-              width={1000}
-              alt="wolimgcus"
-              className=" w-1/2 lg:translate-y-[10%]"
-            />
+            {/*  */}
+            <div className="relative w-[322px] border-2  translate-y-[100px]">
+              <Image
+                src={wolimgcus2desk}
+                width={1000}
+                alt="wolimgcus"
+                className="absolute  -translate-y-[90px] z-0"
+              />
+              <div className="relative z-10 pt-[80px]">
+                <div>
+                  <Image
+                    src={fstars}
+                    alt="fstars"
+                    className="w-[189px] mx-auto"
+                  />
+                </div>
+                <p className="text-[20px] font-[600] leading-[30px] pl-[63px] pr-[50px]">
+                  “I really appreciate”
+                </p>
+                <p className="text-[12px] font-[500] leading-[18px] pl-[22px] pr-[29px] pt-[12px] text-center">
+                  “The onboarding is seamless, they came, installed QRs & all,
+                  and we were live before you know it!”{" "}
+                </p>
+                <p className="font-[400] text-[16px] leading-[24px] text-center pt-[20px]">
+                  Nitin,{" "}
+                  <span className="font-[600] text-[#006B66]">
+                    Hotel Lujo Grand
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            {/*  */}
           </div>
           <div className="relative">
             <Image src={wolarr} alt="wolarr" width={1000} />

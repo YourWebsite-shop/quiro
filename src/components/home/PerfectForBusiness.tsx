@@ -44,7 +44,7 @@ const Box1: React.FC = () => {
         backgroundImage: `url(${perfectBox1BG.src})`,
         backgroundSize: "100% 100%",
       }}
-      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px] lg:py-0 lg:mb-[24px] mb-[21px] lg:max-w-[95vw] custom-height sm:rounded-[10px] "
+      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px] lg:py-0 lg:mb-[24px] mb-[21px]  custom-height sm:rounded-[10px] "
     >
       <div className="text-center sm:text-start  pt-8 lg:pt-[286px] sm:w-1/2 sm:px-8 ">
        <p className="billyOhioText text-[#F3CCE7] pb-1 text-[24px] sm:pb-0 sm:text-[18px] lg:text-[32px] leading-[24px] lg:leading-[48px]">Why Choose Quiro ?</p>
