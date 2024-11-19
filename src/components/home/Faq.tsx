@@ -115,7 +115,7 @@ const Faq: React.FC = () => {
                         />
                       )}
                     </div>
-                    <h2 className="lg:text-[18px] font-[600] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words lg:mx-[24px] sm:mx-[8px] mx-[4px]">
+                    <h2 className="lg:text-[18px] font-[500] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words lg:mx-[24px] sm:mx-[8px] mx-[4px]">
                       {faq.question}
                     </h2>
                   </div>
@@ -158,7 +158,7 @@ const Faq: React.FC = () => {
                         />
                       )}
                     </div>
-                    <h2 className="lg:text-[18px] font-[600] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words lg:mx-[24px] sm:mx-[8px] mx-[4px]">
+                    <h2 className="lg:text-[18px] font-[500] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words lg:mx-[24px] sm:mx-[8px] mx-[4px]">
                       {faq.question}
                     </h2>
                   </div>

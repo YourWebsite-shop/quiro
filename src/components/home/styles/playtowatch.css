@@ -54,4 +54,9 @@
    .ptw-desc{
     width: 40vw;
    }
+
+   .custom-ptw-box {
+    min-height: 50vh !important;
+   }
 }
+
