@@ -63,7 +63,7 @@ const Header: React.FC = () => {
   return (
     <div className="flex items-center justify-between px-4 md:px-10 lg:pl-[142px] lg:pr-[160px] w-full top-0 bg-[#F5F3ED] py-4 z-50">
       <div>
-        <Image src={Logo} width={300} height={70} alt="logo" className="w-[100px] h-[70px] md:w-[150px] md:h-[100px]" />
+        <Link href={"/"}><Image src={Logo} width={300} height={70} alt="logo" className="w-[100px] h-[70px] md:w-[150px] md:h-[100px]" /></Link>
       </div>
 
       {/* Mobile Menu Button */}
