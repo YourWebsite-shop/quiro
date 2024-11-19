@@ -44,7 +44,7 @@ const Box1: React.FC = () => {
         backgroundImage: `url(${perfectBox1BG.src})`,
         backgroundSize: "100% 100%",
       }}
-      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px] lg:py-0 lg:mb-[24px] mb-[21px]  custom-height sm:rounded-[10px] "
+      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px] lg:py-0 lg:mb-[24px] mb-[21px]  custom-height sm:rounded-[10px] lg:rounded-[20px] "
     >
       <div className="text-center sm:text-start  pt-8 lg:pt-[286px] sm:w-1/2 sm:px-8 ">
        <p className="billyOhioText text-[#F3CCE7] pb-1 text-[24px] sm:pb-0 sm:text-[18px] lg:text-[32px] leading-[24px] lg:leading-[48px]">Why Choose Quiro ?</p>
@@ -86,7 +86,7 @@ const Box2: React.FC = () => {
 
   return (
     <div
-      className="flex justify-center items-center sm:w-[98vw] px-[54px] sm:pl-[118px] lg:pl-[405px] sm:pr-[132px] lg:pr-[399px] py-[75px] sm:py-[50px] lg:pt-[110px] lg:pb-[91px] lg:mb-[24px] mb-[21px] custom-height saurabh-bug  rounded-[20px] sm:rounded-[10px] lg:rounded-[20px]"
+      className="flex justify-center items-center sm:w-[98vw] lg:w-auto px-[54px] sm:pl-[118px] lg:pl-[405px] sm:pr-[132px] lg:pr-[399px] py-[75px] sm:py-[50px] lg:pt-[110px] lg:pb-[91px] lg:mb-[24px] mb-[21px] custom-height saurabh-bug  rounded-[20px] sm:rounded-[10px] lg:rounded-[20px]"
       style={{
         backgroundImage: `url(${isMobile ? perfectbox2bgmobile.src : perfectBox2BG.src})`,
         backgroundRepeat: "no-repeat",
@@ -94,7 +94,7 @@ const Box2: React.FC = () => {
       }}
     >
       {/* Flex container to center the child div */}
-      <div className="bg-[#F5F3ED] rounded-[10px] lg:rounded-[30px]">
+      <div className="bg-[#F5F3ED] rounded-[10px] lg:rounded-[20px]">
         <p className="billyOhioText text-[#F58121] text-[16px] sm:text-[18px] lg:text-[32px] pb-1 font-[400] leading-[19.2px] sm:[21.6px] lg:leading-[48px] text-center pt-[32px] sm:pt-[66px] lg:pt-[141px]">
           Master your Operation
         </p>
