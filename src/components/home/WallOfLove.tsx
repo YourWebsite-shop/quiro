@@ -1,14 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import wolimg1 from "@/assets/home/walloflove/wolimg1.png";
-import cheers from "@/assets/home/AbsoluteImages/Cheers.png";
 import wolimg2 from "@/assets/home/walloflove/wolimg2.png";
 import mayank from "@/assets/home/AbsoluteImages/Mayank.png";
 import apos2 from "@/assets/home/AbsoluteImages/apos2.png";
 import kamal from "@/assets/home/AbsoluteImages/Kamal.png";
-import wolimgcus from "@/assets/home/walloflove/wolimgcus.png";
 import wolimgcus2desk from "@/assets/home/walloflove/wolcus2desk.png";
-import wolimgcus2 from "@/assets/home/walloflove/wolimgcus2.png";
 import wolimgcus3desk from "@/assets/home/walloflove/wolcus3desk.png";
 import fstars from "@/assets/home/5star.png";
 import wolarr from "@/assets/home/walloflove/wolarr.png";
@@ -54,13 +51,13 @@ const WallOfLove: React.FC = () => {
 
             <div className="relative pt-[32px] pr-[50px] pl-[18px] z-10 ">
               <p className="text-[8px] font-[500] leading-[12px] pb-[16px] pt-[2px]">
-                "Quiro has transformed how we manage our hotel operations. The
-                QR-based ordering and request “
+                &apos;Quiro has transformed how we manage our hotel operations. The
+                QR-based ordering and request &quot;
               </p>
               <p className="text-[10px] font-[400] leading-[15px] pb-[12px]">
                 Gaurav,{" "}
                 <span className="text-[10px] text-[#006B66] font-[600]">
-                  Hiker&apos; House
+                  Hiker&apos;s House
                 </span>
               </p>
             </div>
@@ -69,9 +66,9 @@ const WallOfLove: React.FC = () => {
           {/* Row 2 */}
           <div className="border border-[#006B66] rounded-[10px] bg-white">
             <p className="text-[8px] leading-[12px] font-[500] pl-[18px] pr-[20px] pt-[18px] pb-[30px]">
-              "Quiro has transformed how we manage our hotel operations. The
+              &quot;Quiro has transformed how we manage our hotel operations. The
               QR-based ordering and request systems are a game-changer, allowing
-              us to provide prompt service that our guests absolutely love!"
+              us to provide prompt service that our guests absolutely love!&quot;
             </p>
             <div className="flex items-center gap-[36px] pl-[18px] pr-[18px] pb-[22px]">
               <div>
@@ -106,8 +103,8 @@ const WallOfLove: React.FC = () => {
               <Image src={fstars} alt="stars" className="w-[83px] mx-auto" />
             </div>
             <div className="text-[10px] leading-[15px] font-[500] text-center pb-[6px]">
-              "Switching to Quiro&apos;s supply management has been a relief.
-              Inventory tracking is straightforward”
+              &quot;Switching to Quiro&apos;s supply management has been a relief.
+              Inventory tracking is straightforward&quot;
             </div>
             <p className=" billyOhioText text-[14px] text-[#006B66] pb-[14px] text-center">
               Kumar
@@ -151,8 +148,8 @@ const WallOfLove: React.FC = () => {
               />
             </div>
             <p className="text-[6px] leading-[9px] font-[500] pt-[6px]">
-              "Quiro’s menu management feature has simplified our dining
-              service.”
+              &quot;Quiro&apos;s menu management feature has simplified our dining
+              service.&quot;
             </p>
             <p className="billyOhioText text-[10px] text-end pr-[12px] text-[#006B66] pb-[4px]">
               Mayank
@@ -165,8 +162,8 @@ const WallOfLove: React.FC = () => {
               <Image src={wolimg2} alt="wolimg2" />
             </div>
             <p className="text-[6px] font-[500] text-center pt-[13px]">
-              &quot;The team at Quiro just gets what their partners need. From
-              setup to daily use, everything has been smooth and simple!&quot;
+              &apos;The team at Quiro just gets what their partners need. From
+              setup to daily use, everything has been smooth and simple!&apos;
             </p>
             <p className="billyOhioText text-[#006B66] text-[12px] text-center pb-[11px]">
               Rajesh
@@ -193,12 +190,12 @@ const WallOfLove: React.FC = () => {
 
             <div className="pt-28 relative z-10 pl-[24px] pr-[120px]">
               <p className="text-[12px] leading-[18px] font-[500]">
-                "Quiro has transformed how we manage our hotel operations. The
-                QR-based ordering and request “
+                &apos;Quiro has transformed how we manage our hotel operations. The
+                QR-based ordering and request &apos;
               </p>
               <p className="text-[15px] leading-[22.5px] font-[400] pt-[38px]">
                 Gaurav,{" "}
-                <span className="font-[600] text-[#006B66]">Hiker's House</span>
+                <span className="font-[600] text-[#006B66]">Hiker&apos;s House</span>
               </p>
             </div>
           </div>
@@ -206,9 +203,9 @@ const WallOfLove: React.FC = () => {
           {/* Second row */}
           <div className="border-2 bg-white border-[#006B66] rounded-[15px] pl-[30px] pt-[34px] pr-[35px] w-[319px]">
             <p className="text-[14px] font-[500] leading-[21px]">
-              "Quiro has transformed how we manage our hotel operations. The
+              &apos;Quiro has transformed how we manage our hotel operations. The
               QR-based ordering and request systems are a game-changer, allowing
-              us to provide prompt service that our guests absolutely love!"
+              us to provide prompt service that our guests absolutely love!&apos;
             </p>
             <div className="flex justify-between pb-[36px] pt-[40px]">
               <div className="text-[16px] leading-[24px]">
@@ -245,8 +242,8 @@ const WallOfLove: React.FC = () => {
               />
             </div>
             <p className="text-[14px] font-[400] leading-[21px] text-center px-[15px]">
-              "It was difficult to manage guest requests earlier. Quiro took the
-              stress out of managing guest requests. It’s so quick and
+              &apos;It was difficult to manage guest requests earlier. Quiro took the
+              stress out of managing guest requests. It&apos;s so quick and
               easy—exactly what we needed!”
             </p>
             <p className="billyOhioText font-[400] text-[24px] text-center text-[#006B66] pt-[12px] pb-[18px]">
@@ -290,8 +287,8 @@ const WallOfLove: React.FC = () => {
               <Image src={wolimg2} alt="wolimg2" className="h-[279px]" />
             </div>
             <p className="pt-[16px] font-[500] text-[12px] leading-[18px]">
-              "Quiro&apos;s menu management feature has simplified our dining
-              service.”
+              &apos;Quiro&apos;s menu management feature has simplified our dining
+              service.&apos;
             </p>
             <p className="text-[20px] leading-[30px] font-[400] billyOhioText text-[#006B66] text-end pb-[10px]">
               Mayank
@@ -304,7 +301,7 @@ const WallOfLove: React.FC = () => {
               <Image src={wolimg2tablelandscape} alt="wolimg2tablelandscape" />
             </div>
             <p className="text-[10px] leading-[15px] font-[500] text-center">
-              "The team at Quiro just gets what their partners need. From setup
+              &apos;The team at Quiro just gets what their partners need. From setup
               to daily use, everything has been smooth and simple!”
             </p>
             <p className="billyOhioText text-[#006B66] text-center pb-[23px]">
@@ -342,15 +339,15 @@ const WallOfLove: React.FC = () => {
 
                 <div className="relative z-10">
                   <p className="text-[12px] leading-[18px] font-[500] pl-[27px] pt-[63px] pr-[124px]">
-                    "Quiro has transformed how we manage our hotel operations.
+                    &apos;Quiro has transformed how we manage our hotel operations.
                     The QR-based ordering and request systems are a
                     game-changer, allowing us to provide prompt service that our
-                    guests absolutely love!"
+                    guests absolutely love!&apos;
                   </p>
                   <p className="text-[16px] pt-[7.52px] leading-[24px] font-[400] pl-[27px] pb-[12px]">
                     Gaurav,{" "}
                     <span className="font-[600] text-[#006B66]">
-                      Hiker’s House
+                      Hiker&apos;s House
                     </span>
                   </p>
                 </div>
@@ -359,10 +356,10 @@ const WallOfLove: React.FC = () => {
               {/* First col second row */}
               <div className="border-[2px]  pt-[44px] pl-[42px] pr-[30px] sm:mr-8 rounded-[20px]   border-[#006B66] bg-white  ">
                 <p className="text-[12px] leading-[18px] font-[500] ">
-                  &quot;Quiro has transformed how we manage our hotel
+                  &apos;Quiro has transformed how we manage our hotel
                   operations. The QR-based ordering and request systems are a
                   game-changer, allowing us to provide prompt service that our
-                  guests absolutely love!&quot;
+                  guests absolutely love!&apos;
                 </p>
                 <div className="flex justify-between pt-[20px] pb-[38px]">
                   <div>
@@ -422,10 +419,10 @@ const WallOfLove: React.FC = () => {
           <div className="relative w-[749px]">
             <Image src={wolarr} alt="wolarr" width={1000} />
             <div className="absolute top-[31px] left-1/2 -translate-x-1/2 w-full text-center">
-              <p className="font-semibold">&quot;I was very impressed&quot;</p>
+              <p className="font-semibold">&apos;I was very impressed&apos;</p>
               <p className="text-[16px] pt-[26px] pl-[33px] pr-[41px]">
-                &quot;Quiro made a big difference right from day one. And the
-                best thing is it is really easy for the staff to use it&quot;
+                &apos;Quiro made a big difference right from day one. And the
+                best thing is it is really easy for the staff to use it&apos;
               </p>
             </div>
             <Image
@@ -447,8 +444,8 @@ const WallOfLove: React.FC = () => {
               className="w-full"
             />
             <p className="text-[6px] sm:text-[12px] font-semibold py-2 sm:py-4 w-full ">
-              &quot;Quiro&apos;s menu management feature has simplified our
-              dining service.&quot;
+              &apos;Quiro&apos;s menu management feature has simplified our
+              dining service.&apos;
             </p>
 
             <Image
@@ -471,9 +468,9 @@ const WallOfLove: React.FC = () => {
               />
             </p>
             <p className="text-[10px] font-semibold sm:text-[14px]  text-center">
-              &quot;It was difficult to manage guest requests earlier. Quiro
+              &apos;It was difficult to manage guest requests earlier. Quiro
               took the stress out of managing guest requests. It&apos;s so quick
-              and easy—exactly what we needed!&quot;
+              and easy—exactly what we needed!&apos;
             </p>
             <Image
               src={kamal}
@@ -497,8 +494,8 @@ const WallOfLove: React.FC = () => {
             </div>
             <div className="w-1/2">
               <p className="lg:text-[12px] font-semibold">
-                &quot;The team at Quiro just gets what their partners need. From
-                setup to daily use, everything has been smooth and simple!&quot;
+                &apos;The team at Quiro just gets what their partners need. From
+                setup to daily use, everything has been smooth and simple!&apos;
               </p>
             </div>
             <Image
@@ -512,8 +509,8 @@ const WallOfLove: React.FC = () => {
           <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-2 border-[#006B66] rounded-2xl  h-[220px] relative">
             <div className="w-1/2">
               <div className=" text-[12px] font-[500] leading-[18px]">
-                &quot;We used to struggle with order tracking, but Quiro has
-                made it effortless. It’s a game-changer for us.&quot;
+                &apos;We used to struggle with order tracking, but Quiro has
+                made it effortless. It’s a game-changer for us.&apos;
               </div>
               <div className="text-start text-[20px] pt-8">
                 <p className="font-[400]leading-[30px]">Pradeep</p>

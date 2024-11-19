@@ -8,7 +8,6 @@ import perfectBox1BG from "@/assets/perfectBox1BG.png";
 import perfectBox2BG from "@/assets/perfectBox2BG.png";
 import perfectbox2bgmobile from "@/assets/perfectbox2bgmobile.png";
 import perfectBox3BG from "@/assets/perfectBox3BG.png";
-import chooseQuiro from "@/assets/chooseQuiro.png";
 import ShadowButton from "../ShadowButton";
 import LineButton from "../LineButton";
 import "./styles/perfectForBusiness.css";

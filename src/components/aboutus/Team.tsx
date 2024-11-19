@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -39,7 +39,7 @@ const teamMembers = [
 ];
 
 // Helper function to chunk the team members into groups of 4
-const chunkArray = (array: any, chunkSize: any) => {
+const chunkArray = (array: Array<TeamMember>, chunkSize: number) => {
   const chunks = [];
   for (let i = 0; i < array.length; i += chunkSize) {
     chunks.push(array.slice(i, i + chunkSize));
@@ -49,6 +49,13 @@ const chunkArray = (array: any, chunkSize: any) => {
 
 // Chunk the team members into groups of 4 for the md screen carousel
 const chunkedTeamMembers = chunkArray(teamMembers, 4);
+
+// Add interface for team member type
+interface TeamMember {
+  profileImage: StaticImageData;
+  name: string;
+  text: string;
+}
 
 const Team: React.FC = () => {
   return (
@@ -69,7 +76,7 @@ const Team: React.FC = () => {
             {chunkedTeamMembers.map((group, index) => (
               <CarouselItem key={index}>
                 <div className="grid grid-cols-2 gap-4">
-                  {group.map((member: any, idx: any) => (
+                  {group.map((member: TeamMember, idx: number) => (
                     <div key={idx} className="p-1">
                       <Card className="border-0 shadow-none">
                         <CardContent className="flex flex-col items-center justify-center bg-[#F5F3ED] p-6">
@@ -158,7 +165,7 @@ const Team: React.FC = () => {
               <FaLinkedin className="absolute top-1 right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile1}
-                alt="Yash Kumar's Profile"
+                alt="Yash Kumar&apos;s Profile"
                 width={1000}
                 className="w-[358px] h-[358px]"
               />
@@ -178,7 +185,7 @@ const Team: React.FC = () => {
               <FaLinkedin className="absolute top-1 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile2}
-                alt="Gurman Singh's Profile"
+                alt="Gurman Singh&apos;s Profile"
                 width={1000}
                 className="w-[358px] h-[358px]"
               />
@@ -186,7 +193,7 @@ const Team: React.FC = () => {
                 Gurman Singh
               </p>
               <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                Founder's Office
+                Founder&apos;s Office
               </p>
             </CardContent>
           </Card>
@@ -198,7 +205,7 @@ const Team: React.FC = () => {
               <FaLinkedin className="absolute top-1 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile3}
-                alt="Shikhir Kalia's Profile"
+                alt="Shikhir Kalia&apos;s Profile"
                 width={1000}
                 className="w-[358px] h-[358px]"
               />
@@ -218,7 +225,7 @@ const Team: React.FC = () => {
               <FaLinkedin className="absolute top-11 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile4}
-                alt="Sumit Jain's Profile"
+                alt="Sumit Jain&apos;s Profile"
                 width={1000}
                 className="w-[358px] h-[358px]"
               />
@@ -238,7 +245,7 @@ const Team: React.FC = () => {
               <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile5}
-                alt="Guneet Singh's Profile"
+                alt="Guneet Singh&apos;s Profile"
                 width={1000}
                 className="w-[358px] h-[358px]"
               />
@@ -258,7 +265,7 @@ const Team: React.FC = () => {
               <FaLinkedin className="absolute top-10 right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile6}
-                alt="Aanchal Patel's Profile"
+                alt="Aanchal Patel&apos;s Profile"
                 width={1000}
                 className="w-[358px] h-[358px]"
               />
@@ -278,7 +285,7 @@ const Team: React.FC = () => {
               <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile7}
-                alt="Vikrant Vasu's Profile"
+                alt="Vikrant Vasu&apos;s Profile"
                 width={1000}
                 className="w-[358px] h-[358px]"
               />
@@ -298,7 +305,7 @@ const Team: React.FC = () => {
               <FaLinkedin className="absolute top-10 right-20 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile8}
-                alt="Shruti Chauhan's Profile"
+                alt="Shruti Chauhan&apos;s Profile"
                 width={1000}
                 className="w-[358px] h-[358px]"
               />
@@ -306,7 +313,7 @@ const Team: React.FC = () => {
                 Shruti Chauhan
               </p>
               <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                Founder's Office
+                Founder&apos;s Office
               </p>
             </CardContent>
           </Card>
@@ -318,7 +325,7 @@ const Team: React.FC = () => {
               <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile9}
-                alt="Raunak Arora's Profile"
+                alt="Raunak Arora&apos;s Profile"
                 width={1000}
                 className="w-[358px] h-[358px]"
               />
@@ -326,7 +333,7 @@ const Team: React.FC = () => {
                 Raunak Arora
               </p>
               <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                Founder's Office
+                Founder&apos;s Office
               </p>
             </CardContent>
           </Card>

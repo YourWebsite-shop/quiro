@@ -1,8 +1,7 @@
 import React from "react";
-import heroMobile from "../../assets/aboutus/heroMobile.png";
 import heroTablet from "../../assets/aboutus/heroTablet.png";
 import heroPC from "../../assets/aboutus/heroPC.png";
-import inspire from "../../assets/aboutus/AbsoluteImages/Inspire.png";
+
 import Image from "next/image";
 
 const Hero: React.FC = () => {

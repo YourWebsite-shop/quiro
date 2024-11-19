@@ -16,7 +16,7 @@ const Journey: React.FC = () => {
         <p className="text-[13px] font-[400] leading-[19.5px] text-[#000000] block sm:hidden text-center pt-[16px] pb-[24px] pl-[26px] pr-[36px]">
           At Quiro, we&apos;re transforming hospitality with impactful
           solutions. Join us to create meaningful change and shape the
-          industry's future.
+          industry&apos;s future.
         </p>
         <p className="text-[13px] lg:text-[18px] font-[500] leading-[19.5px] lg:leading-[27px] text-[#000000] hidden sm:block text-center lg:text-start py-8 sm:pt-[37px] sm:px-[44px] lg:px-0 lg:py-6 sm:text-start">
           At Quiro, we&apos;re not just building software – we&apos;re

@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import revolutionize from "../../assets/aboutus/AbsoluteImages/Revolutionize.png";
 
 const Mission: React.FC = () => {
   return (
