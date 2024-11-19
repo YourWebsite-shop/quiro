@@ -203,6 +203,20 @@ const Partners = () => {
           width={73}
           className="mx-10 w-[69px] sm:w-[73px]"
         />
+        <Image
+          src={partner1}
+          alt="Carousel Imag 1"
+          height={121}
+          width={73}
+          className="mx-10 w-[39px] sm:w-[73px]"
+        />
+        <Image
+          src={partner2}
+          alt="Carousel Imag 1"
+          height={121}
+          width={73}
+          className="mx-10 w-[69px] sm:w-[73px]"
+        />
       </Marquee>
     </div>
   );
