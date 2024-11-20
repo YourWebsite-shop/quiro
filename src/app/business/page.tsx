@@ -5,7 +5,8 @@ import Boosters from '@/components/business/Boosters'
 import Process from '@/components/business/Process'
 import OneStepSolution from '@/components/business/OneStepSolution'
 import Carousel from '@/components/business/Carousel'
-import GetStarted from '@/components/business/GetStarted'
+import GetStarted from '@/components/home/GetStarted'
+
 
 const page: React.FC  = () => {
   return (
