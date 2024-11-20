@@ -148,3 +148,34 @@ font-300{
   backface-visibility: hidden; /* Ensures the back side is hidden when rotated */
 }
 
+
+
+.custom-stroke{
+  -webkit-text-stroke: 1px #006B66;
+  color: transparent;
+
+}
+.custom-stroke2{
+  -webkit-text-stroke: 1px #006B66;
+  opacity: 0.8;
+  color: transparent;
+
+}
+.custom-stroke3{
+  -webkit-text-stroke: 1px #006B66;
+  opacity: 0.6;
+  color: transparent;
+
+}
+.custom-stroke4{
+  -webkit-text-stroke: 1px #006B66;
+  opacity: 0.4;
+  color: transparent;
+
+}
+.custom-stroke5{
+  -webkit-text-stroke: 1px #006B66;
+  opacity: 0.2;
+  color: transparent;
+
+}
