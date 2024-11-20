@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import icon1 from "@/assets/business/Innovating1.png";
@@ -12,17 +12,23 @@ const Innovating: React.FC = () => {
   const [flipped3, setFlipped3] = useState(false);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center sm:mr-[71px] sm:ml-[68.62px] mr-[51px] ml-[49px]">
       {/* Header Section */}
-      <div className="text-center mb-[20px]">
-        <span className="billyOhioText text-[#006b66] text-[16px] font-[400] leading-[24px]">
-          Innovating
-        </span>
-        <h1 className="text-[#000000] text-[20px] font-[600] leading-[24px]">
-          Building Technology for a Better Experience
-        </h1>
-        <p className="text-[#000000] text-[13px] font-[500] leading-[19.5px]">
+      <div className="text-center flex flex-col sm:flex-row justify-between mb-[20px] ">
+        <div className="text-center sm:text-start lg:mr-[197px] sm:mr-[40px]">
+          <p className="billyOhioText text-start text-[#006b66] text-[16px] font-[400] leading-[24px]  sm:text-[18px] sm:leading-[21.6px] lg:text-[28px] lg:leading-[42px] translate-x-4 ">
+            Innovating
+          </p>
+          <h1 className="text-[#000000] text-[20px] sm:text-[24px] font-[600] leading-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] ">
+            Building Technology for a Better Experience
+          </h1>
+        </div>
+        <p className="block sm:hidden text-[#000000] text-[13px] font-[500] leading-[19.5px] sm:text-[11px] sm:leading-[16.5px]">
           We craft solutions with you, for you.
+        </p>
+        <p className="hidden sm:block sm:text-start text-[#000000] text-[13px] font-[500] leading-[19.5px] sm:text-[11px] sm:leading-[16.5px] ">
+          We craft solutions with you, for you, and your community, addressing
+          every challenge across all areas.
         </p>
       </div>
 
@@ -39,7 +45,9 @@ const Innovating: React.FC = () => {
             }`}
           >
             {/* Front Side */}
-            <div className="absolute w-full h-full bg-[#F5812166] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden">
+            <div
+              className={`absolute w-full h-full bg-[#F5812166] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden`}
+            >
               <div className="rounded-full border-[0.81px] border-[#006B66] p-[4px]">
                 <div className="relative bg-[#F5F3ED] backdrop-blur-lg rounded-full flex items-center justify-center">
                   <Image
@@ -56,7 +64,11 @@ const Innovating: React.FC = () => {
             </div>
 
             {/* Back Side */}
-            <div className="absolute w-full h-full bg-[#F5812166] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden rotate-y-180">
+            <div
+              className={`absolute w-full h-full bg-[#F5812166] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden ${
+                flipped1 ? "block" : "hidden"
+              }`}
+            >
               <div className="rounded-full border-[0.81px] border-[#006B66] p-[4px]">
                 <div className="relative bg-[#F5F3ED] backdrop-blur-lg rounded-full flex items-center justify-center">
                   <Image
@@ -85,7 +97,9 @@ const Innovating: React.FC = () => {
             }`}
           >
             {/* Front Side */}
-            <div className="absolute w-full h-full bg-[#9E326D66] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden">
+            <div
+              className={`absolute w-full h-full bg-[#9E326D66] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden`}
+            >
               <div className="rounded-full border-[0.81px] border-[#006B66] p-[4px]">
                 <div className="relative bg-[#F5F3ED] backdrop-blur-lg rounded-full flex items-center justify-center">
                   <Image
@@ -102,7 +116,11 @@ const Innovating: React.FC = () => {
             </div>
 
             {/* Back Side */}
-            <div className="absolute w-full h-full bg-[#9E326D66] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden rotate-y-180">
+            <div
+              className={`absolute w-full h-full bg-[#9E326D66] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden ${
+                flipped2 ? "block" : "hidden"
+              }`}
+            >
               <div className="rounded-full border-[0.81px] border-[#006B66] p-[4px]">
                 <div className="relative bg-[#F5F3ED] backdrop-blur-lg rounded-full flex items-center justify-center">
                   <Image
@@ -131,7 +149,9 @@ const Innovating: React.FC = () => {
             }`}
           >
             {/* Front Side */}
-            <div className="absolute w-full h-full bg-[#E5343E66] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden">
+            <div
+              className={`absolute w-full h-full bg-[#E5343E66] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden`}
+            >
               <div className="rounded-full border-[0.81px] border-[#006B66] p-[4px]">
                 <div className="relative bg-[#F5F3ED] backdrop-blur-lg rounded-full flex items-center justify-center">
                   <Image
@@ -148,7 +168,11 @@ const Innovating: React.FC = () => {
             </div>
 
             {/* Back Side */}
-            <div className="absolute w-full h-full bg-[#E5343E66] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden rotate-y-180">
+            <div
+              className={`absolute w-full h-full bg-[#E5343E66] rounded-[21.57px] flex flex-col items-center justify-center p-[20px] backface-hidden ${
+                flipped3 ? "block" : "hidden"
+              }`}
+            >
               <div className="rounded-full border-[0.81px] border-[#006B66] p-[4px]">
                 <div className="relative bg-[#F5F3ED] backdrop-blur-lg rounded-full flex items-center justify-center">
                   <Image

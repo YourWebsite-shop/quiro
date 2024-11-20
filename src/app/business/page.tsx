@@ -4,7 +4,7 @@ import Innovating from '@/components/business/Innovating'
 import Boosters from '@/components/business/Boosters'
 import Process from '@/components/business/Process'
 import OneStepSolution from '@/components/business/OneStepSolution'
-import Carousel from '@/components/business/Carousel'
+import Carousel from '@/components/business/TeamCarousel'
 import GetStarted from '@/components/home/GetStarted'
 
 
