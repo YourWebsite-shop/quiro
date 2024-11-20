@@ -5,7 +5,7 @@ import LineButton from "../LineButton";
 
 const Journey: React.FC = () => {
   return (
-    <div className="flex flex-col mb-20 sm:mb-[100px] lg:mb-[150px] lg:flex-row justify-between items-center border-2 border-[#006B66] rounded-[15px] lg:gap-20 lg:mx-20 mx-[20px] sm:mx-[40px] mt-[60px] sm:mt-[80px] lg:mt-[120px] pt-[44px]  lg:pl-[117px] h-full">
+    <div className="flex flex-col mb-20 sm:mb-[100px] lg:mb-[150px] lg:flex-row justify-between items-center border-2 border-[#006B66] rounded-[15px] lg:gap-20 lg:mx-[120px] mx-[20px] sm:mx-[40px] mt-[60px] sm:mt-[80px] lg:mt-[120px]  pt-[44px] lg:pt-0  lg:pl-[88px] h-full">
       <div className="flex flex-col justify-center items-center lg:items-start lg:w-1/2 lg:h-[500px]">
         <h1 className="relative  sm:pt-4 text-[20px] sm:text-[32px] lg:text-[40px] font-[600] leading-[26px] sm:leading-[38.4px] lg:leading-[48px] text-[#000000]">
           <p className="billyOhioText text-[#006B66] text-[24px] lg:text-[40px] font-[400] leading-[29px] lg:leading-[48px] sm:-translate-x-4 lg:translate-x-0 -mb-1 ">
