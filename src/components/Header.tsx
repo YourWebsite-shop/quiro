@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Logo from "@/assets/Logo.png";
 import {
@@ -58,11 +58,12 @@ const components: { title: string; href: string; description: string }[] = [
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <div className="flex items-center justify-between px-4 md:px-10 w-full top-0 bg-[#F5F3ED] py-4">
+    <div className="flex items-center justify-between px-4 md:px-10 lg:pl-[142px] lg:pr-[160px] w-full top-0 bg-[#F5F3ED] py-4 z-50">
       <div>
-        <Image src={Logo} width={300} height={70} alt="logo" className="w-[100px] h-[70px] md:w-[150px] md:h-[100px]" />
+        <Link href={"/"}><Image src={Logo} width={300} height={70} alt="logo" className="w-[100px] h-[70px] md:w-[150px] md:h-[100px]" /></Link>
       </div>
 
       {/* Mobile Menu Button */}
@@ -76,11 +77,11 @@ const Header: React.FC = () => {
       {/* Mobile Menu */}
       <div className={`fixed inset-0 bg-white z-20 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 xl:hidden`}>
         <div className="flex flex-col p-8 space-y-4">
-          <Link href="/docs" className="text-lg">About us</Link>
-          <Link href="/business" className="text-lg">For Businesses</Link>
-          <Link href="/resources" className="text-lg">Resources</Link>
-          <Link href="/customers" className="text-lg">For Customers</Link>
-          <Link href="/pricing" className="text-lg">Pricing</Link>
+          <Link href="/aboutus" className={`text-lg ${pathname === '/aboutus' ? 'text-[#00413E]' : ''}`}>About us</Link>
+          <Link href="/business" className={`text-lg ${pathname === '/business' ? 'text-[#00413E]' : ''}`}>For Businesses</Link>
+          <Link href="/resources" className={`text-lg ${pathname === '/resources' ? 'text-[#00413E]' : ''}`}>Resources</Link>
+          <Link href="/customers" className={`text-lg ${pathname === '/customers' ? 'text-[#00413E]' : ''}`}>For Customers</Link>
+          <Link href="/pricing" className={`text-lg ${pathname === '/pricing' ? 'text-[#00413E]' : ''}`}>Pricing</Link>
           <div className="pt-4">
             <LineButton text="Get Started" />
           </div>
@@ -91,8 +92,8 @@ const Header: React.FC = () => {
       <NavigationMenu className="bg-white rounded-full fixed translate-x-1/2 z-20 right-1/2 hidden xl:block">
         <NavigationMenuList className="border border-[#00413E] rounded-full p-2">
 
-          <NavigationMenuItem className="rounded-full text-white bg-[#00413E] hover:bg-white">
-            <Link href="/docs" legacyBehavior passHref>
+          <NavigationMenuItem className={`rounded-full ${pathname === '/aboutus' ? 'text-white bg-[#00413E]' : ''}`}>
+            <Link href="/aboutus" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 About us
               </NavigationMenuLink>
@@ -100,7 +101,7 @@ const Header: React.FC = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="rounded-full">
+            <NavigationMenuTrigger className={`rounded-full ${pathname === '/business' ? 'text-white bg-[#00413E]' : ''}`}>
               For Businesses
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -136,7 +137,7 @@ const Header: React.FC = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+            <NavigationMenuTrigger className={`rounded-full ${pathname === '/resources' ? 'text-white bg-[#00413E]' : ''}`}>Resources</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (
@@ -153,7 +154,7 @@ const Header: React.FC = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger>For Customers</NavigationMenuTrigger>
+            <NavigationMenuTrigger className={`rounded-full ${pathname === '/customers' ? 'text-white bg-[#00413E]' : ''}`}>For Customers</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (
@@ -170,8 +171,11 @@ const Header: React.FC = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link href="/docs" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <Link href="/pricing" legacyBehavior passHref>
+              <NavigationMenuLink className={cn(
+                navigationMenuTriggerStyle(),
+                pathname === '/pricing' ? 'text-white bg-[#00413E]' : ''
+              )}>
                 Pricing
               </NavigationMenuLink>
             </Link>
