@@ -1,6 +1,6 @@
 import React from "react";
 import heroTablet from "../../assets/aboutus/heroTablet.png";
-import heroPC from "../../assets/aboutus/heroPC.png";
+import heroPC from "../../assets/aboutus/HeroPC.png";
 
 import Image from "next/image";
 
