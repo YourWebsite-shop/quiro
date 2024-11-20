@@ -138,3 +138,13 @@ body::-webkit-scrollbar-thumb:hover {
 font-300{
   font-weight: 300 !important;
 }
+
+
+.perspective {
+  perspective: 1000px; /* Enables the 3D effect */
+}
+
+.backface-hidden {
+  backface-visibility: hidden; /* Ensures the back side is hidden when rotated */
+}
+
