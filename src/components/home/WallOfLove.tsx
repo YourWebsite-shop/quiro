@@ -429,21 +429,21 @@ const WallOfLove: React.FC = () => {
               src={imggroup}
               alt="imggroup"
               width={1000}
-              className="absolute top-full"
+              className="absolute top-full w-[452px] translate-x-1/3"
             />
           </div>
         </div>
 
-        <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4">
+        <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4 translate-y-14">
           {/*  */}
-          <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative">
+          <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative w-[322px] -translate-x-8">
             <Image
               src={wolimg2}
               width={1000}
               alt="wolimg2"
               className="w-full"
             />
-            <p className="text-[6px] sm:text-[12px] font-semibold py-2 sm:py-4 w-full ">
+            <p className="text-[12px] font-[500] leading-[18px] py-2 sm:py-4 w-full ">
               &apos;Quiro&apos;s menu management feature has simplified our
               dining service.&apos;
             </p>
@@ -457,7 +457,7 @@ const WallOfLove: React.FC = () => {
           </div>
 
           {/*  */}
-          <div className="border-[2px] p-4 sm:ml-8 rounded-xl   border-[#006B66] bg-white">
+          <div className="border-[2px] p-4 sm:ml-8 rounded-xl   border-[#006B66] bg-white w-[301px] -translate-x-2">
             <Image src={wolimg1} alt="wolimg1" width={70} className="mx-auto" />
             <p className=" text-center py-2">
               <Image
@@ -482,18 +482,33 @@ const WallOfLove: React.FC = () => {
         </div>
 
         <div className="w-[28%] p-1 flex flex-col items-center gap-6">
-          <Image
+
+
+         <div className="relative w-[458px] pb-1">
+         <Image
             src={wolcusimg3desk}
             width={1000}
             alt="wolimgcus"
-            className="relative "
+            className="absolute w-full top-0 left-0"
           />
-          <div className="border-2 border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 bg-white rounded-2xl">
+         <div className="relative z-10 pt-[160px]">
+          <div>
+            <Image src={fstars} alt="fstars" width={1000} className="w-[189px] mx-auto" />
+            <p className="font-[600] text-[20px] leading-[30px] text-center pb-[12px] ">Good Job !</p>
+            <p className="font-[500] text-[12px] leading-[18px] text-center px-[32px] pb-[14px]">"The QR-based request system keeps everything organized, and guest satisfaction has noticeably increased."</p>
+            
+          </div>
+         </div>
+         </div>
+
+
+
+          <div className="border-2 border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 mt-[36px] bg-white rounded-2xl w-[458px]">
             <div className="w-1/2">
-              <Image src={wolimgcus3desk} alt="wolimgcus3desk" />
+              <Image src={wolimgcus3desk} alt="wolimgcus3desk"  />
             </div>
             <div className="w-1/2">
-              <p className="lg:text-[12px] font-semibold">
+              <p className="lg:text-[12px] font-[500] leading-[18px]">
                 &apos;The team at Quiro just gets what their partners need. From
                 setup to daily use, everything has been smooth and simple!&apos;
               </p>
@@ -502,11 +517,11 @@ const WallOfLove: React.FC = () => {
               src={rajesh}
               alt="rajesh"
               width={1000}
-              className="absolute w-11 bottom-6 right-8"
+              className="absolute w-11 bottom-[22px] right-[15px]"
             />
           </div>
 
-          <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-2 border-[#006B66] rounded-2xl  h-[220px] relative">
+          <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-2 border-[#006B66] rounded-2xl  h-[220px] w-[458px] relative">
             <div className="w-1/2">
               <div className=" text-[12px] font-[500] leading-[18px]">
                 &apos;We used to struggle with order tracking, but Quiro has

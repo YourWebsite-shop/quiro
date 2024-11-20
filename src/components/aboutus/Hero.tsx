@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <div className="  overflow-hidden mx-[20px] sm:mx-[46px] flex items-center justify-center relative    bg-[#F5F3ED] lg:mx-[160px]">
+    <div className="  overflow-hidden mx-[20px] sm:mx-[46px] flex items-center justify-center relative    bg-[#F5F3ED] lg:mx-[120px] 3xl:mx-[160px]">
                     <Image
                       src={heroPC}
                       alt="heropc"
