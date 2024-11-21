@@ -8,7 +8,7 @@ import Boosters5 from "@/assets/business/Boosters5.png";
 
 const Boosters: React.FC = () => {
   return (
-    <div className="sm:mr-[69px] sm:ml-[72px] ml-[37px] mr-[30px]">
+    <div className="sm:mr-[69px] sm:ml-[72px] ml-[37px] mr-[30px] mt-[80px] sm:mt-[96px]">
       <div className="relative text-center">
         <p className="billyOhioText text-start text-[#006b66] text-[16px] font-[400] leading-[24px]  sm:text-[18px] sm:leading-[21.6px] lg:text-[40px] lg:leading-[48px] sm:translate-x-16 lg:translate-x-36 ">
           Boosters
@@ -26,9 +26,10 @@ const Boosters: React.FC = () => {
         </p>
       </div>
       <div className="flex flex-col w-full sm:gap-[8.59px] lg:gap-[20px] gap-[20px]">
+
         <div className="flex flex-col sm:flex-row items-stretch sm:gap-[8.59px] lg:gap-[20px] gap-[20px]">
           <div
-            className="bg-[#FFFFFF] p-[13px] pb-[13.85px] sm:p-[12.85px] sm:pb-[18.1px] lg:p-[30px] lg:pb-[49px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/2 flex flex-col flex-grow"
+            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[12.85px] sm:pb-[18.1px] lg:p-[30px] lg:pb-[49px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/2 flex flex-col flex-grow"
             style={{ boxShadow: "0px 4px 20px 0px #006B6640" }}
           >
             <Image
@@ -48,7 +49,7 @@ const Boosters: React.FC = () => {
             </p>
           </div>
           <div
-            className="bg-[#FFFFFF] p-[13px] pb-[13.85px] sm:p-[12.85px] sm:pb-[29.1px] lg:p-[30px] lg:pb-[73px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/2 flex flex-col flex-grow"
+            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[12.85px] sm:pb-[29.1px] lg:p-[30px] lg:pb-[73px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/2 flex flex-col flex-grow"
             style={{ boxShadow: "0px 4px 20px 0px #006B6640" }}
           >
             <Image
@@ -68,9 +69,12 @@ const Boosters: React.FC = () => {
             </p>
           </div>
         </div>
+
+
+
         <div className="flex flex-col sm:flex-row items-stretch sm:gap-[8.59px] lg:gap-[20px] gap-[20px]">
           <div
-            className="bg-[#FFFFFF] p-[13px] pb-[13.85px] sm:p-[11.13px] sm:pb-[42.94px] lg:p-[26px] lg:pb-[83px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
+            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[11.13px] sm:pb-[42.94px] lg:p-[26px] lg:pb-[83px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
             style={{ boxShadow: "0px 4px 20px 0px #006B6640" }}
           >
             <Image
@@ -90,7 +94,7 @@ const Boosters: React.FC = () => {
             </p>
           </div>
           <div
-            className="bg-[#FFFFFF] p-[13px] pb-[13.85px] sm:p-[11.13px] sm:pb-[31.94px] lg:p-[26px] lg:pb-[83px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
+            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[11.13px] sm:pb-[31.94px] lg:p-[26px] lg:pb-[83px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
             style={{ boxShadow: "0px 4px 20px 0px #006B6640" }}
           >
             <Image
@@ -110,7 +114,7 @@ const Boosters: React.FC = () => {
             </p>
           </div>
           <div
-            className="bg-[#FFFFFF] p-[13px] pb-[14.74px] sm:p-[11.13px] sm:pb-[31.94px] lg:p-[26px] lg:pb-[107px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
+            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[14.74px] sm:p-[11.13px] sm:pb-[31.94px] lg:p-[26px] lg:pb-[107px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
             style={{ boxShadow: "0px 4px 20px 0px #006B6640" }}
           >
             <Image
@@ -129,6 +133,10 @@ const Boosters: React.FC = () => {
             </p>
           </div>
         </div>
+
+
+
+
       </div>
     </div>
   );

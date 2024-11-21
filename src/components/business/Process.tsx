@@ -7,10 +7,10 @@ import LapStepper from "@/assets/business/LapStepper"
 
 const Process: React.FC = () => {
   return (
-    <div>
+    <div className="mt-[80px] sm:mt[95px]">
       <div className="pl-[41px] sm:pl-[77px]  pr-[10px] sm:pr-[70px] lg:px-[255px] text-center">
        <div className="sm:w-fit sm:mx-auto">
-       <p className="billyOhioText text-[16px] sm:text-start sm:text-[18px] lg:text-[28px] leading-[19.2px] sm:leading-[21.6px] font-[400] text-[#006B66]">
+       <p className="billyOhioText text-[16px] text-start sm:text-[18px] lg:text-[28px] leading-[19.2px] sm:leading-[21.6px] font-[400] text-[#006B66]">
           Process
         </p>
         <p className="font-[600] text-[20px] sm:text-[24px] lg:text-[36px]   leading-[24px] sm:leading-[28.8px]">
@@ -32,7 +32,7 @@ const Process: React.FC = () => {
           <p className="text-[7px] sm:text-[7.2px] lg:text-[13px]  text-[#006B66] font-[700] translate-y-[110px] lg:translate-y-[210px]  pr-[12px]">
             Place orders, make requests, or view menus on their device
           </p>
-          <p className="text-[7px] lg:text-[13px] text-[#006B66] font-[700] translate-y-[305px] lg:translate-y-[540px]  pr-[16px]">
+          <p className="text-[7px] sm:text-[7.2px] lg:text-[13px] text-[#006B66] font-[700] translate-y-[300px] lg:translate-y-[540px]  pr-[16px]">
             All orders, payments and requests are tracked in the admin dashboard
             for easy management.
           </p>
@@ -44,10 +44,10 @@ const Process: React.FC = () => {
           <LapStepper />
         </div>
         <div className="w-[45%]">
-          <p className="text-[7px] lg:text-[13px] text-[#006B66] font-[700] pl-[21.8px]">
+          <p className="text-[7px] sm:text-[7.2px] lg:text-[13px] translate-y-1 text-[#006B66] font-[700] pl-[21.8px]">
             Guests scan the room&apos;s QR code.
           </p>
-          <p className="text-[7px] lg:text-[13px] text-[#006B66] font-[700] translate-y-[205px] lg:translate-y-[367px] pl-[21px]">
+          <p className="text-[7px] sm:text-[7.2px] lg:text-[13px] text-[#006B66] font-[700] translate-y-[205px] lg:translate-y-[367px] pl-[21px]">
             Hotel staff receive notifications in real-time and fulfil the
             requests.
           </p>

@@ -98,7 +98,6 @@ const Approach: React.FC = () => {
                 key={item.id}
                 value={item.id}
                 className="border-b border-black"
-                
               >
                 <AccordionTrigger>
                   <div className="flex justify-between w-full px-4 sm:px-12 ">
@@ -139,15 +138,15 @@ const Approach: React.FC = () => {
       {/* Mobile View above*/}
 
       {/* Desktop Accordion */}
-      <div className="px-0 hidden lg:mx-[160px] lg:flex border border-black justify-between lg:max-w-[90vw] xl:max-w-[1376px] mx-auto overflow-hidden">
+      <div className="px-0 hidden lg:mx-[160px] 3xl:mx-auto lg:flex border border-black  justify-between lg:max-w-[90vw] xl:max-w-[1376px] 3xl:max-w-[1600px] mx-auto overflow-hidden">
         {approachData.map((item) => {
           const isOpen = openItemId === item.id;
           return (
             <div
               key={item.id}
               onClick={() => handleToggle(item.id)}
-              className={`border relative border-black  h-[700px] bg-[#F5F3ED] ${
-                isOpen ? "w-2/3" : "w-[300px]"
+              className={`border relative border-black    h-[700px] bg-[#F5F3ED] ${
+                isOpen ? "w-2/3" : "w-[300px] 3xl:w-[320px]"
               }  p-8 cursor-pointer transition-all duration-700 ease-in-out`}
             >
               {/* Number */}
@@ -159,7 +158,7 @@ const Approach: React.FC = () => {
               <div
                 className={`-rotate-90 absolute left-6 top-1/2 -translate-x-1/2  text-[24px] font-[600] transition-all duration-300 ${
                   isOpen
-                    ? "w-full translate-y-[20px]"
+                    ? "w-full translate-y-[20px] 3xl:-translate-y-[25px]"
                     : "w-[500px] translate-y-[50px]"
                 }`}
               >
