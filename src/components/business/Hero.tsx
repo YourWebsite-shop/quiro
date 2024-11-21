@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
             src={arrow}
             width={1000}
             alt="arrow"
-            className="absolute w-[64px] sm:w-[85px] sm:h-[65px] lg:w-[163px] h-[48px] lg:h-[113px] -right-5 top-4 3xl:top-[120px] 3xl:-right-[50px]"
+            className="absolute w-[64px] sm:w-[85px] sm:h-[65px] lg:w-[163px] h-[48px] lg:h-[113px] -right-5 top-4 lg:-right-12 3xl:top-[120px]  3xl:-right-[50px]"
           />
         </p>
         {/* Marquee slider */}

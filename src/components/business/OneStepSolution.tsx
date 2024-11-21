@@ -56,10 +56,10 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
   title,
   description,
 }) => (
-  <div className="sm:flex lg:px-10 px-7 lg:pb-[96px] sm:pb-[50px] ">
+  <div className="sm:flex 3xl:flex-col 3xl:justify-center 3xl:w-full  lg:px-10 px-7 lg:pb-[96px] sm:pb-[50px] ">
     <div className="relative w-full text-[#000000] sm:w-[60%] text-[20px] leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[48px] font-[600] sm:leading-[28.8px] lg:leading-[57.6px] pb-[11px] sm:pb-[0px]">
       {title}
-      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[16pxpx] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-1 -top-7 sm:-top-8">
+      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[16pxpx] leading-[28.8px] lg:text-[36px] 3xl:text-[40px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-1 -top-7 sm:-top-8">
         One Stop Solution
       </span>
     </div>
