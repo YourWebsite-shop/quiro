@@ -434,7 +434,7 @@ const WallOfLove: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4 translate-y-14">
+        <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4 translate-y-24">
           {/*  */}
           <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative w-[322px] -translate-x-8">
             <Image

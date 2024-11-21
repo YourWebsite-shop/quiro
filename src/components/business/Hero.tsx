@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
       img: hero5,
       description:
         "Quiro's daily settlement and menu management solutions streamline end-of-day reconciliations and make updating offerings effortless, ensuring accuracy and keeping guests informed",
-        color:"#E5343E",
+        color:"#F58121",
         textColor: "#F58121"
     },
   ];
@@ -68,13 +68,13 @@ const Hero: React.FC = () => {
   return (
     <div className="">
       <div className="w-full ">
-        <p className="font-[600] text-[20px] lg:text-[40px] leading-[24px] w-fit mx-auto mb-[35px] relative">
+        <p className="font-[600] text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[40px] leading-[24px] w-fit mx-auto mb-[35px] relative">
           Partnering for your <span className="text-[#006B66]">Growth</span>
           <Image
             src={arrow}
             width={1000}
             alt="arrow"
-            className="absolute w-[64px] lg:w-[163px] h-[48px] lg:h-[113px] -right-5 top-4"
+            className="absolute w-[64px] sm:w-[85px] sm:h-[65px] lg:w-[163px] h-[48px] lg:h-[113px] -right-5 top-4"
           />
         </p>
         {/* Marquee slider */}
@@ -115,7 +115,7 @@ const Card: React.FC<CardProps> = ({ isExpanded, onClick, img, color, textColor,
   return (
     <div
       onClick={onClick}
-      className="cursor-pointer w-[204px] lg:w-[333px] 3xl:w-[465px] transition-all duration-300 mx-[8.45px]"
+      className="cursor-pointer w-[204px] sm:w-[186px] lg:w-[333px] 3xl:w-[465px] transition-all duration-300 mx-[8.45px] sm:mx-[8px]"
     >
       <div
         className={`transition-transform duration-300 ${
