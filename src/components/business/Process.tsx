@@ -10,10 +10,10 @@ const Process: React.FC = () => {
     <div className="mt-[80px] sm:mt[95px]">
       <div className="pl-[41px] sm:pl-[77px]  pr-[10px] sm:pr-[70px] lg:px-[255px] text-center">
        <div className="sm:w-fit sm:mx-auto">
-       <p className="billyOhioText text-[16px] text-start sm:text-[18px] lg:text-[28px] leading-[19.2px] sm:leading-[21.6px] font-[400] text-[#006B66]">
+       <p className="billyOhioText text-[16px] lg:-translate-x-6 text-start sm:text-[18px] lg:text-[28px] leading-[19.2px] sm:leading-[21.6px] lg:leading-[33.3px] font-[400] text-[#006B66]">
           Process
         </p>
-        <p className="font-[600] text-[20px] sm:text-[24px] lg:text-[36px]   leading-[24px] sm:leading-[28.8px]">
+        <p className="font-[600] text-[20px] sm:text-[24px] lg:text-[36px]   leading-[24px] sm:leading-[28.8px] lg:leading-[43.2px]">
           Where Everything Feel Effortless
         </p>
        </div>

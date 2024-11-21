@@ -28,7 +28,7 @@ const Efficiency: React.FC = () => {
   ];
 
   return (
-    <div className=" lg:px-24 sm:px-4 lg:pb-[185px] sm:pb-[126px] pb-[106px] mt-[80px] sm:mt-[95px]">
+    <div className=" lg:px-24 sm:px-4 lg:pb-[185px] sm:pb-[126px] pb-[106px] mt-[80px] sm:mt-[95px] lg:mt-[110px]">
       {/* Section Heading */}
       <SectionHeader
         title="Beyond the Essentials: Quiro's Enhanced Offerings"

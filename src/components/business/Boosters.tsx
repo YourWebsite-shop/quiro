@@ -8,15 +8,15 @@ import Boosters5 from "@/assets/business/Boosters5.png";
 
 const Boosters: React.FC = () => {
   return (
-    <div className="sm:mr-[69px] sm:ml-[72px] ml-[37px] mr-[30px] mt-[80px] sm:mt-[96px]">
+    <div className="sm:mr-[69px] sm:ml-[72px] ml-[37px] mr-[30px] mt-[80px] sm:mt-[96px] lg:mx-[120px] 3xl:mx-[228px]">
       <div className="relative text-center">
         <p className="billyOhioText text-start text-[#006b66] text-[16px] font-[400] leading-[24px]  sm:text-[18px] sm:leading-[21.6px] lg:text-[40px] lg:leading-[48px] sm:translate-x-16 lg:translate-x-36 ">
           Boosters
         </p>
-        <h1 className="text-[#000000] text-[20px] sm:text-[24px] font-[600] leading-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px]  mb-[15.94px] sm:mb-[10px] lg:mb-[16px]">
+        <h1 className="text-[#000000] text-[20px] sm:text-[24px] font-[600] leading-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px]  mb-[15.94px] sm:mb-[10px] lg:mb-[16px] ">
           Powerful Features Built for Your Success
         </h1>
-        <p className="block sm:hidden text-[#000000] text-[13px] font-[500] leading-[19.5px] sm:text-[11px] sm:leading-[16.5px]   mb-[24px] sm:mb-[36px] lg:mb-[50px]">
+        <p className="block sm:hidden text-[#000000] text-[13px] font-[500] leading-[19.5px] sm:text-[11px] sm:leading-[16.5px]   mb-[24px] sm:mb-[36px] lg:mb-[70px] 3xl:mb-[50px]">
           Quiro brings together advanced hospitality tools and a simple,
           easy-to-use platform
         </p>

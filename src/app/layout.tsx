@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} ${billyOhio.variable} antialiased`}
+        className={`${poppins.className} ${billyOhio.variable} antialiased bg-[#F5F3ED]`}
       >
         <Header />
         {children}

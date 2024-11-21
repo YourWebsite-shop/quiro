@@ -68,17 +68,17 @@ const Hero: React.FC = () => {
   return (
     <div className="">
       <div className="w-full ">
-        <p className="font-[600] text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[40px] leading-[24px] w-fit mx-auto mb-[35px] relative">
+        <p className="font-[600] text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[40px] 3xl:text-[56px] leading-[24px] 3xl:leading-[67.2px] 3xl:mt-[92px] lg:mt-[110px] w-fit mx-auto mb-[35px] relative">
           Partnering for your <span className="text-[#006B66]">Growth</span>
           <Image
             src={arrow}
             width={1000}
             alt="arrow"
-            className="absolute w-[64px] sm:w-[85px] sm:h-[65px] lg:w-[163px] h-[48px] lg:h-[113px] -right-5 top-4"
+            className="absolute w-[64px] sm:w-[85px] sm:h-[65px] lg:w-[163px] h-[48px] lg:h-[113px] -right-5 top-4 3xl:top-[120px] 3xl:-right-[50px]"
           />
         </p>
         {/* Marquee slider */}
-        <div className="min-h-[327px] lg:min-h-[500px] -translate-y-2">
+        <div className="min-h-[327px] lg:min-h-[500px] -translate-y-2 lg:translate-y-2">
           <Marquee pauseOnClick={true} play={isPlay} className="min-h-[327px] lg:min-h-[500px] 3xl:min-h-[700px]">
             {sliderArray.map((item, index) => (
               <Card
@@ -127,12 +127,12 @@ const Card: React.FC<CardProps> = ({ isExpanded, onClick, img, color, textColor,
 
       {/* Info */}
       <div
-        className={`border-b-[0.87px] border-r-[0.87px] border-l-[0.87px] pt-10  -z-10 rounded-b-[21.86px] flex justify-center items-center transition-all duration-300 ${
-          isExpanded ? "h-auto opacity-100 -translate-y-6" : "h-0 opacity-0"
+        className={`border-b-[0.87px] border-r-[0.87px] 3xl:border-[2px] 3xl:border-t-0 border-l-[0.87px] pt-10  -z-10 rounded-b-[21.86px] flex justify-center items-center transition-all duration-300 ${
+          isExpanded ? "h-auto opacity-100 -translate-y-6 lg:-translate-y-10 3xl:-translate-y-12 lg:pt-[62px] 3xl:pt-20" : "h-0 opacity-0"
         }`}
         style={{ borderColor: color }}
       >
-        <p className="text-center px-[11.41px] text-[6.12px] lg:text-[10px] pb-[15.3px]" style={{ color: textColor || color }}>
+        <p className="text-center px-[11.41px] text-[6.12px] sm:leading-[9px] lg:leading-[15px] lg:text-[10px] 3xl:text-[14px] 3xl:leading-[21px] pb-[15.3px]" style={{ color: textColor || color }}>
           {description}
         </p>
       </div>
