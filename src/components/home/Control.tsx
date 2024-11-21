@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import control1 from "../../assets/home/control/control1.png";
 import control2 from "../../assets/home/control/control2.png";
 import control3 from "../../assets/home/control/control3.png";
 import control3mobile from "../../assets/home/control/control3mobile.png";

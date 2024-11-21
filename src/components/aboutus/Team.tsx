@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -39,7 +39,7 @@ const teamMembers = [
 ];
 
 // Helper function to chunk the team members into groups of 4
-const chunkArray = (array: any, chunkSize: any) => {
+const chunkArray = (array: Array<TeamMember>, chunkSize: number) => {
   const chunks = [];
   for (let i = 0; i < array.length; i += chunkSize) {
     chunks.push(array.slice(i, i + chunkSize));
@@ -50,9 +50,16 @@ const chunkArray = (array: any, chunkSize: any) => {
 // Chunk the team members into groups of 4 for the md screen carousel
 const chunkedTeamMembers = chunkArray(teamMembers, 4);
 
+// Add interface for team member type
+interface TeamMember {
+  profileImage: StaticImageData;
+  name: string;
+  text: string;
+}
+
 const Team: React.FC = () => {
   return (
-    <div className="relative flex flex-col justify-center items-center  sm:px-[52px] ">
+    <div className="relative flex flex-col justify-center items-center  sm:px-[52px] lg:px-[126px] 3xl:px-[160px]">
       <div className="pb-2 lg:pb-[100px] sm:self-start lg:self-center">
         <p className="billyOhioText -translate-x-4 sm:-translate-x-0  font-[400] text-[24px] leading-[28.8px] sm:text-[26px] sm:leading-[31.2px] lg:text-[40px] lg:leading-[48px]  text-[#006B66]">
           Empower
@@ -69,7 +76,7 @@ const Team: React.FC = () => {
             {chunkedTeamMembers.map((group, index) => (
               <CarouselItem key={index}>
                 <div className="grid grid-cols-2 gap-4">
-                  {group.map((member: any, idx: any) => (
+                  {group.map((member: TeamMember, idx: number) => (
                     <div key={idx} className="p-1">
                       <Card className="border-0 shadow-none">
                         <CardContent className="flex flex-col items-center justify-center bg-[#F5F3ED] p-6">
@@ -151,16 +158,18 @@ const Team: React.FC = () => {
       </div>
 
       {/* Grid for lg screens */}
-      <div className="hidden lg:grid lg:grid-cols-3 lg:gap-4">
-        <div className="p-6">
+      <div className="hidden lg:grid lg:grid-cols-3 lg:gap-x-[200px] 3xl:gap-x-[260px] lg:gap-y-[102px] 3xl:gap-y-[126px] 3xl:gap-y-0">
+
+
+        <div className="p-0">
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-1 right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <FaLinkedin className="absolute top-1 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile1}
-                alt="Yash Kumar's Profile"
+                alt="Yash Kumar&apos;s Profile"
                 width={1000}
-                className="w-[358px] h-[358px]"
+                className="3xl:w-[358px]  w-[238px] h-[235px]]]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Yash Kumar
@@ -172,35 +181,35 @@ const Team: React.FC = () => {
           </Card>
         </div>
 
-        <div className="p-6">
+        <div >
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-1 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <FaLinkedin className="absolute top-1 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile2}
-                alt="Gurman Singh's Profile"
+                alt="Gurman Singh&apos;s Profile"
                 width={1000}
-                className="w-[358px] h-[358px]"
+                className="3xl:w-[358px]  w-[238px] h-[235px]]]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Gurman Singh
               </p>
               <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                Founder's Office
+                Founder&apos;s Office
               </p>
             </CardContent>
           </Card>
         </div>
 
-        <div className="p-6">
+        <div >
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-1 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <FaLinkedin className="absolute top-1 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile3}
-                alt="Shikhir Kalia's Profile"
+                alt="Shikhir Kalia&apos;s Profile"
                 width={1000}
-                className="w-[358px] h-[358px]"
+                className="3xl:w-[358px]  w-[238px] h-[235px]]]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Shikhir Kalia
@@ -212,15 +221,15 @@ const Team: React.FC = () => {
           </Card>
         </div>
 
-        <div className="p-6">
+        <div >
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-11 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <FaLinkedin className="absolute top-5 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile4}
-                alt="Sumit Jain's Profile"
+                alt="Sumit Jain&apos;s Profile"
                 width={1000}
-                className="w-[358px] h-[358px]"
+                className="3xl:w-[358px]  w-[238px] h-[235px]]]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Sumit Jain
@@ -232,15 +241,15 @@ const Team: React.FC = () => {
           </Card>
         </div>
 
-        <div className="p-6">
+        <div >
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <FaLinkedin className="absolute top-5 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile5}
-                alt="Guneet Singh's Profile"
+                alt="Guneet Singh&apos;s Profile"
                 width={1000}
-                className="w-[358px] h-[358px]"
+                className="3xl:w-[358px]  w-[238px] h-[235px]]]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Guneet Singh
@@ -252,15 +261,15 @@ const Team: React.FC = () => {
           </Card>
         </div>
 
-        <div className="p-6">
+        <div >
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-10 right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <FaLinkedin className="absolute top-5 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile6}
-                alt="Aanchal Patel's Profile"
+                alt="Aanchal Patel&apos;s Profile"
                 width={1000}
-                className="w-[358px] h-[358px]"
+                className="3xl:w-[358px]  w-[238px] h-[235px]]]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Aanchal Patel
@@ -272,15 +281,15 @@ const Team: React.FC = () => {
           </Card>
         </div>
 
-        <div className="p-6">
+        <div >
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <FaLinkedin className="absolute top-5 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile7}
-                alt="Vikrant Vasu's Profile"
+                alt="Vikrant Vasu&apos;s Profile"
                 width={1000}
-                className="w-[358px] h-[358px]"
+                className="3xl:w-[358px]  w-[238px] h-[235px]]]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Vikrant Vasu
@@ -292,41 +301,41 @@ const Team: React.FC = () => {
           </Card>
         </div>
 
-        <div className="p-6">
+        <div >
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-10 right-20 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <FaLinkedin className="absolute top-5 right-10 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile8}
-                alt="Shruti Chauhan's Profile"
+                alt="Shruti Chauhan&apos;s Profile"
                 width={1000}
-                className="w-[358px] h-[358px]"
+                className="3xl:w-[358px]  w-[238px] h-[235px]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Shruti Chauhan
               </p>
               <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                Founder's Office
+                Founder&apos;s Office
               </p>
             </CardContent>
           </Card>
         </div>
 
-        <div className="p-6">
+        <div >
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-10 right-12 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <FaLinkedin className="absolute top-5 right-8 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
               <Image
                 src={profile9}
-                alt="Raunak Arora's Profile"
+                alt="Raunak Arora&apos;s Profile"
                 width={1000}
-                className="w-[358px] h-[358px]"
+                className="3xl:w-[358px]  w-[238px] h-[235px]]]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Raunak Arora
               </p>
               <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                Founder's Office
+                Founder&apos;s Office
               </p>
             </CardContent>
           </Card>

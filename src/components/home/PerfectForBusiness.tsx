@@ -8,13 +8,12 @@ import perfectBox1BG from "@/assets/perfectBox1BG.png";
 import perfectBox2BG from "@/assets/perfectBox2BG.png";
 import perfectbox2bgmobile from "@/assets/perfectbox2bgmobile.png";
 import perfectBox3BG from "@/assets/perfectBox3BG.png";
-import chooseQuiro from "@/assets/chooseQuiro.png";
 import ShadowButton from "../ShadowButton";
 import LineButton from "../LineButton";
 import "./styles/perfectForBusiness.css";
 const PerfectForBusiness: React.FC = () => {
   return (
-    <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-10 lg:pb-[190px] sm:pb-[126px] pb-[107px]">
+    <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-[160px] lg:px-0 lg:pb-[190px] sm:pb-[126px] pb-[107px]">
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
           <p className="relative text-center font-[600] px-10 sm:px-0 lg:pb-[16px] sm:pb-[0px] pb-[11px] text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px]">
@@ -44,7 +43,7 @@ const Box1: React.FC = () => {
         backgroundImage: `url(${perfectBox1BG.src})`,
         backgroundSize: "100% 100%",
       }}
-      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px] lg:py-0 lg:mb-[24px] mb-[21px]  custom-height sm:rounded-[10px] lg:rounded-[20px] "
+      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px]  lg:py-0 lg:mb-[24px] mb-[21px]  custom-height sm:rounded-[10px] lg:rounded-[20px] "
     >
       <div className="text-center sm:text-start  pt-8 lg:pt-[286px] sm:w-1/2 sm:px-8 ">
        <p className="billyOhioText text-[#F3CCE7] pb-1 text-[24px] sm:pb-0 sm:text-[18px] lg:text-[32px] leading-[24px] lg:leading-[48px]">Why Choose Quiro ?</p>
@@ -90,7 +89,7 @@ const Box2: React.FC = () => {
       style={{
         backgroundImage: `url(${isMobile ? perfectbox2bgmobile.src : perfectBox2BG.src})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "100% 100%",
+        backgroundSize: "cover",
       }}
     >
       {/* Flex container to center the child div */}
@@ -99,7 +98,7 @@ const Box2: React.FC = () => {
           Master your Operation
         </p>
         <h5 className="text-[16px] lg:text-[40px] font-[600] leading-[19.2px] lg:leading-[48px] text-center pl-[31px] sm:pl-[116px] lg:pl-[123px] pr-[30px] sm:pr-[116px] lg:pr-[112px]">
-          Less ‘just a second’More done in just a few seconds
+          Less ‘just a second’ <br />More done in just a few seconds
         </h5>
         <p className="text-[10px] sm:text-[11px] lg:text-[18px] font-[500] lg:font-[400] leading-[15px] sm:leading-[16.5px] lg:leading-[27px] text-center pt-[23px] sm:pt-[10px] pl-[11px] sm:pl-[55px] pr-[10px] sm:pr-[40px]">
           We&apos;re your partner in business growth. We help increase
@@ -118,7 +117,7 @@ const Box2: React.FC = () => {
 const Box3: React.FC = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row md:flex-row sm:flex-row bg-cover bg-center rounded-[20px] sm:rounded-[10px] min-w-[90vw] items-center justify-center pt-[28px] p-4 pb-[10px] sm:pt-[88px] lg:pt-[0px]   lg:p-10 lg:rounded-[20px] overflow-hidden"
+      className="flex flex-col lg:flex-row md:flex-row sm:flex-row bg-cover bg-center rounded-[20px]   sm:rounded-[10px] min-w-[90vw] items-center justify-center pt-[28px] p-4 pb-[10px] sm:pt-[88px] lg:pt-[0px]   lg:p-10 lg:rounded-[40px] overflow-hidden"
       style={{ backgroundImage: `url(${perfectBox3BG.src})` }}
     >
       {/* Text content section */}

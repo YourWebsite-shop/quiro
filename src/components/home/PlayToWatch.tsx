@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import magictextmobile from "@/assets/home/magictextmobile.png";
 import arrowmobile from "@/assets/home/arrowmobile.png";
-import magictext from "@/assets/watchTheMagic.png";
 import magicarraow from "@/assets/magicArrow.png";
 import magicarrowtab from "@/assets/home/magicarrtab.png";
 import "./styles/playtowatch.css";

@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <div className="flex flex-col items-start space-y-2">
-            <h1 className="font-semibold text-[16px] lg:text-xl text-[#00413E] sm:text-[10px] mb-3">Resources</h1>
+            <h1 className="font-semibold text-[16px]  text-[#00413E] sm:text-[10px] lg:text-[24px] mb-3">Resources</h1>
             <ul className="space-y-2">
               <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]">Documentation</li>
               <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]">Pricing</li>

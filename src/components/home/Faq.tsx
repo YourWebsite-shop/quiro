@@ -1,10 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import problem from "../../assets/problem.png";
 import accdown from "@/assets/home/accdown.png";
 import accup from "@/assets/home/accup.png";
-import help from "@/assets/home/AbsoluteImages/help.png";
 
 const Faq: React.FC = () => {
   const faqData = [
