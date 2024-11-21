@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Right Section with Background and Address */}
-      <div className="lg:w-1/2   w-full sm:flex flex-col items-start lg:items-end lg:pt-6">
+      <div className="lg:w-1/2 h-full   w-full sm:flex flex-col justify-between lg:items-end lg:pt-6">
         <div
           className="w-full bg-cover bg-center rounded-xl hidden sm:block p-6 lg:p-10 mb-8 "
           style={{ backgroundImage: `url(${footer.src})` }}
