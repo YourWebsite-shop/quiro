@@ -37,7 +37,7 @@ const TeamCarousel: React.FC = () => {
         “The onboarding is seamless, they came, installed QRs & all, and we were
         live before you know it!”
       </p>
-      <div className="relative w-full max-w-md">
+      <div className="relative w-full max-w-[265px] sm:max-w-[325px] lg:max-w-[610px]">
         {/* Carousel Content */}
         <div className="overflow-hidden relative">
           <div
@@ -66,13 +66,13 @@ const TeamCarousel: React.FC = () => {
                 {/* Navigation Buttons */}
                 <button
                   onClick={handlePrevious}
-                  className="absolute top-[30%] left-[5%] transform -translate-y-1/2 bg-[#F5F3ED] p-[7.36px] lg:p-[13.88px] rounded-full border-[0.24px] border-[#000000] shadow-[3px_3px_0_rgba(0,0,0,1)]"
+                  className="absolute top-[30%] left-[5%] lg:text-[30px] transform -translate-y-1/2 bg-[#F5F3ED] p-[7.36px] lg:p-[13.88px] rounded-full border-[0.24px] border-[#000000] shadow-[3px_3px_0_rgba(0,0,0,1)]"
                 >
                   <IoIosArrowRoundBack />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="absolute top-[30%] right-[5%] transform -translate-y-1/2 bg-[#F5F3ED] p-[7.36px] lg:p-[13.88px] rounded-full border-[0.24px] border-[#000000] shadow-[3px_3px_0_rgba(0,0,0,1)]"
+                  className="absolute top-[30%] right-[5%] lg:text-[30px] transform -translate-y-1/2 bg-[#F5F3ED] p-[7.36px] lg:p-[13.88px] rounded-full border-[0.24px] border-[#000000] shadow-[3px_3px_0_rgba(0,0,0,1)]"
                 >
                   <IoIosArrowRoundForward />
                 </button>
@@ -87,7 +87,7 @@ const TeamCarousel: React.FC = () => {
             <div
               key={index}
               onClick={() => handleDotClick(index)}
-              className={`w-3 h-3 mx-2 rounded-full cursor-pointer ${
+              className={`w-2 h-2 mx-2 rounded-full cursor-pointer ${
                 currentIndex === index ? "bg-[#000000]" : "bg-[#D9D9D9]"
               }`}
             ></div>
