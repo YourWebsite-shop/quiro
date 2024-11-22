@@ -13,7 +13,7 @@ import LineButton from "../LineButton";
 import "./styles/perfectForBusiness.css";
 const PerfectForBusiness: React.FC = () => {
   return (
-    <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-10 lg:pb-[190px] sm:pb-[126px] pb-[107px]">
+    <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-[223px] lg:px-0 lg:pb-[190px] sm:pb-[126px] pb-[107px]">
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
           <p className="relative text-center font-[600] px-10 sm:px-0 lg:pb-[16px] sm:pb-[0px] pb-[11px] text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px]">
@@ -43,30 +43,30 @@ const Box1: React.FC = () => {
         backgroundImage: `url(${perfectBox1BG.src})`,
         backgroundSize: "100% 100%",
       }}
-      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px] lg:py-0 lg:mb-[24px] mb-[21px]  custom-height sm:rounded-[10px] lg:rounded-[20px] "
+      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px]    lg:mb-[24px] mb-[21px]  sm:rounded-[10px] lg:rounded-[20px] "
     >
-      <div className="text-center sm:text-start  pt-8 lg:pt-[286px] sm:w-1/2 sm:px-8 ">
+      <div className="text-center sm:text-start  pt-8 sm:w-1/2 lg:w-[60%] sm:px-8 ">
        <p className="billyOhioText text-[#F3CCE7] pb-1 text-[24px] sm:pb-0 sm:text-[18px] lg:text-[32px] leading-[24px] lg:leading-[48px]">Why Choose Quiro ?</p>
-        <h5 className="text-[16px] text-[#F5F3ED]  font-[600] sm:text-[16px] lg:text-[40px] ">
+        <h5 className="text-[16px] text-[#F5F3ED]  font-[600] sm:text-[16px] lg:text-[24px] 3xl:text-[40px] ">
           Say Goodbye to Service Delays
         </h5>
-        <p className="text-[#F5F3ED] font-[500] text-center sm:text-start text-[10px] sm:text-[11px] lg:text-[16px] py-8 px-6 sm:px-0 sm:py-2">
+        <p className="text-[#F5F3ED] font-[500] text-center sm:text-start text-[10px] sm:text-[11px] lg:text-[16px] py-8 px-6 sm:px-0 sm:py-2 lg:pr-[49px]">
           & yes, to more revenue! We&apos;re redefining the future of guest
           experiences—from seamless check-ins to memorable stays. We tackle core
           issues like service delays, eliminate errors, and handle much more
         </p>
 
-        <div className="flex justify-center sm:block pb-10 sm:scale-90 sm:-translate-x-3 lg:translate-x-0 lg:scale-100 sm:py-4 lg:py-4 lg:pb-[284px]">
+        <div className="flex justify-center sm:block pb-10 sm:scale-90 sm:-translate-x-3 lg:translate-x-0 lg:scale-100 sm:py-4 lg:py-4 ">
           <ShadowButton text="Learn More" />
         </div>
       </div>
-      <div className="px-4 sm:w-1/2 sm:px-10  ">
+      <div className="px-4 sm:w-1/2 lg:w-[40%] sm:px-10 lg:pt-[40px] lg:flex lg:justify-center ">
         <Image src={perfectBox1sm} alt="img" className="sm:hidden" />
         <Image
           src={perfectBox1}
           alt="img"
           width={1000}
-          className="hidden sm:block lg:scale-[90%] "
+          className="hidden sm:block lg:max-w-[250px] 3xl:max-w-[555px] "
         />
       </div>
     </div>
@@ -85,28 +85,28 @@ const Box2: React.FC = () => {
 
   return (
     <div
-      className="flex justify-center items-center sm:w-[98vw] lg:w-auto px-[54px] sm:pl-[118px] lg:pl-[405px] sm:pr-[132px] lg:pr-[399px] py-[75px] sm:py-[50px] lg:pt-[110px] lg:pb-[91px] lg:mb-[24px] mb-[21px] custom-height saurabh-bug  rounded-[20px] sm:rounded-[10px] lg:rounded-[20px]"
+      className="flex justify-center items-center sm:w-[98vw] lg:w-auto px-[54px] sm:pl-[118px] 3xl:pl-[405px] sm:pr-[132px] lg:pl-[247px] lg:pr-[227px] 3xl:pr-[399px] py-[75px] sm:py-[50px]  lg:pt-[52px] lg:pb-[74px]  3xl:pt-[110px] 3xl:pb-[69px] lg:mb-[24px] mb-[21px] custom-height saurabh-bug  rounded-[20px] sm:rounded-[10px] lg:rounded-[20px]"
       style={{
         backgroundImage: `url(${isMobile ? perfectbox2bgmobile.src : perfectBox2BG.src})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "100% 100%",
+        backgroundSize: "cover",
       }}
     >
       {/* Flex container to center the child div */}
       <div className="bg-[#F5F3ED] rounded-[10px] lg:rounded-[20px]">
-        <p className="billyOhioText text-[#F58121] text-[16px] sm:text-[18px] lg:text-[32px] pb-1 font-[400] leading-[19.2px] sm:[21.6px] lg:leading-[48px] text-center pt-[32px] sm:pt-[66px] lg:pt-[141px]">
+        <p className="billyOhioText text-[#F58121] text-[16px] sm:text-[18px] lg:text-[24px] 3xl:text-[32px] pb-1 font-[400] leading-[19.2px] sm:leading-[21.6px] lg:leading-[36px] 3xl:leading-[48px] text-center pt-[32px] sm:pt-[66px]  lg:pt-[60px] 3xl:pt-[141px]">
           Master your Operation
         </p>
-        <h5 className="text-[16px] lg:text-[40px] font-[600] leading-[19.2px] lg:leading-[48px] text-center pl-[31px] sm:pl-[116px] lg:pl-[123px] pr-[30px] sm:pr-[116px] lg:pr-[112px]">
-          Less ‘just a second’More done in just a few seconds
+        <h5 className="text-[16px] lg:text-[24px] lg:leading-[28.8px] 3xl:text-[40px] font-[600] leading-[19.2px] 3xl:leading-[48px] text-center pl-[31px] sm:pl-[116px] lg:pl-[58px] 3xl:pl-[123px] pr-[30px] sm:pr-[116px] lg:pr-[79px] 3xl:pr-[112px]">
+          Less ‘just a second’ <br />More done in just a few seconds
         </h5>
-        <p className="text-[10px] sm:text-[11px] lg:text-[18px] font-[500] lg:font-[400] leading-[15px] sm:leading-[16.5px] lg:leading-[27px] text-center pt-[23px] sm:pt-[10px] pl-[11px] sm:pl-[55px] pr-[10px] sm:pr-[40px]">
+        <p className="text-[10px] sm:text-[11px]  lg:text-[14px] lg:leading-[21px] 3xl:text-[18px] font-[500] lg:font-[400] leading-[15px] sm:leading-[16.5px] 3xl:leading-[27px] text-center pt-[23px] sm:pt-[10px] pl-[11px] sm:pl-[55px] pr-[10px] sm:pr-[40px]">
           We&apos;re your partner in business growth. We help increase
           revisiting customers, and maximise brand visibility to boost revenue.
           Experience 40% faster turnaround times, 35% improved guest
           satisfaction, and double staff efficiency
         </p>
-        <div className="flex justify-center pt-[23px] sm:pt-[30px] pb-[44px] sm:pb-[58.3px] lg:pb-[161px] sm:scale-90">
+        <div className="flex justify-center pt-[23px] sm:pt-[30px] lg:pt-[20.66px] pb-[44px] sm:pb-[58.3px] lg:pb-[88px] 3xl:pb-[161px] sm:scale-90">
           <LineButton text="Start for free" />
         </div>
       </div>
@@ -117,36 +117,36 @@ const Box2: React.FC = () => {
 const Box3: React.FC = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row md:flex-row sm:flex-row bg-cover bg-center rounded-[20px] sm:rounded-[10px] min-w-[90vw] items-center justify-center pt-[28px] p-4 pb-[10px] sm:pt-[88px] lg:pt-[0px]   lg:p-10 lg:rounded-[20px] overflow-hidden"
+      className="flex flex-col lg:flex-row md:flex-row sm:flex-row bg-cover bg-center rounded-[20px]   sm:rounded-[10px] min-w-[90vw] items-center justify-center lg:justify-between pt-[28px] p-4 3xl:p-0 pb-[10px] sm:pt-[88px] lg:pt-[0px]  lg:rounded-[40px] overflow-hidden"
       style={{ backgroundImage: `url(${perfectBox3BG.src})` }}
     >
       {/* Text content section */}
 
-      <div className="text-start sm:w-1/2  lg:px-14 sm:pl-[46px] sm:pr-[68px] lg:py-[289px] ">
+      <div className="text-start sm:w-1/2  lg:pl-[129px] sm:pl-[46px] sm:pr-[68px] lg:pt-[126px] ">
         {/* Smaller logo/image section */}
         <div className="text-center sm:text-start">
-        <p className="billyOhioText text-[#F3CCE7] text-[20px] lg:text-[32px] lg:leading-[48px] font-[400]">A one stop solution for businesses</p>
+        <p className="billyOhioText text-[#F3CCE7] text-[20px] lg:text-[24px] 3xltext-[32px] lg:leading-[36px] 3xl:leading-[48px] font-[400]">A one stop solution for businesses</p>
         </div>
 
         {/* Text content with heading and paragraph */}
 
-        <h1 className="font-[600] lg:text-[40px] text-[16px] sm:text-[16px] lg:leading-[48px] md:leading-[20px] sm:leading-[24px] text-[#F5F3ED] lg:text-start md:text-start text-center sm:text-start sm:pl-0 pl-[32px] pr-[27px]">
+        <h1 className="font-[600] lg:text-[24px] 3xl:text-[40px] text-[16px] sm:text-[16px] lg:leading-[28px] 3xl:leading-[48px] md:leading-[20px] sm:leading-[24px] text-[#F5F3ED] lg:text-start md:text-start text-center sm:text-start sm:pl-0 pl-[32px] pr-[27px]">
           Join Our Growing Community of Partners
         </h1>
-        <p className="font-[500] sm:font-[400] lg:text-[16px] sm:text-[11px]  lg:leading-[24px] md:leading-[16px] sm:leading-[15px] text-[#F5F3ED] sm:text-start lg:text-start md:text-start lg:py-6 py-[23px] sm:py-2 text-center text-[10px] ">
+        <p className="font-[500] sm:font-[400] lg:text-[14px] 3xl:text-[16px] sm:text-[11px]  lg:leading-[21px] 3xl:leading-[24px] md:leading-[16px] sm:leading-[15px] text-[#F5F3ED] sm:text-start lg:text-start md:text-start lg:py-6 py-[23px] sm:py-2 text-center text-[10px] ">
           What sets us apart is our commitment to your growth. We believe in
           cultivating long-term relationships and helping you thrive in a
           competitive landscape. At Quiro, you&apos;re not just adopting a tool –
           you&apos;re gaining a dedicated ally who&apos;s invested in your success.
         </p>
-        <div className="flex justify-center w-full sm:justify-start sm:pt-[30px] lg:pt-[20px] sm:pb-[92px] lg:pb-[0px]">
+        <div className="flex justify-center w-full sm:justify-start sm:pt-[30px] lg:pt-[90px] 3xl:pt-[20px] sm:pb-[92px] lg:pb-[39px]">
           <ShadowButton text="Learn More" />
         </div>
       </div>
 
       {/* Image container with a defined width */}
-      <div className="w-full flex lg:w-[50%] sm:self-start md:w-[50%]  sm:w-[50%] sm:items-center sm:mx-auto px-6 sm:px-4 lg:px-10 lg:pt-[125px]">
-        <Image src={boxperfect3} width={1000} alt="box3" className="w-full" />
+      <div className="w-full  lg:w-[50%]  lg:flex lg:justify-center sm:self-start md:w-[50%]  sm:w-[50%] sm:items-center sm:mx-auto px-6 sm:px-4 lg:px-10 3xl:pr-[89px] lg:pt-[125px] 3xl:py-[125px] ">
+        <Image src={boxperfect3} width={1000} alt="box3" className="w-full lg:w-[360px] 3xl:w-[749px]" />
       </div>
     </div>
   );

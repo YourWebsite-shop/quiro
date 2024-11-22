@@ -12,6 +12,24 @@ body, html {
   width: 100vw !important;
 }
 
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #d7d7d7;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -119,4 +137,45 @@ body, html {
 
 font-300{
   font-weight: 300 !important;
+}
+
+
+.perspective {
+  perspective: 1000px; /* Enables the 3D effect */
+}
+
+.backface-hidden {
+  backface-visibility: hidden; /* Ensures the back side is hidden when rotated */
+}
+
+
+
+.custom-stroke{
+  -webkit-text-stroke: 1px #006B66;
+  color: transparent;
+
+}
+.custom-stroke2{
+  -webkit-text-stroke: 1px #006B66;
+  opacity: 0.8;
+  color: transparent;
+
+}
+.custom-stroke3{
+  -webkit-text-stroke: 1px #006B66;
+  opacity: 0.6;
+  color: transparent;
+
+}
+.custom-stroke4{
+  -webkit-text-stroke: 1px #006B66;
+  opacity: 0.4;
+  color: transparent;
+
+}
+.custom-stroke5{
+  -webkit-text-stroke: 1px #006B66;
+  opacity: 0.2;
+  color: transparent;
+
 }

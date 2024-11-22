@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
   return (
     <>
       <div
-        className={`relative flex flex-col  custom-hero items-center lg:pt-[73px] sm:h-[50vh] lg:h-[100vh] 3xl:h-[60vh]`}
+        className={`relative flex flex-col  custom-hero items-center lg:pt-[73px] sm:h-[50vh] lg:h-[85vh] 3xl:h-[60vh]`}
       >
         <Image
           src={gradientBg}
@@ -151,7 +151,7 @@ const Carousel = () => {
   );
 };
 
-const Partners = () => {
+export const Partners = () => {
   return (
     <div className="">
       <h5 className="text-[#000000] font-[600] text-[15px] sm:text-[20px] lg:text-[24px] lg:leading-[28.8px] sm:leading-[24px] leading-[18px] text-center lg:pb-[50px]  sm:pb-[65px] pb-[20px]">

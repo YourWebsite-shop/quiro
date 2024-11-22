@@ -324,12 +324,12 @@ const WallOfLove: React.FC = () => {
 
       {/* For desktop screens */}
 
-      <div className="hidden lg:flex justify-between p-10 lg:pb-56 lg:w-[1572px] 3xl:mx-auto ">
+      <div className="hidden lg:flex justify-between p-10 lg:pb-56 lg:mx-auto lg:w-[1253px] 3xl:w-[1572px] 3xl:mx-auto ">
         <div className="w-[45%] flex flex-col items-center">
           <div className="flex items-center  gap-6 h-full">
             <div className="w-1/2 flex flex-col gap-[37px]">
               {/* first row first column */}
-              <div className="relative w-[394px]">
+              <div className="relative lg:w-[316px]  3xl:w-[394px]">
                 <Image
                   src={wolimgcus1desk}
                   width={1000}
@@ -338,13 +338,13 @@ const WallOfLove: React.FC = () => {
                 />
 
                 <div className="relative z-10">
-                  <p className="text-[12px] leading-[18px] font-[500] pl-[27px] pt-[63px] pr-[124px]">
+                  <p className="lg:text-[10px] 3xl:text-[12px] lg:leading-[15px] 3xl:leading-[18px] font-[500] pl-[27px] lg:pt-[30px] 3xl:pt-[63px] lg:pr-[95px] 3xl:pr-[124px]">
                     &apos;Quiro has transformed how we manage our hotel operations.
                     The QR-based ordering and request systems are a
                     game-changer, allowing us to provide prompt service that our
                     guests absolutely love!&apos;
                   </p>
-                  <p className="text-[16px] pt-[7.52px] leading-[24px] font-[400] pl-[27px] pb-[12px]">
+                  <p className="3xl:text-[16px] lg:text-[12.76px] lg:pt-[10px] 3xl:pt-[7.52px] leading-[19px] l3xl:eading-[24px] font-[400] pl-[27px] pb-[12px]">
                     Gaurav,{" "}
                     <span className="font-[600] text-[#006B66]">
                       Hiker&apos;s House
@@ -354,19 +354,19 @@ const WallOfLove: React.FC = () => {
               </div>
 
               {/* First col second row */}
-              <div className="border-[2px]  pt-[44px] pl-[42px] pr-[30px] sm:mr-8 rounded-[20px]   border-[#006B66] bg-white  ">
+              <div className="border-[2px] lg:pt-[35.1px] 3xl:pt-[44px] lg:pl-[33.5px] 3xl:pl-[42px] lg:pr-[29.93px] 3xl:pr-[30px] sm:mr-8 rounded-[20px]   border-[#006B66] bg-white  ">
                 <p className="text-[12px] leading-[18px] font-[500] ">
                   &apos;Quiro has transformed how we manage our hotel
                   operations. The QR-based ordering and request systems are a
                   game-changer, allowing us to provide prompt service that our
                   guests absolutely love!&apos;
                 </p>
-                <div className="flex justify-between pt-[20px] pb-[38px]">
+                <div className="flex justify-between pt-[20px] lg:pb-[30.31px] 3xl:pb-[38px]">
                   <div>
-                    <h6 className="text-[10px] sm:text-[16px] font-[400]">
+                    <h6 className=" lg:text-[12.73px]   3xl:text-[16px] font-[400]">
                       Uttam
                     </h6>
-                    <p className="text-[10px] sm:text-[16px] font-[600] text-[#006B66]">
+                    <p className=" lg:text-[12.73px]  3xl:text-[16px] font-[600] text-[#006B66]">
                       uttam zaika
                     </p>
                   </div>
@@ -375,7 +375,7 @@ const WallOfLove: React.FC = () => {
                       src={uttamzaika}
                       width={1000}
                       alt="wolimg1"
-                      className="sm:w-[70px]"
+                      className="sm:w-[70px] lg:w-[51px]"
                     />
                   </div>
                 </div>
@@ -383,29 +383,29 @@ const WallOfLove: React.FC = () => {
             </div>
 
             {/*  */}
-            <div className="relative w-[322px] border-2  translate-y-[80px] -translate-x-8">
+            <div className="relative lg:w-[256px] 3xl:w-[322px] border-2  lg:translate-y-[90px] 3xl:translate-y-[80px] -translate-x-8">
               <Image
                 src={wolimgcus2desk}
                 width={1000}
                 alt="wolimgcus"
                 className="absolute  -translate-y-[90px] z-0"
               />
-              <div className="relative z-10 pt-[80px]">
+              <div className="relative z-10 lg:pt-[40px] 3xl:pt-[80px]">
                 <div>
                   <Image
                     src={fstars}
                     alt="fstars"
-                    className="w-[189px] mx-auto"
+                    className=" lg:w-[151px] 3xl:w-[189px] mx-auto"
                   />
                 </div>
-                <p className="text-[20px] font-[600] leading-[30px] pl-[63px] pr-[50px]">
+                <p className=" lg:text-[15.95px] 3xl:text-[20px] font-[600] leading-[30px] lg:pl-[50px] 3xl:pl-[63px] lg:pr-[3px] 3xl:pr-[50px]">
                   “I really appreciate”
                 </p>
-                <p className="text-[12px] font-[500] leading-[18px] pl-[22px] pr-[29px] pt-[12px] text-center">
+                <p className=" text-[10px] 3xl:text-[12px] font-[500] lg:leading-[15px] 3xl:leading-[18px] lg:pl-[17px] 3xl:pl-[22px] lg:pr-[23px] 3xl:pr-[29px] lg:pt-[9.57px] 3xl:pt-[12px] text-center">
                   “The onboarding is seamless, they came, installed QRs & all,
                   and we were live before you know it!”{" "}
                 </p>
-                <p className="font-[400] text-[16px] leading-[24px] text-center pt-[20px]">
+                <p className="font-[400] lg:text-[12px] 3xl:text-[16px] leading-[24px] text-center lg:pt-[15px] 3xl:pt-[20px]">
                   Nitin,{" "}
                   <span className="font-[600] text-[#006B66]">
                     Hotel Lujo Grand
@@ -416,11 +416,11 @@ const WallOfLove: React.FC = () => {
 
             {/*  */}
           </div>
-          <div className="relative w-[749px]">
+          <div className="relative lg:w-[580px] 3xl:w-[730px]">
             <Image src={wolarr} alt="wolarr" width={1000} />
-            <div className="absolute top-[31px] left-1/2 -translate-x-1/2 w-full text-center">
+            <div className="absolute lg:top-[21px] 3xl:top-[31px] left-1/2 -translate-x-1/2 w-full text-center">
               <p className="font-semibold">&apos;I was very impressed&apos;</p>
-              <p className="text-[16px] pt-[26px] pl-[33px] pr-[41px]">
+              <p className=" lg:text-[12.76px] 3xl:text-[16px] pt-[20px] 3xl:pt-[26px] pl-[33px] pr-[41px]">
                 &apos;Quiro made a big difference right from day one. And the
                 best thing is it is really easy for the staff to use it&apos;
               </p>
@@ -429,21 +429,21 @@ const WallOfLove: React.FC = () => {
               src={imggroup}
               alt="imggroup"
               width={1000}
-              className="absolute top-full"
+              className="absolute top-full lg:w-[386px] 3xl:w-[452px] 3xl:translate-x-1/3 lg:translate-x-1/4 "
             />
           </div>
         </div>
 
-        <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4">
+        <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4 translate-y-24">
           {/*  */}
-          <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative">
+          <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative lg:w-[257px] 3xl:w-[322px] -translate-x-4">
             <Image
               src={wolimg2}
               width={1000}
               alt="wolimg2"
               className="w-full"
             />
-            <p className="text-[6px] sm:text-[12px] font-semibold py-2 sm:py-4 w-full ">
+            <p className=" lg:text-[10px] 3xl:text-[12px] font-[500] lg:leading-[15px] 3xl:leading-[18px] py-2 sm:py-4 w-full ">
               &apos;Quiro&apos;s menu management feature has simplified our
               dining service.&apos;
             </p>
@@ -457,7 +457,7 @@ const WallOfLove: React.FC = () => {
           </div>
 
           {/*  */}
-          <div className="border-[2px] p-4 sm:ml-8 rounded-xl   border-[#006B66] bg-white">
+          <div className="border-[2px] p-4 sm:ml-8 rounded-xl   border-[#006B66] bg-white lg:w-[240px] 3xl:w-[301px] -translate-x-2">
             <Image src={wolimg1} alt="wolimg1" width={70} className="mx-auto" />
             <p className=" text-center py-2">
               <Image
@@ -467,7 +467,7 @@ const WallOfLove: React.FC = () => {
                 className="w-2/3 mx-auto"
               />
             </p>
-            <p className="text-[10px] font-semibold sm:text-[14px]  text-center">
+            <p className="lg:text-[10px] leading-[15px] font-semibold 3xl:text-[14px]  text-center">
               &apos;It was difficult to manage guest requests earlier. Quiro
               took the stress out of managing guest requests. It&apos;s so quick
               and easy—exactly what we needed!&apos;
@@ -482,18 +482,33 @@ const WallOfLove: React.FC = () => {
         </div>
 
         <div className="w-[28%] p-1 flex flex-col items-center gap-6">
-          <Image
+
+
+         <div className="relative lg:w-[365px] 3xl:w-[458px] pb-1">
+         <Image
             src={wolcusimg3desk}
             width={1000}
             alt="wolimgcus"
-            className="relative "
+            className="absolute w-full top-0 left-0"
           />
-          <div className="border-2 border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 bg-white rounded-2xl">
+         <div className="relative z-10 lg:pt-[125px] 3xl:pt-[160px]">
+          <div>
+            <Image src={fstars} alt="fstars" width={1000} className=" lg:w-[151px] 3xl:w-[189px] mx-auto" />
+            <p className="font-[600] lg:text-[15px] 3xl:text-[20px] leading-[30px] text-center pb-[12px] ">Good Job !</p>
+            <p className="font-[500] lg:text-[10px] 3xl:text-[12px] lg:leading-[15px] 3xl:leading-[18px] text-center px-[32px] pb-[14px]">&quot;The QR-based request system keeps everything organized, and guest satisfaction has noticeably increased.&quot;</p>
+            
+          </div>
+         </div>
+         </div>
+
+
+
+          <div className="border-2 border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 lg:mt-[24px]  3xl:mt-[36px] bg-white rounded-2xl lg:w-[365px] 3xl:w-[458px]">
             <div className="w-1/2">
-              <Image src={wolimgcus3desk} alt="wolimgcus3desk" />
+              <Image src={wolimgcus3desk} alt="wolimgcus3desk"  />
             </div>
             <div className="w-1/2">
-              <p className="lg:text-[12px] font-semibold">
+              <p className=" lg:text-[10px] 3xl:text-[12px] font-[500] lg:leading-[15px] 3xl:leading-[18px]">
                 &apos;The team at Quiro just gets what their partners need. From
                 setup to daily use, everything has been smooth and simple!&apos;
               </p>
@@ -502,19 +517,19 @@ const WallOfLove: React.FC = () => {
               src={rajesh}
               alt="rajesh"
               width={1000}
-              className="absolute w-11 bottom-6 right-8"
+              className="absolute w-11 bottom-[22px] right-[15px]"
             />
           </div>
 
-          <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-2 border-[#006B66] rounded-2xl  h-[220px] relative">
+          <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-2 border-[#006B66] rounded-2xl  lg:h-[175px] 3xl:h-[220px] lg:w-[365px] 3xl:w-[458px] relative translate-x-4">
             <div className="w-1/2">
               <div className=" text-[12px] font-[500] leading-[18px]">
                 &apos;We used to struggle with order tracking, but Quiro has
                 made it effortless. It’s a game-changer for us.&apos;
               </div>
-              <div className="text-start text-[20px] pt-8">
-                <p className="font-[400]leading-[30px]">Pradeep</p>
-                <p className="text-[#006B66] font-[600] leading-[30px]">Hotel Pride Inn</p>
+              <div className="text-start lg:text-[15px] 3xl:text-[20px] lg:pt-4 3xl:pt-8">
+                <p className="font-[400] lg:leading-[15px] 3xl:leading-[30px]">Pradeep</p>
+                <p className="text-[#006B66] font-[600] lg:leading-[15px] 3xl:leading-[30px]">Hotel Pride Inn</p>
               </div>
             </div>
             <div className="w-fit pr-[37px]">
@@ -522,10 +537,10 @@ const WallOfLove: React.FC = () => {
                 src={pradeep}
                 alt="pradeep"
                 width={1000}
-                className="w-[142px] h-[132px]"
+                className="3xl:w-[142px] 3xl:h-[132px] lg:w-[111px] lg:h-[105px]"
               />
             </div>
-            <Image  src={apos2} alt="apos2" width={1000} className="w-[125px] aspect-square absolute bottom-0 right-0 translate-y-1/2" />
+            <Image  src={apos2} alt="apos2" width={1000} className=" lg:w-[100px] 3xl:w-[125px] aspect-square absolute bottom-0 right-0 translate-y-1/2" />
           </div>
         </div>
       </div>
