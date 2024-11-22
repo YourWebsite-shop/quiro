@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import icon1 from "@/assets/business/Innovating1.png";
 import icon2 from "@/assets/business/Innovating2.png";
-import icon3 from "@/assets/business/innovating3.png";
+import icon3 from "@/assets/business/Innovating3.png";
 import backIcon1 from "@/assets/business/backIcon1.png";
 import backIcon2 from "@/assets/business/backIcon2.png";
 import backIcon3 from "@/assets/business/backIcon3.png";

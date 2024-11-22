@@ -70,7 +70,7 @@ const Team: React.FC = () => {
       </div>
 
       {/* Carousel for md and larger screens */}
-      <div className="hidden  sm:block lg:hidden">
+      <div className="hidden sm:block lg:hidden">
         <Carousel className="w-full max-w-none">
           <CarouselContent>
             {chunkedTeamMembers.map((group, index) => (
