@@ -383,7 +383,7 @@ const WallOfLove: React.FC = () => {
             </div>
 
             {/*  */}
-            <div className="relative lg:w-[256px] 3xl:w-[322px] border-2  translate-y-[80px] -translate-x-8">
+            <div className="relative lg:w-[256px] 3xl:w-[322px] border-2  lg:translate-y-[90px] 3xl:translate-y-[80px] -translate-x-8">
               <Image
                 src={wolimgcus2desk}
                 width={1000}
@@ -416,7 +416,7 @@ const WallOfLove: React.FC = () => {
 
             {/*  */}
           </div>
-          <div className="relative lg:w-[597px] 3xl:w-[749px]">
+          <div className="relative lg:w-[580px] 3xl:w-[730px]">
             <Image src={wolarr} alt="wolarr" width={1000} />
             <div className="absolute lg:top-[21px] 3xl:top-[31px] left-1/2 -translate-x-1/2 w-full text-center">
               <p className="font-semibold">&apos;I was very impressed&apos;</p>
@@ -436,7 +436,7 @@ const WallOfLove: React.FC = () => {
 
         <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4 translate-y-24">
           {/*  */}
-          <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative lg:w-[257px] 3xl:w-[322px] -translate-x-8">
+          <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative lg:w-[257px] 3xl:w-[322px] -translate-x-4">
             <Image
               src={wolimg2}
               width={1000}
@@ -503,7 +503,7 @@ const WallOfLove: React.FC = () => {
 
 
 
-          <div className="border-2 border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 mt-[36px] bg-white rounded-2xl lg:w-[365px] 3xl:w-[458px]">
+          <div className="border-2 border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 lg:mt-[24px]  3xl:mt-[36px] bg-white rounded-2xl lg:w-[365px] 3xl:w-[458px]">
             <div className="w-1/2">
               <Image src={wolimgcus3desk} alt="wolimgcus3desk"  />
             </div>
@@ -521,7 +521,7 @@ const WallOfLove: React.FC = () => {
             />
           </div>
 
-          <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-2 border-[#006B66] rounded-2xl  lg:h-[175px] 3xl:h-[220px] lg:w-[365px] 3xl:w-[458px] relative">
+          <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-2 border-[#006B66] rounded-2xl  lg:h-[175px] 3xl:h-[220px] lg:w-[365px] 3xl:w-[458px] relative translate-x-4">
             <div className="w-1/2">
               <div className=" text-[12px] font-[500] leading-[18px]">
                 &apos;We used to struggle with order tracking, but Quiro has
