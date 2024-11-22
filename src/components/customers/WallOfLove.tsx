@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import pic1 from "@/assets/customers/wallOfLove1.png";
 import pic2 from "@/assets/customers/wallOfLove2.png";
-import pic3 from "@/assets/customers/wallOfLove3.png";
 import pic4 from "@/assets/customers/wallOfLove4.png";
 
 const WallOfLove: React.FC = () => {

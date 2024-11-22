@@ -13,7 +13,7 @@ const Offerings: React.FC = () => {
           Offerings
         </p>
         <h1 className="text-[#000000] text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[36px] font-[600] leading-tight pb-[14px] sm:pb-[10px]">
-          Let’s dive into what we bring to the table
+          Let&apos;s dive into what we bring to the table
         </h1>
         <p className="text-[13px] sm:text-[11px] sm:leading-[16.5px] lg:text-[18px] font-[500]">
           Food obviously, but much more!
@@ -99,12 +99,12 @@ const Offerings: React.FC = () => {
           </h1>
           <p className="text-[#000000] pb-[20px] font-[400] text-[10px] leading-[15px] sm:text-[8px] sm:leading-[12px] lg:text-[14px] lg:leading-[21px] mb-[40px] hidden sm:block lg:hidden">
             Simple and secure payments with multiple options – right from your
-            device. Whether it's card payments, UPI, or mobile wallets, guests
+            device. Whether it&apos;s card payments, UPI, or mobile wallets, guests
             can choose their preferred method with ease.
           </p>
           <p className="text-[#000000] pb-[20px] font-[500] text-[10px] leading-[15px] sm:text-[10px] sm:leading-[15px] lg:text-[14px] lg:leading-[21px] mb-[40px] block sm:hidden lg:block">
             Simple and secure payments with multiple options – right from your
-            device. Whether it's card payments, UPI, or mobile wallets, guests
+            device. Whether it&apos;s card payments, UPI, or mobile wallets, guests
             can choose their preferred method with ease. Our streamlined process
             ensures quick transactions, enhanced security, and a hassle-free
             payment experience for both guests and businesses.

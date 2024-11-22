@@ -495,7 +495,7 @@ const WallOfLove: React.FC = () => {
           <div>
             <Image src={fstars} alt="fstars" width={1000} className=" lg:w-[151px] 3xl:w-[189px] mx-auto" />
             <p className="font-[600] lg:text-[15px] 3xl:text-[20px] leading-[30px] text-center pb-[12px] ">Good Job !</p>
-            <p className="font-[500] lg:text-[10px] 3xl:text-[12px] lg:leading-[15px] 3xl:leading-[18px] text-center px-[32px] pb-[14px]">"The QR-based request system keeps everything organized, and guest satisfaction has noticeably increased."</p>
+            <p className="font-[500] lg:text-[10px] 3xl:text-[12px] lg:leading-[15px] 3xl:leading-[18px] text-center px-[32px] pb-[14px]">&quot;The QR-based request system keeps everything organized, and guest satisfaction has noticeably increased.&quot;</p>
             
           </div>
          </div>
