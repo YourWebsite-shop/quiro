@@ -13,7 +13,7 @@ import LineButton from "../LineButton";
 import "./styles/perfectForBusiness.css";
 const PerfectForBusiness: React.FC = () => {
   return (
-    <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-[160px] lg:px-0 lg:pb-[190px] sm:pb-[126px] pb-[107px]">
+    <div className="flex justify-center items-center px-20 sm:px-2 lg:mx-[223px] lg:px-0 lg:pb-[190px] sm:pb-[126px] pb-[107px]">
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
           <p className="relative text-center font-[600] px-10 sm:px-0 lg:pb-[16px] sm:pb-[0px] pb-[11px] text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px]">
@@ -43,7 +43,7 @@ const Box1: React.FC = () => {
         backgroundImage: `url(${perfectBox1BG.src})`,
         backgroundSize: "100% 100%",
       }}
-      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px]  lg:py-0 lg:mb-[24px] mb-[21px]  custom-height sm:rounded-[10px] lg:rounded-[20px] "
+      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px]  lg:pt-[105px] lg:pb-[74px] lg:mb-[24px] mb-[21px]  sm:rounded-[10px] lg:rounded-[20px] "
     >
       <div className="text-center sm:text-start  pt-8 lg:pt-[286px] sm:w-1/2 sm:px-8 ">
        <p className="billyOhioText text-[#F3CCE7] pb-1 text-[24px] sm:pb-0 sm:text-[18px] lg:text-[32px] leading-[24px] lg:leading-[48px]">Why Choose Quiro ?</p>
@@ -66,7 +66,7 @@ const Box1: React.FC = () => {
           src={perfectBox1}
           alt="img"
           width={1000}
-          className="hidden sm:block lg:scale-[90%] "
+          className="hidden sm:block lg:scale-[75%] "
         />
       </div>
     </div>
@@ -85,7 +85,7 @@ const Box2: React.FC = () => {
 
   return (
     <div
-      className="flex justify-center items-center sm:w-[98vw] lg:w-auto px-[54px] sm:pl-[118px] lg:pl-[405px] sm:pr-[132px] lg:pr-[399px] py-[75px] sm:py-[50px] lg:pt-[110px] lg:pb-[91px] lg:mb-[24px] mb-[21px] custom-height saurabh-bug  rounded-[20px] sm:rounded-[10px] lg:rounded-[20px]"
+      className="flex justify-center items-center sm:w-[98vw] lg:w-auto px-[54px] sm:pl-[118px] 3xl:pl-[405px] sm:pr-[132px] lg:pl-[247px] lg:pr-[227px] 3xl:pr-[399px] py-[75px] sm:py-[50px] lg:pt-[52px] lg:pb-[48px] 3xl:pt-[110px] 3xl:pb-[91px] lg:mb-[24px] mb-[21px] custom-height saurabh-bug  rounded-[20px] sm:rounded-[10px] lg:rounded-[20px]"
       style={{
         backgroundImage: `url(${isMobile ? perfectbox2bgmobile.src : perfectBox2BG.src})`,
         backgroundRepeat: "no-repeat",
@@ -94,19 +94,19 @@ const Box2: React.FC = () => {
     >
       {/* Flex container to center the child div */}
       <div className="bg-[#F5F3ED] rounded-[10px] lg:rounded-[20px]">
-        <p className="billyOhioText text-[#F58121] text-[16px] sm:text-[18px] lg:text-[32px] pb-1 font-[400] leading-[19.2px] sm:[21.6px] lg:leading-[48px] text-center pt-[32px] sm:pt-[66px] lg:pt-[141px]">
+        <p className="billyOhioText text-[#F58121] text-[16px] sm:text-[18px] lg:text-[24px] 3xl:text-[32px] pb-1 font-[400] leading-[19.2px] sm:leading-[21.6px] lg:leading-[36px] 3xl:leading-[48px] text-center pt-[32px] sm:pt-[66px]  lg:pt-[60px] 3xl:pt-[141px]">
           Master your Operation
         </p>
-        <h5 className="text-[16px] lg:text-[40px] font-[600] leading-[19.2px] lg:leading-[48px] text-center pl-[31px] sm:pl-[116px] lg:pl-[123px] pr-[30px] sm:pr-[116px] lg:pr-[112px]">
+        <h5 className="text-[16px] lg:text-[24px] lg:leading-[28.8px] 3xl:text-[40px] font-[600] leading-[19.2px] 3xl:leading-[48px] text-center pl-[31px] sm:pl-[116px] lg:pl-[58px] 3xl:pl-[123px] pr-[30px] sm:pr-[116px] lg:pr-[79px] 3xl:pr-[112px]">
           Less ‘just a second’ <br />More done in just a few seconds
         </h5>
-        <p className="text-[10px] sm:text-[11px] lg:text-[18px] font-[500] lg:font-[400] leading-[15px] sm:leading-[16.5px] lg:leading-[27px] text-center pt-[23px] sm:pt-[10px] pl-[11px] sm:pl-[55px] pr-[10px] sm:pr-[40px]">
+        <p className="text-[10px] sm:text-[11px]  lg:text-[14px] lg:leading-[21px] 3xl:text-[18px] font-[500] lg:font-[400] leading-[15px] sm:leading-[16.5px] 3xl:leading-[27px] text-center pt-[23px] sm:pt-[10px] pl-[11px] sm:pl-[55px] pr-[10px] sm:pr-[40px]">
           We&apos;re your partner in business growth. We help increase
           revisiting customers, and maximise brand visibility to boost revenue.
           Experience 40% faster turnaround times, 35% improved guest
           satisfaction, and double staff efficiency
         </p>
-        <div className="flex justify-center pt-[23px] sm:pt-[30px] pb-[44px] sm:pb-[58.3px] lg:pb-[161px] sm:scale-90">
+        <div className="flex justify-center pt-[23px] sm:pt-[30px] lg:pt-[20.66px] pb-[44px] sm:pb-[58.3px] lg:pb-[88px] 3xl:pb-[161px] sm:scale-90">
           <LineButton text="Start for free" />
         </div>
       </div>
