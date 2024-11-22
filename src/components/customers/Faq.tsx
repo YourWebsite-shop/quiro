@@ -72,7 +72,7 @@ const Faq: React.FC = () => {
         <div className="flex flex-col justify-center items-center">
           <h1 className=" font-[600] relative text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] mx:auto max-w-1/2 text-center">
             <span
-              className="billyOhioText text-[#006B66] absolute font-[400] text-[36px] leading-[54px] sm:px-0 lg:-left-10 lg:-top-10 sm:-left-6 left-1 -top-6  
+              className="billyOhioText text-[#006B66] absolute font-[400] text-[16px] lg:text-[36px] leading-[19.2px] w-full lg:leading-[54px] sm:px-0 lg:-left-10 lg:-top-10 sm:-left-6 left-1 -top-6  
             sm:text-[24px] sm:leading-[36px] -translate-x-6"
             >
               Know More

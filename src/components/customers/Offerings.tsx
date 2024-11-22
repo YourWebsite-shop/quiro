@@ -7,8 +7,8 @@ import artwork from "@/assets/customers/offering1artwork.png";
 
 const Offerings: React.FC = () => {
   return (
-    <div className="flex flex-col items-center px-4 sm:pl-[90px] sm:pr-[75px] lg:px-16">
-      <div className="text-center mb-[30px] sm:mb-[50px] lg:mb-[100px]">
+    <div className="flex flex-col items-center  sm:pl-[90px] sm:pr-[75px] lg:px-[160px]  sm:mt-[90px] lg:mt-[200px]">
+      <div className="text-center mb-[30px] sm:mb-[50px] lg:mb-[100px] pl-[28px] pr-[25px]">
         <p className="billyOhioText text-[#006B66] text-[16px] sm:text-[20px] lg:text-[28px] font-[400] text-start -translate-x-2 sm:-translate-x-6">
           Offerings
         </p>
@@ -21,8 +21,8 @@ const Offerings: React.FC = () => {
       </div>
 
       {/* Section 1 */}
-      <div className="flex flex-col sm:flex-row justify-between items-center lg:items-start sm:gap-[36px] lg:gap-[101px] ">
-        <div className="relative sm:w-1/2 lg:w-2/5 flex justify-center lg:justify-end sm:px-0 sm:mb-0">
+      <div className="flex flex-col sm:flex-row justify-between items-center lg:items-start px-[64px] sm:gap-[36px] lg:gap-[101px] ">
+        <div className="relative sm:w-1/2 lg:w-2/5 flex justify-center lg:justify-end  sm:px-0 sm:mb-0">
           <Image
             src={offering1}
             alt="journey"
@@ -52,7 +52,7 @@ const Offerings: React.FC = () => {
       </div>
 
       {/* Section 2 */}
-      <div className="flex flex-col sm:flex-row-reverse justify-between items-center lg:items-start sm:gap-[36px] lg:gap-[101px] ">
+      <div className="flex flex-col sm:flex-row-reverse justify-between items-center lg:items-start px-[64px]  sm:gap-[36px] lg:gap-[101px] ">
         <div className="relative sm:w-1/2 lg:w-2/5 flex justify-center lg:justify-end sm:px-0 sm:mb-0">
           <Image
             src={offering2}
@@ -83,7 +83,7 @@ const Offerings: React.FC = () => {
       </div>
 
       {/* Section 3 */}
-      <div className="flex flex-col sm:flex-row justify-between items-center lg:items-start sm:gap-[36px] lg:gap-[101px] ">
+      <div className="flex flex-col sm:flex-row justify-between items-center lg:items-start px-[64px]  sm:gap-[36px] lg:gap-[101px] ">
         <div className="relative sm:w-1/2 lg:w-2/5 flex justify-center lg:justify-end sm:px-0 sm:mb-0">
           <Image
             src={offering3}

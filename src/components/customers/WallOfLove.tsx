@@ -6,7 +6,7 @@ import pic4 from "@/assets/customers/wallOfLove4.png";
 
 const WallOfLove: React.FC = () => {
   return (
-    <div className="flex flex-col items-center px-[47px] sm:px-[72px] lg:px-[316px]">
+    <div className="flex flex-col items-center px-[47px] sm:px-[72px] lg:px-[316px] sm:mt-[96px]">
       <div className="flex flex-col mb-[30.16px] sm:mb-[36px] lg:mb-[70px]">
         <p className="billyOhioText text-[#006B66] text-[16px] sm:text-[20px] sm:leading-[30px] lg:text-[28px] font-[400] text-start -translate-x-2 sm:-translate-x-6">
           Wall of Love
