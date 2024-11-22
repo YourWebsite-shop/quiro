@@ -429,7 +429,7 @@ const WallOfLove: React.FC = () => {
               src={imggroup}
               alt="imggroup"
               width={1000}
-              className="absolute top-full lg:w-[386px] 3xl:w-[452px] 3xl:translate-x-1/3 lg:translate-x-1/4 ml-3 3xl:ml-0"
+              className="absolute top-full lg:w-[386px] 3xl:w-[452px] 3xl:translate-x-1/3 lg:translate-x-1/4 "
             />
           </div>
         </div>

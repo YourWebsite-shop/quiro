@@ -117,36 +117,36 @@ const Box2: React.FC = () => {
 const Box3: React.FC = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row md:flex-row sm:flex-row bg-cover bg-center rounded-[20px]   sm:rounded-[10px] min-w-[90vw] items-center justify-center pt-[28px] p-4 pb-[10px] sm:pt-[88px] lg:pt-[0px]   lg:p-10 lg:rounded-[40px] overflow-hidden"
+      className="flex flex-col lg:flex-row md:flex-row sm:flex-row bg-cover bg-center rounded-[20px]   sm:rounded-[10px] min-w-[90vw] items-center justify-center lg:justify-between pt-[28px] p-4 3xl:p-0 pb-[10px] sm:pt-[88px] lg:pt-[0px]  lg:rounded-[40px] overflow-hidden"
       style={{ backgroundImage: `url(${perfectBox3BG.src})` }}
     >
       {/* Text content section */}
 
-      <div className="text-start sm:w-1/2  lg:px-14 sm:pl-[46px] sm:pr-[68px] lg:py-[289px] ">
+      <div className="text-start sm:w-1/2  lg:pl-[129px] sm:pl-[46px] sm:pr-[68px] lg:pt-[126px] 3xl:py-[289px] ">
         {/* Smaller logo/image section */}
         <div className="text-center sm:text-start">
-        <p className="billyOhioText text-[#F3CCE7] text-[20px] lg:text-[32px] lg:leading-[48px] font-[400]">A one stop solution for businesses</p>
+        <p className="billyOhioText text-[#F3CCE7] text-[20px] lg:text-[24px] 3xltext-[32px] lg:leading-[36px] 3xl:leading-[48px] font-[400]">A one stop solution for businesses</p>
         </div>
 
         {/* Text content with heading and paragraph */}
 
-        <h1 className="font-[600] lg:text-[40px] text-[16px] sm:text-[16px] lg:leading-[48px] md:leading-[20px] sm:leading-[24px] text-[#F5F3ED] lg:text-start md:text-start text-center sm:text-start sm:pl-0 pl-[32px] pr-[27px]">
+        <h1 className="font-[600] lg:text-[24px] 3xl:text-[40px] text-[16px] sm:text-[16px] lg:leading-[28px] 3xl:leading-[48px] md:leading-[20px] sm:leading-[24px] text-[#F5F3ED] lg:text-start md:text-start text-center sm:text-start sm:pl-0 pl-[32px] pr-[27px]">
           Join Our Growing Community of Partners
         </h1>
-        <p className="font-[500] sm:font-[400] lg:text-[16px] sm:text-[11px]  lg:leading-[24px] md:leading-[16px] sm:leading-[15px] text-[#F5F3ED] sm:text-start lg:text-start md:text-start lg:py-6 py-[23px] sm:py-2 text-center text-[10px] ">
+        <p className="font-[500] sm:font-[400] lg:text-[14px] 3xl:text-[16px] sm:text-[11px]  lg:leading-[21px] 3xl:leading-[24px] md:leading-[16px] sm:leading-[15px] text-[#F5F3ED] sm:text-start lg:text-start md:text-start lg:py-6 py-[23px] sm:py-2 text-center text-[10px] ">
           What sets us apart is our commitment to your growth. We believe in
           cultivating long-term relationships and helping you thrive in a
           competitive landscape. At Quiro, you&apos;re not just adopting a tool –
           you&apos;re gaining a dedicated ally who&apos;s invested in your success.
         </p>
-        <div className="flex justify-center w-full sm:justify-start sm:pt-[30px] lg:pt-[20px] sm:pb-[92px] lg:pb-[0px]">
+        <div className="flex justify-center w-full sm:justify-start sm:pt-[30px] lg:pt-[90px] 3xl:pt-[20px] sm:pb-[92px] lg:pb-[39px]">
           <ShadowButton text="Learn More" />
         </div>
       </div>
 
       {/* Image container with a defined width */}
-      <div className="w-full flex lg:w-[50%] sm:self-start md:w-[50%]  sm:w-[50%] sm:items-center sm:mx-auto px-6 sm:px-4 lg:px-10 lg:pt-[125px]">
-        <Image src={boxperfect3} width={1000} alt="box3" className="w-full" />
+      <div className="w-full  lg:w-[50%]  lg:flex lg:justify-center sm:self-start md:w-[50%]  sm:w-[50%] sm:items-center sm:mx-auto px-6 sm:px-4 lg:px-10 lg:pt-[125px] ">
+        <Image src={boxperfect3} width={1000} alt="box3" className="w-full lg:w-[360px] 3xl:w-full" />
       </div>
     </div>
   );
