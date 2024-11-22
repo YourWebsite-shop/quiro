@@ -43,30 +43,30 @@ const Box1: React.FC = () => {
         backgroundImage: `url(${perfectBox1BG.src})`,
         backgroundSize: "100% 100%",
       }}
-      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px]  lg:pt-[105px] lg:pb-[74px] lg:mb-[24px] mb-[21px]  sm:rounded-[10px] lg:rounded-[20px] "
+      className="rounded-[20px] overflow-hidden sm:flex flex-row-reverse items-center sm:py-[50px]    lg:mb-[24px] mb-[21px]  sm:rounded-[10px] lg:rounded-[20px] "
     >
-      <div className="text-center sm:text-start  pt-8 lg:pt-[286px] sm:w-1/2 sm:px-8 ">
+      <div className="text-center sm:text-start  pt-8 sm:w-1/2 lg:w-[60%] sm:px-8 ">
        <p className="billyOhioText text-[#F3CCE7] pb-1 text-[24px] sm:pb-0 sm:text-[18px] lg:text-[32px] leading-[24px] lg:leading-[48px]">Why Choose Quiro ?</p>
-        <h5 className="text-[16px] text-[#F5F3ED]  font-[600] sm:text-[16px] lg:text-[40px] ">
+        <h5 className="text-[16px] text-[#F5F3ED]  font-[600] sm:text-[16px] lg:text-[24px] 3xl:text-[40px] ">
           Say Goodbye to Service Delays
         </h5>
-        <p className="text-[#F5F3ED] font-[500] text-center sm:text-start text-[10px] sm:text-[11px] lg:text-[16px] py-8 px-6 sm:px-0 sm:py-2">
+        <p className="text-[#F5F3ED] font-[500] text-center sm:text-start text-[10px] sm:text-[11px] lg:text-[16px] py-8 px-6 sm:px-0 sm:py-2 lg:pr-[49px]">
           & yes, to more revenue! We&apos;re redefining the future of guest
           experiences—from seamless check-ins to memorable stays. We tackle core
           issues like service delays, eliminate errors, and handle much more
         </p>
 
-        <div className="flex justify-center sm:block pb-10 sm:scale-90 sm:-translate-x-3 lg:translate-x-0 lg:scale-100 sm:py-4 lg:py-4 lg:pb-[284px]">
+        <div className="flex justify-center sm:block pb-10 sm:scale-90 sm:-translate-x-3 lg:translate-x-0 lg:scale-100 sm:py-4 lg:py-4 ">
           <ShadowButton text="Learn More" />
         </div>
       </div>
-      <div className="px-4 sm:w-1/2 sm:px-10  ">
+      <div className="px-4 sm:w-1/2 lg:w-[40%] sm:px-10 lg:pt-[40px] lg:flex lg:justify-center ">
         <Image src={perfectBox1sm} alt="img" className="sm:hidden" />
         <Image
           src={perfectBox1}
           alt="img"
           width={1000}
-          className="hidden sm:block lg:scale-[75%] "
+          className="hidden sm:block lg:max-w-[250px] 3xl:max-w-[555px] "
         />
       </div>
     </div>
@@ -85,7 +85,7 @@ const Box2: React.FC = () => {
 
   return (
     <div
-      className="flex justify-center items-center sm:w-[98vw] lg:w-auto px-[54px] sm:pl-[118px] 3xl:pl-[405px] sm:pr-[132px] lg:pl-[247px] lg:pr-[227px] 3xl:pr-[399px] py-[75px] sm:py-[50px] lg:pt-[52px] lg:pb-[48px] 3xl:pt-[110px] 3xl:pb-[91px] lg:mb-[24px] mb-[21px] custom-height saurabh-bug  rounded-[20px] sm:rounded-[10px] lg:rounded-[20px]"
+      className="flex justify-center items-center sm:w-[98vw] lg:w-auto px-[54px] sm:pl-[118px] 3xl:pl-[405px] sm:pr-[132px] lg:pl-[247px] lg:pr-[227px] 3xl:pr-[399px] py-[75px] sm:py-[50px]  lg:pt-[52px] lg:pb-[74px]  3xl:pt-[110px] 3xl:pb-[69px] lg:mb-[24px] mb-[21px] custom-height saurabh-bug  rounded-[20px] sm:rounded-[10px] lg:rounded-[20px]"
       style={{
         backgroundImage: `url(${isMobile ? perfectbox2bgmobile.src : perfectBox2BG.src})`,
         backgroundRepeat: "no-repeat",
@@ -122,7 +122,7 @@ const Box3: React.FC = () => {
     >
       {/* Text content section */}
 
-      <div className="text-start sm:w-1/2  lg:pl-[129px] sm:pl-[46px] sm:pr-[68px] lg:pt-[126px] 3xl:py-[289px] ">
+      <div className="text-start sm:w-1/2  lg:pl-[129px] sm:pl-[46px] sm:pr-[68px] lg:pt-[126px] ">
         {/* Smaller logo/image section */}
         <div className="text-center sm:text-start">
         <p className="billyOhioText text-[#F3CCE7] text-[20px] lg:text-[24px] 3xltext-[32px] lg:leading-[36px] 3xl:leading-[48px] font-[400]">A one stop solution for businesses</p>
@@ -145,8 +145,8 @@ const Box3: React.FC = () => {
       </div>
 
       {/* Image container with a defined width */}
-      <div className="w-full  lg:w-[50%]  lg:flex lg:justify-center sm:self-start md:w-[50%]  sm:w-[50%] sm:items-center sm:mx-auto px-6 sm:px-4 lg:px-10 lg:pt-[125px] ">
-        <Image src={boxperfect3} width={1000} alt="box3" className="w-full lg:w-[360px] 3xl:w-full" />
+      <div className="w-full  lg:w-[50%]  lg:flex lg:justify-center sm:self-start md:w-[50%]  sm:w-[50%] sm:items-center sm:mx-auto px-6 sm:px-4 lg:px-10 3xl:pr-[89px] lg:pt-[125px] 3xl:py-[125px] ">
+        <Image src={boxperfect3} width={1000} alt="box3" className="w-full lg:w-[360px] 3xl:w-[749px]" />
       </div>
     </div>
   );
