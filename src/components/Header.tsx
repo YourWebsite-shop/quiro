@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -60,6 +60,11 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
+  // Close menu when pathname changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
   return (
     <div className="flex items-center justify-between px-4 md:px-10 lg:pl-[142px] lg:pr-[160px] w-full top-0 bg-[#F5F3ED] py-4 z-50">
       <div>
@@ -77,11 +82,11 @@ const Header: React.FC = () => {
       {/* Mobile Menu */}
       <div className={`fixed inset-0 bg-white z-20 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 xl:hidden`}>
         <div className="flex flex-col p-8 space-y-4">
-          <Link href="/aboutus" className={`text-lg ${pathname === '/aboutus' ? 'text-[#00413E]' : ''}`}>About us</Link>
-          <Link href="/business" className={`text-lg ${pathname === '/business' ? 'text-[#00413E]' : ''}`}>For Businesses</Link>
-          <Link href="/resources" className={`text-lg ${pathname === '/resources' ? 'text-[#00413E]' : ''}`}>Resources</Link>
-          <Link href="/customers" className={`text-lg ${pathname === '/customers' ? 'text-[#00413E]' : ''}`}>For Customers</Link>
-          <Link href="/pricing" className={`text-lg ${pathname === '/pricing' ? 'text-[#00413E]' : ''}`}>Pricing</Link>
+          <Link href="/aboutus" onClick={() => setIsMenuOpen(false)} className={`text-lg ${pathname === '/aboutus' ? 'text-[#00413E]' : ''}`}>About us</Link>
+          <Link href="/business" onClick={() => setIsMenuOpen(false)} className={`text-lg ${pathname === '/business' ? 'text-[#00413E]' : ''}`}>For Businesses</Link>
+          <Link href="/resources" onClick={() => setIsMenuOpen(false)} className={`text-lg ${pathname === '/resources' ? 'text-[#00413E]' : ''}`}>Resources</Link>
+          <Link href="/customers" onClick={() => setIsMenuOpen(false)} className={`text-lg ${pathname === '/customers' ? 'text-[#00413E]' : ''}`}>For Customers</Link>
+          <Link href="/pricing" onClick={() => setIsMenuOpen(false)} className={`text-lg ${pathname === '/pricing' ? 'text-[#00413E]' : ''}`}>Pricing</Link>
           <div className="pt-4">
             <LineButton text="Get Started" />
           </div>
