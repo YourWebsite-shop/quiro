@@ -49,12 +49,12 @@ const Innovating: React.FC = () => {
   ];
 
   return (
-    <div >
+    <div className="3xl:mx-[160px]">
       <SectionHeader
         title="Building Technology for a Better  Experience"
        
       />
-      <div className="flex flex-col sm:flex-row justify-center gap-[20px] sm:gap-[8px] mx-[20px] sm:mx-[68px] lg:mx-[154px] 3xl:mx-[160px]">
+      <div className="flex flex-col sm:flex-row justify-center gap-[20px] sm:gap-[8px] mx-[20px] sm:mx-[68px] lg:mx-[154px] 3xl:mx-0 ">
         {cards.map(
           (
             {
@@ -138,10 +138,10 @@ const SectionHeader: React.FC<{ title: string;}> = ({
   title,
   
 }) => (
-  <div className="sm:flex lg:px-[125px] px-7 lg:pb-[70px] 3xl:pb-[96px] sm:pb-[50px] ">
-    <div className="relative w-full text-[#000000] sm:w-[60%] text-[20px] leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[36px] 3xl:text-[48px] font-[600] sm:leading-[28.8px] lg:leading-[43.2px] 3xl:leading-[57.6px] pb-[11px] sm:pb-[0px]">
+  <div className="sm:flex sm:justify-between lg:px-[125px] 3xl:px-0 px-[70px] lg:pb-[70px] 3xl:pb-[96px] sm:pb-[50px] ">
+    <div className="relative w-full text-[#000000] sm:w-[50%] text-[20px] leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[36px] 3xl:text-[48px] font-[600] sm:leading-[28.8px] lg:leading-[43.2px] 3xl:leading-[57.6px] pb-[11px] sm:pb-[0px]">
       {title}
-      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[16pxpx] leading-[28.8px] lg:text-[28px] 3xl:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-1 -top-7 sm:-top-8">
+      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[16pxpx] leading-[28.8px] lg:text-[28px] 3xl:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-0 left-1 -top-7 sm:-top-8">
         Innovating
       </span>
     </div>

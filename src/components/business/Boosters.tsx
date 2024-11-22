@@ -16,11 +16,11 @@ const Boosters: React.FC = () => {
         <h1 className="text-[#000000] text-[20px] sm:text-[24px] font-[600] leading-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px]  mb-[15.94px] sm:mb-[10px] lg:mb-[16px] ">
           Powerful Features Built for Your Success
         </h1>
-        <p className="block sm:hidden text-[#000000] text-[13px] font-[500] leading-[19.5px] sm:text-[11px] sm:leading-[16.5px]   mb-[24px] sm:mb-[36px] lg:mb-[70px] 3xl:mb-[50px]">
+        <p className="block sm:hidden text-[#000000] text-[13px] font-[500] leading-[19.5px] sm:text-[11px] sm:leading-[16.5px]   mb-[24px] sm:mb-[36px] lg:mb-[70.6px] 3xl:mb-[50px]">
           Quiro brings together advanced hospitality tools and a simple,
           easy-to-use platform
         </p>
-        <p className="hidden sm:block text-[#000000] text-[13px] font-[500] leading-[19.5px] sm:text-[11px] sm:leading-[16.5px] lg:text-[18px] lg:leading-[27px] mb-[24px]">
+        <p className="hidden sm:block text-[#000000] text-[13px] font-[500] leading-[19.5px] sm:text-[11px] sm:leading-[16.5px] lg:text-[18px] lg:leading-[27px] lg:mb-[70.6px] 3xl:mb-[50px]  mb-[24px]">
           Quiro brings together advanced hospitality tools and a simple,
           easy-to-use platform to keep your business running smoothly.
         </p>

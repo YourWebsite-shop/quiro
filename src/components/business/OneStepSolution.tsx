@@ -28,7 +28,7 @@ const Efficiency: React.FC = () => {
   ];
 
   return (
-    <div className=" lg:px-24 sm:px-4 lg:pb-[185px] sm:pb-[126px] pb-[106px] mt-[80px] sm:mt-[95px] lg:mt-[110px]">
+    <div className=" lg:px-24 sm:px-[60px] lg:pb-[185px] sm:pb-[126px] pb-[106px] mt-[80px] sm:mt-[95px] lg:mt-[164px]">
       {/* Section Heading */}
       <SectionHeader
         title="Beyond the Essentials: Quiro's Enhanced Offerings"
@@ -56,14 +56,14 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
   title,
   description,
 }) => (
-  <div className="sm:flex 3xl:flex-col 3xl:justify-center 3xl:w-full  lg:px-10 px-7 lg:pb-[96px] sm:pb-[50px] ">
-    <div className="relative w-full text-[#000000] sm:w-[60%] text-[20px] leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[48px] font-[600] sm:leading-[28.8px] lg:leading-[57.6px] pb-[11px] sm:pb-[0px]">
+  <div className="sm:flex sm:flex-col  3xl:flex-col 3xl:justify-center 3xl:w-full  lg:pl-[254px] lg:pr-[246px] px-7  lg:pb-[70.4px] 3xl:pb-[96px] sm:pb-[36px] ">
+    <div className="relative w-full text-[#000000] sm:w-[100%] text-[20px] lg:text-center leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[36px] 3xl:text-[48px] font-[600] sm:leading-[28.8px] lg:leading-[43.2px] 3xl:leading-[57.6px] pb-[11px] sm:pb-[0px]">
       {title}
-      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[16pxpx] leading-[28.8px] lg:text-[36px] 3xl:text-[40px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-1 -top-7 sm:-top-8">
+      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[16pxpx] leading-[28.8px] lg:text-[28px] 3xl:text-[40px] lg:leading-[54px] sm:text-[18px] sm:leading-[21.6pxpx] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-1 -top-7 sm:-top-8 -translate-x-4">
         One Stop Solution
       </span>
     </div>
-    <p className="  w-full text-[#000000] text-center sm:text-start sm:w-[40%] sm:text-[11px] sm:leading-[16.5px] lg:text-[20px] lg:leading-[30px] font-[500] text-[13px] leading-[19.5px] py-3 sm:py-0 lg:text-base ">
+    <p className="  w-full text-[#000000] text-center sm:w-[100%] sm:text-center sm:text-[11px] sm:mt-[10px] sm:leading-[16.5px] lg:text-[20px] lg:leading-[30px] font-[500] text-[13px] leading-[19.5px] py-3 sm:py-0 lg:text-base ">
       {description}
     </p>
   </div>
@@ -102,7 +102,7 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
       height={311}
       className="rounded-[10px]"
     />
-    <h5 className="text-[#000000] text-[16px] leading-[20.8px] font-[600] sm:text-[12px] sm:leading-[15.6px] sm:py-3 lg:text-[24px] text-center lg:leading-[31.2px] lg:py-6 py-4">
+    <h5 className="text-[#000000] sm:min-h-[55px] text-[16px] leading-[20.8px] font-[600] sm:text-[12px] sm:leading-[15.6px] sm:py-3 lg:text-[24px] text-center lg:leading-[31.2px] lg:py-6 pt-[24px] pb-[10px]">
       {heading}
     </h5>
     <p className="text-[#000000] pb-[20px] text-center font-[400] text-[10px] leading-[15px] sm:text-[8px] sm:leading-[12px] lg:text-[16px] lg:leading-[24px] lg:pb-6 sm:pb-4">
