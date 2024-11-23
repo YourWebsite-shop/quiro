@@ -30,7 +30,7 @@ const Boosters: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-stretch sm:gap-[8.59px] lg:gap-[20px] gap-[20px]">
           <div
             className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[12.85px] sm:pb-[18.1px] lg:p-[30px] lg:pb-[49px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/2 flex flex-col flex-grow"
-            style={{ boxShadow: "0px 4px 20px 0px #006B6640" }}
+            style={{ boxShadow: "0px 4px 8.57px 0px #006B6640" }}
           >
             <Image
               src={Boosters1}
@@ -50,7 +50,7 @@ const Boosters: React.FC = () => {
           </div>
           <div
             className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[12.85px] sm:pb-[29.1px] lg:p-[30px] lg:pb-[73px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/2 flex flex-col flex-grow"
-            style={{ boxShadow: "0px 4px 20px 0px #006B6640" }}
+            style={{ boxShadow: "0px 4px 8.57px 0px #006B6640"  }}
           >
             <Image
               src={Boosters2}
@@ -75,7 +75,7 @@ const Boosters: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-stretch sm:gap-[8.59px] lg:gap-[20px] gap-[20px]">
           <div
             className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[11.13px] sm:pb-[42.94px] lg:p-[26px] lg:pb-[83px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
-            style={{ boxShadow: "0px 4px 20px 0px #006B6640" }}
+            style={{ boxShadow:  "0px 4px 8.57px 0px #006B6640" }}
           >
             <Image
               src={Boosters3}
@@ -95,7 +95,7 @@ const Boosters: React.FC = () => {
           </div>
           <div
             className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[11.13px] sm:pb-[31.94px] lg:p-[26px] lg:pb-[83px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
-            style={{ boxShadow: "0px 4px 20px 0px #006B6640" }}
+            style={{ boxShadow: "0px 4px 8.57px 0px #006B6640"  }}
           >
             <Image
               src={Boosters4}
