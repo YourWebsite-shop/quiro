@@ -114,7 +114,7 @@ const WallOfLove: React.FC = () => {
 
         {/* Second column */}
 
-        <div className="w-[40%] flex flex-col gap-[15px]">
+        <div className="w-[40%] flex flex-col gap-[15px] mt-5">
           {/* First row */}
           <div className="relative">
             <Image
@@ -354,8 +354,8 @@ const WallOfLove: React.FC = () => {
               </div>
 
               {/* First col second row */}
-              <div className="border-[2px] lg:pt-[35.1px] 3xl:pt-[44px] lg:pl-[33.5px] 3xl:pl-[42px] lg:pr-[29.93px] 3xl:pr-[30px] sm:mr-8 rounded-[20px]   border-[#006B66] bg-white  ">
-                <p className="text-[12px] leading-[18px] font-[500] ">
+              <div className="border-[2px] lg:pt-[35.1px] 3xl:pt-[44px] lg:pl-[33.5px] 3xl:pl-[42px] lg:pr-[29.93px] 3xl:pr-[30px] sm:mr-8  rounded-[20px]   border-[#006B66] bg-white  ">
+                <p className="text-[10px] leading-[15px] font-[500] ">
                   &apos;Quiro has transformed how we manage our hotel
                   operations. The QR-based ordering and request systems are a
                   game-changer, allowing us to provide prompt service that our
@@ -383,14 +383,14 @@ const WallOfLove: React.FC = () => {
             </div>
 
             {/*  */}
-            <div className="relative lg:w-[256px] 3xl:w-[322px] border-2  lg:translate-y-[90px] 3xl:translate-y-[80px] -translate-x-8">
+            <div className="relative lg:w-[256.82px] 3xl:w-[322px] border-2  lg:translate-y-[94px] 3xl:translate-y-[80px] -translate-x-8 lg:-translate-x-[28px]">
               <Image
                 src={wolimgcus2desk}
                 width={1000}
                 alt="wolimgcus"
-                className="absolute  -translate-y-[90px] z-0"
+                className="absolute  -translate-y-[90px] lg:-translate-y-[100px] z-0"
               />
-              <div className="relative z-10 lg:pt-[40px] 3xl:pt-[80px]">
+              <div className="relative z-10 lg:pt-[25px] 3xl:pt-[80px]">
                 <div>
                   <Image
                     src={fstars}
@@ -398,7 +398,7 @@ const WallOfLove: React.FC = () => {
                     className=" lg:w-[151px] 3xl:w-[189px] mx-auto"
                   />
                 </div>
-                <p className=" lg:text-[15.95px] 3xl:text-[20px] font-[600] leading-[30px] lg:pl-[50px] 3xl:pl-[63px] lg:pr-[3px] 3xl:pr-[50px]">
+                <p className=" lg:text-[15.95px] 3xl:text-[20px] font-[600] leading-[30px] lg:pl-[50px] 3xl:pl-[63px] lg:pr-[3px] 3xl:pr-[50px] mt-1">
                   “I really appreciate”
                 </p>
                 <p className=" text-[10px] 3xl:text-[12px] font-[500] lg:leading-[15px] 3xl:leading-[18px] lg:pl-[17px] 3xl:pl-[22px] lg:pr-[23px] 3xl:pr-[29px] lg:pt-[9.57px] 3xl:pt-[12px] text-center">
@@ -448,12 +448,7 @@ const WallOfLove: React.FC = () => {
               dining service.&apos;
             </p>
 
-            <Image
-              src={mayank}
-              alt="mayankimg"
-              width={27}
-              className="absolute right-4 bottom-2 sm:w-[52px] "
-            />
+            <p className="absolute billyOhioText lg:text-[19.14px] text-[#006B66]  right-[41.25px] bottom-[15.2px] sm:w-[52px] ">Mayank</p>
           </div>
 
           {/*  */}

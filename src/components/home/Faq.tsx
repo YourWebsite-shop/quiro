@@ -85,7 +85,7 @@ const Faq: React.FC = () => {
         </div>
 
         {/* FAQ List in Two Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-4 md:gap-4 lg:mx-[41px] sm:mx-[25px] mx-[20px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-4 md:gap-4 lg:mx-[41px] sm:mx-[25px] mx-[20px] ">
           {/* Left Column */}
           <div>
             {faqData.slice(0, faqData.length / 2).map((faq, index) => (

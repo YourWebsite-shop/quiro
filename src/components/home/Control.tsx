@@ -61,9 +61,7 @@ const Control: React.FC = () => {
                     </div>
                     {/* Mobile heading */}
                     <h5
-                      className="
-                    text-[10px] lg:text-[24px] lg:leadin-[28.8px] sm:hidden lg:block font-[600] leading-[12px] text-[#F5F3ED] pb-[5px] lg:pb-[15px] pr-[36px] lg:pr-[14px]
-                    "
+                      className="text-[10px] lg:text-[24px] lg:leading-[28.8px] sm:hidden lg:block font-[600] leading-[12px] text-[#F5F3ED] pb-[5px] lg:pb-[15px] pr-[36px] lg:pr-[14px]"
                     >
                       Services &amp; Order Management
                     </h5>
@@ -102,7 +100,7 @@ const Control: React.FC = () => {
               </div>
 
               {/* Control 3 */}
-              <div className="relative rounded-[6px] lg:rounded-[10px] overflow-hidden h-[220px] min-h-[220px] lg:h-[350px] 3xl:h-[400px]">
+              <div className="relative rounded-[6px] lg:rounded-[10px] overflow-hidden h-[220px] min-h-[234px] lg:h-[350px] 3xl:h-[400px]">
                 <Image
                   src={control3mobile.src}
                   alt="control background"
@@ -142,7 +140,7 @@ const Control: React.FC = () => {
             {/* Second Column */}
             <div className="w-[40.3%] sm:w-[32%] lg:w-[27%] flex flex-col gap-[9px]">
               {/* Payment Management - Full height on sm and above */}
-              <div className="relative pl-[13px] lg:pl-[30px] lg:pt-[30px] pt-[13px] rounded-[6px] lg:rounded-[10px] overflow-hidden h-[200px] sm:h-[349px] min-h-[200px] sm:min-h-[349px] lg:min-h-[590px]  3xl:h-[630px]">
+              <div className="relative pl-[13px] lg:pl-[30px] lg:pt-[30px] pt-[13px] rounded-[6px] lg:rounded-[10px] overflow-hidden h-[200px] sm:h-[349px] min-h-[243px] sm:min-h-[349px] lg:min-h-[590px]  3xl:h-[630px]">
                 <Image
                   src={control4.src}
                   alt="control background"
@@ -165,12 +163,12 @@ const Control: React.FC = () => {
               </div>
 
               {/* Control 2 - Only visible below sm */}
-              <div className="sm:hidden relative rounded-[6px]  overflow-hidden h-[140px] min-h-[140px]">
+              <div className="sm:hidden relative rounded-[6px]  overflow-hidden h-[111px] min-h-[111px]">
                 <Image
                   src={control2.src}
                   alt="control background"
                   fill
-                  className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-[6px]"
+                  className="absolute top-0 left-0 w-full h-full z-0 rounded-[6px]"
                 />
                 <div className="relative z-10 pt-[6px] pl-[4px] pr-[10px]">
                   <div className="text-[8px] leading-[8px] font-[500] rounded-[6px] py-[2px] flex items-center justify-between w-full max-w-[120px]  px-[6px] bg-[#F5F3ED]">
