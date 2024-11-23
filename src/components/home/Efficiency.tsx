@@ -3,8 +3,6 @@ import Image, { StaticImageData } from "next/image";
 import Img1 from "@/assets/home/EfficiencyImg1.png";
 import Img2 from "@/assets/home/EfficiencyImg2.png";
 import Img3 from "@/assets/home/EfficiencyImg3.png";
-import LineButton from "../LineButton";
-import ShadowButton from "../ShadowButton";
 import line from "@/assets/buttonLine.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 

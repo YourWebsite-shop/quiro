@@ -3,7 +3,6 @@ import React from "react";
 import gradientBg from "@/assets/home/herogradient.png";
 import Image from "next/image";
 import doubleLine from "@/assets/home/doubleunderline.png";
-import LineButton from "../LineButton";
 import Marquee from "react-fast-marquee";
 import "./styles/hero.css";
 
@@ -19,7 +18,7 @@ import CarouselImg7 from "@/assets/home/carousel/CarouselImg7.png";
 // Partners carousel images
 import partner1 from "@/assets/home/carousel/partners/partners1.png";
 import partner2 from "@/assets/home/carousel/partners/partners2.png";
-import ShadowButton from "../ShadowButton";
+
 
 // Button assets
 import line from "@/assets/buttonLine.png";
