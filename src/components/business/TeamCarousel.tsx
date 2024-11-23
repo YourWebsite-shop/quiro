@@ -33,7 +33,7 @@ const TeamCarousel: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full text-center mb-[80px] sm:mb-[96px]">
       <Image src={logo} alt="logo" width={1000} className="hidden lg:block w-[188.39px]" />
-      <p className="text-[14px] leading-[21px] text-[#000000] font-[700] sm:text-[14px] sm:leading-[21px] lg:text-[27.13px] lg:leading-[40.69px] mb-[80px] sm:mb-[55.2px] lg:mb-[104px] p-[24px] sm:p-[93px] lg:p-[168px]">
+      <p className="text-[14px] leading-[21px] text-[#000000] font-[700] sm:text-[14px] sm:leading-[21px] lg:text-[27.13px] lg:leading-[40.69px] mb-[80px] sm:mb-[43.6px] lg:mb-[79.25px] px-[24px] sm:px-[93px] lg:px-[168px]">
         “The onboarding is seamless, they came, installed QRs & all, and we were
         live before you know it!”
       </p>
@@ -70,13 +70,13 @@ const TeamCarousel: React.FC = () => {
         {/* Static Navigation Buttons */}
         <button
           onClick={handlePrevious}
-          className="absolute top-[30%] left-[5%] lg:text-[30px] transform -translate-y-1/2 bg-[#F5F3ED] p-[7.36px] lg:p-[13.88px] rounded-full border-[0.24px] border-[#000000] shadow-[3px_3px_0_rgba(0,0,0,1)]"
+          className="absolute top-[18%] left-[5%] lg:text-[30px] transform -translate-y-1/2 bg-[#F5F3ED] p-[7.36px] lg:p-[13.88px] rounded-full border-[0.24px] border-[#000000] shadow-[3px_3px_0_rgba(0,0,0,1)]"
         >
           <IoIosArrowRoundBack />
         </button>
         <button
           onClick={handleNext}
-          className="absolute top-[30%] right-[5%] lg:text-[30px] transform -translate-y-1/2 bg-[#F5F3ED] p-[7.36px] lg:p-[13.88px] rounded-full border-[0.24px] border-[#000000] shadow-[3px_3px_0_rgba(0,0,0,1)]"
+          className="absolute top-[18%] right-[5%] lg:text-[30px] transform -translate-y-1/2 bg-[#F5F3ED] p-[7.36px] lg:p-[13.88px] rounded-full border-[0.24px] border-[#000000] shadow-[3px_3px_0_rgba(0,0,0,1)]"
         >
           <IoIosArrowRoundForward />
         </button>
