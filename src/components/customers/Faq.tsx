@@ -66,52 +66,52 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center  lg:pb-[142px] sm:pb-[100px] pb-[80px] mt-[80px]">
+    <div className="flex justify-center items-center  lg:pb-[142px] sm:pb-[100px] pb-[80px] mt-[96px] sm:mt-[119.82px] lg:mt-[139.64px] 3xl:mt-[183px]">
       <div className="max-w-7xl w-full">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center">
-          <h1 className=" font-[600] relative text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] mx:auto max-w-1/2 text-center">
-            <span
-              className="billyOhioText text-[#006B66] absolute font-[400] text-[16px] lg:text-[36px] leading-[19.2px] w-full lg:leading-[54px] sm:px-0 lg:-left-10 lg:-top-10 sm:-left-6 left-1 -top-6  
-            sm:text-[24px] sm:leading-[36px] -translate-x-6"
+          <h1 className=" font-[600] relative text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[43.2px] 3xl:leading-[57.6px] mx:auto max-w-1/2 text-center">
+            <p
+              className="billyOhioText text-[#006B66] absolute font-[400] text-[16px] leading-[19.2px] sm:px-0 lg:-left-6 lg:-top-8 sm:-left-2 left-1 -top-4 sm:-top-7  
+            sm:text-[20px] sm:leading-[24px] lg:text-[28px] lg:leading-[33.8px] 3xl:text-[40px] 3xl:leading-[48px] -translate-x-10 whitespace-nowrap "
             >
               Know More
-            </span>
+            </p>
             FAQs
           </h1>
-          <p className="font-medium text[13px] sm:text-[12px] sm:leading-[18px] text-[13px] leading-[19.5px] lg:text-[20px] lg:leading-[30px] lg:pb-[96px] sm:pb-[39px] pb-[40px] text-center lg:mt-[16px] sm:mt-[7px] mt-[11px]">
+          <p className="font-medium text[13px] sm:text-[12px] sm:leading-[18px] text-[13px] leading-[19.5px] lg:text-[14px] lg:leading-[21px] 3xl:text-[18px] 3xl:leading-[27px] lg:pb-[50px] sm:pb-[39px] pb-[40px] text-center lg:mt-[16px] sm:mt-[7px] mt-[11px]">
             Here are some common questions about Quiro and our hotel management
             software.
           </p>
         </div>
 
-        <div className="flex flex-col items-start lg:gap-4 md:gap-4 w-full lg:pl-[383px] sm:pl-[184px]">
+        <div className="flex flex-col items-start md:gap-4 w-full lg:pl-[400px] sm:pl-[184px] pl-[24px] gap-[11.5px] lg:gap-[20px] 3xl:gap-[25.42px] sm:gap-[18.24px] ">
           {faqData.slice(0, faqData.length / 2).map((faq, index) => (
-            <div key={index} className="pb-1 sm:pb-2 lg:pb-4 justify-center">
+            <div key={index} className="">
               {/* Question */}
               <div
-                className="flex items-center justify-center cursor-pointer"
+                className="flex items-center justify-start cursor-pointer"
                 onClick={() => toggleFaq(index)}
               >
-                <div className="flex items-center">
-                  <div className="w-[22px] h-[22px] lg:w-[38px] lg:h-[38px] sm:w-[18px] sm:h-[18px] rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex items-center m-2 p-1">
+                <div className="flex items-center sm:gap-[13.08px] gap-[9.75px] lg:gap-[18px] 3xl:gap-[24.7px]">
+                  <div className="w-[17.33px] h-[18.49px] lg:w-[32px] lg:h-[32px] sm:w-[22.92px] sm:h-[22.91px] 3xl:w-[34.3px] 3xl:h-[37.58px] rounded-full border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex items-center justify-center">
                     {expandedIndex === index ? (
                       <Image
                         src={accup}
                         alt="accup"
                         width={1000}
-                        className="w-[10px] sm:w-[6px] lg:w-[13px] "
+                        className="w-[10px] sm:w-[6px] lg:w-[13px]"
                       />
                     ) : (
                       <Image
                         src={accdown}
                         alt="accdown"
                         width={1000}
-                        className="w-[10px] sm:w-[6px]  lg:w-[13px] "
+                        className="w-[10px] sm:w-[6px] lg:w-[13px]"
                       />
                     )}
                   </div>
-                  <h2 className="lg:text-[18px] font-[500] lg:leading-[23.4px] leading-[18px] sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words ">
+                  <h2 className="lg:text-[14px] font-[600] lg:leading-[18.2px] leading-[13px] sm:text-[11px] text-[10px] sm:leading-[14.3px] 3xl:text-[18px] 3xl:leading-[23.4px] break-words">
                     {faq.question}
                   </h2>
                 </div>
@@ -119,7 +119,7 @@ const Faq: React.FC = () => {
 
               {/* Answer */}
               {expandedIndex === index && (
-                <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-[14px] text-gray-600 lg:pl-8">
+                <p className="sm:text-[14px] text-[12px] font-[400] w-2/3 leading-[23px] pl-6 sm:pl-8 lg:pl-12 text-gray-600">
                   {faq.answer}
                 </p>
               )}
