@@ -10,16 +10,16 @@ interface TrustedCardType {
 
 const TrustedCard: React.FC<TrustedCardType> = ({ img, name, company }) => {
   return (
-    <div className="border-2 relative border-[#00413E] bg-white gap-2  w-[149px] sm:w-[200px] lg:w-[237px] rounded-xl sm:rounded-[7px] lg:rounded-[20px] flex items-center  px-2 py-2">
-      <div><Image src={img} height={40} width={40} className="" alt="profile" /></div>
+    <div className="border-[1.5px] lg:border-[2.55px] relative border-[#00413E] bg-white gap-[8px]  w-[128px] h-[36px] sm:w-[172px] sm:h-[49.86px] lg:w-[285px] lg:h-[72px] 3xl:w-[337px] 3xl:h-[86px]  rounded-[7px] lg:rounded-[20px] flex items-center  pl-[7px] pt-[6px] 3xl:pl-[11px] pb-[7px] lg:gap-[18px]">
+      <div><Image src={img} width={1000} height={1000} className="w-[23px] sm:w-[31.02px] lg:w-[54px] 3xl:w-[64px]  aspect-square" alt="profile" /></div>
       <div className="w-full">
 
-        <h5 className="font-[400] text-[9px] sm:text-[12px] lg:text-[15px] w-full ">{name}</h5>
-        <p className="text-[#00413E] font-[600] text-[9px] sm:text-[12px] lg:text-[15px]">{company}</p>
+        <h5 className="font-[400] text-[8px] leading-[12px]  lg:text-[12.73px] 3xl:text-[15px] 3xl:leading-[22.5px] w-full ">{name}</h5>
+        <p className="text-[#00413E] font-[600] leading-[12px] text-[8px] lg:text-[12.73px] 3xl:text-[15px] 3xl:leading-[22.5px] lg:leading-[19.09px]">{company}</p>
 
       </div>
 
-      <Image src={curvedLine} alt="curved line" className="absolute -bottom-2 left-2 lg:-bottom-3 lg:left-2 w-full" />
+      <Image src={curvedLine} alt="curved line" className="absolute -bottom-[6px] left-1 lg:-bottom-3 sm:pl-2 sm:left-[5px] lg:left-2 w-full" />
     </div>
   );
 };

@@ -6,9 +6,9 @@
 
 
 /* Media query for tablets */
-@media (min-width: 600px) and (max-width: 1024px) and (min-height: 800px) and (max-height: 1366px) {
+@media (min-width: 600px) and (max-width: 1024px) and (min-height: 750px) and (max-height: 1366px) {
     .custom-hero{
-        padding: 80px 0px;
+        padding: 80px 0px 110px 0px;
     }
 }
 

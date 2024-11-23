@@ -7,7 +7,7 @@ import "./styles/playtowatch.css";
 
 const PlayToWatch: React.FC = () => {
   return (
-    <div className="bg-[#F3CCE7] custom-ptw-box  px-20 pt-10 lg:pt-20 sm:p-10  flex flex-col items-center justify-center sm:justify-start sm:items-start sm:relative sm:min-h-[50vh] lg:min-h-[80vh] lg:mb-[150px] sm:mb-[100px] mb-[80px]">
+    <div className="bg-[#F3CCE7] custom-ptw-box  px-20 pt-10 lg:pt-20 sm:p-10  flex flex-col items-center justify-center sm:justify-start sm:items-start sm:relative sm:min-h-[50vh] lg:min-h-[80vh] ">
       {/* Mobile Images */}
       <div className="sm:hidden">
         <h1 className="text-[20px] font-[600] leading-[24px] min-w-[211px]">Hit Play to Watch the</h1>

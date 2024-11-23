@@ -5,6 +5,8 @@ import Img2 from "@/assets/home/EfficiencyImg2.png";
 import Img3 from "@/assets/home/EfficiencyImg3.png";
 import LineButton from "../LineButton";
 import ShadowButton from "../ShadowButton";
+import line from "@/assets/buttonLine.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 /* ---------------- Efficiency Component ---------------- */
 const Efficiency: React.FC = () => {
@@ -28,7 +30,7 @@ const Efficiency: React.FC = () => {
   ];
 
   return (
-    <div className=" lg:px-24 sm:px-4 lg:pb-[185px] sm:pb-[126px] pb-[106px]">
+    <div className="  sm:px-[42px] lg:px-0 lg:pb-[185px] sm:pb-[126px] pb-[106px]">
       {/* Section Heading */}
       <SectionHeader
         title="We Are More Than Just Another Software Company"
@@ -41,12 +43,23 @@ const Efficiency: React.FC = () => {
       <EfficiencyCardList data={efficiencyData} />
 
       {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row lg:pl-10 lg:pt-[61px] sm:pt-[30px] gap-[16px] items-center">
+      <div className="flex flex-col mt-[23px] sm:flex-row lg:pl-[126px] lg:pt-[50.59px] sm:pt-[30px]  sm:mt-0 gap-[16px] items-center">
         <div>
-          <LineButton text="Learn More" />
+          <button className="bg-black relative sm:text-[12px] sm:pr-[20.65px] sm:pl-[18px] md:text-base text-white pl-[14px] pr-[11px]  rounded-[6px] flex items-center w-fit text-[12px] lg:text-[14.45px] lg:leading-[21.68px] leading-[18px]  pt-[7px] pb-[7.97px] lg:pl-[22px] lg:pr-[23.12px] lg:pt-[14.46px] lg:pb-[15.17px]">
+            Learn More <FaLongArrowAltRight className="ml-2 text-white" />
+            <Image
+              src={line}
+              width={100}
+              height={0}
+              alt="line"
+              className="absolute w-full -bottom-2 left-0 px-2"
+            />
+          </button>
         </div>
         <div>
-          <ShadowButton text="Contact Us" />
+        <button className="bg-[#F5F3ED] text-[#00413E] lg:text-[14.45px] lg:pt-[14.46px] lg:pb-[15.17px] lg:leading-[21.68px]  justify-center border-2 border-[#00413E] text-center text-[12px] leading-[18px] sm:leading-[18px] font-[500] sm:text-[12px]  px-[25.5px] pt-[7.07px] pb-[8px] shadow-[4px_4px_0_rgba(0,0,0,1)] sm:pl-[32px] sm:pr-[29px] sm:pt-[6px] sm:pb-[6px]  rounded-[6px] flex items-center active:bg-[#E2E0D9] lg:pl-[34.69px] lg:pr-[35.49px] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none">
+      Contact Us
+    </button>
         </div>
       </div>
     </div>
@@ -58,14 +71,14 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
   title,
   description,
 }) => (
-  <div className="sm:flex lg:px-10 px-7 lg:pb-[96px] sm:pb-[50px] ">
-    <div className="relative w-full text-[#000000] sm:w-[60%] text-[20px] leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[48px] font-[600] sm:leading-[28.8px] lg:leading-[57.6px] pb-[11px] sm:pb-[0px]">
+  <div className="sm:flex   sm:gap-[27px]  lg:pb-[64px] sm:pb-[0px] ">
+    <div className="relative w-full text-[#000000] sm:w-[50%] lg:w-[55%]  text-[20px] leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[48px] font-[600] sm:leading-[28.8px] lg:pl-[151px] lg:leading-[57.6px] pl-[45px] pr-[38px] sm:px-0">
       {title}
-      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-1 -top-7 sm:-top-8">
+      <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 pl-[47px] sm:-left-6 left-1 -top-7 sm:-top-8 lg:pl-[122px]">
         Efficiency
       </span>
     </div>
-    <p className="  w-full text-[#000000] text-center sm:text-start sm:w-[40%] sm:text-[11px] sm:leading-[16.5px] lg:text-[20px] lg:leading-[30px] font-[500] text-[13px] leading-[19.5px] py-3 sm:py-0 lg:text-base ">
+    <p className="  w-full text-[#000000] text-center sm:text-start sm:w-[50%] sm:text-[11px] sm:leading-[16.5px] lg:w-[45%] lg:text-[20px] lg:leading-[30px] font-[500] text-[13px] leading-[19.5px] mt-[11px] pl-[20px] pr-[18px]  sm:py-0 sm:px-0 lg:text-base lg:pr-[120px]">
       {description}
     </p>
   </div>
@@ -75,7 +88,7 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
 const EfficiencyCardList: React.FC<{ data: EfficiencyCardProps[] }> = ({
   data,
 }) => (
-  <div className="sm:flex sm:gap-[10px] lg:gap-[20px] px-6 sm:px-0">
+  <div className="flex flex-col mt-[40px] sm:mt-[50px] lg:mt-0 gap-[25px]  sm:flex-row lg:mx-[104px] sm:gap-[10px] lg:gap-[12.47px] 3xl:gap-[20px] px-[24px] sm:px-0">
     {data.map((item, index) => (
       <EfficiencyCard key={index} {...item} />
     ))}
@@ -94,20 +107,18 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
   heading,
   text,
 }) => (
-  <div
-    className="sm:border-[1.5px] border-2 border-[#006B66] rounded-2xl w-fit mx-auto max-w-[491px] p-5 sm:p-3 lg:p-5 my-5 sm:my-0 lg:shadow-[0px_4px_14px_0px_rgba(0,107,102,0.25)]"
-  >
+  <div className="sm:border-[1.5px] lg:border-[2.32px] lg:rounded-[15.47px] border-2  border-[#006B66] rounded-[20px] sm:rounded-[8px] w-fit mx-auto max-w-[491px] lg:max-w-screen-3xl  px-[20px] pt-[20px] pb-[40px] sm:px-[14px] lg:px-[15.48px] lg:pt-[15.48px] sm:pt-[14px] sm:pb-[20px]   sm:my-0 lg:shadow-[0px_4px_14px_0px_rgba(0,107,102,0.25)]">
     <Image
       src={img}
       alt="efficiency img"
       width={452}
       height={311}
-      className="rounded"
+      className="rounded-[10px] w-full lg:rounded-[7.74px]"
     />
-    <h5 className="text-[#000000] text-[16px] leading-[20.8px] font-[600] sm:text-[12px] sm:leading-[15.6px] sm:py-3 lg:text-[24px] text-center lg:leading-[31.2px] lg:py-6 py-4">
+    <h5 className="text-[#000000] text-[16px] leading-[20.8px] font-[600] sm:text-[12px] sm:leading-[15.6px] sm:py-3 lg:text-[24px] text-center lg:leading-[31.2px] lg:py-6 pt-[25px] pb-[12px]">
       {heading}
     </h5>
-    <p className="text-[#000000] pb-[20px] text-center font-[400] text-[10px] leading-[15px] sm:text-[8px] sm:leading-[12px] lg:text-[16px] lg:leading-[24px] lg:pb-6 sm:pb-4">
+    <p className="text-[#000000]  text-center font-[400] text-[10px] leading-[15px] sm:text-[8px] sm:leading-[12px] lg:text-[16px] lg:leading-[24px] lg:pb-6 sm:pb-4">
       {text}
     </p>
   </div>

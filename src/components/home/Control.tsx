@@ -19,7 +19,7 @@ const Control: React.FC = () => {
     <div className="flex flex-col justify-center items-center gap-2 lg:pb-[185px] sm:pb-[118px] pb-[103px] xl:px-22 2xl:px-44 ">
       <div className="flex flex-col justify-center items-center ">
         <h1 className=" font-[600] text-[20px] px-10  text-center lg:text-[48px] sm:text-[24px] sm:leading-[28.8px] lg:leading-[57.6px] relative md:leading-[29px] lg:mb-[16px] sm:mb-[0px] mb-[11px]">
-          <span className="billyOhioText text-[#006B66] px-10 absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-0 lg:-left-0 lg:-top-10 sm:-left-6 left-3 -top-6 ">
+          <span className="billyOhioText text-[#006B66] px-10 absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-10 lg:-left-0 lg:-top-10 sm:-left-6 left-3 -top-6 ">
             Services
           </span>
           A Product That Puts You in Control
@@ -53,7 +53,7 @@ const Control: React.FC = () => {
                     src={control1tab.src}
                     alt="control background"
                     fill
-                    className="absolute hidden sm:block lg:rounded-[10px]  top-0 left-0 w-full h-full object-cover z-0"
+                    className="absolute hidden sm:block lg:rounded-[10px]  top-0 left-0 w-full h-full  z-0"
                   />
                   <div className="relative z-10 pl-[13px] lg:pl-[30px] pt-[13px] lg:pt-[32px]">
                     <div className="absolute right-[11px] top-[11px]">

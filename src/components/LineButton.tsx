@@ -1,7 +1,7 @@
 import React from 'react'
 import line from "@/assets/buttonLine.png"
-import Image from "next/image"
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Image from "next/image"
 
 interface buttonType {
     text:string

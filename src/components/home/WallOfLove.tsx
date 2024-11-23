@@ -296,11 +296,11 @@ const WallOfLove: React.FC = () => {
           </div>
 
           {/* Third row */}
-          <div className="border relative border-[#006B66] rounded-[10px] px-[18px] pt-[17px] bg-white w-[236px] mt-[19px]">
+          <div className="border relative border-[#006B66] rounded-[10px] px-[18px] pt-[17px]  bg-white w-[236px] mt-[19px]">
             <div>
               <Image src={wolimg2tablelandscape} alt="wolimg2tablelandscape" />
             </div>
-            <p className="text-[10px] leading-[15px] font-[500] text-center">
+            <p className="text-[10px] pt-[13px] leading-[15px] font-[500] text-center">
               &apos;The team at Quiro just gets what their partners need. From setup
               to daily use, everything has been smooth and simple!”
             </p>
@@ -529,7 +529,7 @@ const WallOfLove: React.FC = () => {
               </div>
               <div className="text-start lg:text-[15px] 3xl:text-[20px] lg:pt-4 3xl:pt-8">
                 <p className="font-[400] lg:leading-[15px] 3xl:leading-[30px]">Pradeep</p>
-                <p className="text-[#006B66] font-[600] lg:leading-[15px] 3xl:leading-[30px]">Hotel Pride Inn</p>
+                <p className="text-[#006B66] font-[600] lg:leading-[15px] 3xl:leading-[30px] pt-1">Hotel Pride Inn</p>
               </div>
             </div>
             <div className="w-fit pr-[37px]">
