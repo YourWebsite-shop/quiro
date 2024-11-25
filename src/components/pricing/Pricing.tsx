@@ -42,7 +42,7 @@ const Pricing: React.FC = () => {
           <Image
             src={tabarrow}
             alt="arrow"
-            className="absolute w-[200px] z-10  left-0 sm:-top-20 sm:left-1 lg:w-[376px] 3xl:w-[572px] lg:-top-[150px] lg:left-[50px] 3xl:left-[0px] 3xl:-top-[250px]"
+            className="absolute w-[200px] z-10  left-0 sm:-top-20 sm:left-1 lg:w-[376px] 3xl:w-[572px] lg:-top-[150px] lg:-left-[70px] xl:-top-[150px] xl:left-[50px] 3xl:left-[0px] 3xl:-top-[250px]"
           />
           Choose a plan that fits your needs, with pay-as-you-go flexibility to
           scale. Our tailored commission model gives you great value and
@@ -51,8 +51,8 @@ const Pricing: React.FC = () => {
       </div>
 
       {/* Pricings */}
-      <div className="mx-[70px] sm:mb-[101px] lg:mb-0 sm:mx-[139px] lg:ml-[324px] lg:mr-[322px] 3xl:mx-[430px] mt-[30px] sm:mt-[36px] lg:mt-[50px] 3xl:mt-[64px] sm:flex sm:gap-[20px]">
-        <div className=" sm:min-w-[263px] md:min-w-none border-[0.8px] lg:border-[1px] rounded-[10px] lg:rounded-[15px] 3xl:rounded-[20px] border-[#006B66] bg-white pt-[16px] lg:pt-[33px] green-shadow sm:max-w-[235px] lg:max-w-[387px] 3xl:max-w-[520px] ">
+      <div className="mx-[70px] sm:mb-[101px] lg:mb-0 sm:mx-[139px] lg:ml-[150px] xl:ml-[324px] lg:mr-[100px] xl:mr-[322px] 3xl:mx-[430px] mt-[30px] sm:mt-[36px] lg:mt-[50px] 3xl:mt-[64px] sm:flex sm:gap-[20px]">
+        <div className=" sm:min-w-[263px] md:min-w-none border-[0.8px] lg:border-[1px] rounded-[10px] lg:rounded-[15px] 3xl:rounded-[20px] border-[#006B66] bg-white pt-[16px] lg:pt-[33px] green-shadow sm:max-w-[235px] lg:max-w-[387px] xl:min-w-[387px] 3xl:max-w-[520px] ">
           <div className="pl-[20px] sm:pl-[20.04px] lg:pl-[27px] 3xl:pl-[44px] pb-[13.74px] lg:pb-[26.01px] 3xl:pb-[31.49px]  border-b-[0.5px] lg:border-b-[1px] border-[#006B66]">
             <p className="text-[16px] lg:text-[24px] 3xl:text-[32px] leading-[19.2px] lg:leading-[28.8px] 3xl:leading-[38.4px] font-[600]">
               Basic Starts at
@@ -118,7 +118,7 @@ const Pricing: React.FC = () => {
           </div>
         </div>
 
-        <div className=" sm:min-w-[263px] md:min-w-none border-[0.8px] lg:border-[1px] rounded-[10px] lg:rounded-[20px] border-[#006B66] bg-white pt-[16px] lg:pt-[26px] 3xl:pt-[32px] mt-[14px] sm:mt-0 green-shadow mb-[80px] sm:mb-0 sm:max-w-[235px] lg:max-w-[387px] 3xl:max-w-[520px]">
+        <div className=" sm:min-w-[263px] md:min-w-none border-[0.8px] lg:border-[1px] rounded-[10px] lg:rounded-[20px] border-[#006B66] bg-white pt-[16px] lg:pt-[26px] 3xl:pt-[32px] mt-[14px] sm:mt-0 green-shadow mb-[80px] sm:mb-0 sm:max-w-[235px] lg:max-w-[387px]  xl:min-w-[387px]  3xl:max-w-[520px]">
           <div className="border-b-[0.5px] lg:border-b-[1px] border-[#006B66] pl-[20px] lg:pl-[33px] 3xl:pl-[44px] pb-[13.81px] lg:pb-[26.57px] 3xl:pb-[31.49px]">
             <div className="text-[8px] lg:text-[14px] 3xl:text-[16px] leading-[9.6px] lg:leading-[16.8px] 3xl:leading-[19.2px] font-[400]">
               <span className="text-[20px] lg:text-[32px] 3xl:text-[40px] leading-[24px] lg:leading-[38.4px] 3xl:leading-[48px] font-[600] text-[#006B66]">
