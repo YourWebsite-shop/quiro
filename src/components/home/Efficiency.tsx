@@ -28,7 +28,7 @@ const Efficiency: React.FC = () => {
   ];
 
   return (
-    <div className="  sm:px-[42px] lg:px-0 lg:pb-[185px] sm:pb-[126px] pb-[106px] 3xl:px-[160px]">
+    <div className="  sm:px-[42px] lg:px-0 lg:pb-[146px] sm:pb-[126px] pb-[106px] 3xl:px-[160px]">
       {/* Section Heading */}
       <SectionHeader
         title="We Are More Than Just Another Software Company"
@@ -43,7 +43,7 @@ const Efficiency: React.FC = () => {
       {/* Action Buttons */}
       <div className="flex flex-col mt-[23px] sm:flex-row lg:pl-[126px] 3xl:pl-[61px] lg:pt-[50.59px] sm:pt-[30px]  sm:mt-0 3xl:pt-[60px]  gap-[16px] items-center">
         <div>
-          <button className="bg-black relative sm:text-[12px] sm:pr-[20.65px] sm:pl-[18px] md:text-base text-white pl-[14px] pr-[11px]  rounded-[6px] flex items-center w-fit text-[12px] lg:text-[14.45px] lg:leading-[21.68px] leading-[18px]  pt-[7px] pb-[7.97px] lg:pl-[22px] 3xl:pl-[31px] lg:pr-[23.12px] 3xl:pr-[32px] lg:pt-[14.46px] lg:pb-[15.17px] 3xl:py-[20px] 3xl:rounded-[10px] 3xl:text-[20px] 3xl:leading-[30px]">
+          <button className="bg-black relative sm:text-[12px]  sm:pr-[20.65px] sm:pl-[18px] md:text-base text-white pl-[14px] pr-[11px]  rounded-[6px] flex items-center w-fit text-[12px] lg:text-[14.45px] lg:leading-[21.68px] leading-[18px]  pt-[7px] pb-[7.97px] lg:pl-[22.41px] 3xl:pl-[31px] lg:pr-[23.12px] 3xl:pr-[32px] lg:pt-[14.46px] lg:pb-[15.17px] 3xl:py-[20px] 3xl:rounded-[10px] 3xl:text-[20px] 3xl:leading-[30px]">
             Learn More <FaLongArrowAltRight className="ml-2 text-white" />
             <Image
               src={line}
@@ -55,7 +55,7 @@ const Efficiency: React.FC = () => {
           </button>
         </div>
         <div>
-        <button className="bg-[#F5F3ED] text-[#00413E] lg:text-[14.45px] lg:pt-[14.46px] lg:pb-[15.17px] lg:leading-[21.68px]  justify-center border-2 border-[#00413E] text-center text-[12px] leading-[18px] sm:leading-[18px] font-[500] sm:text-[12px]  px-[25.5px] pt-[7.07px] pb-[8px] shadow-[4px_4px_0_rgba(0,0,0,1)] sm:pl-[32px] sm:pr-[29px] sm:pt-[6px] sm:pb-[6px]  rounded-[6px] flex items-center active:bg-[#E2E0D9] lg:pl-[34.69px] lg:pr-[35.49px] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none 3xl:rounded-[10px] 3xl:text-[20px] 3xl:leading-[30px] 3xl:py-[20px] 3xl:px-[48px]">
+        <button className="bg-[#F5F3ED] text-[#00413E] lg:text-[14.45px] lg:pt-[14.46px] lg:pb-[15.17px] lg:leading-[21.68px] lg:border-[1.45px]  justify-center border-2 border-[#00413E] text-center text-[12px] leading-[18px] sm:leading-[18px]  font-[500] sm:text-[12px]  px-[25.5px] pt-[7.07px] pb-[8px] shadow-[4px_4px_0_rgba(0,0,0,1)] sm:pl-[32px] sm:pr-[29px] sm:pt-[6px] sm:pb-[6px]  rounded-[6px] flex items-center active:bg-[#E2E0D9] lg:pl-[34.69px] lg:pr-[35.49px] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none 3xl:rounded-[10px] 3xl:text-[20px] 3xl:leading-[30px] 3xl:py-[20px] 3xl:px-[48px]">
       Contact Us
     </button>
         </div>

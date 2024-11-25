@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import wolimg1 from "@/assets/home/walloflove/wolimg1.png";
 import wolimg2 from "@/assets/home/walloflove/wolimg2.png";
-import mayank from "@/assets/home/AbsoluteImages/Mayank.png";
 import apos2 from "@/assets/home/AbsoluteImages/apos2.png";
 import kamal from "@/assets/home/AbsoluteImages/Kamal.png";
 import wolimgcus2desk from "@/assets/home/walloflove/wolcus2desk.png";
@@ -27,7 +26,7 @@ import wolimg2tablelandscape from "@/assets/home/walloflove/wolimg2tablandscape.
 
 const WallOfLove: React.FC = () => {
   return (
-    <div className="lg:pb-[185px] sm:pb-[100px] pb-[33px]">
+    <div className="lg:pb-[105px] sm:pb-[100px] pb-[33px]">
       <div className="text-center pb-6">
         <h5 className="text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] font-[600] w-fit mx-auto relative">
           <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-0 lg:-left-8 lg:-top-10 sm:-left-6 -left-4 -top-6">

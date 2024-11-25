@@ -16,7 +16,7 @@ import control7 from "../../assets/home/control/control7.png";
 
 const Control: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-2 lg:pb-[185px] sm:pb-[118px] pb-[103px] xl:px-22 2xl:px-44 ">
+    <div className="flex flex-col justify-center items-center gap-2 lg:pb-[165px] sm:pb-[118px] pb-[103px] xl:px-22 2xl:px-44 ">
       <div className="flex flex-col justify-center items-center ">
         <h1 className=" font-[600] text-[20px] px-10  text-center lg:text-[48px] sm:text-[24px] sm:leading-[28.8px] lg:leading-[57.6px] relative md:leading-[29px] lg:mb-[16px] sm:mb-[0px] mb-[11px]">
           <span className="billyOhioText text-[#006B66] px-10 absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-10 lg:-left-0 lg:-top-10 sm:-left-6 left-3 -top-6 ">
@@ -56,7 +56,7 @@ const Control: React.FC = () => {
                     className="absolute hidden sm:block lg:rounded-[10px]  top-0 left-0 w-full h-full  z-0"
                   />
                   <div className="relative z-10 pl-[13px] lg:pl-[30px] pt-[13px] lg:pt-[32px]">
-                    <div className="absolute right-[11px] top-[11px]">
+                    <div className="absolute right-[11px] top-[11px] lg:right-[38px] lg:top-[25px]">
                       <ChevronCircle variant="light" />
                     </div>
                     {/* Mobile heading */}
@@ -122,7 +122,7 @@ const Control: React.FC = () => {
                 />
 
                 <div className="relative z-10 pl-[13px] pt-[13px] lg:pt-[30px] lg:pl-[30px]">
-                  <div className="absolute right-[11px] top-[11px]">
+                  <div className="absolute right-[11px] top-[11px] lg:right-[49.82px] lg:top-[22.5px]">
                     <ChevronCircle variant="light" />
                   </div>
                   <h5 className="text-[10px]  sm:text-[12px] lg:text-[24px] sm:leading-[14.4px] lg:leading-[28.8px] leading-[12px] font-[600] pb-[5px] lg:pb-[15px]">
@@ -148,7 +148,7 @@ const Control: React.FC = () => {
                   className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-[6px]"
                 />
                 <div className="relative z-10">
-                  <div className="absolute right-[8px] ">
+                  <div className="absolute right-[8px] lg:right-[27px]  ">
                     <ChevronCircle variant="light" />
                   </div>
                   <h5 className="text-[10px] sm:text-[12px] lg:text-[24px] leading-[12px] lg:leading-[28.8px] font-[600] text-[#F5F3ED] pr-[38px] lg:pr-[108px] pb-[5px] lg:pb-[11px]">
@@ -195,7 +195,7 @@ const Control: React.FC = () => {
               className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-[6px] hidden lg:block "
             />
             <div className="relative z-10 pl-[12px] pt-[8px] lg:pl-[30px] lg:pt-[32px]">
-              <div className="bg-[#F5F3ED] text-[10px] lg:text-[20px]  leading-[10px] h-[20px] rounded-[6px] sm:py-3 sm:pr-3 lg:rounded-[10px] flex items-center pl-[6px] mb-[112px] lg:mb-[238px]  mr-[129px] w-fit lg:pr-3 lg:py-6 gap-3">
+              <div className="bg-[#F5F3ED] text-[10px] lg:text-[20px]  leading-[10px] h-[20px] rounded-[6px] sm:py-3 sm:pr-3 lg:rounded-[10px] flex items-center pl-[6px] lg:pl-[16.56px] mb-[112px] lg:mb-[238px]  mr-[129px] w-fit lg:pr-3 lg:py-6 gap-3">
                 Access services through QR
                 <ChevronCircle variant="dark" />
               </div>
@@ -219,7 +219,7 @@ const Control: React.FC = () => {
                 className="absolute hidden sm:block top-0 left-0 w-full h-full object-cover z-0 rounded-[6px]"
               />
               <div className="relative z-10 p-4">
-                <div className="absolute right-[11px] top-[11px]">
+                <div className="absolute right-[11px] top-[11px] lg:right-[28px] lg:top-[22px]">
                   <ChevronCircle variant="light" />
                 </div>
                 <h5 className="text-[10px] sm:text-[12px] lg:text-[24px] leading-[12px] lg:leading-[28.8px] font-[600] text-[#F5F3ED] pb-[5px] lg:pb-[15px]">
@@ -248,7 +248,7 @@ const Control: React.FC = () => {
                 className="absolute hidden sm:block top-0 left-0 w-full h-full object-cover z-0 rounded-[6px]"
               />
               <div className="relative z-10 p-4">
-                <div className="absolute right-[11px] top-[11px]">
+                <div className="absolute right-[11px] top-[11px] lg:right-[28px] lg:top-[22px]">
                   <ChevronCircle variant="light" />
                 </div>
                 <h5 className="text-[10px] sm:text-[12px] lg:text-[24px] leading-[12px] lg:leading-[28.8px] font-[600] text-[#F5F3ED] pb-[5px]">
@@ -281,7 +281,7 @@ const ChevronCircle = ({
       } relative`}
     >
       <div
-        className={`absolute scale-50 lg:scale-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${
+        className={`absolute scale-50 lg:scale-100 top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 ${
           variant === "light" ? "text-black" : "text-white"
         }`}
       >

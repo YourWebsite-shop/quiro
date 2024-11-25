@@ -16,7 +16,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const PerfectForBusiness: React.FC = () => {
   return (
-    <div className="flex justify-center items-center  sm:px-2  lg:px-0 lg:pb-[190px] sm:pb-[126px] pb-[107px]">
+    <div className="flex justify-center items-center  sm:px-2  lg:px-0 lg:pb-[147.96px] sm:pb-[126px] pb-[107px]">
       <div className="flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
           <p className="relative text-center font-[600] px-[50px] sm:px-0 lg:pb-[16px]  sm:pb-[0px] pb-[11px] text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[40px] 3xl:text-[48px] 3xl:leading-[57.6px] lg:leading-[48px]">
