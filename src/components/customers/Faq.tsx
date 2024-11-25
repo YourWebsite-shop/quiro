@@ -85,7 +85,7 @@ const Faq: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-start md:gap-4 w-full lg:pl-[400px] sm:pl-[184px] pl-[24px] gap-[11.5px] lg:gap-[20px] 3xl:gap-[25.42px] sm:gap-[18.24px] ">
+        <div className="flex flex-col items-start w-full lg:pl-[400px] sm:pl-[184px] pl-[24px] gap-[11.5px] lg:gap-[20px] 3xl:gap-[25.42px] sm:gap-[18.24px] ">
           {faqData.slice(0, faqData.length / 2).map((faq, index) => (
             <div key={index} className="">
               {/* Question */}
