@@ -18,8 +18,6 @@ import Image from "next/image";
 import LineButton from "./LineButton";
 import { Menu } from "lucide-react";
 
-
-
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
