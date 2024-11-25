@@ -476,7 +476,7 @@ const WallOfLove: React.FC = () => {
         <div className="w-[28%] p-1 flex flex-col items-center gap-6">
 
 
-         <div className="relative lg:w-[365px] 3xl:w-[458px] pb-1">
+         <div className="relative lg:w-[365px]  3xl:w-[458px] pb-1">
          <Image
             src={wolcusimg3desk}
             width={1000}
@@ -495,7 +495,7 @@ const WallOfLove: React.FC = () => {
 
 
 
-          <div className="border-2 border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 lg:mt-[24px]  3xl:mt-[36px] bg-white rounded-2xl lg:w-[365px] 3xl:w-[458px]">
+          <div className="border-2 border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 lg:mt-[24px]  3xl:mt-[36px] bg-white rounded-2xl lg:w-[365px]  3xl:w-[458px]">
             <div className="w-1/2">
               <Image src={wolimgcus3desk} alt="wolimgcus3desk"  />
             </div>

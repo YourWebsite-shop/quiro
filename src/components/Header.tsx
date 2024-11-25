@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Logo from "@/assets/Logo.png";
+import LogoMain from "@/assets/Logo"
 import line from "@/assets/buttonLine.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import {
@@ -28,16 +29,11 @@ const Header: React.FC = () => {
   }, [pathname]);
 
   return (
-    <div className="flex items-center justify-between px-4 md:px-10 lg:pl-[142px] lg:pr-[160px] w-full top-0 bg-[#F5F3ED] py-4 z-50">
+    <div className="flex items-center justify-between px-4 md:px-10 lg:pl-[142px] lg:pr-[160px] w-full top-0 bg-[#F5F3ED] pt-[33px] z-50">
       <div>
-        <Link href={"/"}>
-          <Image
-            src={Logo}
-            width={300}
-            height={70}
-            alt="logo"
-            className="w-[100px] h-[70px] md:w-[150px] md:h-[100px]"
-          />
+        <Link href={"/"} className="flex items-center gap-[8px] sm:gap-[20px] lg:gap-[10px]">
+          <LogoMain />
+          <h1 className="text-[#00413E] font-[400] lg:font-[500] text-[16px] leading-[24px] sm:text-[20px] lg:text-[28.2px] sm:leading-[30px] lg:leading-[42.3px] 3xl:text-[40px] 3xl:leading-[60px]">Quiro</h1>
         </Link>
       </div>
 

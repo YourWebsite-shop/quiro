@@ -23,14 +23,14 @@ const PlayToWatch: React.FC = () => {
 
       {/* Tablet and Desktop Screens */}
       <div className="sm:flex w-full ">
-        <div className="w-[70vw] sm:w-[50vw] lg:w-[52vw] custom-ptw-content  xl:px-44">
-          <h1 className="font-[600] text-[20px] leading-[24px] w-[273px] sm:w-[264px] sm:pb-[6px] lg:w-full  lg:text-[48px] lg:leading-[57.6px] hidden sm:block">
+        <div className="w-[70vw] sm:w-[50vw] lg:w-[52vw] custom-ptw-content  ">
+          <h1 className="font-[600] text-[20px] leading-[24px] w-[273px] xl:pl-32 sm:w-[264px] sm:pb-[6px] lg:w-full lg:text-[40px] 3xl:text-[48px] lg:leading-[57.6px] hidden sm:block">
             Hit Play to Watch the{" "}
-            <span className="billyOhioText text-[#006B66] text-[24px] leading-[28.8px] lg:text-[64px] lg:leading-[76.8px] font-[400]">
+            <span className="billyOhioText text-[#006B66] text-[24px] leading-[28.8px] lg:text-[40px] 3xl:text-[48px] lg:leading-[76.8px] font-[400]">
               Magic.
             </span>
           </h1>
-          <p className="text-[12px] leading-[18px] w-[273px] sm:w-[254px]   lg:w-full  lg:text-[18px] font-[500] lg:leading-[27px] hidden sm:block ptw-desc">
+          <p className="text-[12px] leading-[18px] w-[273px] sm:w-[254px]  xl:px-32  lg:w-full  lg:text-[15px] 3xl:text-[18px] font-[500] lg:leading-[22.5px] 3xl:leading-[27px] hidden sm:block ptw-desc">
             Explore how Quiro&apos;s management software transforms your
             operations in just 2 minutes. Experience faster order processing,
             instant guest request handling, and automated payment solutions.
