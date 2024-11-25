@@ -26,15 +26,15 @@ import wolimg2tablelandscape from "@/assets/home/walloflove/wolimg2tablandscape.
 
 const WallOfLove: React.FC = () => {
   return (
-    <div className="lg:pb-[105px] sm:pb-[100px] pb-[33px]">
+    <div className="lg:pb-[105px] sm:pb-[100px] pb-[102px]">
       <div className="text-center pb-6">
-        <h5 className="text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] font-[600] w-fit mx-auto relative">
-          <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-0 lg:-left-8 lg:-top-10 sm:-left-6 -left-4 -top-6">
+        <h5 className="text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[40px] 3xl:text-[48px] lg:leading-[48px] 3xl:leading-[57.6px] font-[600] w-fit mx-auto relative">
+          <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] lg:text-[38px] 3xl:text-[36px] lg:leading-[57px] 3xl:leading-[54px] sm:text-[24px] sm:leading-[28.8px]  sm:px-0 lg:-left-8 lg:-top-10 sm:-left-6 -left-4 -top-6">
             Cheers
           </span>
           Wall of Love
         </h5>
-        <p className="text-[13px] leading-[19.5px] lg:pt-[16px] sm:pt-[0px] pt-[11px] lg:text-[20px] lg:leading-[30px] font-[500]">
+        <p className="text-[13px] leading-[19.5px] lg:pt-[16.02px] 3xl:pt-[16px] sm:pt-[0px] pt-[11px] lg:text-[16px] 3xl:text-[20px] lg:leading-[24px] 3xl:leading-[30px] font-[500]">
           Less from us, more from our happy customers
         </p>
       </div>
@@ -317,9 +317,7 @@ const WallOfLove: React.FC = () => {
       </div>
       {/* Tab masonry above */}
 
-      <div className="text-center sm:text-[20px] text-[#006B66] font-semibold border-b border-[#006B66] lg:hidden my-8 w-fit mx-auto">
-        View More
-      </div>
+  
 
       {/* For desktop screens */}
 
@@ -419,7 +417,7 @@ const WallOfLove: React.FC = () => {
             <Image src={wolarr} alt="wolarr" width={1000} />
             <div className="absolute lg:top-[21px] 3xl:top-[31px] left-1/2 -translate-x-1/2 w-full text-center">
               <p className="font-semibold">&apos;I was very impressed&apos;</p>
-              <p className=" lg:text-[12.76px] 3xl:text-[16px] pt-[20px] 3xl:pt-[26px] pl-[33px] pr-[41px]">
+              <p className=" lg:text-[10px] 3xl:text-[16px] pt-[20px] 3xl:pt-[26px] pl-[33px] pr-[41px]">
                 &apos;Quiro made a big difference right from day one. And the
                 best thing is it is really easy for the staff to use it&apos;
               </p>
@@ -517,7 +515,7 @@ const WallOfLove: React.FC = () => {
 
           <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-2 border-[#006B66] rounded-2xl  lg:h-[175px] 3xl:h-[220px] lg:w-[365px] 3xl:w-[458px] relative translate-x-4">
             <div className="w-1/2">
-              <div className=" text-[12px] font-[500] leading-[18px]">
+              <div className=" text-[10px] font-[500] leading-[18px]">
                 &apos;We used to struggle with order tracking, but Quiro has
                 made it effortless. It’s a game-changer for us.&apos;
               </div>

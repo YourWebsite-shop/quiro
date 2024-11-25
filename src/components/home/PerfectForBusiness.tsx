@@ -103,7 +103,7 @@ const Box2: React.FC = () => {
     >
       {/* Flex container to center the child div */}
       <div className="bg-[#F5F3ED] rounded-[10px] lg:rounded-[20.84px] 3xl:rounded-[30px] ">
-        <p className="billyOhioText text-[#F58121] text-[16px] sm:text-[18px] lg:text-[24px] 3xl:text-[32px] 3xl:pl-[243px] 3xl:pr-[256px]  font-[400] leading-[19.2px] sm:leading-[21.6px] lg:leading-[36px] 3xl:leading-[48px] text-center pt-[32px] sm:pt-[66px]  lg:pt-[60px] 3xl:pt-[141px] ">
+        <p className="billyOhioText text-[#F58121] text-[16px] sm:text-[18px] lg:text-[24px] 3xl:text-[32px]   font-[400] leading-[19.2px] sm:leading-[21.6px] lg:leading-[36px] 3xl:leading-[48px] text-center pt-[32px] sm:pt-[66px]  lg:pt-[60px] 3xl:pt-[141px] ">
           Master your Operation
         </p>
         <h5 className="text-[16px] lg:text-[24px] lg:leading-[28.8px] sm:leading-[19.2px] 3xl:text-[40px] font-[600] leading-[19.2px] 3xl:leading-[48px] text-center pl-[31px] sm:pl-[68px] lg:pl-[58px] 3xl:pl-[61px] pr-[30px] sm:pr-[62px] lg:pr-[79px] 3xl:pr-[112px]">
