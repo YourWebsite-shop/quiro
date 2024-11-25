@@ -7,6 +7,7 @@ import artwork from "@/assets/customers/offering1artwork.png";
 import artwork2 from "@/assets/customers/artwork2.png";
 import artwork3 from "@/assets/customers/artwork3.png";
 import smartwork3 from "@/assets/customers/smArtwork3.png";
+import mobartwork3 from "@/assets/customers/mobArtwork3.png";
 
 const Offerings: React.FC = () => {
   return (
@@ -31,13 +32,13 @@ const Offerings: React.FC = () => {
             src={offering1}
             alt="journey"
             width={1000}
-            className="w-full max-w-[551px] lg:max-w-none lg:min-h-[219px] lg:min-w-[352px] h-auto rounded-[3px] lg:rounded-[10px] shadow-[4.88px_4.88px_0_rgba(0,0,0,1)] lg:shadow-[7.81px_7.81px_0_rgba(0,0,0,1)] 3xl:shadow-[11px_12px_0_rgba(0,0,0,1)] mb-[24px] sm:mb-[0px]"
+            className="w-full max-w-[551px] lg:max-w-none lg:min-h-[219px] lg:min-w-[352px] h-auto rounded-[3px] lg:rounded-[10px] shadow-[4.88px_4.88px_0_rgba(0,0,0,1)] lg:shadow-[7.81px_7.81px_0_rgba(0,0,0,1)] 3xl:shadow-[11px_12px_0_rgba(0,0,0,1)] mb-[28.88px] sm:mb-[0px]"
           />
         </div>
         <div className="sm:w-3/5 lg:w-[70%] text-center sm:text-left flex flex-col justify-center items-center sm:items-start h-full">
           <h1 className="text-[#000000] text-[16px] leading-[20.8px] font-[700] sm:text-[16px] sm:leading-[19.2px] lg:text-[20px] text-center sm:text-start lg:leading-[24px] 3xl:text-[32px] 3xl:leading-[38.4px] pb-[12px] sm:pb-[8px] lg:pb-[24px] 3xl:pb-[16px] w-full relative">
             Convenience Redefined
-            <Image src={artwork} alt="artwork" width={1000} className="absolute lg:w-[46px] lg:h-[38px] sm:w-[30px] sm:h-[26px] 3xl:w-[71px] 3xl:h-[64px] lg:translate-x-[232px] lg:-top-[22px] sm:translate-x-[190px] sm:-top-[12px] 3xl:translate-x-[375px] 3xl:-top-[30px] hidden sm:block" />
+            <Image src={artwork} alt="artwork" width={1000} className="absolute w-[22.74px] h-[18.79px] lg:w-[46px] lg:h-[38px] sm:w-[30px] sm:h-[26px] 3xl:w-[71px] 3xl:h-[64px] lg:translate-x-[232px] lg:-top-[22px] sm:translate-x-[190px] sm:-top-[12px] 3xl:translate-x-[375px] 3xl:-top-[30px] translate-x-[265px] -top-[8px] " />
           </h1>
           <p className="text-[#000000] pb-[20px] sm:pb-[0px] font-[400] text-[10px] leading-[15px] sm:text-[8px] sm:leading-[12px] lg:text-[14px] lg:leading-[21px] hidden sm:block lg:hidden">
             No more waiting or phone calls. With Quiro, guests can request
@@ -62,7 +63,7 @@ const Offerings: React.FC = () => {
             src={offering2}
             alt="journey"
             width={1000}
-            className="w-full max-w-[551px] lg:max-w-none lg:min-h-[219px] lg:min-w-[352px] h-auto rounded-[3px] lg:rounded-[10px] shadow-[4.88px_4.88px_0_rgba(0,0,0,1)] lg:shadow-[7.81px_7.81px_0_rgba(0,0,0,1)] 3xl:shadow-[11px_12px_0_rgba(0,0,0,1)] mb-[24px] sm:mb-[0px]"
+            className="w-full max-w-[551px] lg:max-w-none lg:min-h-[219px] lg:min-w-[352px] h-auto rounded-[3px] lg:rounded-[10px] shadow-[4.88px_4.88px_0_rgba(0,0,0,1)] lg:shadow-[7.81px_7.81px_0_rgba(0,0,0,1)] 3xl:shadow-[11px_12px_0_rgba(0,0,0,1)] mb-[28.88px] sm:mb-[0px]"
           />
         </div>
         <div className="sm:w-3/5 lg:w-[70%] text-center sm:text-left flex flex-col justify-center items-center sm:items-start h-full">
@@ -93,7 +94,7 @@ const Offerings: React.FC = () => {
             src={offering3}
             alt="journey"
             width={1000}
-            className="w-full max-w-[551px] lg:max-w-none lg:min-h-[219px] lg:min-w-[352px] h-auto rounded-[3px] lg:rounded-[10px] shadow-[4.88px_4.88px_0_rgba(0,0,0,1)] lg:shadow-[7.81px_7.81px_0_rgba(0,0,0,1)] 3xl:shadow-[11px_12px_0_rgba(0,0,0,1)] mb-[24px] sm:mb-[0px]"
+            className="w-full max-w-[551px] lg:max-w-none lg:min-h-[219px] lg:min-w-[352px] h-auto rounded-[3px] lg:rounded-[10px] shadow-[4.88px_4.88px_0_rgba(0,0,0,1)] lg:shadow-[7.81px_7.81px_0_rgba(0,0,0,1)] 3xl:shadow-[11px_12px_0_rgba(0,0,0,1)] mb-[28.88px] sm:mb-[0px]"
           />
         </div>
         <div className="sm:w-3/5 lg:w-[70%] text-center sm:text-left flex flex-col justify-center items-center sm:items-start h-full">
@@ -101,6 +102,7 @@ const Offerings: React.FC = () => {
             Secure, Easy Payments
             <Image src={artwork3} alt="artwork" width={1000} className="absolute lg:w-[198px] sm:w-[75px] 3xl:w-[198px] lg:-translate-x-[121px] lg:top-[68px] 3xl:-translate-x-[109px] 3xl:top-[110px] hidden lg:block" />
             <Image src={smartwork3} alt="artwork" width={1000} className="absolute sm:w-[75px] hidden sm:block lg:hidden" style={{top: "195%", right: "88%"}}/>
+            <Image src={mobartwork3} alt="mobartwork" width={1000} className="absolute w-[41.12px] h-[33.42px] translate-x-[268px] -top-[22px] block sm:hidden -rotate-12" />
           </h1>
           <p className="text-[#000000] pb-[20px] sm:pb-[0px] font-[400] text-[10px] leading-[15px] sm:text-[8px] sm:leading-[12px] lg:text-[14px] lg:leading-[21px] hidden sm:block lg:hidden">
             Simple and secure payments with multiple options – right from your

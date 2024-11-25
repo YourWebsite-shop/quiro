@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoInformationCircleSharp } from "react-icons/io5";
 import Trusted from "../home/Trusted";
+import FAQs from "../home/Faq";
 
 const Pricing: React.FC = () => {
   const price1 = [
@@ -158,6 +159,12 @@ const Pricing: React.FC = () => {
       {/* Trusted */}
       <div className="hidden lg:block">
         <Trusted />
+      </div>
+
+      
+      {/* FAQs */}
+      <div>
+        <FAQs />
       </div>
     </div>
   );
