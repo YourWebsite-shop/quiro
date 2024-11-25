@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <div className="mt-[25px]">
+    <div className="mt-[41px] sm:mt-[46px] ">
       <div className="w-full ">
         <p className="font-[600] text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[40px] 3xl:text-[56px] leading-[24px] 3xl:leading-[67.2px] 3xl:mt-[92px] lg:mt-[110px] w-fit mx-auto mb-[35px] relative">
           Partnering for your <span className="text-[#006B66]">Growth</span>

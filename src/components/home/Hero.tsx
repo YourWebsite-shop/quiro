@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
   return (
     <>
       <div
-        className={`relative flex flex-col  custom-hero items-center lg:pt-[61.8px]`}
+        className={`relative flex flex-col  custom-hero items-center pt-[41px] sm:pt-[100px] lg:pt-[101px] `}
       >
         <Image
           src={gradientBg}

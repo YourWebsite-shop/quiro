@@ -476,7 +476,7 @@ const WallOfLove: React.FC = () => {
         <div className="w-[28%] p-1 flex flex-col items-center gap-6">
 
 
-         <div className="relative lg:w-[365px]  3xl:w-[458px] pb-1">
+         <div className="relative lg:w-[365px]  3xl:w-[458px] pb-1 lg:translate-y-[20px]">
          <Image
             src={wolcusimg3desk}
             width={1000}

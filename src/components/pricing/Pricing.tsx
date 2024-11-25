@@ -21,7 +21,7 @@ const Pricing: React.FC = () => {
     "Customised consulting services",
   ];
   return (
-    <div>
+    <div className="mt-[54.6px] sm:mt-[36px] lg:mt-[79px] 3xl:mt-[115px]">
       <div>
         <h5 className="px-[15px] sm:pl-[201px] sm:pr-[202px] lg:pl-[412px] lg:pr-[413px] 3xl:px-[467px] text-center text-[20px] sm:text-[24px] lg:text-[40px] 3xl:text-[56px] leading-[24px] sm:leading-[28.8px] lg:leading-[48px] 3xl:leading-[67.2px] font-[600]">
           There&apos;s a Plan For You, No Matter Your Size or Budget
