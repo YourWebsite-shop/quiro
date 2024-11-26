@@ -11,7 +11,7 @@ import mobartwork3 from "@/assets/customers/mobArtwork3.png";
 
 const Offerings: React.FC = () => {
   return (
-    <div className="flex flex-col items-center  sm:pl-[90px] sm:pr-[75px] lg:px-[160px] 3xl:px-[209px] mt-[99px] sm:mt-[194px] lg:mt-[138px] 3xl:mt-[330px]">
+    <div className="flex flex-col items-center  sm:pl-[90px] sm:pr-[75px] lg:px-[160px] 3xl:px-[209px] sm:mt-[145px] lg:mt-[138px] 3xl:mt-[330px]">
       <div className="text-center mb-[30px] sm:mb-[50px] lg:mb-[100px] 3xl:mb-[150px] pl-[28px] pr-[25px]">
         <p className="billyOhioText text-[#006B66] text-[16px] sm:text-[20px] lg:text-[28px] 3xl:leading-[48px] 3xl:text-[40px] font-[400] text-start -translate-x-2 sm:-translate-x-6 3xl:-top-3 top-1 relative">
           Offerings

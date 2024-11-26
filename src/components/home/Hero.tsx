@@ -167,11 +167,11 @@ const Carousel = () => {
 export const Partners = () => {
   return (
     <div className="">
-      <h5 className="text-[#000000] font-[600] text-[15px] sm:text-[20px] lg:text-[20px] lg:leading-[24px] 3xl:text-[24px] 3xl:leading-[28.8px] sm:leading-[24px] leading-[18px] text-center lg:pb-[50.3px] 3xl:pb-[50.3px]  sm:pb-[50px] pb-[0px]">
+      <h5 className="text-[#000000] font-[600] text-[15px] sm:text-[20px] lg:text-[20px] lg:leading-[24px] 3xl:text-[24px] 3xl:leading-[28.8px] sm:leading-[24px] leading-[18px] text-center lg:pb-[50.3px] 3xl:pb-[50.3px]  sm:pb-[50px] pb-[40px]">
         Discover our partners from around the world
       </h5>
       <Marquee
-        className="sm:max-w-[60vw] mx-auto  lg:pb-[150px] sm:pb-[128px] pb-[60px]"
+        className="sm:max-w-[60vw]  mx-auto  lg:pb-[150px] sm:pb-[128px] pb-[60px]"
         direction="right"
       >
         <Image

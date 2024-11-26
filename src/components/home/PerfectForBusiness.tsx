@@ -46,7 +46,7 @@ const Box1: React.FC = () => {
         backgroundImage: `url(${perfectBox1BG.src})`,
         backgroundSize: "100% 100%",
       }}
-      className="rounded-[20px] overflow-hidden sm:flex mx-[20px] lg:mx-[223px] 3xl:mx-[160px] flex-row-reverse items-center sm:py-[50px]  lg:py-0  lg:mb-[20px] 3xl:mb-[24px] mb-[21px] sm:rounded-[10px] lg:rounded-[13.89px] 3xl:rounded-[20px] 3xl:gap-[106px]"
+      className="rounded-[20px] overflow-hidden sm:flex mx-[20px] xl:mx-[223px] 3xl:mx-[160px] flex-row-reverse items-center sm:py-[50px]  lg:py-0  lg:mb-[20px] 3xl:mb-[24px] mb-[21px] sm:rounded-[10px] lg:rounded-[13.89px] 3xl:rounded-[20px] 3xl:gap-[106px]"
     >
       <div className="text-center sm:text-start   pt-8 sm:w-1/2 lg:w-[60%] sm:px-8 lg:px-0">
         <p className="billyOhioText text-[#F3CCE7] pb-1 text-[20px] font-[400] sm:pb-0 sm:text-[18px] lg:text-[26px] lg:leading-[39px] 3xl:text-[32px] leading-[24px] sm:leading-[27px] 3xl:leading-[48px]">
@@ -92,7 +92,7 @@ const Box2: React.FC = () => {
 
   return (
     <div
-      className="flex justify-center items-center sm:w-[98vw] lg:w-auto lg:mx-[223px] 3xl:mx-[160px] px-[54px] sm:pl-[118px] 3xl:pl-[405px] sm:pr-[132px] lg:pl-[247px] lg:pr-[227px] 3xl:pr-[399px] pt-[75px] pb-[74px] sm:py-[50px]   lg:pt-[48px] lg:pb-[52px] mx-[20px]  3xl:pt-[110px] 3xl:pb-[91px] lg:mb-[20px] 3xl:mb-[24px] mb-[21px] custom-height saurabh-bug  rounded-[20px] sm:rounded-[10px] lg:rounded-[13.89px] 3xl:rounded-[20px]"
+      className="flex justify-center items-center sm:w-[98vw] lg:w-auto xl:mx-[223px] 3xl:mx-[160px] px-[54px] sm:pl-[118px] 3xl:pl-[405px] sm:pr-[132px] xl:pl-[247px] xl:pr-[227px] 3xl:pr-[399px] pt-[75px] pb-[74px] sm:py-[50px]   lg:pt-[48px] lg:pb-[52px] mx-[20px]  3xl:pt-[110px] 3xl:pb-[91px] lg:mb-[20px] 3xl:mb-[24px] mb-[21px] custom-height saurabh-bug  rounded-[20px] sm:rounded-[10px] lg:rounded-[13.89px] 3xl:rounded-[20px]"
       style={{
         backgroundImage: `url(${
           isMobile ? perfectbox2bgmobile.src : perfectBox2BG.src
@@ -135,7 +135,7 @@ const Box2: React.FC = () => {
 const Box3: React.FC = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row md:flex-row sm:flex-row mx-[22px]  bg-cover bg-center rounded-[20px]   sm:rounded-[10px]  lg:min-w-0 lg:mx-[223px] 3xl:mx-[160px]  items-center justify-center lg:justify-between pt-[34px] 3xl:p-0 pb-[10px] sm:pt-[88px] lg:pt-[0px]  lg:rounded-[13.89px] 3xl:rounded-[20px] overflow-hidden"
+      className="flex flex-col lg:flex-row md:flex-row sm:flex-row mx-[22px]  bg-cover bg-center rounded-[20px]   sm:rounded-[10px]  lg:min-w-0 xl:mx-[223px] 3xl:mx-[160px]  items-center justify-center lg:justify-between pt-[34px] 3xl:p-0 pb-[10px] sm:pt-[88px] lg:pt-[0px]  lg:rounded-[13.89px] 3xl:rounded-[20px] overflow-hidden"
       style={{
         backgroundImage: `url(${perfectBox3BG.src})`,
         backgroundSize: "100% 100%",

@@ -16,7 +16,7 @@ import line from "@/assets/buttonLine.png";
 
 const Form: React.FC = () => {
   return (
-    <div className="mb-[80px] sm:mb-[72.9px] lg:mb-[110px] mt-[54.61px] sm:mt-[36px] lg:mt-[79px] 3xl:met-[115px]">
+    <div className="mb-[80px] sm:mb-[72.9px] lg:mb-[110px] mt-[54.61px] sm:mt-[36px] lg:mt-[79px] 3xl:mt-[115px]">
       <div>
         <h4 className="text-[20px] sm:text-[24px] lg:text-[40px] 3xl:text-[56px] leading-[24px] sm:leading-[28.8px] lg:leading-[48px] 3xl:leading-[67.2px] font-[600] text-center">
           We&apos;re Here To Support You
@@ -32,8 +32,9 @@ const Form: React.FC = () => {
       <div className="mt-[32.2px] lg:mt-[50px] relative bg-white overflow-hidden mx-[32px] sm:mx-[39px] 2xl:mx-[224px] lg:mx-[100px] 3xl:mx-[310px] rounded-[5.31px] sm:rounded-[10.62px] lg:rounded-[20px] pt-[34px] sm:pt-0 pb-[18px] 3xl:pb-[40px]  sm:flex flex-row-reverse justify-end items-center">
         <Image
           src={gradient}
+          width={1000}
           alt="gradient"
-          className="absolute sm:w-[640px] sm:h-[500px] sm:-right-[80px] lg:w-[900px] lg:h-[650px]   "
+          className="absolute sm:w-[640px] sm:h-[500px] sm:-right-[80px] lg:w-[900px] lg:h-[650px] md:left-20 md:w-[90vw] xl:left-40 3xl:left-[22vw]"
         />
         <form className=" relative">
           <h5 className="text-[18px] sm:text-[20px] lg:text-[28px] 3xl:text-[40px] font-[600] leading-[21.6px] sm:leading-[24px] lg:leading-[33.6px] 3xl:leading-[48px] text-center sm:text-start text-[#006B66] px-[30px] sm:px-0">
@@ -52,7 +53,7 @@ const Form: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Your full name"
-                  className="text-[8px] lg:text-[12px] 3xl:text-[14px] 3xl:leading-[21px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px] "
+                  className="text-[8px] lg:text-[12px] focus:outline-none 3xl:text-[14px] 3xl:leading-[21px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px] "
                 />
               </div>
 
@@ -66,7 +67,7 @@ const Form: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Your Phone number"
-                  className="text-[8px] lg:text-[12px] 3xl:text-[14px] 3xl:leading-[21px] lg:leading-[18px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px]"
+                  className="text-[8px] lg:text-[12px] focus:outline-none 3xl:text-[14px] 3xl:leading-[21px] lg:leading-[18px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px]"
                 />
               </div>
 
@@ -80,7 +81,7 @@ const Form: React.FC = () => {
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="text-[8px] lg:text-[12px] 3xl:text-[14px] 3xl:leading-[21px] lg:leading-[18px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px]"
+                  className="text-[8px] lg:text-[12px] focus:outline-none 3xl:text-[14px] 3xl:leading-[21px] lg:leading-[18px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px]"
                 />
               </div>
 
@@ -94,7 +95,7 @@ const Form: React.FC = () => {
                 <input
                   type="email"
                   placeholder="Write your message here"
-                  className="text-[8px] lg:text-[12px] 3xl:text-[14px] 3xl:leading-[21px] lg:leading-[18px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px]"
+                  className="text-[8px] lg:text-[12px] focus:outline-none 3xl:text-[14px] 3xl:leading-[21px] lg:leading-[18px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px]"
                 />
               </div>
             </div>
@@ -109,13 +110,13 @@ const Form: React.FC = () => {
               <input
                 type="text"
                 placeholder="Your Phone number"
-                className="text-[8px] lg:text-[12px] lg:leading-[18px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px]"
+                className="text-[8px] lg:text-[12px] 3xl:text-[14px] focus:outline-none lg:leading-[18px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px]"
               />
             </div>
           </div>
 
           <div className="w-full flex justify-center sm:justify-start mt-[29px] sm:mt-[31px] lg:mt-[40px]">
-            <button className="bg-black relative   text-white  sm:px-10 rounded-[4px] flex items-center w-fit text-[10px] sm:text-[8px] lg:text-[12px] 3xl:text-[16px] sm:py-4 leading-[15px] sm:leading-[12px] lg:leading-[18px] 3xl:leading-[24px] pl-[19.5px] sm:pl-[11.78px] pr-[21px] sm:pr-[11.06px] lg:px-[10px] 3xl:pl-[22px] 3xl:pr-[20px] py-[7.92px] sm:pt-[6.03px] lg:pt-[5px] sm:pb-[5.73px] lg:pb-[7.9px] 3xl:pt-[15px] 3xl:pb-[14px]">
+            <button className="bg-black relative   text-white  sm:px-10 rounded-[4px] flex items-center w-fit text-[10px] sm:text-[8px] lg:text-[12px] focus:outline-none 3xl:text-[16px] sm:py-4 leading-[15px] sm:leading-[12px] lg:leading-[18px] 3xl:leading-[24px] pl-[19.5px] sm:pl-[11.78px] pr-[21px] sm:pr-[11.06px] lg:px-[10px] 3xl:pl-[22px] 3xl:pr-[20px] py-[7.92px] sm:pt-[6.03px] lg:pt-[5px] sm:pb-[5.73px] lg:pb-[7.9px] 3xl:pt-[15px] 3xl:pb-[14px]">
               Submit
               <Image
                 src={line}
@@ -143,7 +144,7 @@ const Form: React.FC = () => {
           <div className=" mt-[27.17px] sm:mt-[37px] lg:mt-[46px] 3xl:mt-[70px]">
             <div className="flex items-center gap-[8px] lg:gap-[19.53px] 3xl:gap-[30px]">
               <div>
-                <IoIosCall className="w-[18px] h-[18px]" />
+                <IoIosCall className="text-[18px] sm:text-[21px] lg:text-[26px] 3xl:text-[40px]" />
               </div>
               <div className="text-[10px] lg:text-[16px] 3xl:text-[18px] leading-[15px] font-[500]">
                 +91 9760865508
@@ -151,7 +152,7 @@ const Form: React.FC = () => {
             </div>
             <div className="flex items-center gap-[8px] lg:gap-[19.53px] 3xl:gap-[30px] mt-[18px] 3xl:mt-[27px]">
               <div>
-                <GrMail className="w-[18px] h-[18px]" />
+                <GrMail className="text-[18px] sm:text-[21px] lg:text-[26px] 3xl:text-[40px]" />
               </div>
               <div className="text-[10px] lg:text-[16px] 3xl:text-[18px]  leading-[15px] font-[500]">
                 info@witsome.in
@@ -159,7 +160,7 @@ const Form: React.FC = () => {
             </div>
             <div className="flex items-center gap-[8px] lg:gap-[19.53px] 3xl:gap-[30px] mt-[18px] 3xl:mt-[27px]">
               <div>
-                <HiLocationMarker className="w-[18px] h-[18px]" />
+                <HiLocationMarker className="text-[18px] sm:text-[21px] lg:text-[26px] 3xl:text-[40px]" />
               </div>
               <div className="text-[10px] lg:text-[16px] 3xl:text-[18px] leading-[15px] font-[500]">
                 Gurugram, India
@@ -168,19 +169,19 @@ const Form: React.FC = () => {
           </div>
 
           {/* Social Handle icons */}
-          <div className="flex items-center mt-[31px] sm:mt-[44px] lg:mt-[78px] gap-[15px]">
+          <div className="flex items-center mt-[31px] sm:mt-[44px] lg:mt-[78px] gap-[15px] ">
             <a href="">
               {" "}
-              <FaFacebookF />
+              <FaFacebookF  className="lg:text-[20px]" />
             </a>
             <a href="">
-              <PiInstagramLogoFill />
+              <PiInstagramLogoFill className="lg:text-[20px]" />
             </a>
             <a href="">
-              <FaXTwitter />
+              <FaXTwitter className="lg:text-[20px]" />
             </a>
             <a href="">
-              <FaLinkedinIn />
+              <FaLinkedinIn className="lg:text-[20px]"/>
             </a>
           </div>
         </div>
