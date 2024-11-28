@@ -4,75 +4,104 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import Logo from "@/assets/Logo.png";
+import LogoMain from "@/assets/Logo";
+import line from "@/assets/buttonLine.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import {
   NavigationMenu,
-  NavigationMenuContent,
+  NavigationMenuList,
   NavigationMenuItem,
   NavigationMenuLink,
-  NavigationMenuList,
   NavigationMenuTrigger,
+  NavigationMenuContent,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
 import LineButton from "./LineButton";
 import { Menu } from "lucide-react";
 
-const components: { title: string; href: string; description: string }[] = [
+interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
+  title: string;
+  href: string;
+  children?: React.ReactNode;
+}
+
+const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
+  ({ className, title, children, href, ...props }, ref) => {
+    return (
+      <li>
+        <NavigationMenuLink asChild>
+          <a
+            ref={ref}
+            href={href}
+            className={cn(
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              className
+            )}
+            {...props}
+          >
+            <div className="text-sm font-medium leading-none">{title}</div>
+            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+              {children}
+            </p>
+          </a>
+        </NavigationMenuLink>
+      </li>
+    );
+  }
+);
+ListItem.displayName = "ListItem";
+
+const components = [
   {
     title: "Alert Dialog",
     href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    description: "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
     title: "Hover Card",
     href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
+    description: "For sighted users to preview content available behind a link.",
   },
   {
     title: "Progress",
     href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    description: "Displays an indicator showing the completion progress of a task.",
   },
   {
     title: "Scroll-area",
     href: "/docs/primitives/scroll-area",
     description: "Visually or semantically separates content.",
   },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
 ];
 
 const Header: React.FC = () => {
+  const pathname = usePathname(); // Get the current route
+  const [activePath, setActivePath] = useState(""); // Local state for active link
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
 
-  // Close menu when pathname changes
+  // Sync activePath with pathname whenever pathname changes
   useEffect(() => {
-    setIsMenuOpen(false);
+    setActivePath(pathname || ""); // Ensure it sets even if pathname is empty
   }, [pathname]);
 
+  // Ensure activePath updates on link click
+  const handleLinkClick = (href: string) => {
+    setActivePath(href);
+    setIsMenuOpen(false); // Close the menu on link click
+  };
+
   return (
-    <div className="flex items-center justify-between px-4 md:px-10 lg:pl-[142px] lg:pr-[160px] w-full top-0 bg-[#F5F3ED] py-4 z-50">
+    <div className="flex items-center justify-between px-4 md:px-10 lg:pl-[142px] lg:pr-[160px] w-full top-0 bg-[#F5F3ED] pt-[33px] z-50">
       <div>
-        <Link href={"/"}><Image src={Logo} width={300} height={70} alt="logo" className="w-[100px] h-[70px] md:w-[150px] md:h-[100px]" /></Link>
+        <Link href={"/"} className="flex items-center gap-[8px] sm:gap-[20px] lg:gap-[10px]">
+          <LogoMain />
+          <h1 className="text-[#00413E] font-[400] lg:font-[500] text-[16px] leading-[24px] sm:text-[20px] lg:text-[28.2px] sm:leading-[30px] lg:leading-[42.3px] 3xl:text-[40px] 3xl:leading-[60px]">Quiro</h1>
+        </Link>
       </div>
 
       {/* Mobile Menu Button */}
-      <button 
+      <button
         className="xl:hidden z-30 bg-white text-[#00403f] p-2 rounded-[15px]"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
@@ -80,13 +109,30 @@ const Header: React.FC = () => {
       </button>
 
       {/* Mobile Menu */}
-      <div className={`fixed inset-0 bg-white z-20 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 xl:hidden`}>
+      <div
+        className={`fixed inset-0 bg-white z-20 transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 xl:hidden`}
+      >
         <div className="flex flex-col p-8 space-y-4">
-          <Link href="/aboutus" onClick={() => setIsMenuOpen(false)} className={`text-lg hover:text-[#00413E] ${pathname === '/aboutus' ? 'text-[#00413E] bg-[#F5F3ED] px-4 py-2 rounded-full' : ''}`}>About us</Link>
-          <Link href="/business" onClick={() => setIsMenuOpen(false)} className={`text-lg hover:text-[#00413E] ${pathname === '/business' ? 'text-[#00413E] bg-[#F5F3ED] px-4 py-2 rounded-full' : ''}`}>For Businesses</Link>
-          <Link href="/resources" onClick={() => setIsMenuOpen(false)} className={`text-lg hover:text-[#00413E] ${pathname === '/resources' ? 'text-[#00413E] bg-[#F5F3ED] px-4 py-2 rounded-full' : ''}`}>Resources</Link>
-          <Link href="/customers" onClick={() => setIsMenuOpen(false)} className={`text-lg hover:text-[#00413E] ${pathname === '/customers' ? 'text-[#00413E] bg-[#F5F3ED] px-4 py-2 rounded-full' : ''}`}>For Customers</Link>
-          <Link href="/pricing" onClick={() => setIsMenuOpen(false)} className={`text-lg hover:text-[#00413E] ${pathname === '/pricing' ? 'text-[#00413E] bg-[#F5F3ED] px-4 py-2 rounded-full' : ''}`}>Pricing</Link>
+          {[
+            { href: "/aboutus", label: "About us" },
+            { href: "/business", label: "For Businesses" },
+            { href: "/resources", label: "Resources" },
+            { href: "/customers", label: "For Customers" },
+            { href: "/pricing", label: "Pricing" },
+          ].map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className={`text-lg ${
+                activePath === href ? "text-[#00413E] font-bold" : ""
+              }`}
+              onClick={() => handleLinkClick(href)}
+            >
+              {label}
+            </Link>
+          ))}
           <div className="pt-4">
             <LineButton text="Get Started" />
           </div>
@@ -97,23 +143,16 @@ const Header: React.FC = () => {
       <NavigationMenu className="bg-white rounded-full fixed translate-x-1/2 z-20 right-1/2 hidden xl:block">
         <NavigationMenuList className="border border-[#00413E] rounded-full p-2">
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className={`rounded-full ${pathname === '/aboutus' ? 'text-white bg-[#00413E]' : ''}`}>
             <Link href="/aboutus" legacyBehavior passHref>
-              <NavigationMenuLink className={cn(
-                navigationMenuTriggerStyle(),
-                'rounded-full hover:text-[#00413E]',
-                pathname === '/aboutus' ? 'text-white bg-[#00413E]' : ''
-              )}>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 About us
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger className={cn(
-              'rounded-full hover:text-[#00413E]',
-              pathname === '/business' ? 'text-white bg-[#00413E]' : ''
-            )}>
+            <NavigationMenuTrigger className={`rounded-full ${pathname === '/business' ? 'text-white bg-[#00413E]' : ''}`}>
               For Businesses
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -149,10 +188,7 @@ const Header: React.FC = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger className={cn(
-              'rounded-full hover:text-[#00413E]',
-              pathname === '/resources' ? 'text-white bg-[#00413E]' : ''
-            )}>Resources</NavigationMenuTrigger>
+            <NavigationMenuTrigger className={`rounded-full ${pathname === '/resources' ? 'text-white bg-[#00413E]' : ''}`}>Resources</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (
@@ -169,10 +205,7 @@ const Header: React.FC = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger className={cn(
-              'rounded-full hover:text-[#00413E]',
-              pathname === '/customers' ? 'text-white bg-[#00413E]' : ''
-            )}>For Customers</NavigationMenuTrigger>
+            <NavigationMenuTrigger className={`rounded-full ${pathname === '/customers' ? 'text-white bg-[#00413E]' : ''}`}>For Customers</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (
@@ -192,7 +225,6 @@ const Header: React.FC = () => {
             <Link href="/pricing" legacyBehavior passHref>
               <NavigationMenuLink className={cn(
                 navigationMenuTriggerStyle(),
-                'rounded-full hover:text-[#00413E]',
                 pathname === '/pricing' ? 'text-white bg-[#00413E]' : ''
               )}>
                 Pricing
@@ -204,36 +236,19 @@ const Header: React.FC = () => {
       </NavigationMenu>
 
       <div className="hidden xl:block">
-        <LineButton text="Get Started" />
+        <button className="bg-black relative text-[14.73px] text-white pl-[20px] rounded-[5.52px] flex items-center w-fit leading-[22.1px] pr-[25px] py-[14px]">
+          Start for Free <FaLongArrowAltRight className="ml-2 text-white" />
+          <Image
+            src={line}
+            width={100}
+            height={0}
+            alt="line"
+            className="absolute w-full -bottom-2 left-0 px-2"
+          />
+        </button>
       </div>
     </div>
   );
 };
-
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  );
-});
-ListItem.displayName = "ListItem";
 
 export default Header;

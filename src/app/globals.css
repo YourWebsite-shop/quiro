@@ -7,7 +7,8 @@ body {
   overflow-x: hidden !important;
   width: 100vw !important;
 }
-body, html {
+body,
+html {
   overflow-x: hidden !important;
   width: 100vw !important;
 }
@@ -15,7 +16,6 @@ body, html {
 /* *{
   transition: all 0.45s;
 } */
-
 
 body::-webkit-scrollbar {
   width: 5px;
@@ -46,23 +46,20 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   @media (min-width: 600px) and (max-width: 1024px) and (min-height: 800px) and (max-height: 1366px) {
-  .custom-magic-arrow-tab {
-    width: 64vw;
-    height: 500px;
-  }
-
-  .custom-iframe-box-desk{
-    width: 520px;
+    .custom-magic-arrow-tab {
+      width: 64vw;
+      height: 500px;
     }
 
-   .ptw-desc{
-    width: 40vw;
-   }
+    .custom-iframe-box-desk {
+      width: 520px;
+    }
 
-   
+    .ptw-desc {
+      width: 40vw;
+    }
+  }
 }
-}
-
 
 @layer base {
   :root {
@@ -139,10 +136,9 @@ body::-webkit-scrollbar-thumb:hover {
   font-family: var(--billy-ohio), sans-serif;
 }
 
-font-300{
+font-300 {
   font-weight: 300 !important;
 }
-
 
 .perspective {
   perspective: 1000px; /* Enables the 3D effect */
@@ -152,34 +148,31 @@ font-300{
   backface-visibility: hidden; /* Ensures the back side is hidden when rotated */
 }
 
-
-
-.custom-stroke{
-  -webkit-text-stroke: 1px #006B66;
+.custom-stroke {
+  -webkit-text-stroke: 1px #006b66;
   color: transparent;
-
 }
-.custom-stroke2{
-  -webkit-text-stroke: 1px #006B66;
+.custom-stroke2 {
+  -webkit-text-stroke: 1px #006b66;
   opacity: 0.8;
   color: transparent;
-
 }
-.custom-stroke3{
-  -webkit-text-stroke: 1px #006B66;
+.custom-stroke3 {
+  -webkit-text-stroke: 1px #006b66;
   opacity: 0.6;
   color: transparent;
-
 }
-.custom-stroke4{
-  -webkit-text-stroke: 1px #006B66;
+.custom-stroke4 {
+  -webkit-text-stroke: 1px #006b66;
   opacity: 0.4;
   color: transparent;
-
 }
-.custom-stroke5{
-  -webkit-text-stroke: 1px #006B66;
+.custom-stroke5 {
+  -webkit-text-stroke: 1px #006b66;
   opacity: 0.2;
   color: transparent;
+}
 
+.green-shadow {
+  box-shadow: 0 4px 10px rgba(0, 107, 102, 0.25);
 }

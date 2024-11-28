@@ -85,7 +85,7 @@ const Faq: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-start md:gap-4 w-full lg:pl-[400px] sm:pl-[184px] pl-[24px] gap-[11.5px] lg:gap-[20px] 3xl:gap-[25.42px] sm:gap-[18.24px] ">
+        <div className="flex flex-col items-start w-full lg:pl-[400px] sm:pl-[184px] pl-[24px] gap-[11.5px] lg:gap-[20px] 3xl:gap-[25.42px] sm:gap-[18.24px] ">
           {faqData.slice(0, faqData.length / 2).map((faq, index) => (
             <div key={index} className="">
               {/* Question */}
@@ -111,7 +111,7 @@ const Faq: React.FC = () => {
                       />
                     )}
                   </div>
-                  <h2 className="lg:text-[14px] font-[600] lg:leading-[18.2px] leading-[13px] sm:text-[11px] text-[10px] sm:leading-[14.3px] 3xl:text-[18px] 3xl:leading-[23.4px] break-words">
+                  <h2 className="lg:text-[14px] font-[600] lg:leading-[21px] leading-[13px] sm:text-[11px] text-[10px] sm:leading-[14.3px] 3xl:text-[18px] 3xl:leading-[23.4px] break-words">
                     {faq.question}
                   </h2>
                 </div>
@@ -119,7 +119,7 @@ const Faq: React.FC = () => {
 
               {/* Answer */}
               {expandedIndex === index && (
-                <p className="sm:text-[14px] text-[12px] font-[400] w-2/3 leading-[23px] pl-6 sm:pl-8 lg:pl-12 text-gray-600">
+                <p className="lg:text-[14px] font-[600] lg:leading-[21px] leading-[13px] sm:text-[11px] text-[10px] sm:leading-[14.3px] 3xl:text-[18px] 3xl:leading-[23.4px]font-[400] w-2/3 pl-6 sm:pl-8 lg:pl-12 text-gray-600">
                   {faq.answer}
                 </p>
               )}

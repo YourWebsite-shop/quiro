@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import arrowmobile from "@/assets/home/arrowmobile.png";
 import magicarraow from "@/assets/magicArrow.png";
+import laparrow from "@/assets/laparrow.png"
 import magicarrowtab from "@/assets/home/magicarrtab.png";
 import "./styles/playtowatch.css";
 
@@ -23,14 +24,14 @@ const PlayToWatch: React.FC = () => {
 
       {/* Tablet and Desktop Screens */}
       <div className="sm:flex w-full ">
-        <div className="w-[70vw] sm:w-[50vw] lg:w-[52vw] custom-ptw-content  xl:px-44">
-          <h1 className="font-[600] text-[20px] leading-[24px] w-[273px] sm:w-[264px] sm:pb-[6px] lg:w-full  lg:text-[48px] lg:leading-[57.6px] hidden sm:block">
+        <div className="w-[70vw] sm:w-[50vw] lg:w-[52vw] custom-ptw-content  ">
+          <h1 className="font-[600] text-[20px] leading-[24px] w-[273px] xl:pl-32 sm:w-[264px] sm:pb-[6px] lg:w-full lg:text-[40px] 3xl:text-[48px] lg:leading-[57.6px] hidden sm:block">
             Hit Play to Watch the{" "}
-            <span className="billyOhioText text-[#006B66] text-[24px] leading-[28.8px] lg:text-[64px] lg:leading-[76.8px] font-[400]">
+            <span className="billyOhioText text-[#006B66] text-[24px] leading-[28.8px] lg:text-[40px] 3xl:text-[48px] lg:leading-[76.8px] font-[400]">
               Magic.
             </span>
           </h1>
-          <p className="text-[12px] leading-[18px] w-[273px] sm:w-[254px]   lg:w-full  lg:text-[18px] font-[500] lg:leading-[27px] hidden sm:block ptw-desc">
+          <p className="text-[12px] leading-[18px] w-[273px] sm:w-[254px]  xl:px-32  lg:w-full  lg:text-[15px] 3xl:text-[18px] font-[500] lg:leading-[22.5px] 3xl:leading-[27px] hidden sm:block ptw-desc">
             Explore how Quiro&apos;s management software transforms your
             operations in just 2 minutes. Experience faster order processing,
             instant guest request handling, and automated payment solutions.
@@ -60,12 +61,19 @@ const PlayToWatch: React.FC = () => {
         className="hidden sm:block absolute left-0 -bottom-10 w-[63vw] h-[500px] lg:hidden custom-magic-arrow-tab"
       />
 
+      <Image
+        src={laparrow}
+        alt="magic arrow"
+        width={900}
+        className="absolute lg:w-[60vw] lg:h-[700px] xl:w-[64vw] xl:h-[800px] left-0 lg:-bottom-44 xl:-bottom-52 hidden  lg:block 3xl:hidden custom-magic-arrow"
+      />
+
       {/* Magic arrow for desktop */}
       <Image
         src={magicarraow}
         alt="magic arrow"
         width={900}
-        className="absolute lg:w-[60vw] lg:h-[700px] xl:w-[64vw] xl:h-[840px] left-0 lg:-bottom-44 xl:-bottom-52 hidden lg:block custom-magic-arrow"
+        className="absolute lg:w-[60vw] lg:h-[700px] xl:w-[64vw] xl:h-[840px] left-0 lg:-bottom-44 xl:-bottom-52 hidden  3xl:block custom-magic-arrow"
       />
 
       {/* Video player with frame */}

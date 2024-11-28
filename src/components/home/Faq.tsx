@@ -70,33 +70,36 @@ const Faq: React.FC = () => {
       <div className="max-w-7xl w-full">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center">
-          <h1 className=" font-[600] relative text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[48px] lg:leading-[57.6px] mx:auto max-w-1/2 text-center">
-            <span className="billyOhioText text-[#006B66] absolute font-[400] text-[36px] leading-[54px] sm:px-0 lg:-left-10 lg:-top-10 sm:-left-6 left-1 -top-6 hidden lg:block">
+          <h1 className=" font-[600] relative text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[40px] lg:leading-[48px] 3xl:text-[48px] 3xl:leading-[57.6px] mx:auto max-w-1/2 text-center">
+            <span className="billyOhioText text-[#006B66] absolute font-[400] 3xl:text-[36px] lg:text-[38px] lg:leading-[57px] 3xl:leading-[54px] sm:px-0 lg:-left-10 lg:-top-10 3xl:-top-11 sm:-left-6 left-1 -top-6 hidden lg:block">
               Problem?
             </span>
-            <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] sm:text-[24px] sm:leading-[36px]  sm:px-0 lg:-left-0 lg:-top-10 sm:-left-2 -left-5 -top-7 block lg:hidden">
+            <span className="billyOhioText text-[#006B66] absolute font-[400] text-[24px] leading-[28.8px] sm:text-[24px] sm:leading-[36px]  sm:px-0 lg:-left-0 lg:-top-10 sm:-left-2 -left-6 -top-6 sm:-top-8 block lg:hidden">
               Help
             </span>
             Frequently Asked Questions
           </h1>
-          <p className="font-medium text[13px] sm:text-[12px] sm:leading-[18px] text-[13px] leading-[19.5px] lg:text-[20px] lg:leading-[30px] lg:pb-[96px] sm:pb-[39px] pb-[40px] text-center lg:mt-[16px] sm:mt-[7px] mt-[11px]">
+          <p className="font-medium text[13px] sm:text-[12px] sm:leading-[18px] text-[13px] leading-[19.5px] lg:text-[16px] lg:leading-[24px] 3xl:text-[20px] 3xl:leading-[30px] 3xl:pb-[96px] lg:pb-[64.07px] sm:pb-[41px] pb-[40px] text-center lg:mt-[16.39px] 3xl:mt-[16px] sm:mt-[7px] mt-[11px]">
             Get all your questions answered here
           </p>
         </div>
 
         {/* FAQ List in Two Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-4 md:gap-4 lg:mx-[41px] sm:mx-[25px] mx-[20px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-4 sm:gap-4 lg:ml-[149.67px] lg:mr-[130px] sm:ml-[81px] sm:mr-[44px] ml-[55px] mr-[53px] 3xl:ml-[241px] 3xl:mr-[311px] ">
           {/* Left Column */}
           <div>
             {faqData.slice(0, faqData.length / 2).map((faq, index) => (
-              <div key={index} className=" pb-1 sm:pb-2 lg:pb-4">
+              <div
+                key={index}
+                className=" pb-[11.83px] sm:pb-[16.25px] lg:pb-[20.86px] 3xl:pb-[25.42px]"
+              >
                 {/* Question */}
                 <div
                   className="flex justify-between items-center cursor-pointer"
                   onClick={() => toggleFaq(index)}
                 >
                   <div className="flex items-center">
-                    <div className="w-[22px] h-[22px] lg:w-[38px] lg:h-[38px] sm:w-[18px] sm:h-[18px] rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
+                    <div className="w-[22px] h-[22px] 3xl:w-[38px] 3xl:h-[38px] lg:w-[31.61px] lg:h-[30.85px] sm:w-[18px] sm:h-[18px] rounded-full aspect-square lg:border-[0.49px] border-[0.3px] sm:border-[0.6px] 3xl:border-[0.6px] border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center p-1">
                       {expandedIndex === index ? (
                         <Image
                           src={accup}
@@ -113,7 +116,7 @@ const Faq: React.FC = () => {
                         />
                       )}
                     </div>
-                    <h2 className="lg:text-[18px] font-[500] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words lg:mx-[24px] sm:mx-[8px] mx-[4px]">
+                    <h2 className="3xl:text-[18px] 3xl:leading-[23.4px] lg:[16px] lg:leading-[20.8px] leading-[18px] font-[600] sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words ml-[17.83px] sm:ml-[8.76px] lg:ml-[22.57px] 3xl:ml-[27.5px] ">
                       {faq.question}
                     </h2>
                   </div>
@@ -121,7 +124,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index && (
-                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-[14px] text-gray-600 lg:pl-8">
+                  <p className="3xl:text-[18px] 3xl:leading-[23.4px] lg:[16px] lg:leading-[20.8px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px]  font-[400]  text-gray-600 pl-[40px] sm:pl-[28px] lg:pl-[55px] 3xl:pl-[68px]">
                     {faq.answer}
                   </p>
                 )}
@@ -132,14 +135,17 @@ const Faq: React.FC = () => {
           {/* Right Column */}
           <div>
             {faqData.slice(faqData.length / 2).map((faq, index) => (
-              <div key={index} className=" pb-1 sm:pb-2 lg:pb-4">
+              <div
+                key={index}
+                className=" pb-[11.83px] sm:pb-[16.25px] lg:pb-[20.86px] 3xl:pb-[25.42px]"
+              >
                 {/* Question */}
                 <div
                   className="flex justify-between items-center cursor-pointer"
                   onClick={() => toggleFaq(index + faqData.length / 2)} // Offset index for second column
                 >
                   <div className="flex items-center">
-                    <div className="w-[22px] h-[22px] lg:w-[38px] lg:h-[38px] sm:w-[18px] sm:h-[18px] rounded-full aspect-square border border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center m-2 p-1">
+                    <div className="w-[22px] h-[22px] 3xl:w-[38px] 3xl:h-[38px] lg:w-[31.61px] lg:h-[30.85px] sm:w-[18px] sm:h-[18px] rounded-full aspect-square lg:border-[0.49px] border-[0.3px] sm:border-[0.6px] 3xl:border-[0.6px] border-black shadow-[2px_2px_0_rgba(0,0,0,1)] flex justify-center items-center p-1">
                       {expandedIndex === index + faqData.length / 2 ? (
                         <Image
                           src={accup}
@@ -156,7 +162,7 @@ const Faq: React.FC = () => {
                         />
                       )}
                     </div>
-                    <h2 className="lg:text-[18px] font-[500] lg:leading-[23.4px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words lg:mx-[24px] sm:mx-[8px] mx-[4px]">
+                    <h2 className="3xl:text-[18px] font-[600] 3xl:leading-[23.4px] lg:[16px] lg:leading-[20.8px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px] break-words ml-[17.83px] sm:ml-[8.76px] lg:ml-[22.57px] 3xl:ml-[27.5px] ">
                       {faq.question}
                     </h2>
                   </div>
@@ -164,7 +170,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index + faqData.length / 2 && (
-                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-[14px] text-gray-600 lg:pl-8">
+                  <p className="3xl:text-[18px] 3xl:leading-[23.4px] lg:[16px] lg:leading-[20.8px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px]  font-[400]  text-gray-600 pl-[40px] sm:pl-[28px] lg:pl-[55px] 3xl:pl-[68px]">
                     {faq.answer}
                   </p>
                 )}
