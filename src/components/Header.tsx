@@ -82,11 +82,11 @@ const Header: React.FC = () => {
       {/* Mobile Menu */}
       <div className={`fixed inset-0 bg-white z-20 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 xl:hidden`}>
         <div className="flex flex-col p-8 space-y-4">
-          <Link href="/aboutus" onClick={() => setIsMenuOpen(false)} className={`text-lg ${pathname === '/aboutus' ? 'text-[#00413E]' : ''}`}>About us</Link>
-          <Link href="/business" onClick={() => setIsMenuOpen(false)} className={`text-lg ${pathname === '/business' ? 'text-[#00413E]' : ''}`}>For Businesses</Link>
-          <Link href="/resources" onClick={() => setIsMenuOpen(false)} className={`text-lg ${pathname === '/resources' ? 'text-[#00413E]' : ''}`}>Resources</Link>
-          <Link href="/customers" onClick={() => setIsMenuOpen(false)} className={`text-lg ${pathname === '/customers' ? 'text-[#00413E]' : ''}`}>For Customers</Link>
-          <Link href="/pricing" onClick={() => setIsMenuOpen(false)} className={`text-lg ${pathname === '/pricing' ? 'text-[#00413E]' : ''}`}>Pricing</Link>
+          <Link href="/aboutus" onClick={() => setIsMenuOpen(false)} className={`text-lg hover:text-[#00413E] ${pathname === '/aboutus' ? 'text-[#00413E] bg-[#F5F3ED] px-4 py-2 rounded-full' : ''}`}>About us</Link>
+          <Link href="/business" onClick={() => setIsMenuOpen(false)} className={`text-lg hover:text-[#00413E] ${pathname === '/business' ? 'text-[#00413E] bg-[#F5F3ED] px-4 py-2 rounded-full' : ''}`}>For Businesses</Link>
+          <Link href="/resources" onClick={() => setIsMenuOpen(false)} className={`text-lg hover:text-[#00413E] ${pathname === '/resources' ? 'text-[#00413E] bg-[#F5F3ED] px-4 py-2 rounded-full' : ''}`}>Resources</Link>
+          <Link href="/customers" onClick={() => setIsMenuOpen(false)} className={`text-lg hover:text-[#00413E] ${pathname === '/customers' ? 'text-[#00413E] bg-[#F5F3ED] px-4 py-2 rounded-full' : ''}`}>For Customers</Link>
+          <Link href="/pricing" onClick={() => setIsMenuOpen(false)} className={`text-lg hover:text-[#00413E] ${pathname === '/pricing' ? 'text-[#00413E] bg-[#F5F3ED] px-4 py-2 rounded-full' : ''}`}>Pricing</Link>
           <div className="pt-4">
             <LineButton text="Get Started" />
           </div>
@@ -97,16 +97,23 @@ const Header: React.FC = () => {
       <NavigationMenu className="bg-white rounded-full fixed translate-x-1/2 z-20 right-1/2 hidden xl:block">
         <NavigationMenuList className="border border-[#00413E] rounded-full p-2">
 
-          <NavigationMenuItem className={`rounded-full ${pathname === '/aboutus' ? 'text-white bg-[#00413E]' : ''}`}>
+          <NavigationMenuItem>
             <Link href="/aboutus" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink className={cn(
+                navigationMenuTriggerStyle(),
+                'rounded-full hover:text-[#00413E]',
+                pathname === '/aboutus' ? 'text-white bg-[#00413E]' : ''
+              )}>
                 About us
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger className={`rounded-full ${pathname === '/business' ? 'text-white bg-[#00413E]' : ''}`}>
+            <NavigationMenuTrigger className={cn(
+              'rounded-full hover:text-[#00413E]',
+              pathname === '/business' ? 'text-white bg-[#00413E]' : ''
+            )}>
               For Businesses
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -142,7 +149,10 @@ const Header: React.FC = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger className={`rounded-full ${pathname === '/resources' ? 'text-white bg-[#00413E]' : ''}`}>Resources</NavigationMenuTrigger>
+            <NavigationMenuTrigger className={cn(
+              'rounded-full hover:text-[#00413E]',
+              pathname === '/resources' ? 'text-white bg-[#00413E]' : ''
+            )}>Resources</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (
@@ -159,7 +169,10 @@ const Header: React.FC = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger className={`rounded-full ${pathname === '/customers' ? 'text-white bg-[#00413E]' : ''}`}>For Customers</NavigationMenuTrigger>
+            <NavigationMenuTrigger className={cn(
+              'rounded-full hover:text-[#00413E]',
+              pathname === '/customers' ? 'text-white bg-[#00413E]' : ''
+            )}>For Customers</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (
@@ -179,6 +192,7 @@ const Header: React.FC = () => {
             <Link href="/pricing" legacyBehavior passHref>
               <NavigationMenuLink className={cn(
                 navigationMenuTriggerStyle(),
+                'rounded-full hover:text-[#00413E]',
                 pathname === '/pricing' ? 'text-white bg-[#00413E]' : ''
               )}>
                 Pricing
