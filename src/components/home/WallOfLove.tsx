@@ -10,7 +10,7 @@ import fstars from "@/assets/home/5star.png";
 import wolarr from "@/assets/home/walloflove/wolarr.png";
 import pradeep from "@/assets/home/walloflove/pradeep.png";
 import imggroup from "@/assets/home/walloflove/imggroup.png";
-import wolcusimg3desk from "@/assets/home/walloflove/wolcusimg3desk.png";
+// import wolcusimg3desk from "@/assets/home/walloflove/wolcusimg3desk.png";
 import rajesh from "@/assets/home/AbsoluteImages/Rajesh.png";
 import wolimgcus1desk from "@/assets/home/walloflove/wolimgcus1desk.png";
 
@@ -23,6 +23,7 @@ import uttamzaika from "@/assets/home/walloflove/uttamzaika.png";
 import g1tab from "@/assets/home/walloflove/g1tab.png";
 import g2tab from "@/assets/home/walloflove/g2tab.png";
 import wolimg2tablelandscape from "@/assets/home/walloflove/wolimg2tablandscape.png";
+import deskimglastcol from "@/assets/home/walloflove/deskimglastcol.png"
 
 const WallOfLove: React.FC = () => {
   return (
@@ -351,7 +352,7 @@ const WallOfLove: React.FC = () => {
               </div>
 
               {/* First col second row */}
-              <div className="border-[2px] lg:pt-[35.1px] 3xl:pt-[44px] lg:pl-[33.5px] 3xl:pl-[42px] lg:pr-[29.93px] 3xl:pr-[30px] sm:mr-8  rounded-[20px]   border-[#006B66] bg-white  ">
+              <div className="3xl:border-[2px] border-[1.6px] lg:pt-[35.1px] 3xl:pt-[44px] lg:pl-[33.5px] 3xl:pl-[42px] lg:pr-[29.93px] 3xl:pr-[30px] sm:mr-8  rounded-[20px]   border-[#006B66] bg-white  ">
                 <p className="text-[10px] leading-[15px] font-[500] ">
                   &apos;Quiro has transformed how we manage our hotel
                   operations. The QR-based ordering and request systems are a
@@ -433,7 +434,7 @@ const WallOfLove: React.FC = () => {
 
         <div className="w-[26%] flex flex-col items-center justify-center gap-10 p-4 translate-y-24">
           {/*  */}
-          <div className="border-[2px] p-4 rounded-xl   border-[#006B66] bg-white relative lg:w-[257px] 3xl:w-[322px] -translate-x-4">
+          <div className="3xl:border-[2px] border-[1.8px] p-4 rounded-xl   border-[#006B66] bg-white relative lg:w-[257px] 3xl:w-[322px] -translate-x-4">
             <Image
               src={wolimg2}
               width={1000}
@@ -449,7 +450,7 @@ const WallOfLove: React.FC = () => {
           </div>
 
           {/*  */}
-          <div className="border-[2px] p-4 sm:ml-8 rounded-xl   border-[#006B66] bg-white lg:w-[240px] 3xl:w-[301px] -translate-x-2">
+          <div className="3xl:border-[2px] border-[1.6px] p-4 sm:ml-8 rounded-xl   border-[#006B66] bg-white lg:w-[240px] 3xl:w-[301px] -translate-x-2">
             <Image src={wolimg1} alt="wolimg1" width={70} className="mx-auto" />
             <p className=" text-center py-2">
               <Image
@@ -478,7 +479,8 @@ const WallOfLove: React.FC = () => {
 
          <div className="relative lg:w-[365px]  3xl:w-[458px] pb-1 lg:translate-y-[20px]">
          <Image
-            src={wolcusimg3desk}
+        //  wolcusimg3desk <- this was the previous img, it's import is also commented
+            src={deskimglastcol}
             width={1000}
             alt="wolimgcus"
             className="absolute w-full top-0 left-0"
@@ -495,7 +497,7 @@ const WallOfLove: React.FC = () => {
 
 
 
-          <div className="border-2 border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 lg:mt-[24px]  3xl:mt-[36px] bg-white rounded-2xl lg:w-[365px]  3xl:w-[458px]">
+          <div className="3xl:border-2 border-[1.6px] border-[#006B66] flex gap-4 relative items-center text-[10px] p-4 lg:mt-[24px]  3xl:mt-[36px] bg-white rounded-2xl lg:w-[365px]  3xl:w-[458px]">
             <div className="w-1/2">
               <Image src={wolimgcus3desk} alt="wolimgcus3desk"  />
             </div>
@@ -513,7 +515,7 @@ const WallOfLove: React.FC = () => {
             />
           </div>
 
-          <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-2 border-[#006B66] rounded-2xl  lg:h-[175px] 3xl:h-[220px] lg:w-[365px] 3xl:w-[458px] relative translate-x-4">
+          <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-[1.6px] 3xl:border-2 border-[#006B66] rounded-2xl  lg:h-[175px] 3xl:h-[220px] lg:w-[365px] 3xl:w-[458px] relative translate-x-4">
             <div className="w-1/2">
               <div className=" text-[10px] font-[500] leading-[18px]">
                 &apos;We used to struggle with order tracking, but Quiro has

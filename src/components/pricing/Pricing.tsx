@@ -29,7 +29,7 @@ const Pricing: React.FC = () => {
         <h5 className="px-[15px] sm:pl-[201px] sm:pr-[202px] lg:px-[100px] xl:pl-[412px] xl:pr-[413px] 3xl:px-[467px] text-center text-[20px] sm:text-[24px] lg:text-[40px] 3xl:text-[56px] leading-[24px] sm:leading-[28.8px] lg:leading-[48px] 3xl:leading-[67.2px] font-[600]">
           There&apos;s a Plan For You, No Matter Your Size or Budget
         </h5>
-        <p className="px-[50px] sm:hidden sm:pl-[81px] sm:pr-[82px] font-[500] leading-[19.5px] sm:leading-[16.5px] text-[13px] sm:text-[11px] mt-[14px] text-center">
+        <p className="px-[50px] sm:hidden sm:pl-[81px] sm:pr-[82px] font-[500] leading-[19.5px] sm:leading-[16.5px] text-[13px] sm:text-[11px] mt-[14px] text-center ">
           <Image
             src={arrow}
             alt="arrow"
@@ -42,7 +42,7 @@ const Pricing: React.FC = () => {
           <Image
             src={tabarrow}
             alt="arrow"
-            className="absolute w-[200px] z-10  left-0 sm:-top-20 sm:left-1 lg:w-[376px] 3xl:w-[572px] lg:-top-[150px] lg:-left-[70px] xl:-top-[150px] xl:left-[50px] 3xl:left-[0px] 3xl:-top-[250px]"
+            className="absolute w-[200px] z-10  left-0 sm:-top-20 sm:left-1 lg:w-[376px] 3xl:w-[572px] lg:-top-[150px] lg:-left-[70px] xl:-top-[150px] xl:left-[50px] 3xl:left-[10px] 3xl:-top-[250px] 3xl:-rotate-12"
           />
           Choose a plan that fits your needs, with pay-as-you-go flexibility to
           scale. Our tailored commission model gives you great value and
