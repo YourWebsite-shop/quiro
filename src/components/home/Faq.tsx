@@ -124,7 +124,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index && (
-                  <p className="sm:text-[10px] text-[12px] lg:text-[13px] font-[400] leading-[23px] 3xl:text-[14px] text-gray-600 pl-[40px] sm:pl-[28px] lg:pl-[55px] 3xl:pl-[68px]">
+                  <p className="3xl:text-[18px] 3xl:leading-[23.4px] lg:[16px] lg:leading-[20.8px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px]  font-[400]  text-gray-600 pl-[40px] sm:pl-[28px] lg:pl-[55px] 3xl:pl-[68px]">
                     {faq.answer}
                   </p>
                 )}
@@ -170,7 +170,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index + faqData.length / 2 && (
-                  <p className="sm:text-[10px] text-[12px] lg:text-[13px] font-[400] leading-[23px] 3xl:text-[14px] text-gray-600 pl-[40px] sm:pl-[28px] lg:pl-[55px] 3xl:pl-[68px]">
+                  <p className="3xl:text-[18px] 3xl:leading-[23.4px] lg:[16px] lg:leading-[20.8px] leading-[18px]  sm:text-[12px] text-[12px] sm:leading-[15.6px]  font-[400]  text-gray-600 pl-[40px] sm:pl-[28px] lg:pl-[55px] 3xl:pl-[68px]">
                     {faq.answer}
                   </p>
                 )}
