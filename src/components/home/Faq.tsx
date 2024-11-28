@@ -89,7 +89,10 @@ const Faq: React.FC = () => {
           {/* Left Column */}
           <div>
             {faqData.slice(0, faqData.length / 2).map((faq, index) => (
-              <div key={index} className=" pb-[11.83px] sm:pb-[16.25px] lg:pb-[20.86px] 3xl:pb-[25.42px]">
+              <div
+                key={index}
+                className=" pb-[11.83px] sm:pb-[16.25px] lg:pb-[20.86px] 3xl:pb-[25.42px]"
+              >
                 {/* Question */}
                 <div
                   className="flex justify-between items-center cursor-pointer"
@@ -132,7 +135,10 @@ const Faq: React.FC = () => {
           {/* Right Column */}
           <div>
             {faqData.slice(faqData.length / 2).map((faq, index) => (
-              <div key={index} className=" pb-[11.83px] sm:pb-[16.25px] lg:pb-[20.86px] 3xl:pb-[25.42px]">
+              <div
+                key={index}
+                className=" pb-[11.83px] sm:pb-[16.25px] lg:pb-[20.86px] 3xl:pb-[25.42px]"
+              >
                 {/* Question */}
                 <div
                   className="flex justify-between items-center cursor-pointer"
@@ -164,7 +170,7 @@ const Faq: React.FC = () => {
 
                 {/* Answer */}
                 {expandedIndex === index + faqData.length / 2 && (
-                  <p className="sm:text-[14px] text-[12px] font-[400] leading-[23px] ml-12 md:text-[14px] text-gray-600 lg:pl-8">
+                  <p className="sm:text-[10px] text-[12px] lg:text-[13px] font-[400] leading-[23px] 3xl:text-[14px] text-gray-600 pl-[40px] sm:pl-[28px] lg:pl-[55px] 3xl:pl-[68px]">
                     {faq.answer}
                   </p>
                 )}
