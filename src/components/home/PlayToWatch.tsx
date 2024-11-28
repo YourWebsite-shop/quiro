@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import arrowmobile from "@/assets/home/arrowmobile.png";
 import magicarraow from "@/assets/magicArrow.png";
+import laparrow from "@/assets/laparrow.png"
 import magicarrowtab from "@/assets/home/magicarrtab.png";
 import "./styles/playtowatch.css";
 
@@ -60,12 +61,19 @@ const PlayToWatch: React.FC = () => {
         className="hidden sm:block absolute left-0 -bottom-10 w-[63vw] h-[500px] lg:hidden custom-magic-arrow-tab"
       />
 
+      <Image
+        src={laparrow}
+        alt="magic arrow"
+        width={900}
+        className="absolute lg:w-[60vw] lg:h-[700px] xl:w-[64vw] xl:h-[800px] left-0 lg:-bottom-44 xl:-bottom-52 hidden  lg:block 3xl:hidden custom-magic-arrow"
+      />
+
       {/* Magic arrow for desktop */}
       <Image
         src={magicarraow}
         alt="magic arrow"
         width={900}
-        className="absolute lg:w-[60vw] lg:h-[700px] xl:w-[64vw] xl:h-[840px] left-0 lg:-bottom-44 xl:-bottom-52 hidden lg:block custom-magic-arrow"
+        className="absolute lg:w-[60vw] lg:h-[700px] xl:w-[64vw] xl:h-[840px] left-0 lg:-bottom-44 xl:-bottom-52 hidden  3xl:block custom-magic-arrow"
       />
 
       {/* Video player with frame */}
