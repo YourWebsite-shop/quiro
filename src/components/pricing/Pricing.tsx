@@ -1,6 +1,7 @@
 import React from "react";
 import line2 from "@/assets/buttonLine.png";
 import Image from "next/image";
+import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoInformationCircleSharp } from "react-icons/io5";
 import Trusted from "../home/Trusted";
@@ -96,16 +97,19 @@ const Pricing: React.FC = () => {
             </div>
 
             <div className="mt-[25.8px] sm:mt-[19px] lg:mt-[32px] 3xl:mt-[42px]">
-              <button className="bg-black text-[8px] lg:text-[14px] 3xl:text-[16px] leading-[12px] lg:leading-[21px] 3xl:leading-[24px]  relative text-white rounded-[3.5px] lg:rounded-[6px] flex items-center px-[14.02px] lg:px-[23.87px] pt-[6.8px] lg:pt-[12.31px] pb-[7.24px] lg:pb-[13.13px] ">
-                Get Started <FaLongArrowAltRight className="ml-2 text-white" />
-                <Image
-                  src={line2}
-                  width={100}
-                  height={0}
-                  alt="line"
-                  className="absolute w-full -bottom-[6px] left-0 "
-                />
-              </button>
+              <Link href="/form">
+                <button className="bg-black text-[8px] lg:text-[14px] 3xl:text-[16px] leading-[12px] lg:leading-[21px] 3xl:leading-[24px]  relative text-white rounded-[3.5px] lg:rounded-[6px] flex items-center px-[14.02px] lg:px-[23.87px] pt-[6.8px] lg:pt-[12.31px] pb-[7.24px] lg:pb-[13.13px] ">
+                  Get Started{" "}
+                  <FaLongArrowAltRight className="ml-2 text-white" />
+                  <Image
+                    src={line2}
+                    width={100}
+                    height={0}
+                    alt="line"
+                    className="absolute w-full -bottom-[6px] left-0 "
+                  />
+                </button>
+              </Link>
             </div>
 
             <div className="flex mt-[21.48px] lg:mt-[33.9px] 3xl:mt-[45px] mb-[18.45px] lg:mb-[31px] 3xl:mb-[35px] items-start gap-[3.86px] pr-[33.85px]">
@@ -160,17 +164,24 @@ const Pricing: React.FC = () => {
               </ul>
             </div>
             <div className="mt-[17px] lg:mt-[32.42px] 3xl:mt-[42px]">
-              <button className="bg-black text-[8px] lg:text-[14px] 3xl:text-[16px] leading-[12px] lg:leading-[21px] 3xl:leading-[24px]  relative text-white rounded-[3.5px] 3xl:rounded-[6px] flex items-center px-[14.02px] lg:pl-[21.15px] lg:pr-[19.4px] 3xl:px-[25px] pt-[6.8px] pb-[7.24px] lg:pt-[12.31px] lg:pb-[13.13px] 3xl:pt-[15px] 3xl:pb-[16px]">
-                Talk to Sales{" "}
-                <FaLongArrowAltRight className="ml-2 text-white" />
-                <Image
-                  src={line2}
-                  width={100}
-                  height={0}
-                  alt="line"
-                  className="absolute w-full -bottom-[6px] left-0 "
-                />
-              </button>
+              <a
+                href="https://cal.com/yashkumar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#000000] cursor-pointer"
+              >
+                <button className="bg-black text-[8px] lg:text-[14px] 3xl:text-[16px] leading-[12px] lg:leading-[21px] 3xl:leading-[24px]  relative text-white rounded-[3.5px] 3xl:rounded-[6px] flex items-center px-[14.02px] lg:pl-[21.15px] lg:pr-[19.4px] 3xl:px-[25px] pt-[6.8px] pb-[7.24px] lg:pt-[12.31px] lg:pb-[13.13px] 3xl:pt-[15px] 3xl:pb-[16px]">
+                  Talk to Sales{" "}
+                  <FaLongArrowAltRight className="ml-2 text-white" />
+                  <Image
+                    src={line2}
+                    width={100}
+                    height={0}
+                    alt="line"
+                    className="absolute w-full -bottom-[6px] left-0 "
+                  />
+                </button>
+              </a>
             </div>
 
             <div className="flex mt-[21.48px] lg:mt-[33.92px] 3xl:mt-[45px]  mb-[18.45px] items-start gap-[3.86px] pr-[33.85px]">
@@ -189,10 +200,6 @@ const Pricing: React.FC = () => {
         <Trusted />
       </div>
 
-      {/* FAQs */}
-      <div>
-        <FAQs />
-      </div>
     </div>
   );
 };

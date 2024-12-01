@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import Image, { StaticImageData } from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 
 import profile1 from "../../assets/aboutus/Team/profile.1.png";
 import profile2 from "../../assets/aboutus/Team/profile2.png";
@@ -81,7 +81,10 @@ const Team: React.FC = () => {
                       <Card className="border-0 shadow-none">
                         <CardContent className="flex flex-col items-center justify-center bg-[#F5F3ED] p-6">
                           <div className="relative h-fit w-fit">
-                            <FaLinkedin className="absolute top-10 sm:top-0 sm:right-3 right-28 text-4xl bg-white text-[#000000] cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1 z-20" />
+                            <div className="absolute top-10 sm:top-0 sm:right-3 right-28 text-4xl bg-white text-[#000000] cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1.5 z-20">
+                              <FaLinkedin className="text-2xl" />
+                            </div>
+
                             <Image
                               src={member.profileImage}
                               alt={`${member.name}'s Profile`}
@@ -125,7 +128,9 @@ const Team: React.FC = () => {
                 <div className="p-1">
                   <Card className="border-0 shadow-none">
                     <CardContent className="flex flex-col items-center justify-center bg-[#F5F3ED] p-6">
-                      <FaLinkedin className="absolute top-8 right-24 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1" />
+                      <div className="absolute top-8 right-24 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1.5">
+                        <FaLinkedin className="text-xl" />
+                      </div>
                       <Image
                         src={member.profileImage}
                         alt={`${member.name}'s Profile`}
@@ -162,7 +167,17 @@ const Team: React.FC = () => {
         <div className="p-0">
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-1 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <div className="absolute top-1 right-5 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+              <a
+                  href="https://www.linkedin.com/in/yashkumar-quiro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000000] cursor-pointer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+
               <Image
                 src={profile1}
                 alt="Yash Kumar's Profile"
@@ -182,7 +197,17 @@ const Team: React.FC = () => {
         <div>
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-1 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <div className="absolute top-1 right-5 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+              <a
+                  href="https://www.linkedin.com/in/gurman-singh-banga-264029195/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000000] cursor-pointer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+
               <Image
                 src={profile2}
                 alt="Gurman Singh's Profile"
@@ -202,7 +227,17 @@ const Team: React.FC = () => {
         <div>
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-1 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <div className="absolute top-1 right-5 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+              <a
+                  href="https://www.linkedin.com/in/shikhir-kalia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000000] cursor-pointer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+
               <Image
                 src={profile3}
                 alt="Shikhir Kalia's Profile"
@@ -222,7 +257,17 @@ const Team: React.FC = () => {
         <div>
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-5 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <div className="absolute top-5 right-5 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+              <a
+                  href="https://www.linkedin.com/in/sumitjain34/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000000] cursor-pointer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+
               <Image
                 src={profile4}
                 alt="Sumit Jain's Profile"
@@ -242,7 +287,17 @@ const Team: React.FC = () => {
         <div>
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-5 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <div className="absolute top-5 right-5 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+              <a
+                  href="https://www.linkedin.com/in/guneet-singh-87a652146/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000000] cursor-pointer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+
               <Image
                 src={profile5}
                 alt="Guneet Singh's Profile"
@@ -262,7 +317,17 @@ const Team: React.FC = () => {
         <div>
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-5 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <div className="absolute top-5 right-5 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+              <a
+                  href="https://www.linkedin.com/in/aanchal-patel-b985531b9/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000000] cursor-pointer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+
               <Image
                 src={profile6}
                 alt="Aanchal Patel's Profile"
@@ -273,7 +338,7 @@ const Team: React.FC = () => {
                 Aanchal Patel
               </p>
               <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                Brand & Product Designer
+                Brand & Product
               </p>
             </CardContent>
           </Card>
@@ -282,7 +347,17 @@ const Team: React.FC = () => {
         <div>
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-5 right-5 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <div className="absolute top-5 right-5 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+              <a
+                  href="https://www.linkedin.com/in/vikrantvasu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000000] cursor-pointer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+
               <Image
                 src={profile7}
                 alt="Vikrant Vasu's Profile"
@@ -293,7 +368,7 @@ const Team: React.FC = () => {
                 Vikrant Vasu
               </p>
               <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                Operations Team
+                Operations
               </p>
             </CardContent>
           </Card>
@@ -302,7 +377,17 @@ const Team: React.FC = () => {
         <div className="">
           <Card className="border-0 shadow-none">
             <CardContent className="relative  flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-5 right-10 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <div className="absolute top-5 right-10 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+              <a
+                  href="https://www.linkedin.com/in/shrutichauhan559/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000000] cursor-pointer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+
               <Image
                 src={profile8}
                 alt="Shruti Chauhan's Profile"
@@ -314,7 +399,7 @@ const Team: React.FC = () => {
                   Shruti Chauhan
                 </p>
                 <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                  Founder&apos;s Office
+                  Product
                 </p>
               </div>
             </CardContent>
@@ -324,7 +409,17 @@ const Team: React.FC = () => {
         <div>
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <FaLinkedin className="absolute top-5 right-8 3xl:right-10 text-5xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2" />
+              <div className="absolute top-5 right-8 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+                <a
+                  href="https://www.linkedin.com/in/raunakarora01/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#000000] cursor-pointer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+
               <Image
                 src={profile9}
                 alt="Raunak Arora's Profile"

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import perfectBox1 from "@/assets/perfectBox1.png";
 import perfectBox1sm from "@/assets/perfectBox1sm.png";
 import boxperfect3 from "@/assets/boxperfect3.png";
@@ -62,9 +63,11 @@ const Box1: React.FC = () => {
         </p>
 
         <div className="flex justify-center mt-[24px] sm:mt-[30px] lg:mt-[30.5px] sm:block pb-10 sm:scale-90 sm:-translate-x-3 lg:translate-x-0 lg:scale-100 sm: ">
-          <button className="bg-[#F5F3ED] text-[12px] sm:text-[10px] lg:text-[13px] lg:leading-[19.5px] sm:leading-[15px] sm:px-[21px] leading-[18px] font-[500] justify-center border-[1px]  border-[#00413E] text-center text-sm sm:text-base lg:border-[1.53px] lg:rounded-[7.64px]  shadow-[4px_4px_0_rgba(0,0,0,1)] sm:py-[10px]  px-[25px] lg:px-[20px] py-2 lg:pt-[10.7px] lg:pb-[11.16px] rounded-[6px] flex items-center active:bg-[#E2E0D9] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none">
-            Learn More
-          </button>
+          <Link href="/business" passHref>
+            <button className="bg-[#F5F3ED] text-[12px] sm:text-[10px] lg:text-[13px] lg:leading-[19.5px] sm:leading-[15px] sm:px-[21px] leading-[18px] font-[500] justify-center border-[1px]  border-[#00413E] text-center text-sm sm:text-base lg:border-[1.53px] lg:rounded-[7.64px]  shadow-[4px_4px_0_rgba(0,0,0,1)] sm:py-[10px]  px-[25px] lg:px-[20px] py-2 lg:pt-[10.7px] lg:pb-[11.16px] rounded-[6px] flex items-center active:bg-[#E2E0D9] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none">
+              Learn More
+            </button>
+          </Link>
         </div>
       </div>
       <div className="pl-[27px] pr-[37px] sm:w-1/2 lg:pl-[140px] 3xl:pl-[149px] sm:pl-[64px] lg:pt-[105px] lg:pb-[74.52px] 3xl:pb-[69px] lg:flex lg:justify-between 3xl:pt-64px">
@@ -117,15 +120,17 @@ const Box2: React.FC = () => {
           satisfaction, and double staff efficiency
         </p>
         <div className="flex justify-center mt-[23px] sm:mt-[30px] lg:mt-[20.66px] 3xl:mt-[30px] pb-[50.03px] sm:pb-[58.3px] lg:pb-[95.75px] 3xl:pb-[169px] ">
-          <button className="bg-black relative sm:text-[10px] lg:text-[13px] 3xl:text-[20px] 3xl:leading-[30px] md:text-base text-white pl-[14px] sm:pl-[15px] pr-[15px] lg:pl-[16.09 px] 3xl:pl-[31px] leading-[18px] sm:pr-[10.15px] lg:pr-[12.14px] 3xl:pr-[32px] rounded-[6px] flex items-center  w-fit text-[12px] sm:leading-[18px] lg:leading-[19.5px]  pt-[7px] sm:pt-[6px] pb-[7.97px] sm:pb-[7.37px] lg:rounded-[5.08px] ">
-            Start for free <FaLongArrowAltRight className="ml-2 text-white" />
-            <Image
-              src={line}
-              width={10000}
-              alt="line"
-              className="absolute -bottom-2 left-0 px-2 w-full"
-            />
-          </button>
+          <Link href="/form" passHref>
+            <button className="bg-black relative sm:text-[10px] lg:text-[13px] 3xl:text-[20px] 3xl:leading-[30px] md:text-base text-white pl-[14px] sm:pl-[15px] pr-[15px] lg:pl-[16.09 px] 3xl:pl-[31px] leading-[18px] sm:pr-[10.15px] lg:pr-[12.14px] 3xl:pr-[32px] rounded-[6px] flex items-center  w-fit text-[12px] sm:leading-[18px] lg:leading-[19.5px]  pt-[7px] sm:pt-[6px] pb-[7.97px] sm:pb-[7.37px] lg:rounded-[5.08px] ">
+              Start for free <FaLongArrowAltRight className="ml-2 text-white" />
+              <Image
+                src={line}
+                width={10000}
+                alt="line"
+                className="absolute -bottom-2 left-0 px-2 w-full"
+              />
+            </button>
+          </Link>
         </div>
       </div>
     </div>

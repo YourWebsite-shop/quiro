@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import control1 from "@/assets/home/control/control1.png"
+import Link from "next/link";
+import control1 from "@/assets/home/control/control1.png";
 import control2 from "../../assets/home/control/control2.png";
 import control3 from "../../assets/home/control/control3.png";
 import control3mobile from "../../assets/home/control/control3mobile.png";
@@ -65,12 +66,12 @@ const Control: React.FC = () => {
                   />
                   <div className="relative z-10 pl-[13px] lg:pl-[24.11px] 3xl:pl-[30px] pt-[13px] lg:pt-[25.71px] 3xl:pt-[32px]">
                     <div className="absolute right-[11px] top-[11px] lg:right-[38px] lg:top-[25px]">
-                      <ChevronCircle variant="light" />
+                      <Link href="/business">
+                        <ChevronCircle variant="light" />
+                      </Link>
                     </div>
                     {/* Mobile heading */}
-                    <h5
-                      className="text-[10px] lg:text-[19.29px] 3xl:text-[24px] lg:leading-[28.8px] sm:hidden lg:block font-[600] leading-[12px] text-[#F5F3ED] pb-[5px] lg:pb-[15px] pr-[36px] lg:pr-[14px]"
-                    >
+                    <h5 className="text-[10px] lg:text-[19.29px] 3xl:text-[24px] lg:leading-[28.8px] sm:hidden lg:block font-[600] leading-[12px] text-[#F5F3ED] pb-[5px] lg:pb-[15px] pr-[36px] lg:pr-[14px]">
                       Services &amp; Order Management
                     </h5>
 
@@ -101,7 +102,9 @@ const Control: React.FC = () => {
                   <div className="relative z-10 pt-[6px] lg:pt-[10px]  pl-[4px] lg:pl-[10px] pr-[10px]">
                     <div className="text-[8px]  lg:text-[8.45px] 3xl:text-[13px] leading-[8px] lg:leading-[10.45px] font-[500] rounded-[6px] py-[2px] px-[6px] flex items-center gap-2 bg-[#F5F3ED] lg:py-[2px] 3xl:py-[4px] lg:pr-[14px] justify-between lg:mb-[177px]">
                       Qr Based Ordering
-                      <ChevronCircle variant="dark" />
+                      <Link href="/customers">
+                        <ChevronCircle variant="dark" />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -131,7 +134,9 @@ const Control: React.FC = () => {
 
                 <div className="relative z-10 pl-[13px] pt-[13px] lg:pt-[25.71px] 3xl:pt-[30px] lg:pl-[24.11px] 3xl:pl-[30px]">
                   <div className="absolute right-[11px] top-[11px] lg:right-[49.82px] lg:top-[22.5px]">
-                    <ChevronCircle variant="light" />
+                    <Link href="/business">
+                      <ChevronCircle variant="light" />
+                    </Link>
                   </div>
                   <h5 className="text-[10px]  sm:text-[12px] lg:text-[19.29px] 3xl:text-[24px] sm:leading-[14.4px] lg:leading-[23.14px] 3xl:leading-[28.8px] leading-[12px] font-[600] pb-[5px] lg:pb-[12.06px] 3xl:pb-[15px]">
                     Menu management
@@ -157,7 +162,9 @@ const Control: React.FC = () => {
                 />
                 <div className="relative z-10">
                   <div className="absolute right-[8px] lg:right-[27px]  ">
-                    <ChevronCircle variant="light" />
+                    <Link href="/business">
+                      <ChevronCircle variant="light" />
+                    </Link>
                   </div>
                   <h5 className="text-[10px] sm:text-[12px] lg:text-[19.29px] 3xl:text-[24px] leading-[12px] sm:leading-[14.4px] lg:leading-[23.14px] 3xl:leading-[28.8px] font-[600] text-[#F5F3ED] pr-[38px] lg:pr-[108px] pb-[5px] lg:pb-[11px]">
                     Payment Management
@@ -181,7 +188,9 @@ const Control: React.FC = () => {
                 <div className="relative z-10 pt-[6px] pl-[4px] pr-[10px]">
                   <div className="text-[8px]  leading-[8px] font-[500] rounded-[6px] py-[2px] flex items-center justify-between w-full max-w-[120px]  px-[6px] bg-[#F5F3ED]">
                     Qr Based Ordering
-                    <ChevronCircle variant="dark" />
+                    <Link href="/customers">
+                      <ChevronCircle variant="dark" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -205,7 +214,9 @@ const Control: React.FC = () => {
             <div className="relative z-10 pl-[12px] pt-[8px] lg:pl-[30px] lg:pt-[32px]">
               <div className="bg-[#F5F3ED] text-[10px] lg:text-[16.07px] 3xl:text-[20px]  leading-[10px] lg:leading-[16.07px] h-[20px] rounded-[6px] sm:py-3 sm:pr-3 lg:rounded-[10px] flex items-center pl-[6px] lg:pl-[16.56px] mb-[112px] lg:mb-[238px]  mr-[129px] w-fit lg:pr-3 lg:py-6 gap-3">
                 Access services through QR
-                <ChevronCircle variant="dark" />
+                <Link href="/customers">
+                  <ChevronCircle variant="dark" />
+                </Link>
               </div>
             </div>
           </div>
@@ -228,7 +239,9 @@ const Control: React.FC = () => {
               />
               <div className="relative z-10 p-4">
                 <div className="absolute right-[11px] top-[11px] lg:right-[28px] lg:top-[22px]">
-                  <ChevronCircle variant="light" />
+                  <Link href="/business">
+                    <ChevronCircle variant="light" />
+                  </Link>
                 </div>
                 <h5 className="text-[10px] sm:text-[12px] lg:text-[19.29px] 3xl:text-[24px] leading-[12px] sm:leading-[14.4px] lg:leading-[23.14px] 3xl:leading-[28.8px] font-[600] text-[#F5F3ED] pb-[5px] lg:pb-[15px]">
                   Insights & Analytics
@@ -257,7 +270,9 @@ const Control: React.FC = () => {
               />
               <div className="relative z-10 p-4">
                 <div className="absolute right-[11px] top-[11px] lg:right-[28px] lg:top-[22px]">
-                  <ChevronCircle variant="light" />
+                  <Link href="/business">
+                    <ChevronCircle variant="light" />
+                  </Link>
                 </div>
                 <h5 className="text-[10px] sm:text-[12px] lg:text-[19.29px] 3xl:text-[24px] leading-[12px] sm:leading-[14.4px] lg:leading-[23.14px] 3xl:leading-[28.8px] font-[600] text-[#F5F3ED] pb-[5px]">
                   Real-Time Dashboard
@@ -267,7 +282,10 @@ const Control: React.FC = () => {
                   knowledge about your business at one place.
                 </p>
                 <p className="text-[6px] hidden sm:block sm:text-[8px] lg:text-[11px] leading-[9px] sm:leading-[12px] lg:leading-[19.5px] font-[500] sm:font-[400]  text-[#F5F3ED] pr-[22px] sm:pr-[66px] lg:pt-1 lg:pb-[220px]">
-                Get instant visibility into your operations! Track active, delivered, and canceled orders, monitor request and payment statuses, and keep tabs on total earnings—all in one dynamic, real-time dashboard.
+                  Get instant visibility into your operations! Track active,
+                  delivered, and canceled orders, monitor request and payment
+                  statuses, and keep tabs on total earnings—all in one dynamic,
+                  real-time dashboard.
                 </p>
               </div>
             </div>

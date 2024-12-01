@@ -27,7 +27,14 @@ const Journey: React.FC = () => {
           of hospitality.
         </p>
         <div className="flex mb-8 sm:mb-14 scale-95 lg:scale-90 lg:-translate-x-3">
-          <LineButton text="See open positions" />
+          <a
+            href="https://www.linkedin.com/company/getquiro/jobs/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <LineButton text="See open positions" />
+          </a>
         </div>
       </div>
       <div className="lg:w-[55%] flex justify-end h-full px-[24px] sm:px-[40px] pb-[24px] sm:pb-[32px] lg:pb-0 lg:pr-[32px] 3xl:pr-0 ">

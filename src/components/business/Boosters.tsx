@@ -26,10 +26,9 @@ const Boosters: React.FC = () => {
         </p>
       </div>
       <div className="flex flex-col w-full sm:gap-[8.59px] lg:gap-[20px] gap-[20px]">
-
         <div className="flex flex-col sm:flex-row items-stretch sm:gap-[8.59px] lg:gap-[20px] gap-[20px]">
           <div
-            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[12.85px] sm:pb-[18.1px] lg:p-[30px] lg:pb-[49px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/2 flex flex-col flex-grow"
+            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[12.85px] sm:pb-[18.1px] 3xl:p-[30px] 3xl:pb-[49px] lg:p-[24.63px] lg:pb-[39.04px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/2 flex flex-col flex-grow"
             style={{ boxShadow: "0px 4px 8.57px 0px #006B6640" }}
           >
             <Image
@@ -38,10 +37,10 @@ const Boosters: React.FC = () => {
               width={1000}
               className="w-[100%]"
             />
-            <h1 className="text-[16px] leading-[24px] text-[#000000] font-[600] sm:text-[13px] sm:leading-[19.5px] lg:text-[24px] lg:leading-[36px] mb-[4.41px] mt-[8.74px] lg:mb-[11px] lg:mt-[46px]">
+            <h1 className="text-[16px] leading-[24px] text-[#000000] font-[600] sm:text-[13px] sm:leading-[19.5px] 3xl:text-[24px] 3xl:leading-[36px] lg:text-[19.7px] lg:leading-[29.55px] mb-[4.41px] mt-[8.74px] lg:mb-[8.58px] 3xl:mt-[46px] lg:mt-[37.76px]">
               Order Management
             </h1>
-            <p className="text-[10px] leading-[15px] sm:text-[7px] sm:leading-[10.5px] lg:text-[16px] lg:leading-[24px] text-[#000000] font-[400]">
+            <p className="text-[10px] leading-[15px] sm:text-[7px] sm:leading-[10.5px] 3xl:text-[16px] 3xl:leading-[24px] lg:text-[13.14px] lg:leading-[19.7px] text-[#000000] font-[400]">
               Streamlines dining by allowing guests to place orders directly
               through the app, enabling staff to manage all orders in one
               centralized location. This reduces manual errors and speeds up
@@ -49,8 +48,8 @@ const Boosters: React.FC = () => {
             </p>
           </div>
           <div
-            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[12.85px] sm:pb-[29.1px] lg:p-[30px] lg:pb-[73px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/2 flex flex-col flex-grow"
-            style={{ boxShadow: "0px 4px 8.57px 0px #006B6640"  }}
+            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[12.85px] sm:pb-[29.1px] 3x;:p-[30px] 3xl:pb-[73px] lg:p-[24.63px] lg:pb-[59.04px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/2 flex flex-col flex-grow"
+            style={{ boxShadow: "0px 4px 8.57px 0px #006B6640" }}
           >
             <Image
               src={Boosters2}
@@ -58,10 +57,10 @@ const Boosters: React.FC = () => {
               width={1000}
               className="w-[100%]"
             />
-            <h1 className="text-[16px] leading-[24px] text-[#000000] font-[600] sm:text-[13px] sm:leading-[19.5px] lg:text-[24px] lg:leading-[36px] mb-[4.41px] mt-[8.74px] lg:mb-[11px] lg:mt-[46px]">
+            <h1 className="text-[16px] leading-[24px] text-[#000000] font-[600] sm:text-[13px] sm:leading-[19.5px] 3xl:text-[24px] 3xl:leading-[36px] lg:text-[19.7px] lg:leading-[29.55px] mb-[4.41px] mt-[8.74px] lg:mb-[8.58px] 3xl:mt-[46px] lg:mt-[37.76px]">
               Real-Time Admin Dashboard
             </h1>
-            <p className="text-[10px] leading-[15px] sm:text-[7px] sm:leading-[10.5px] lg:text-[16px] lg:leading-[24px] text-[#000000] font-[400]">
+            <p className="text-[10px] leading-[15px] sm:text-[7px] sm:leading-[10.5px] 3xl:text-[16px] 3xl:leading-[24px] lg:text-[13.14px] lg:leading-[19.7px] text-[#000000] font-[400]">
               The real-time dashboard provides instant operational insights,
               allowing staff/owners to make quick decisions and allocate
               resources efficiently, ensuring smooth operations and improved
@@ -70,12 +69,10 @@ const Boosters: React.FC = () => {
           </div>
         </div>
 
-
-
         <div className="flex flex-col sm:flex-row items-stretch sm:gap-[8.59px] lg:gap-[20px] gap-[20px]">
           <div
-            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[11.13px] sm:pb-[42.94px] lg:p-[26px] lg:pb-[83px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
-            style={{ boxShadow:  "0px 4px 8.57px 0px #006B6640" }}
+            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[11.13px] sm:pb-[42.94px] 3xl:p-[26px] 3xl:pb-[83px] lg:p-[21.34px] lg:pb-[66.65px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
+            style={{ boxShadow: "0px 4px 8.57px 0px #006B6640" }}
           >
             <Image
               src={Boosters3}
@@ -83,10 +80,10 @@ const Boosters: React.FC = () => {
               width={1000}
               className="w-[100%]"
             />
-            <h1 className="text-[16px] leading-[24px] text-[#000000] font-[600] sm:text-[13px] sm:leading-[19.5px] lg:text-[24px] lg:leading-[36px] mb-[4.41px] mt-[8.74px] lg:mb-[11px] lg:mt-[46px]">
+            <h1 className="text-[16px] leading-[24px] text-[#000000] font-[600] sm:text-[13px] sm:leading-[19.5px] 3xl:text-[24px] 3xl:leading-[36px] lg:text-[19.7px] lg:leading-[29.55px] mb-[4.41px] mt-[8.74px] lg:mb-[8.58px] 3xl:mt-[46px] lg:mt-[37.76px]">
               Request Management
             </h1>
-            <p className="text-[10px] leading-[15px] sm:text-[7px] sm:leading-[10.5px] lg:text-[16px] lg:leading-[24px] text-[#000000] font-[400]">
+            <p className="text-[10px] leading-[15px] sm:text-[7px] sm:leading-[10.5px] 3xl:text-[16px] 3xl:leading-[24px] lg:text-[13.14px] lg:leading-[19.7px] text-[#000000] font-[400]">
               Streamline guest requests with a centralized system, enabling
               prioritised tasks and real-time tracking for quicker responses.
               This boosts service standards, enhances guest satisfaction, and
@@ -94,8 +91,8 @@ const Boosters: React.FC = () => {
             </p>
           </div>
           <div
-            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[11.13px] sm:pb-[31.94px] lg:p-[26px] lg:pb-[83px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
-            style={{ boxShadow: "0px 4px 8.57px 0px #006B6640"  }}
+            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[13.85px] sm:p-[11.13px] sm:pb-[31.94px] 3xl:p-[26px] 3xl:pb-[83px] lg:p-[21.34px] lg:pb-[66.65px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
+            style={{ boxShadow: "0px 4px 8.57px 0px #006B6640" }}
           >
             <Image
               src={Boosters4}
@@ -103,10 +100,10 @@ const Boosters: React.FC = () => {
               width={1000}
               className="w-[100%]"
             />
-            <h1 className="text-[16px] leading-[24px] text-[#000000] font-[600] sm:text-[13px] sm:leading-[19.5px] lg:text-[24px] lg:leading-[36px] mb-[4.41px] mt-[8.74px] lg:mb-[11px] lg:mt-[46px]">
+            <h1 className="text-[16px] leading-[24px] text-[#000000] font-[600] sm:text-[13px] sm:leading-[19.5px] 3xl:text-[24px] 3xl:leading-[36px] lg:text-[19.7px] lg:leading-[29.55px] mb-[4.41px] mt-[8.74px] lg:mb-[8.58px] 3xl:mt-[46px] lg:mt-[37.76px]">
               Payment Management
             </h1>
-            <p className="text-[10px] leading-[15px] sm:text-[7px] sm:leading-[10.5px] lg:text-[16px] lg:leading-[24px] text-[#000000] font-[400]">
+            <p className="text-[10px] leading-[15px] sm:text-[7px] sm:leading-[10.5px] 3xl:text-[16px] 3xl:leading-[24px] lg:text-[13.14px] lg:leading-[19.7px] text-[#000000] font-[400]">
               Centralizes transaction monitoring, enabling you to track
               cash-at-counter orders and digital payments with ease. Quiro’s
               system also oversees settlement statuses for streamlined, accurate
@@ -114,7 +111,7 @@ const Boosters: React.FC = () => {
             </p>
           </div>
           <div
-            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[14.74px] sm:p-[11.13px] sm:pb-[31.94px] lg:p-[26px] lg:pb-[107px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
+            className="bg-[#FFFFFF] border-[0.42px] border-[#006B66] p-[13px] pb-[14.74px] sm:p-[11.13px] sm:pb-[31.94px] 3xl:p-[26px] 3xl:pb-[83px] lg:p-[21.34px] lg:pb-[86.65px] rounded-[8.49px] lg:rounded-[20px] sm:w-1/3 flex flex-col flex-grow"
             style={{ boxShadow: "0px 4px 20px 0px #006B6640" }}
           >
             <Image
@@ -123,20 +120,16 @@ const Boosters: React.FC = () => {
               width={1000}
               className="w-[100%]"
             />
-            <h1 className="text-[16px] leading-[24px] text-[#000000] font-[600] sm:text-[13px] sm:leading-[19.5px] lg:text-[24px] lg:leading-[36px] mb-[4.41px] mt-[8.91px] lg:mb-[11px] lg:mt-[46px]">
+            <h1 className="text-[16px] leading-[24px] text-[#000000] font-[600] sm:text-[13px] sm:leading-[19.5px] 3xl:text-[24px] 3xl:leading-[36px] lg:text-[19.7px] lg:leading-[29.55px] mb-[4.41px] mt-[8.74px] lg:mb-[8.58px] 3xl:mt-[46px] lg:mt-[37.76px]">
               Menu Management
             </h1>
-            <p className="text-[10px] leading-[15px] sm:text-[7px] sm:leading-[10.5px] lg:text-[16px] lg:leading-[24px] text-[#000000] font-[400]">
+            <p className="text-[10px] leading-[15px] sm:text-[7px] sm:leading-[10.5px] 3xl:text-[16px] 3xl:leading-[24px] lg:text-[13.14px] lg:leading-[19.7px] text-[#000000] font-[400]">
               Allows for quick updates to in-room dining menus, ensuring guests
               always have access to the freshest options and increasing order
               volume.
             </p>
           </div>
         </div>
-
-
-
-
       </div>
     </div>
   );
