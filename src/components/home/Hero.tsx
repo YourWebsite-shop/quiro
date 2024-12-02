@@ -6,7 +6,7 @@ import Link from "next/link";
 import doubleLine from "@/assets/home/doubleunderline.png";
 import Marquee from "react-fast-marquee";
 import "./styles/hero.css";
-import {useRouter} from "next/navigation"
+import { useRouter } from "next/navigation";
 
 // Importing Carousel Images
 import CarouselImg1 from "@/assets/home/carousel/CarouselImg1.png";
@@ -20,6 +20,11 @@ import CarouselImg7 from "@/assets/home/carousel/CarouselImg7.png";
 // Partners carousel images
 import partner1 from "@/assets/home/carousel/partners/partners1.png";
 import partner2 from "@/assets/home/carousel/partners/partners2.png";
+import partner3 from "@/assets/home/carousel/partners/partners3.svg";
+import partner4 from "@/assets/home/carousel/partners/partners4.png";
+import partner5 from "@/assets/home/carousel/partners/partners5.png";
+import partner6 from "@/assets/home/carousel/partners/partners6.svg";
+import partner7 from "@/assets/home/carousel/partners/partners7.png";
 
 // Button assets
 import line from "@/assets/buttonLine.png";
@@ -27,10 +32,10 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { Router } from "lucide-react";
 
 const Hero: React.FC = () => {
-  const router = useRouter()
+  const router = useRouter();
   const handleRedirect = () => {
-    router.push('/form')
-  }
+    router.push("/form");
+  };
   return (
     <>
       <div
@@ -58,17 +63,19 @@ const Hero: React.FC = () => {
           designed by HoReCa Community, for the community. Our all-in-one
           solution empowers your team to effortlessly manage everything
         </p>
-        <div className="flex flex-col gap-[15.65px] 3xl:gap-[16px] sm:flex-row sm:pt-0 z-10 ">          
-          <button onClick={handleRedirect} className="bg-black relative sm:text-[12px] lg:text-[13.62px] 3xl:text-[20px] 3xl:leading-[30px] md:text-base text-white pl-[34px] pr-[39.59px] sm:pl-[20px] lg:px-[35px] 3xl:pl-[31px] sm:pr-[20.65px]  3xl:pr-[32px] rounded-[10px] flex items-center w-fit text-[12px] sm:leading-[18px] sm:py-[4px] py-3">
-              Get Started <FaLongArrowAltRight className="ml-2 text-white" />
-              <Image
-                src={line}
-                width={10000}
-                alt="line"
-                className="absolute -bottom-2 left-0 px-2 w-full"
-              />
-            </button>
-      
+        <div className="flex flex-col gap-[15.65px] 3xl:gap-[16px] sm:flex-row sm:pt-0 z-10 ">
+          <button
+            onClick={handleRedirect}
+            className="bg-black relative sm:text-[12px] lg:text-[13.62px] 3xl:text-[20px] 3xl:leading-[30px] md:text-base text-white pl-[34px] pr-[39.59px] sm:pl-[20px] lg:px-[35px] 3xl:pl-[31px] sm:pr-[20.65px]  3xl:pr-[32px] rounded-[10px] flex items-center w-fit text-[12px] sm:leading-[18px] sm:py-[4px] py-3"
+          >
+            Get Started <FaLongArrowAltRight className="ml-2 text-white" />
+            <Image
+              src={line}
+              width={10000}
+              alt="line"
+              className="absolute -bottom-2 left-0 px-2 w-full"
+            />
+          </button>
 
           <a
             href="https://cal.com/quiro"
@@ -188,60 +195,46 @@ export const Partners = () => {
         direction="right"
       >
         <Image
-          src={partner1}
+          src={partner3}
           alt="Carousel Imag 1"
           height={121}
           width={73}
           className="mx-10 w-[39px] sm:w-[73px]"
         />
         <Image
-          src={partner2}
+          src={partner4}
           alt="Carousel Imag 1"
           height={121}
           width={73}
           className="mx-10 w-[69px] sm:w-[73px]"
         />
         <Image
-          src={partner1}
+          src={partner5}
           alt="Carousel Imag 1"
           height={121}
           width={73}
           className="mx-10 w-[39px] sm:w-[73px]"
         />
         <Image
-          src={partner2}
+          src={partner6}
           alt="Carousel Imag 1"
           height={121}
           width={73}
-          className="mx-10 w-[69px] sm:w-[73px]"
+          className="mx-10 w-[119px] sm:w-[293px]"
         />
         <Image
-          src={partner1}
+          src={partner7}
           alt="Carousel Imag 1"
           height={121}
           width={73}
-          className="mx-10 w-[39px] sm:w-[73px]"
-        />
-        <Image
-          src={partner2}
-          alt="Carousel Imag 1"
-          height={121}
-          width={73}
-          className="mx-10 w-[69px] sm:w-[73px]"
-        />
-        <Image
-          src={partner1}
-          alt="Carousel Imag 1"
-          height={121}
-          width={73}
-          className="mx-10 w-[39px] sm:w-[73px]"
+          className="mx-10 w-[39px] sm:w-[83px]"
         />
         <Image
           src={partner2}
           alt="Carousel Imag 1"
           height={121}
           width={73}
-          className="mx-10 w-[69px] sm:w-[73px]"
+          className="mx-10 w-[69px] sm:w-[83px]"
         />
       </Marquee>
     </div>
