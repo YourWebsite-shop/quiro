@@ -430,7 +430,7 @@ const Team: React.FC = () => {
                 Raunak Arora
               </p>
               <p className="mt-1 text-center text-[18px] font-[500] leading-[21.6px] text-[#000000]">
-                Founder&apos;s Office
+                Product
               </p>
             </CardContent>
           </Card>
