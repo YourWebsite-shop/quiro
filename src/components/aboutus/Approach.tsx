@@ -74,7 +74,7 @@ const Approach: React.FC = () => {
   return (
     <div className="pb-[80px] sm:pb-[100px] lg:pb-[150px] pt-[60px] ">
       <div className="text-center sm:text-start">
-        <h3 className="text-[20px] sm:text-[32px] pb-[32px] sm:pb-[54px] lg:text-[48px] sm:pl-[49px] font-[600] relative lg:px-[160px]">
+        <h3 className="text-[20px] sm:text-[32px] pb-[32px] sm:pb-[54px] lg:text-[40px] 3xl:text-[48px] sm:pl-[49px] font-[600] relative lg:px-[160px]">
           <p className="text-[#006B66] billyOhioText text-[24px] sm:text-[26px] lg:text-[40px] pr-40 translate-y-2">
             From Vision to Reality
           </p>
@@ -150,7 +150,7 @@ const Approach: React.FC = () => {
               }  p-8 cursor-pointer transition-all duration-700 ease-in-out`}
             >
               {/* Number */}
-              <div className="text-[#F58121] text-[48px] font-[600]">
+              <div className="text-[#F58121] text-[40px] font-[600]">
                 {item.number}
               </div>
 

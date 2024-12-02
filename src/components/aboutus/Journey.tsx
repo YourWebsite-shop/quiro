@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import journey from "../../assets/aboutus/journey.png";
 import LineButton from "../LineButton";
+import line from "@/assets/buttonLine.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Journey: React.FC = () => {
   return (
@@ -33,7 +35,17 @@ const Journey: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-block"
           >
-            <LineButton text="See open positions" />
+            <button className="bg-black relative sm:text-[12px] md:text-base text-white px-6 sm:px-10 rounded-lg flex items-center w-fit text-[12px] sm:py-4 py-3">
+              See open positions{" "}
+              <FaLongArrowAltRight className="ml-2 text-white" />
+              <Image
+                src={line}
+                width={100}
+                height={0}
+                alt="line"
+                className="absolute w-full -bottom-3 left-0 px-2"
+              />
+            </button>
           </a>
         </div>
       </div>

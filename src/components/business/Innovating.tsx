@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import icon1 from "@/assets/business/Innovating1.png";
 import icon2 from "@/assets/business/Innovating2.png";
@@ -10,10 +10,24 @@ import backIcon3 from "@/assets/business/backIcon3.png";
 
 const Innovating: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const handleCardClick = (index: number) => {
     setActiveIndex((prev) => (prev === index ? null : index)); // Toggle state
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (activeIndex !== null && cardRefs.current[activeIndex] && !cardRefs.current[activeIndex]?.contains(event.target as Node)) {
+        setActiveIndex(null); // Close the card if clicked outside
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [activeIndex]);
 
   const cards = [
     {
@@ -70,11 +84,16 @@ const Innovating: React.FC = () => {
           ) => (
             <div
               key={index}
+              ref={(el) => {
+                if (el) {
+                  cardRefs.current[index] = el;
+                }
+              }}
               onClick={() => handleCardClick(index)}
-              className={`relative cursor-pointer transition-all duration-500 ease-in-out ${
+              className={`relative cursor-pointer transition-all duration-500 ease-in-out border-2 border-transparent hover:border-black ${
                 activeIndex === index
-                  ? "w-[100%] sm:w-[100%]"
-                  : "w-[100%] sm:w-[50%]"
+                  ? "w-[100%] sm:w-[100%] border-0"
+                  : "w-[100%] sm:w-[50%] border-2"
               } h-[300px] rounded-[21.57px]`}
               style={{
                 backgroundColor: activeIndex === index ? backBgColor : bgColor,
@@ -138,7 +157,7 @@ const SectionHeader: React.FC<{ title: string;}> = ({
   title,
   
 }) => (
-  <div className="sm:flex sm:justify-between lg:px-[125px] 3xl:px-0 px-[70px] lg:pb-[70px] 3xl:pb-[96px] sm:pb-[50px] ">
+  <div className="sm:flex sm:justify-between lg:px-[154px] 3xl:px-0 px-[70px] lg:pb-[70px] 3xl:pb-[96px] sm:pb-[50px] ">
     <div className="relative w-full text-[#000000] sm:w-[50%] text-[20px] leading-[24px] text-center sm:text-start sm:text-[24px] lg:text-[36px] 3xl:text-[48px] font-[600] sm:leading-[28.8px] lg:leading-[43.2px] 3xl:leading-[57.6px] pb-[11px] sm:pb-[0px]">
       {title}
       <span className="billyOhioText text-[#006B66] absolute font-[400] text-[16pxpx] leading-[28.8px] lg:text-[28px] 3xl:text-[36px] lg:leading-[54px] sm:text-[24px] sm:leading-[36px] sm:px-0 lg:-left-0 lg:-top-10 sm:-left-0 left-1 -top-7 sm:-top-8">
@@ -148,7 +167,7 @@ const SectionHeader: React.FC<{ title: string;}> = ({
     <p className="  w-full text-[#000000] text-center sm:text-start sm:w-[40%] sm:text-[11px] sm:leading-[16.5px] lg:text-[20px]  lg:leading-[30px] font-[500] text-[13px] leading-[19.5px] py-3 pb-[24px] sm:py-0   sm:hidden lg:text-base ">
     We craft solutions with you, for you.
     </p>
-    <p className="  w-full text-[#000000] text-center sm:text-start sm:w-[40%] sm:text-[11px] sm:leading-[16.5px] lg:leading-[21px] lg:text-[14px] 3xl:text-[20px] lg:leading-[30px] font-[500] text-[13px] leading-[19.5px] py-3 sm:py-0 hidden sm:block lg:text-base ">
+    <p className="  w-full text-[#000000] text-center sm:text-start sm:w-[40%] sm:text-[11px] sm:leading-[16.5px] lg:leading-[21px] lg:text-[14px] 3xl:text-[20px] 3xl:leading-[30px] font-[500] text-[13px] leading-[19.5px] py-3 sm:py-0 hidden sm:block lg:text-base ">
     We craft solutions with you, for you, and your community, addressing every challenge across all areas.
     </p>
   </div>

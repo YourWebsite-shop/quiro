@@ -35,7 +35,7 @@ const teamMembers = [
   },
   { profileImage: profile7, name: "Vikrant Vasu", text: "Operations Team" },
   { profileImage: profile8, name: "Shruti Chauhan", text: "Founder’s Office" },
-  { profileImage: profile9, name: "Raunak Arora", text: "Founder’s Office" },
+  { profileImage: profile9, name: "Raunak Arora", text: "Product" },
 ];
 
 // Helper function to chunk the team members into groups of 4
@@ -64,7 +64,7 @@ const Team: React.FC = () => {
         <p className="billyOhioText -translate-x-4 sm:-translate-x-0  font-[400] text-[24px] leading-[28.8px] sm:text-[26px] sm:leading-[31.2px] lg:text-[40px] lg:leading-[48px]  text-[#006B66]">
           Empower
         </p>
-        <h5 className="text-[20px] font-[600] leading-[24px] sm:text-[32px] lg:text-[48px] lg:leading-[57.6px] sm:leading-[38.4px]">
+        <h5 className="text-[20px] font-[600] leading-[24px] sm:text-[32px] lg:text-[40px] 3xl:text-[48px] lg:leading-[57.6px] sm:leading-[38.4px]">
           Meet the Dream Team
         </h5>
       </div>

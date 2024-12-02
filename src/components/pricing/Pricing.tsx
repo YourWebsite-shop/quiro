@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoInformationCircleSharp } from "react-icons/io5";
 import Trusted from "../home/Trusted";
-import FAQs from "../home/Faq";
 import check from "@/assets/pricing/check.png";
 import arrow from "@/assets/pricing/arrow.png";
 import tabarrow from "@/assets/pricing/tabarrow.png";
@@ -43,7 +42,7 @@ const Pricing: React.FC = () => {
           <Image
             src={tabarrow}
             alt="arrow"
-            className="absolute w-[200px] z-10  left-0 sm:-top-20 sm:left-1 lg:w-[376px] 3xl:w-[572px] lg:-top-[150px] lg:-left-[70px] xl:-top-[150px] xl:left-[50px] 3xl:left-[10px] 3xl:-top-[250px] 3xl:-rotate-12"
+            className="absolute w-[200px] z-10  left-0 sm:-top-20 sm:left-1 lg:w-[376px] 3xl:w-[572px] lg:-top-[150px] lg:-left-[70px] lg:-rotate-12 xl:-top-[150px] xl:left-[40px] 3xl:left-[10px] 3xl:-top-[250px] 3xl:-rotate-12"
           />
           Choose a plan that fits your needs, with pay-as-you-go flexibility to
           scale. Our tailored commission model gives you great value and
@@ -52,7 +51,7 @@ const Pricing: React.FC = () => {
       </div>
 
       {/* Pricings */}
-      <div className="mx-[70px] sm:mb-[101px] lg:mb-0 sm:mx-[139px] lg:ml-[150px] xl:ml-[324px] lg:mr-[100px] xl:mr-[322px] 3xl:mx-[430px] mt-[30px] sm:mt-[36px] lg:mt-[50px] 3xl:mt-[64px] sm:flex sm:gap-[20px]">
+      <div className="mx-[70px] sm:mb-[101px] lg:mb-0 sm:mx-[139px] lg:mx-auto xl:mx-auto w-fit 3xl:mx-[430px] mt-[30px] sm:mt-[36px] lg:mt-[50px] 3xl:mt-[64px] sm:flex sm:gap-[20px]">
         <div className=" sm:min-w-[263px] md:min-w-none border-[0.8px] lg:border-[1px] rounded-[10px] lg:rounded-[15px] 3xl:rounded-[20px] border-[#006B66] bg-white pt-[16px] lg:pt-[33px] green-shadow sm:max-w-[235px] lg:max-w-[387px] xl:min-w-[387px] 3xl:max-w-[520px] ">
           <div className="pl-[20px] sm:pl-[20.04px] lg:pl-[27px] 3xl:pl-[44px] pb-[13.74px] lg:pb-[26.01px] 3xl:pb-[31.49px]  border-b-[0.5px] lg:border-b-[1px] border-[#006B66]">
             <p className="text-[16px] lg:text-[24px] 3xl:text-[32px] leading-[19.2px] lg:leading-[28.8px] 3xl:leading-[38.4px] font-[600]">
@@ -78,7 +77,7 @@ const Pricing: React.FC = () => {
                 {price1 &&
                   price1.map((item, i) => (
                     <div
-                      className="flex items-center gap-[5.09px] lg:gap-[8.39px] 3xl:gap-[11px] lg:mt-[11px] 3xl:mt-[20px]"
+                      className="flex items-center gap-[5.09px] lg:gap-[8.39px] 3xl:gap-[11px] mt-[8.1px] lg:mt-[11px] 3xl:mt-[20px]"
                       key={i}
                     >
                       <p>
@@ -146,7 +145,7 @@ const Pricing: React.FC = () => {
                 {price2 &&
                   price2.map((item, i) => (
                     <div
-                      className="flex items-center gap-[5.09px] lg:gap-[8.39px] 3xl:gap-[11px] lg:mt-[13px] 3xl:mt-[20px]"
+                      className="flex items-center gap-[5.09px] lg:gap-[8.39px] 3xl:gap-[11px] mt-[8.1px] lg:mt-[13px] 3xl:mt-[20px]"
                       key={i}
                     >
                       <p>

@@ -5,7 +5,7 @@ const Mission: React.FC = () => {
     <div className="flex flex-col justify-center items-center  px-[23px] sm:pl-[49px] lg:px-[117px] 3xl:px-[160px] sm:pr-[54px] sm:pb-10 lg:pb-[80px]  mt-[80px] sm:mt-[100px] lg:mt-[110px] 3xl:mt-[150px]">
       <div className="w-full ">
         <p className="billyOhioText text-[#006B66] font-[400] text-[24px] sm:text-[26px] lg:text-[40px] 3xl:text-[40px] text-center sm:text-start sm:-translate-x-0 -translate-x-14 translate-y-1">Revolutionize</p>
-        <h1 className="relative text-[#000000] text-[20px] sm:text-[32px] 3xl:text-[48px] lg:text-[48px] font-[600] leading-[24px] sm:leading-[38px] lg:leading-[57.6px]  3xl:mb-[24px] flex items-center justify-center sm:justify-start">
+        <h1 className="relative text-[#000000] text-[20px] sm:text-[32px] 3xl:text-[48px] lg:text-[40px] font-[600] leading-[24px] sm:leading-[38px] lg:leading-[57.6px]  3xl:mb-[24px] flex items-center justify-center sm:justify-start">
           Our Mission
         </h1>
       </div>

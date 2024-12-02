@@ -124,6 +124,8 @@ body::-webkit-scrollbar-thumb:hover {
   body {
     @apply bg-background text-foreground;
   }
+
+  
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
@@ -172,6 +174,13 @@ font-300 {
   opacity: 0.2;
   color: transparent;
 }
+.custom-stroke6 {
+  -webkit-text-stroke: 1px #006b66;
+  opacity: 0.1;
+  color: transparent;
+}
+
+
 
 .green-shadow {
   box-shadow: 0 4px 10px rgba(0, 107, 102, 0.25);

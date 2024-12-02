@@ -11,7 +11,7 @@ const WallOfLove: React.FC = () => {
         <p className="billyOhioText text-[#006B66] text-[16px] sm:text-[20px] sm:leading-[30px] lg:text-[28px] 3xl:text-[40px] 3xl:leading-[48p] font-[400] text-start -translate-x-2 sm:-translate-x-6 3xl:-translate-x-20">
           Wall of Love
         </p>
-        <h1 className="text-[#000000] text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[36px] lg:leading-[43.2px] 3xl:text-[48px] 3xl:leading-[57.6px] font-[700] pb-[14px] sm:pb-[10px] 3xl:pb-[16px]">
+        <h1 className="text-[#000000] lg:font-[600] 3xl:font-[700] text-[20px] leading-[24px] sm:text-[24px] sm:leading-[28.8px] lg:text-[36px] lg:leading-[43.2px] 3xl:text-[48px] 3xl:leading-[57.6px] font-[700] pb-[14px] sm:pb-[10px] 3xl:pb-[16px]">
           What Guests Love About Quiro
         </h1>
         <p className="text-[13px] leading-[19.5px] sm:text-[11px] sm:leading-[16.5px] lg:text-[14px] lg:leading-[21px] 3xl:text-[18px] 3xl:leading-[27px] font-[500] text-center">

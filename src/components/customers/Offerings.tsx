@@ -17,10 +17,10 @@ const Offerings: React.FC = () => {
           Offerings
         </p>
 
-        <h1 className="text-[#000000] text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[36px] 3xl:text-[48px] font-[600] leading-tight pb-[14px] sm:pb-[10px] 3xl:pb-[16px]">
+        <h1 className="text-[#000000] text-[20px] sm:text-[24px] sm:leading-[28.8px] lg:text-[36px] 3xl:text-[48px] font-[600] leading-tight pb-[14px] sm:pb-[10px] 3xl:pb-[16px] ">
           Let&apos;s dive into what we bring to the table
         </h1>
-        <p className="text-[13px] sm:text-[11px] sm:leading-[16.5px] lg:text-[18px] font-[500]">
+        <p className="text-[13px] sm:text-[11px] sm:leading-[16.5px] lg:text-[18px] font-[500] lg:mt-[10px] 3xl:mt-[16px]">
           Food obviously, but much more!
         </p>
       </div>
