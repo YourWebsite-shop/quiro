@@ -12,14 +12,14 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 
 import profile1 from "../../assets/aboutus/Team/profile.1.png";
-import profile2 from "../../assets/aboutus/Team/profile2.png";
-import profile3 from "../../assets/aboutus/Team/profile3.png";
-import profile4 from "../../assets/aboutus/Team/profile4.png";
-import profile5 from "../../assets/aboutus/Team/profile5.png";
-import profile6 from "../../assets/aboutus/Team/profile6.png";
-import profile7 from "../../assets/aboutus/Team/profile7.png";
+import profile2 from "../../assets/aboutus/Team/faceProfile2.png";
+import profile3 from "../../assets/aboutus/Team/faceProfile3.png";
+import profile4 from "../../assets/aboutus/Team/faceProfile4.png";
+import profile5 from "../../assets/aboutus/Team/faceProfile5.png";
+import profile6 from "../../assets/aboutus/Team/faceProfile6.png";
+import profile7 from "../../assets/aboutus/Team/faceProfile7.png";
 import profile8 from "../../assets/aboutus/Team/profile8.png";
-import profile9 from "../../assets/aboutus/Team/profile9.png";
+import profile9 from "../../assets/aboutus/Team/faceProfile9.png";
 
 // Team members data
 const teamMembers = [
@@ -182,7 +182,7 @@ const Team: React.FC = () => {
                 src={profile1}
                 alt="Yash Kumar's Profile"
                 width={1000}
-                className="3xl:w-[358px]  w-[238px] h-[235px]"
+                className="3xl:w-[358px] 3xl:h-[358px]  lg:w-[238px] lg:h-[236px]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Yash Kumar
@@ -212,7 +212,7 @@ const Team: React.FC = () => {
                 src={profile2}
                 alt="Gurman Singh's Profile"
                 width={1000}
-                className="3xl:w-[358px]  w-[238px] h-[235px]"
+                className="3xl:w-[358px] 3xl:h-[358px]  lg:w-[252.4px] lg:h-[236px]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Gurman Singh
@@ -242,7 +242,7 @@ const Team: React.FC = () => {
                 src={profile3}
                 alt="Shikhir Kalia's Profile"
                 width={1000}
-                className="3xl:w-[358px]  w-[238px] h-[235px]"
+                className="3xl:w-[358px] 3xl:h-[358px]  lg:w-[236px] lg:h-[236px]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Shikhir Kalia
@@ -272,7 +272,7 @@ const Team: React.FC = () => {
                 src={profile4}
                 alt="Sumit Jain's Profile"
                 width={1000}
-                className="3xl:w-[358px]  w-[238px] h-[235px]"
+                className="3xl:w-[342.22px] 3xl:h-[375.72px]  lg:w-[241.46px] lg:h-[236px]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Sumit Jain
@@ -302,7 +302,7 @@ const Team: React.FC = () => {
                 src={profile5}
                 alt="Guneet Singh's Profile"
                 width={1000}
-                className="3xl:w-[358px]  w-[238px] h-[235px]"
+                className="3xl:w-[323.21px] 3xl:h-[375.72px]  lg:w-[235px] lg:h-[236px]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Guneet Singh
@@ -332,7 +332,7 @@ const Team: React.FC = () => {
                 src={profile6}
                 alt="Aanchal Patel's Profile"
                 width={1000}
-                className="3xl:w-[358px]  w-[238px] h-[235px]"
+                className="3xl:w-[352px] 3xl:h-[375px]  lg:w-[248.84px] lg:h-[236px]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Aanchal Patel
@@ -362,7 +362,7 @@ const Team: React.FC = () => {
                 src={profile7}
                 alt="Vikrant Vasu's Profile"
                 width={1000}
-                className="3xl:w-[358px]  w-[238px] h-[235px]"
+                className="3xl:w-[357.74px] 3xl:h-[359.42px]  lg:w-[216px] lg:h-[236px]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Vikrant Vasu
@@ -392,7 +392,7 @@ const Team: React.FC = () => {
                 src={profile8}
                 alt="Shruti Chauhan's Profile"
                 width={1000}
-                className="3xl:w-[358px]  w-[238px] h-[235px]"
+                className="3xl:w-[348.28px] 3xl:h-[359.42px]  lg:w-[227.45px] lg:h-[236px]"
               />
               <div>
                 <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
@@ -424,7 +424,7 @@ const Team: React.FC = () => {
                 src={profile9}
                 alt="Raunak Arora's Profile"
                 width={1000}
-                className="3xl:w-[358px]  w-[238px] h-[235px]"
+                className="3xl:w-[340px] 3xl:h-[360px]  lg:w-[236px] lg:h-[236px]"
               />
               <p className="mt-2 text-[32px] font-[400] leading-[38.4px] billyOhioText text-[#006B66]">
                 Raunak Arora

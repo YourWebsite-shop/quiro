@@ -1,6 +1,8 @@
 import React from "react";
 import TrustedCard from "./props/TrustedCard";
 import user1 from "@/assets/home/trusted/trusteduser1.png";
+import client1 from "@/assets/home/trusted/client1.jpeg";
+import client2 from "@/assets/home/trusted/client2.jpeg";
 const Trusted: React.FC = () => {
   return (
     <div className="lg:pb-[151px] 3xl:pb-[204px] pb-[113px] sm:pb-[135px] mt-[80px] lg:mt-[110px] 3xl:mt-[150px]">
@@ -9,19 +11,19 @@ const Trusted: React.FC = () => {
       </h5>
 
       <div className="flex gap-[17px] lg:gap-[19.51px] 3xl:gap-[23px] sm:gap-[28.2px]  justify-center pl-4">
-        <div><TrustedCard company="Mojang" name="Rocky Tomar" img={user1} /></div>
-        <div><TrustedCard company="Mojang" name="Nitin Bhardwaj" img={user1} /></div>
-        <div className="hidden lg:block"><TrustedCard company="Mojang" name="kunal" img={user1} /></div>
+        <div><TrustedCard company="Hub of Joys" name="Rocky Tomar" img={client2} /></div>
+        <div><TrustedCard company="Lujo Grand" name="Nitin Bhardwaj" img={user1} /></div>
+        <div className="hidden lg:block"><TrustedCard company="Devpaga Group" name="Pradeep" img={client1} /></div>
       </div>
       <div className="flex gap-[17px] lg:gap-[19.51px] 3xl:gap-[23px] sm:gap-[28.2px]  justify-center my-[21px] lg:my-[30.17px] pr-10">
-        <div>  <TrustedCard company="Mojang" name="Pradeep" img={user1} /></div>
-        <div> <TrustedCard company="Mojang" name="Narendra Singh" img={user1} /></div>
-        <div className="hidden"> <TrustedCard company="Mojang" name="kunal" img={user1} /></div>
+        <div>  <TrustedCard company="Opulence Group" name="Mayank Bhardwaj" img={user1} /></div>
+        <div> <TrustedCard company="Meera Hotels" name="Narendra Singh" img={user1} /></div>
+        <div className="hidden"> <TrustedCard company="Arctic Hills" name="Mayank" img={user1} /></div>
       </div>
       <div className="flex gap-[17px] lg:gap-[19.51px] 3xl:gap-[23px] sm:gap-[28.2px]  justify-center pl-4">
-        <div><TrustedCard company="Mojang" name="Mayank Bhardwaj" img={user1} /></div>
-        <div><TrustedCard company="Mojang" name="Vijendra Singh" img={user1} /></div>
-        <div className="hidden lg:block"><TrustedCard company="Mojang" name="kunal" img={user1} /></div>
+        <div><TrustedCard company="AK Residency" name="Vijendra Singh" img={user1} /></div>
+        <div><TrustedCard company="Hotel Delight Inn" name="Kamal" img={user1} /></div>
+        <div className="hidden lg:block"><TrustedCard company="Arctic Hills" name="Mayank" img={user1} /></div>
       </div>
     </div>
   );
