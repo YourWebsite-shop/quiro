@@ -299,7 +299,7 @@ const WallOfLove: React.FC = () => {
           </div>
 
           {/* Third row */}
-          <div className="border relative border-[#006B66] rounded-[10px] px-[18px] pt-[17px]  bg-white w-[236px] mt-[19px]">
+          <div className="border-2 relative border-[#006B66] rounded-[10px] px-[18px] pt-[17px]  bg-white w-[236px] mt-[19px]">
             <div>
               <Image src={wolimg2tablelandscape} alt="wolimg2tablelandscape" />
             </div>

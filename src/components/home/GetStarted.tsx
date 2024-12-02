@@ -70,9 +70,10 @@ const GetStarted: React.FC = () => {
               </button>
             </Link>
 
-            <button className="bg-[#F5F3ED] justify-center border-2 border-[#00413E] text-center text-sm sm:text-base shadow-[4px_4px_0_rgba(0,0,0,1)] sm:py-3 sm:px-10 px-6 py-2 rounded-lg flex items-center active:bg-[#E2E0D9] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none whitespace-nowrap">
+           <Link href={'/form'}>
+           <button className="bg-[#F5F3ED] justify-center border-2 border-[#00413E] text-center text-sm sm:text-base shadow-[4px_4px_0_rgba(0,0,0,1)] sm:py-3 sm:px-10 px-6 py-2 rounded-lg flex items-center active:bg-[#E2E0D9] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none whitespace-nowrap">
               Contact Us
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

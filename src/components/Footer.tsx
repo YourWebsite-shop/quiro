@@ -6,6 +6,8 @@ import { BsTwitterX } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 import logo from "../assets/Logo.png";
 import footer from "../assets/footerbg.png";
+import Link from "next/link";
+
 
 const Footer: React.FC = () => {
   return (
@@ -23,16 +25,16 @@ const Footer: React.FC = () => {
             <div className="flex flex-col items-start space-y-2">
               <h1 className="font-semibold text-[16px] sm:text-[10px] text-[#00413E] mb-3 lg:text-[24px]">Company</h1>
               <ul className="space-y-2">
-                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]">About us</li>
-                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]">For Businesses</li>
-                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]">For Customers</li>
+                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]"><Link href={'/aboutus'}>About us</Link></li>
+                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]"><Link href={'/business'}>For Businesses</Link></li>
+                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]"><Link href={'/customers'}>For Customers</Link></li>
               </ul>
             </div>
             <div className="flex flex-col items-start space-y-2">
               <h1 className="font-semibold text-[16px] text-[#00413E] sm:text-[10px] lg:text-[24px] mb-3">Resources</h1>
               <ul className="space-y-2">
                 <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]">Documentation</li>
-                <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]">Pricing</li>
+                <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]"><Link href={'/pricing'}>Pricing</Link></li>
               </ul>
             </div>
           </div>
