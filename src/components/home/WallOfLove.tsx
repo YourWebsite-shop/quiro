@@ -25,6 +25,9 @@ import g2tab from "@/assets/home/walloflove/g2tab.png";
 import wolimg2tablelandscape from "@/assets/home/walloflove/wolimg2tablandscape.png";
 import deskimglastcol from "@/assets/home/walloflove/deskimglastcol.png"
 
+// Real people import
+import Pradeep from "@/assets/home/walloflove/Pradeep.jpeg"
+
 const WallOfLove: React.FC = () => {
   return (
     <div className="lg:pb-[105px] sm:pb-[100px] pb-[102px]">
@@ -353,7 +356,7 @@ const WallOfLove: React.FC = () => {
 
               {/* First col second row */}
               <div className="3xl:border-[2px] border-[1.6px] lg:pt-[35.1px] 3xl:pt-[44px] lg:pl-[33.5px] 3xl:pl-[42px] lg:pr-[29.93px] 3xl:pr-[30px] sm:mr-8  rounded-[20px]   border-[#006B66] bg-white  ">
-                <p className="text-[10px] leading-[15px] font-[500] ">
+                <p className="text-[10px] 3xl:text-[12px] leading-[15px] 3xl:leading-[18px] font-[500] ">
                   &apos;Quiro has transformed how we manage our hotel
                   operations. The QR-based ordering and request systems are a
                   game-changer, allowing us to provide prompt service that our
@@ -517,9 +520,9 @@ const WallOfLove: React.FC = () => {
 
           <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-[1.6px] 3xl:border-2 border-[#006B66] rounded-2xl  lg:h-[175px] 3xl:h-[220px] lg:w-[365px] 3xl:w-[458px] relative translate-x-4">
             <div className="w-1/2">
-              <div className=" text-[10px] font-[500] lg:leading-[15px] 3xl:leading-[18px]">
+              <div className=" text-[10px] 3xl:text-[12px] font-[500] lg:leading-[15px] 3xl:leading-[18px]">
                 &apos;We used to struggle with order tracking, but Quiro has
-                made it effortless. It’s a game-changer for us.&apos;
+                made it effortless. It&apos;s a game-changer for us.&apos;
               </div>
               <div className="text-start lg:text-[15px] 3xl:text-[20px] lg:pt-4 3xl:pt-8">
                 <p className="font-[400] lg:leading-[15px] 3xl:leading-[30px]">Pradeep</p>
@@ -528,10 +531,10 @@ const WallOfLove: React.FC = () => {
             </div>
             <div className="w-fit pr-[37px]">
               <Image
-                src={pradeep}
+                src={Pradeep}
                 alt="pradeep"
                 width={1000}
-                className="3xl:w-[142px] 3xl:h-[132px] lg:w-[111px] lg:h-[105px]"
+                className="3xl:w-[142px] 3xl:h-[132px] lg:w-[111px] lg:h-[105px] rounded-full"
               />
             </div>
             <Image  src={apos2} alt="apos2" width={1000} className=" lg:w-[100px] 3xl:w-[125px] aspect-square absolute bottom-0 right-0 translate-y-1/2" />
