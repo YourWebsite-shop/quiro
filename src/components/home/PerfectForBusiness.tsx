@@ -168,7 +168,7 @@ const Box3: React.FC = () => {
           – you&apos;re gaining a dedicated ally who&apos;s invested in your
           success.
         </p>
-        <div className="flex justify-center w-full sm:justify-start sm:pt-[30px] lg:pt-[90.6px] 3xl:pt-[24px] sm:pb-[88px] lg:pb-[43px]">
+        <div className="flex justify-center w-full sm:justify-start sm:pt-[30px] lg:pb-[90.6px] 3xl:pt-[24px] sm:pb-[88px] ">
           <button className="bg-[#F5F3ED]  text-[#00413E] font-[500] justify-center border-2 sm:border border-[#00413E] text-center text-[12px] sm:text-[10px] 3xl:text-[16px] 3xl:leading-[24px] sm:text-base  shadow-[4px_4px_0_rgba(0,0,0,1)] py-[7px] sm:py-[10px] sm:px-[21px] pl-[25px] pr-[25px] pt-[7px] pb-[8px] leading-[18px] rounded-[10px] flex items-center active:bg-[#E2E0D9] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none 3xl:px-[27px] 3xl:py-[14px]">
             Learn More
           </button>

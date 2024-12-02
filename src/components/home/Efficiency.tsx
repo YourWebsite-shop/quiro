@@ -29,7 +29,7 @@ const Efficiency: React.FC = () => {
   ];
 
   return (
-    <div className="  sm:px-[42px] lg:px-0 lg:pb-[146px] sm:pb-[126px] pb-[106px] 3xl:px-[160px]">
+    <div className="  sm:px-[42px] lg:px-0 lg:pb-[146px] sm:pb-[126px] pb-[106px] 3xl:px-[160px] 2xl:max-w-[1450px] 2xl:mx-auto 3xl:max-w-none">
       {/* Section Heading */}
       <SectionHeader
         title="We Are More Than Just Another Software Company"
@@ -91,7 +91,7 @@ const SectionHeader: React.FC<{ title: string; description: string }> = ({
 const EfficiencyCardList: React.FC<{ data: EfficiencyCardProps[] }> = ({
   data,
 }) => (
-  <div className="flex flex-col mt-[40px] sm:mt-[50px]  lg:mt-10 gap-[25px]  sm:flex-row lg:mx-[104px] sm:gap-[10px] lg:gap-[12.47px] 3xl:gap-[20px] px-[24px] sm:px-0 3xl:mx-0">
+  <div className="flex flex-col mt-[40px] sm:mt-[50px]  lg:mt-10 gap-[25px]  sm:flex-row lg:mx-[104px] sm:gap-[10px] lg:gap-[12.47px] 3xl:gap-[20px] px-[24px] sm:px-0  3xl:mx-0">
     {data.map((item, index) => (
       <EfficiencyCard
         key={index}

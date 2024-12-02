@@ -418,7 +418,7 @@ const WallOfLove: React.FC = () => {
             <Image src={wolarr} alt="wolarr" width={1000} />
             <div className="absolute lg:top-[21px] 3xl:top-[31px] left-1/2 -translate-x-1/2 w-full text-center">
               <p className="font-semibold">&apos;I was very impressed&apos;</p>
-              <p className=" lg:text-[10px] 3xl:text-[16px] pt-[20px] 3xl:pt-[26px] pl-[33px] pr-[41px]">
+              <p className=" lg:text-[10px] 3xl:text-[16px] pt-[20px] 3xl:pt-[26px] pl-[33px] pr-[41px] font-[500] leading-[15px] 3xl:leading-[18px]">
                 &apos;Quiro made a big difference right from day one. And the
                 best thing is it is really easy for the staff to use it&apos;
               </p>
@@ -446,7 +446,7 @@ const WallOfLove: React.FC = () => {
               dining service.&apos;
             </p>
 
-            <p className="absolute billyOhioText lg:text-[19.14px] text-[#006B66]  right-[41.25px] bottom-[15.2px] sm:w-[52px] ">Mayank</p>
+            <p className="absolute billyOhioText lg:text-[19.14px] text-[#006B66]  right-[25.25px] bottom-[10.2px] sm:w-[52px] ">Mayank</p>
           </div>
 
           {/*  */}
@@ -460,7 +460,7 @@ const WallOfLove: React.FC = () => {
                 className="w-2/3 mx-auto"
               />
             </p>
-            <p className="lg:text-[10px] leading-[15px] font-semibold 3xl:text-[14px]  text-center">
+            <p className="lg:text-[10px] leading-[15px] 3xl:leading-[18px]  3xl:text-[14px]  text-center font-[500]">
               &apos;It was difficult to manage guest requests earlier. Quiro
               took the stress out of managing guest requests. It&apos;s so quick
               and easy—exactly what we needed!&apos;
@@ -511,13 +511,13 @@ const WallOfLove: React.FC = () => {
               src={rajesh}
               alt="rajesh"
               width={1000}
-              className="absolute w-11 bottom-[22px] right-[15px]"
+              className="absolute w-11 bottom-[10px] right-[20px]"
             />
           </div>
 
           <div className="flex pt-[31px] pl-[31px] justify-between bg-white border-[1.6px] 3xl:border-2 border-[#006B66] rounded-2xl  lg:h-[175px] 3xl:h-[220px] lg:w-[365px] 3xl:w-[458px] relative translate-x-4">
             <div className="w-1/2">
-              <div className=" text-[10px] font-[500] leading-[18px]">
+              <div className=" text-[10px] font-[500] lg:leading-[15px] 3xl:leading-[18px]">
                 &apos;We used to struggle with order tracking, but Quiro has
                 made it effortless. It’s a game-changer for us.&apos;
               </div>

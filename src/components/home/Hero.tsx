@@ -6,6 +6,7 @@ import Link from "next/link";
 import doubleLine from "@/assets/home/doubleunderline.png";
 import Marquee from "react-fast-marquee";
 import "./styles/hero.css";
+import {useRouter} from "next/navigation"
 
 // Importing Carousel Images
 import CarouselImg1 from "@/assets/home/carousel/CarouselImg1.png";
@@ -23,8 +24,13 @@ import partner2 from "@/assets/home/carousel/partners/partners2.png";
 // Button assets
 import line from "@/assets/buttonLine.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { Router } from "lucide-react";
 
 const Hero: React.FC = () => {
+  const router = useRouter()
+  const handleRedirect = () => {
+    router.push('/form')
+  }
   return (
     <>
       <div
@@ -52,9 +58,8 @@ const Hero: React.FC = () => {
           designed by HoReCa Community, for the community. Our all-in-one
           solution empowers your team to effortlessly manage everything
         </p>
-        <div className="flex flex-col gap-[15.65px] 3xl:gap-[16px] sm:flex-row sm:pt-0 z-10 ">
-          {/* <Link href="/form">
-            <button className="bg-black relative sm:text-[12px] lg:text-[13.62px] 3xl:text-[20px] 3xl:leading-[30px] md:text-base text-white pl-[34px] pr-[39.59px] sm:pl-[20px] lg:pl-[21.12px] 3xl:pl-[31px] sm:pr-[20.65px] lg:pr-[21.79px] 3xl:pr-[32px] rounded-[10px] flex items-center w-fit text-[12px] sm:leading-[18px] sm:py-[4px] py-3">
+        <div className="flex flex-col gap-[15.65px] 3xl:gap-[16px] sm:flex-row sm:pt-0 z-10 ">          
+          <button onClick={handleRedirect} className="bg-black relative sm:text-[12px] lg:text-[13.62px] 3xl:text-[20px] 3xl:leading-[30px] md:text-base text-white pl-[34px] pr-[39.59px] sm:pl-[20px] lg:px-[35px] 3xl:pl-[31px] sm:pr-[20.65px]  3xl:pr-[32px] rounded-[10px] flex items-center w-fit text-[12px] sm:leading-[18px] sm:py-[4px] py-3">
               Get Started <FaLongArrowAltRight className="ml-2 text-white" />
               <Image
                 src={line}
@@ -63,17 +68,7 @@ const Hero: React.FC = () => {
                 className="absolute -bottom-2 left-0 px-2 w-full"
               />
             </button>
-          </Link> */}
-
-          <button className="bg-black relative sm:text-[12px] lg:text-[13.62px] 3xl:text-[20px] 3xl:leading-[30px] md:text-base text-white pl-[34px] pr-[39.59px] sm:pl-[20px] lg:pl-[21.12px] 3xl:pl-[31px] sm:pr-[20.65px] lg:pr-[21.79px] 3xl:pr-[32px] rounded-[10px] flex items-center w-fit text-[12px] sm:leading-[18px] sm:py-[4px] py-3">
-              Get Started <FaLongArrowAltRight className="ml-2 text-white" />
-              <Image
-                src={line}
-                width={10000}
-                alt="line"
-                className="absolute -bottom-2 left-0 px-2 w-full"
-              />
-            </button>
+      
 
           <a
             href="https://cal.com/quiro"
@@ -81,7 +76,7 @@ const Hero: React.FC = () => {
             rel="noopener noreferrer"
             className="bg-[#F5F3ED] text-[#00413E] font-[500] justify-center border border-[#00413E] text-center text-[12px] sm:text-[15px] 3xl:text-[20px] 3xl:leading-[30px] sm:text-base shadow-[4px_4px_0_rgba(0,0,0,1)] sm:py-3 sm:px-[35px] pl-[44px] pr-[41px] pt-[8.29px] pb-[9.21px] rounded-[10px] flex items-center active:bg-[#E2E0D9] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none"
           >
-            Contact Us
+            <button>Contact Us</button>
           </a>
         </div>
       </div>
