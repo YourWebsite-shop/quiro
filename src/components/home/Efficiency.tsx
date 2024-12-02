@@ -114,7 +114,7 @@ const EfficiencyCard: React.FC<EfficiencyCardProps> = ({
   heading,
   text,
 }) => (
-  <div className="sm:border-[1.5px] lg:border-[2.32px] lg:rounded-[15.47px] border-2  border-[#006B66] rounded-[20px] sm:rounded-[8px] w-fit mx-auto max-w-[491px] lg:max-w-screen-3xl  px-[20px] pt-[20px] pb-[40px] sm:px-[14px] lg:px-[15.48px] 3xl:px-[20px] lg:pt-[15.48px] 3xl:pt-[20px] sm:pt-[14px] sm:pb-[20px] lg:pb-0   sm:my-0 lg:shadow-[0px_4px_14px_0px_rgba(0,107,102,0.25)]">
+  <div className="sm:border-[1.5px] lg:border-[2.32px] lg:rounded-[15.47px] border-2  border-[#006B66] rounded-[20px] sm:rounded-[8px] w-fit mx-auto max-w-[491px] lg:max-w-screen-3xl  px-[20px] pt-[20px] pb-[40px] sm:px-[14px] lg:px-[15.48px] 3xl:px-[20px] lg:pt-[15.48px] 3xl:pt-[20px] sm:pt-[14px] sm:pb-[20px] lg:pb-0   sm:my-0 lg:shadow-[0px_4px_14px_0px_rgba(0,107,102,0.25)] 2xl:w-[402.35px]">
     <Image
       src={img}
       alt="efficiency img"
