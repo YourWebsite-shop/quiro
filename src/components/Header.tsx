@@ -61,7 +61,6 @@ const Header: React.FC = () => {
           {[
             { href: "/aboutus", label: "About us" },
             { href: "/business", label: "For Businesses" },
-            { href: "/resources", label: "Resources" },
             { href: "/customers", label: "For Customers" },
             { href: "/pricing", label: "Pricing" },
           ].map(({ href, label }) => (
@@ -88,7 +87,6 @@ const Header: React.FC = () => {
           {[
             { href: "/aboutus", label: "About us" },
             { href: "/business", label: "For Businesses" },
-            { href: "/resources", label: "Resources" },
             { href: "/customers", label: "For Customers" },
             { href: "/pricing", label: "Pricing" },
           ].map(({ href, label }) => (
