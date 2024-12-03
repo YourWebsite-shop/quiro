@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import arrowmobile from "@/assets/home/arrowmobile.png";
 import magicarraow from "@/assets/magicArrow.png";
-import laparrow from "@/assets/laparrow.png"
+import laparrow from "@/assets/laparrow.png";
 import magicarrowtab from "@/assets/home/magicarrtab.png";
 import "./styles/playtowatch.css";
 
@@ -11,8 +11,12 @@ const PlayToWatch: React.FC = () => {
     <div className="bg-[#F3CCE7] custom-ptw-box  px-20 pt-10 lg:pt-20 sm:p-10  flex flex-col items-center justify-center sm:justify-start sm:items-start sm:relative sm:min-h-[50vh] lg:min-h-[80vh] ">
       {/* Mobile Images */}
       <div className="sm:hidden">
-        <h1 className="text-[20px] font-[600] leading-[24px] min-w-[211px]">Hit Play to Watch the</h1>
-        <p className="billyOhioText text-[#006B66] pt-1 text-[24px] font-[400] leading-[28.8px] w-fit mx-auto -translate-x-4">Magic.</p>
+        <h1 className="text-[20px] font-[600] leading-[24px] min-w-[211px]">
+          Hit Play to Watch the
+        </h1>
+        <p className="billyOhioText text-[#006B66] pt-1 text-[24px] font-[400] leading-[28.8px] w-fit mx-auto -translate-x-4">
+          Magic.
+        </p>
       </div>
       <Image
         src={arrowmobile}
@@ -44,14 +48,12 @@ const PlayToWatch: React.FC = () => {
             minWidth: "140px",
           }}
         >
-          <iframe
-            className="w-full max-w-[530px] lg:max-w-full  h-auto aspect-video p-2 rounded-3xl"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=VPn-v5LdsouPChNW"
+          <video
+            className="w-full max-w-[530px] lg:max-w-full  h-auto aspect-video p-2 rounded-3xl relative z-50"
+            src="/videos/comingsoon.mp4"
             title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-          ></iframe>
+            controls
+          ></video>
         </div>
       </div>
       <Image
@@ -65,7 +67,7 @@ const PlayToWatch: React.FC = () => {
         src={laparrow}
         alt="magic arrow"
         width={900}
-        className="absolute lg:w-[60vw] lg:h-[700px] xl:w-[64vw] xl:h-[800px] left-0 lg:-bottom-44 xl:-bottom-52 hidden  lg:block 3xl:hidden custom-magic-arrow"
+        className="absolute lg:w-[50vw] lg:h-[700px] xl:w-[54vw] xl:h-[800px] left-0 lg:-bottom-44 xl:-bottom-52 hidden  lg:block 3xl:hidden custom-magic-arrow "
       />
 
       {/* Magic arrow for desktop */}
@@ -73,7 +75,7 @@ const PlayToWatch: React.FC = () => {
         src={magicarraow}
         alt="magic arrow"
         width={900}
-        className="absolute lg:w-[60vw] lg:h-[700px] xl:w-[64vw] xl:h-[840px] left-0 lg:-bottom-44 xl:-bottom-52 hidden  3xl:block custom-magic-arrow"
+        className="absolute lg:w-[60vw] lg:h-[700px] xl:w-[54vw] xl:h-[840px] left-0 lg:-bottom-44 xl:-bottom-52 hidden  3xl:block custom-magic-arrow z-0 "
       />
 
       {/* Video player with frame */}
@@ -83,14 +85,12 @@ const PlayToWatch: React.FC = () => {
           minWidth: "340px",
         }}
       >
-        <iframe
-          className="w-full max-w-[530px] min-w-[200px] h-auto aspect-video p-2 rounded-3xl"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=VPn-v5LdsouPChNW"
+        <video
+          className="w-full max-w-[530px] min-w-[200px] h-auto aspect-video p-2 rounded-3xl relative z-40"
+         src="/videos/comingsoon.mp4"
           title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-        ></iframe>
+          controls
+        ></video>
       </div>
     </div>
   );

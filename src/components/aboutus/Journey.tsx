@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import journey from "../../assets/aboutus/journey.png";
-import LineButton from "../LineButton";
 import line from "@/assets/buttonLine.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 

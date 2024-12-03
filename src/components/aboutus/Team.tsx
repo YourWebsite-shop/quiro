@@ -128,9 +128,9 @@ const Team: React.FC = () => {
                 <div className="p-1">
                   <Card className="border-0 shadow-none">
                     <CardContent className="flex flex-col items-center justify-center bg-[#F5F3ED] p-6">
-                      <div className="absolute top-8 right-24 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1.5">
+                      {/* <div className="absolute top-8 right-24 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-1.5">
                         <FaLinkedin className="text-xl" />
-                      </div>
+                      </div> */}
                       <Image
                         src={member.profileImage}
                         alt={`${member.name}'s Profile`}

@@ -8,7 +8,6 @@ import wolimgcus2desk from "@/assets/home/walloflove/wolcus2desk.png";
 import wolimgcus3desk from "@/assets/home/walloflove/wolcus3desk.png";
 import fstars from "@/assets/home/5star.png";
 import wolarr from "@/assets/home/walloflove/wolarr.png";
-import pradeep from "@/assets/home/walloflove/pradeep.png";
 import imggroup from "@/assets/home/walloflove/imggroup.png";
 // import wolcusimg3desk from "@/assets/home/walloflove/wolcusimg3desk.png";
 import rajesh from "@/assets/home/AbsoluteImages/Rajesh.png";

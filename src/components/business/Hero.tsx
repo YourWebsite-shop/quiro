@@ -143,7 +143,7 @@ const Card: React.FC<CardProps> = ({
         style={{
           borderColor: (textColor === "#000000" || color === "#000000") ? "#F3CCE7" : (textColor || color),
         }}
-          className={`absolute border hidden lg:block ${isExpanded ? "opacity-0":"opacity-100"}  lg:w-[330px] 3xl:w-[465px] 3xl:rounded-[50px] aspect-square rounded-[40px] top-0 left-0 transition-all duration-300 group-hover:left-2 group-hover:top-3`}
+          className={`absolute border hidden lg:block ${isExpanded ? "opacity-0":"opacity-100"}  lg:w-[330px] 3xl:w-[464px] 3xl:rounded-[50px] aspect-square rounded-[40px] top-0 left-0 transition-all duration-300 group-hover:left-2 group-hover:top-3 3xl:group-hover:top-4`}
         ></div>
       </div>
 

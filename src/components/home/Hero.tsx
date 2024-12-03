@@ -2,7 +2,6 @@
 import React from "react";
 import gradientBg from "@/assets/home/herogradient.png";
 import Image from "next/image";
-import Link from "next/link";
 import doubleLine from "@/assets/home/doubleunderline.png";
 import Marquee from "react-fast-marquee";
 import "./styles/hero.css";
@@ -18,7 +17,6 @@ import CarouselImg6 from "@/assets/home/carousel/CarouselImg6.png";
 import CarouselImg7 from "@/assets/home/carousel/CarouselImg7.png";
 
 // Partners carousel images
-import partner1 from "@/assets/home/carousel/partners/partners1.png";
 import partner2 from "@/assets/home/carousel/partners/partners2.png";
 import partner3 from "@/assets/home/carousel/partners/partners3.svg";
 import partner4 from "@/assets/home/carousel/partners/partners4.png";
@@ -29,7 +27,6 @@ import partner7 from "@/assets/home/carousel/partners/partners7.png";
 // Button assets
 import line from "@/assets/buttonLine.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { Router } from "lucide-react";
 
 const Hero: React.FC = () => {
   const router = useRouter();

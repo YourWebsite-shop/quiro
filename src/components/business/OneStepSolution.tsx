@@ -4,7 +4,7 @@ import Img1 from "@/assets/home/EfficiencyImg1.png";
 import Img2 from "@/assets/home/EfficiencyImg2.png";
 import Img3 from "@/assets/home/EfficiencyImg3.png";
 import LineButton from "../LineButton";
-import ShadowButton from "../ShadowButton";
+import Link from "next/link";
 
 /* ---------------- Efficiency Component ---------------- */
 const Efficiency: React.FC = () => {
@@ -44,7 +44,11 @@ const Efficiency: React.FC = () => {
           <LineButton text="Learn More" />
         </div>
         <div>
-          <ShadowButton text="Contact Us" />
+        <Link href={"/form"}>
+          <button className="bg-[#F5F3ED]  justify-center border-2 border-[#00413E] text-center text-sm sm:text-base  shadow-[4px_4px_0_rgba(0,0,0,1)] sm:py-3 sm:px-10 lg:px-11 lg:py-[14px] px-8 py-2 rounded-lg flex items-center active:bg-[#E2E0D9] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none">
+            Contact Us
+          </button>
+        </Link>
         </div>
       </div>
     </div>
