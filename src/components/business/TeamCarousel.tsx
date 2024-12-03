@@ -6,9 +6,24 @@ import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 import logo from "@/assets/Logo.png";
 
 const teamMembers = [
-  { profileImage: team1, name: "Nitin", text: "Hotel Lujo Grand" },
-  { profileImage: team1, name: "Yash Kumar", text: "Founder & CEO" },
-  { profileImage: team1, name: "Amit Sharma", text: "Product Manager" },
+  { 
+    profileImage: team1, 
+    name: "Rocky", 
+    text: "Hubs of Joy", 
+    description: "Our operations feel more streamlined than ever. Quiro brought the convenience we were missing!" 
+  },
+  { 
+    profileImage: team1, 
+    name: "Mayank", 
+    text: "Arctic hills", 
+    description: "Quiro is soo convinient, managing kitchen was a hassle for me, Quiro came in and made it really quick!" 
+  },
+  { 
+    profileImage: team1, 
+    name: "Gaurav", 
+    text: "Hiker’s house", 
+    description: "Quiro is quite easy to use, my staff got familiar with it within a couple of days" 
+  },
 ];
 
 const TeamCarousel: React.FC = () => {
@@ -32,7 +47,12 @@ const TeamCarousel: React.FC = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full text-center mb-[80px] sm:mb-[96px]">
-      <Image src={logo} alt="logo" width={1000} className="hidden lg:block w-[188.39px]" />
+      <Image
+        src={logo}
+        alt="logo"
+        width={1000}
+        className="hidden lg:block w-[188.39px] 3xl:mb-[83px] mb-[62.54px]"
+      />
       <p className="text-[14px] leading-[21px] text-[#000000] font-[700] sm:text-[14px] sm:leading-[21px] lg:text-[27.13px] lg:leading-[40.69px] mb-[80px] sm:mb-[43.6px] lg:mb-[79.25px] px-[24px] sm:px-[93px] lg:px-[168px]">
         “The onboarding is seamless, they came, installed QRs & all, and we were
         live before you know it!”
@@ -61,6 +81,9 @@ const TeamCarousel: React.FC = () => {
                 </h3>
                 <p className="text-[13px] font-[500] leading-[19.5px] sm:text-[12.8px] sm:leading-[19.2px] lg:text-[24.11px] lg:leading-[36.17px] text-[#006B66]">
                   {member.text}
+                </p>
+                <p className="text-[12px] leading-[18px] sm:text-[12px] sm:leading-[18px] lg:text-[20px] lg:leading-[30px] text-[#575A5E] mt-2">
+                “{member.description}”
                 </p>
               </div>
             ))}

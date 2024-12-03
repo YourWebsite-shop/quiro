@@ -12,14 +12,14 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 
 import profile1 from "../../assets/aboutus/Team/profile.1.png";
-import profile2 from "../../assets/aboutus/Team/faceProfile2.png";
+import profile2 from "../../assets/aboutus/Team/faceprofile.2.png";
 import profile3 from "../../assets/aboutus/Team/faceProfile3.png";
-import profile4 from "../../assets/aboutus/Team/faceProfile4.png";
-import profile5 from "../../assets/aboutus/Team/faceProfile5.png";
-import profile6 from "../../assets/aboutus/Team/faceProfile6.png";
-import profile7 from "../../assets/aboutus/Team/faceProfile7.png";
+import profile4 from "../../assets/aboutus/Team/faceprofile.4.png";
+import profile5 from "../../assets/aboutus/Team/faceprofile.5.png";
+import profile6 from "../../assets/aboutus/Team/faceprofile.6.png";
+import profile7 from "../../assets/aboutus/Team/faceprofile.7.png";
 import profile8 from "../../assets/aboutus/Team/profile8.png";
-import profile9 from "../../assets/aboutus/Team/faceProfile9.png";
+import profile9 from "../../assets/aboutus/Team/faceprofile.9.png";
 
 // Team members data
 const teamMembers = [
@@ -257,7 +257,7 @@ const Team: React.FC = () => {
         <div>
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <div className="absolute top-5 right-5 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+              <div className="absolute top-5 right-7 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
               <a
                   href="https://www.linkedin.com/in/sumitjain34/"
                   target="_blank"
@@ -347,7 +347,7 @@ const Team: React.FC = () => {
         <div>
           <Card className="border-0 shadow-none">
             <CardContent className="relative flex flex-col items-center justify-center bg-[#F5F3ED] p-6 sm:py-0">
-              <div className="absolute top-5 right-5 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
+              <div className="absolute top-5 right-8 3xl:right-10 text-3xl text-[#000000] bg-white cursor-pointer border border-solid border-[#000000] rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] p-2">
               <a
                   href="https://www.linkedin.com/in/vikrantvasu/"
                   target="_blank"

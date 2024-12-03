@@ -8,7 +8,6 @@ import logo from "../assets/Logo.png";
 import footer from "../assets/footerbg.png";
 import Link from "next/link";
 
-
 const Footer: React.FC = () => {
   return (
     <>
@@ -17,24 +16,44 @@ const Footer: React.FC = () => {
         <div className="lg:w-1/2 w-full px-2 md:pt-5 lg:-pt-5 lg:px-0">
           {/* Logo */}
           <div className="flex flex-col items-start justify-start w-full sm:mb-0 mb-16 lg:pb-10">
-            <Image src={logo} alt="logo" width={200} height={80} className="mx-auto sm:mx-0 h-auto w-[102px] lg:w-[122px]" />
+            <Image
+              src={logo}
+              alt="logo"
+              width={200}
+              height={80}
+              className="mx-auto sm:mx-0 h-auto w-[102px] lg:w-[122px]"
+            />
           </div>
 
           {/* Company and Resources Sections */}
           <div className="flex justify-between sm:justify-start lg:gap-32 sm:gap-10 md:flex-row items-start w-full gap-8 mb-16 lg:mb-20">
             <div className="flex flex-col items-start space-y-2">
-              <h1 className="font-semibold text-[16px] sm:text-[10px] text-[#00413E] mb-3 lg:text-[24px]">Company</h1>
+              <h1 className="font-semibold text-[16px] sm:text-[10px] text-[#00413E] mb-3 lg:text-[24px]">
+                Company
+              </h1>
               <ul className="space-y-2">
-                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]"><Link href={'/aboutus'}>About us</Link></li>
-                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]"><Link href={'/business'}>For Businesses</Link></li>
-                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]"><Link href={'/customers'}>For Customers</Link></li>
+                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]">
+                  <Link href={"/aboutus"}>About us</Link>
+                </li>
+                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]">
+                  <Link href={"/business"}>For Businesses</Link>
+                </li>
+                <li className="text-[16px] sm:text-[10px] lg:text-lg text-[#00413ECC]">
+                  <Link href={"/customers"}>For Customers</Link>
+                </li>
               </ul>
             </div>
             <div className="flex flex-col items-start space-y-2">
-              <h1 className="font-semibold text-[16px] text-[#00413E] sm:text-[10px] lg:text-[24px] mb-3">Resources</h1>
+              <h1 className="font-semibold text-[16px] text-[#00413E] sm:text-[10px] lg:text-[24px] mb-3">
+                Resources
+              </h1>
               <ul className="space-y-2">
-                <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]">Documentation</li>
-                <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]"><Link href={'/pricing'}>Pricing</Link></li>
+                <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]">
+                  Documentation
+                </li>
+                <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]">
+                  <Link href={"/pricing"}>Pricing</Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -48,18 +67,25 @@ const Footer: React.FC = () => {
           >
             <div className="flex flex-col space-y-4 lg:py-4">
               <div>
-                <h1 className="font-semibold text-lg sm:text-[10px] lg:text-xl text-[#F5F3ED]">Address</h1>
+                <h1 className="font-semibold text-lg sm:text-[10px] lg:text-xl text-[#F5F3ED]">
+                  Address
+                </h1>
                 <p className="text-sm lg:text-base sm:text-[10px] text-[#F5F3ED]">
                   1330, Sector 57, Gurugram, Haryana, India – 122003
                 </p>
               </div>
               <div>
-                <h1 className="font-semibold text-lg lg:text-xl sm:text-[10px] text-[#F5F3ED]">Email</h1>
-                <p className="text-sm lg:text-base text-[#F5F3ED] sm:text-[10px]">info@witsome.in</p>
+                <h1 className="font-semibold text-lg lg:text-xl sm:text-[10px] text-[#F5F3ED]">
+                  Email
+                </h1>
+                <p className="text-sm lg:text-base text-[#F5F3ED] sm:text-[10px]">
+                  info@witsome.in
+                </p>
               </div>
               <div>
                 <p className="text-xs lg:text-sm text-[#F5F3ED] opacity-60 sm:text-[10px]">
-                  CIN: U62099HR2023PTC116609 | DPIIT Recognition number: DIPP165445
+                  CIN: U62099HR2023PTC116609 | DPIIT Recognition number:
+                  DIPP165445
                 </p>
               </div>
             </div>
@@ -72,14 +98,50 @@ const Footer: React.FC = () => {
         {/* Social Icons and Description */}
         <div className="flex flex-col items-start sm:mb-8 w-full sm:w-1/2">
           <div className="flex space-x-4 mx-auto sm:mx-0">
-            <FaFacebook className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
-            <AiFillInstagram className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
-            <BsTwitterX className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
-            <FaLinkedin className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
-            <GrMail className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
+            <a
+              href="https://www.facebook.com/people/Quiro/61556699365682/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000000] cursor-pointer"
+            >
+              <FaFacebook className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
+            </a>
+            <a
+              href="https://www.instagram.com/getquiro/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000000] cursor-pointer"
+            >
+              <AiFillInstagram className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
+            </a>
+            <a
+              href="https://x.com/getquiro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000000] cursor-pointer"
+            >
+              <BsTwitterX className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/getquiro/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000000] cursor-pointer"
+            >
+              <FaLinkedin className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
+            </a>
+            <a
+               href="mailto:info@witsome.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000000] cursor-pointer"
+            >
+              <GrMail className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
+            </a>
           </div>
           <p className="text-[12px] sm:text-[10px] text-center sm:text-start lg:text-base mt-4 text-[#00413ECC] lg:max-w-[65%]">
-            Quiro is a platform built with the HoReCa community, for business owners & their guests.
+            Quiro is a platform built with the HoReCa community, for business
+            owners & their guests.
           </p>
         </div>
 
@@ -89,9 +151,36 @@ const Footer: React.FC = () => {
             © 2024 Witsome Tech Private Limited. All rights reserved.
           </p>
           <ul className="flex mx-auto sm:mx-0 space-x-4 mt-6 self-end">
-            <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC]">Refund Policy</li>
-            <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC]">Terms & Condition</li>
-            <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC]">Privacy Policy</li>
+            <a
+              href="https://quiro.in/refund-policy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000000] cursor-pointer"
+            >
+              <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC] hover:border-b-0">
+                Refund Policy
+              </li>
+            </a>
+            <a
+              href="https://quiro.in/terms-of-service/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000000] cursor-pointer"
+            >
+              <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC] hover:border-b-0">
+                Terms & Condition
+              </li>
+            </a>
+            <a
+              href="https://quiro.in/privacy-policy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#000000] cursor-pointer"
+            >
+              <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC] hover:border-b-0">
+                Privacy Policy
+              </li>
+            </a>
           </ul>
         </div>
       </div>
