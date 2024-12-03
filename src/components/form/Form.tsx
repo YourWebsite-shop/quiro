@@ -29,7 +29,7 @@ const Form: React.FC = () => {
       </div>
 
       {/* Form */}
-      <div className="mt-[32.2px] lg:mt-[50px] relative bg-white overflow-hidden mx-[32px] sm:mx-[39px] 2xl:mx-[224px] lg:mx-[100px] 3xl:mx-[310px] rounded-[5.31px] sm:rounded-[10.62px] lg:rounded-[20px] pt-[34px] sm:pt-0 pb-[18px] 3xl:pb-[40px]  sm:flex flex-row-reverse justify-end items-center">
+      <div className="mt-[32.2px] lg:mt-[50px] relative bg-white overflow-hidden mx-[32px] sm:mx-[39px] xl:max-w-[1000px] xl:mx-auto   2xl:mx-[auto] 2xl:max-w-[1000px] lg:mx-[100px] 3xl:max-w-none 3xl:mx-[310px] rounded-[5.31px] sm:rounded-[10.62px] lg:rounded-[20px] pt-[34px] sm:pt-0 pb-[18px] 3xl:pb-[40px]  sm:flex flex-row-reverse justify-end items-center">
         <Image
           src={gradient}
           width={1000}
