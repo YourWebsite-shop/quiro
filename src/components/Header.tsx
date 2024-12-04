@@ -7,9 +7,7 @@ import { cn } from "@/lib/utils";
 import LogoMain from "@/assets/Logo";
 import line from "@/assets/buttonLine.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import {
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import Image from "next/image";
 import LineButton from "./LineButton";
 import { Menu } from "lucide-react";
@@ -97,7 +95,9 @@ const Header: React.FC = () => {
                   className={cn(
                     navigationMenuTriggerStyle(),
                     "font-[500] text-[15.34px] leading-[23px] py-2 px-4 rounded-full cursor-pointer",
-                    activePath === href ? "text-white bg-[#00413E] hover:bg-[#00413E] hover:text-white" : ""
+                    activePath === href
+                      ? "text-white bg-[#00413E] hover:bg-[#00413E] hover:text-white"
+                      : ""
                   )}
                 >
                   {label}
@@ -109,16 +109,18 @@ const Header: React.FC = () => {
       </header>
 
       <div className="hidden xl:block">
-        <button className="bg-black relative text-[14.73px] text-white pl-[20px] rounded-[5.52px] flex items-center w-fit leading-[22.1px] pr-[25px] py-[14px]">
-          Start for Free <FaLongArrowAltRight className="ml-2 text-white" />
-          <Image
-            src={line}
-            width={100}
-            height={0}
-            alt="line"
-            className="absolute w-full -bottom-2 left-0 px-2"
-          />
-        </button>
+        <Link href={"/form"}>
+          <button className="bg-black relative text-[14.73px] text-white pl-[20px] rounded-[5.52px] flex items-center w-fit leading-[22.1px] pr-[25px] py-[14px]">
+            Start for Free <FaLongArrowAltRight className="ml-2 text-white" />
+            <Image
+              src={line}
+              width={100}
+              height={0}
+              alt="line"
+              className="absolute w-full -bottom-2 left-0 px-2"
+            />
+          </button>
+        </Link>
       </div>
     </div>
   );
