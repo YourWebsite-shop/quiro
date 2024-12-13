@@ -6,23 +6,31 @@ import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 import logo from "@/assets/Logo.png";
 
 const teamMembers = [
-  { 
-    profileImage: team1, 
-    name: "Rocky", 
-    text: "Hubs of Joy", 
-    description: "Our operations feel more streamlined than ever. Quiro brought the convenience we were missing!" 
+  {
+    profileImage: team1,
+    name: "Rocky",
+    text: "Hubs of Joy",
+    description:
+      "Our operations feel more streamlined than ever. Quiro brought the convenience we were missing!",
+    quote:
+      "The onboarding is seamless, they came, installed QRs & all, and we were live before you know it!",
   },
-  { 
-    profileImage: team1, 
-    name: "Mayank", 
-    text: "Arctic hills", 
-    description: "Quiro is soo convinient, managing kitchen was a hassle for me, Quiro came in and made it really quick!" 
+  {
+    profileImage: team1,
+    name: "Mayank",
+    text: "Arctic hills",
+    description:
+      "Quiro is soo convenient, managing kitchen was a hassle for me, Quiro came in and made it really quick!",
+    quote:
+      "Quiro transformed the way we manage our kitchen—seamless and quick onboarding!",
   },
-  { 
-    profileImage: team1, 
-    name: "Gaurav", 
-    text: "Hiker’s house", 
-    description: "Quiro is quite easy to use, my staff got familiar with it within a couple of days" 
+  {
+    profileImage: team1,
+    name: "Gaurav",
+    text: "Hiker’s house",
+    description:
+      "Quiro is quite easy to use, my staff got familiar with it within a couple of days",
+    quote: "Our staff adapted to Quiro in no time. It's so user-friendly!",
   },
 ];
 
@@ -53,11 +61,30 @@ const TeamCarousel: React.FC = () => {
         width={1000}
         className="hidden lg:block w-[188.39px] 3xl:mb-[83px] mb-[62.54px]"
       />
-      <p className="text-[14px] leading-[21px] text-[#000000] font-[700] sm:text-[14px] sm:leading-[21px] lg:text-[27.13px] lg:leading-[40.69px] mb-[80px] sm:mb-[43.6px] lg:mb-[79.25px] px-[24px] sm:px-[93px] lg:px-[168px]">
-        “The onboarding is seamless, they came, installed QRs & all, and we were
-        live before you know it!”
-      </p>
-      <div className="relative w-full max-w-[265px] sm:max-w-[325px] lg:max-w-[610px]">
+
+      {/* Dynamic Quote */}
+      <div className="overflow-hidden w-full mx-auto">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="w-full flex-shrink-0 flex justify-center items-center" // Center content inside each slide
+              style={{ width: "100%" }} // Ensure each slide takes full width
+            >
+              <p className="text-[14px] leading-[21px] text-[#000000] font-[700] sm:text-[14px] sm:leading-[21px] lg:text-[27.13px] lg:leading-[40.69px] text-center px-[24px] sm:px-[93px] lg:px-[168px]">
+                “{member.description}”
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="relative w-full max-w-[265px] sm:max-w-[325px] lg:max-w-[610px] mt-[80px] sm:mt-[43.6px] lg:mt-[79.25px]  3xl:mt-[106px]">
         {/* Carousel Content */}
         <div className="overflow-hidden relative">
           <div
@@ -82,9 +109,7 @@ const TeamCarousel: React.FC = () => {
                 <p className="text-[13px] font-[500] leading-[19.5px] sm:text-[12.8px] sm:leading-[19.2px] lg:text-[24.11px] lg:leading-[36.17px] text-[#006B66]">
                   {member.text}
                 </p>
-                <p className="text-[12px] leading-[18px] sm:text-[12px] sm:leading-[18px] lg:text-[20px] lg:leading-[30px] text-[#575A5E] mt-2">
-                “{member.description}”
-                </p>
+                
               </div>
             ))}
           </div>
