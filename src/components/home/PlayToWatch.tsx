@@ -10,7 +10,7 @@ const PlayToWatch: React.FC = () => {
   return (
     <div  className="bg-[#F3CCE7] custom-ptw-box  px-20 pt-10 lg:pt-20 sm:p-10  flex flex-col items-center justify-center sm:justify-start sm:items-start sm:relative sm:min-h-[50vh] lg:min-h-[80vh] ">
       {/* Mobile Images */}
-      <div className="sm:hidden">
+      <div className="sm:hidden" id="demo" >
         <h1 className="text-[20px] font-[600] leading-[24px] min-w-[211px]">
           Hit Play to Watch the
         </h1>
@@ -29,7 +29,7 @@ const PlayToWatch: React.FC = () => {
       {/* Tablet and Desktop Screens */}
       <div className="sm:flex w-full ">
         <div className="w-[70vw] sm:w-[50vw] lg:w-[52vw] custom-ptw-content  ">
-          <h1 id="demo"  className="font-[600] text-[20px] leading-[24px] w-[273px] xl:pl-32 sm:w-[264px] sm:pb-[6px] lg:w-full lg:text-[40px] 3xl:text-[48px] lg:leading-[57.6px] hidden sm:block">
+          <h1  className="font-[600] text-[20px] leading-[24px] w-[273px] xl:pl-32 sm:w-[264px] sm:pb-[6px] lg:w-full lg:text-[40px] 3xl:text-[48px] lg:leading-[57.6px] hidden sm:block">
             Hit Play to Watch the{" "}
             <span className="billyOhioText text-[#006B66] text-[24px] leading-[28.8px] lg:text-[40px] 3xl:text-[48px] lg:leading-[76.8px] font-[400]">
               Magic.
