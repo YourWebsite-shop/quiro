@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
           one place, just a tap away!
         </p>
         <div className="flex w-full space-x-0 border h-[21px] lg:h-[44px] rounded-[2.97px] overflow-hidden border-black mt-[11.86px]">
-          <Input type="email" className="border-none shadow-none text-xs" />
+          <Input type="email" className=" shadow-none text-xs border-1 focus:border-0 focus:outline-none" />
           <button className="text-[6px] lg:text-[12px]  w-[200px] lg:w-[260px] bg-black text-white ">
             Subscribe for newsletter
           </button>

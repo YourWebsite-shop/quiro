@@ -39,7 +39,7 @@ const Efficiency: React.FC = () => {
       <EfficiencyCardList data={efficiencyData} />
 
       {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row pt-[20px] lg:pt-[61px] sm:pt-[30px] gap-[16px] items-center ">
+      {/* <div className="flex flex-col sm:flex-row pt-[20px] lg:pt-[61px] sm:pt-[30px] gap-[16px] items-center ">
         <div>
           <LineButton text="Learn More" />
         </div>
@@ -50,7 +50,7 @@ const Efficiency: React.FC = () => {
           </button>
         </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

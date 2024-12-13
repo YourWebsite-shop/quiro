@@ -109,8 +109,8 @@ const Header: React.FC = () => {
       </header>
 
       <div className="hidden xl:block">
-        <Link href={"/form"}>
-          <button className="bg-black relative text-[14.73px] text-white pl-[20px] rounded-[5.52px] flex items-center w-fit leading-[22.1px] pr-[25px] py-[14px]">
+        <Link href={'/form'}>
+          <button className="bg-black relative z-50 text-[14.73px] text-white pl-[20px] rounded-[5.52px] flex items-center w-fit leading-[22.1px] pr-[25px] py-[14px]">
             Start for Free <FaLongArrowAltRight className="ml-2 text-white" />
             <Image
               src={line}

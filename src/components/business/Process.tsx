@@ -1,3 +1,4 @@
+'use client'
 import SvgIcon from "@/assets/business/stepper";
 import React from "react";
 import LineButton from "../LineButton";
@@ -59,7 +60,7 @@ const Process: React.FC = () => {
 
       {/* Button */}
       <div className="flex gap-[6.72px] pt-[40px] lg:pt-[90px] justify-center scale-75 lg:scale-100">
-        <LineButton text="Watch Demo" />
+        <Link href={'/#demo'}><LineButton text="Watch Demo" /></Link>
         <Link href={"/form"}>
           <button className="bg-[#F5F3ED]  justify-center border-2 border-[#00413E] text-center text-sm sm:text-base  shadow-[4px_4px_0_rgba(0,0,0,1)] sm:py-3 sm:px-10 lg:px-12 lg:py-[14px] px-8 py-2 rounded-lg flex items-center active:bg-[#E2E0D9] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none">
             Contact Us

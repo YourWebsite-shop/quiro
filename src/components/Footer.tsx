@@ -7,11 +7,11 @@ import { AiFillInstagram } from "react-icons/ai";
 import logo from "../assets/Logo.png";
 import footer from "../assets/footerbg.png";
 import Link from "next/link";
-
+import { Badge } from "./ui/badge";
 const Footer: React.FC = () => {
   return (
     <>
-      <div className="flex flex-col sm:flex-row justify-center items-start bg-[#F5F3ED] p-8 lg:pb-0 lg:pt-28 pt-10 lg:px-20 space-y-8 lg:space-y-0 lg:space-x-8">
+      <div className="flex flex-col sm:flex-row justify-center items-start bg-[#F5F3ED] p-8 lg:pb-0 lg:pt-28 pt-10 lg:px-20  space-y-8 lg:space-y-0 lg:space-x-8">
         {/* Left Section */}
         <div className="lg:w-1/2 w-full px-2 md:pt-5 lg:-pt-5 lg:px-0">
           {/* Logo */}
@@ -48,7 +48,8 @@ const Footer: React.FC = () => {
                 Resources
               </h1>
               <ul className="space-y-2">
-                <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]">
+                <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px] relative">
+                <div className="text-[10px] font-[500] leading-[15px] text-[#9E326D] absolute left-[110%] -top-2  border rounded-full w-max bg-[#f4e1e5] border-[#9E326D] pl-[5px] pt-[2px] pb-[3px] pr-[4px]">Coming soon</div >
                   Documentation
                 </li>
                 <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px]">
@@ -71,7 +72,7 @@ const Footer: React.FC = () => {
                   Address
                 </h1>
                 <p className="text-sm lg:text-base sm:text-[10px] text-[#F5F3ED]">
-                  1330, Sector 57, Gurugram, Haryana, India – 122003
+                2nd FLOOR, PLOT NO.4, Minarch Tower, Sector 45, Gurgaon, Haryana - 122003
                 </p>
               </div>
               <div>
@@ -79,13 +80,12 @@ const Footer: React.FC = () => {
                   Email
                 </h1>
                 <p className="text-sm lg:text-base text-[#F5F3ED] sm:text-[10px]">
-                  info@witsome.in
+                info@quiro.in
                 </p>
               </div>
               <div>
                 <p className="text-xs lg:text-sm text-[#F5F3ED] opacity-60 sm:text-[10px]">
-                  CIN: U62099HR2023PTC116609 | DPIIT Recognition number:
-                  DIPP165445
+                CIN: U62020HR2024PTC126724 | DPIIT Recognition number: DIPP165445
                 </p>
               </div>
             </div>
@@ -148,7 +148,7 @@ const Footer: React.FC = () => {
         {/* Footer Bottom Section */}
         <div className="flex flex-col sm:text-right  items-center text-center lg:text-right w-full sm:w-1/2">
           <p className="text-[12px] lg:text-base text-[#00413ECC] sm:self-end">
-            © 2024 Witsome Tech Private Limited. All rights reserved.
+          © 2024 Quiro Horizon Private Limited. All rights reserved.
           </p>
           <ul className="flex mx-auto sm:mx-0 space-x-4 mt-6 self-end">
             <a

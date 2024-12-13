@@ -8,7 +8,7 @@ import "./styles/playtowatch.css";
 
 const PlayToWatch: React.FC = () => {
   return (
-    <div className="bg-[#F3CCE7] custom-ptw-box  px-20 pt-10 lg:pt-20 sm:p-10  flex flex-col items-center justify-center sm:justify-start sm:items-start sm:relative sm:min-h-[50vh] lg:min-h-[80vh] ">
+    <div  className="bg-[#F3CCE7] custom-ptw-box  px-20 pt-10 lg:pt-20 sm:p-10  flex flex-col items-center justify-center sm:justify-start sm:items-start sm:relative sm:min-h-[50vh] lg:min-h-[80vh] ">
       {/* Mobile Images */}
       <div className="sm:hidden">
         <h1 className="text-[20px] font-[600] leading-[24px] min-w-[211px]">
@@ -29,13 +29,13 @@ const PlayToWatch: React.FC = () => {
       {/* Tablet and Desktop Screens */}
       <div className="sm:flex w-full ">
         <div className="w-[70vw] sm:w-[50vw] lg:w-[52vw] custom-ptw-content  ">
-          <h1 className="font-[600] text-[20px] leading-[24px] w-[273px] xl:pl-32 sm:w-[264px] sm:pb-[6px] lg:w-full lg:text-[40px] 3xl:text-[48px] lg:leading-[57.6px] hidden sm:block">
+          <h1 id="demo"  className="font-[600] text-[20px] leading-[24px] w-[273px] xl:pl-32 sm:w-[264px] sm:pb-[6px] lg:w-full lg:text-[40px] 3xl:text-[48px] lg:leading-[57.6px] hidden sm:block">
             Hit Play to Watch the{" "}
             <span className="billyOhioText text-[#006B66] text-[24px] leading-[28.8px] lg:text-[40px] 3xl:text-[48px] lg:leading-[76.8px] font-[400]">
               Magic.
             </span>
           </h1>
-          <p className="text-[12px] leading-[18px] w-[273px] sm:w-[254px]  xl:px-32  lg:w-full  lg:text-[15px] 3xl:text-[18px] font-[500] lg:leading-[22.5px] 3xl:leading-[27px] hidden sm:block ptw-desc">
+          <p  className="text-[12px] leading-[18px] w-[273px] sm:w-[254px]  xl:px-32  lg:w-full  lg:text-[15px] 3xl:text-[18px] font-[500] lg:leading-[22.5px] 3xl:leading-[27px] hidden sm:block ptw-desc">
             Explore how Quiro&apos;s management software transforms your
             operations in just 2 minutes. Experience faster order processing,
             instant guest request handling, and automated payment solutions.
@@ -49,6 +49,7 @@ const PlayToWatch: React.FC = () => {
           }}
         >
           <video
+         
             className="w-full max-w-[530px] lg:max-w-full  h-auto aspect-video p-2 rounded-3xl relative z-50"
             src="/videos/comingsoon.mp4"
             title="YouTube video player"
@@ -61,6 +62,7 @@ const PlayToWatch: React.FC = () => {
         alt="magic arrow"
         width={500}
         className="hidden sm:block absolute left-0 -bottom-10 w-[63vw] h-[500px] lg:hidden custom-magic-arrow-tab"
+       
       />
 
       <Image
@@ -72,6 +74,7 @@ const PlayToWatch: React.FC = () => {
 
       {/* Magic arrow for desktop */}
       <Image
+      
         src={magicarraow}
         alt="magic arrow"
         width={900}
@@ -86,6 +89,7 @@ const PlayToWatch: React.FC = () => {
         }}
       >
         <video
+        
           className="w-full max-w-[530px] min-w-[200px] h-auto aspect-video p-2 rounded-3xl relative z-40"
          src="/videos/comingsoon.mp4"
           title="YouTube video player"

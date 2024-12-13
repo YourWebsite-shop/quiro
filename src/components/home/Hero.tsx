@@ -21,7 +21,7 @@ import partner2 from "@/assets/home/carousel/partners/partners2.png";
 import partner3 from "@/assets/home/carousel/partners/partners3.svg";
 import partner4 from "@/assets/home/carousel/partners/partners4.png";
 import partner5 from "@/assets/home/carousel/partners/partners5.png";
-import partner6 from "@/assets/home/carousel/partners/partners6.svg";
+import partner6 from "@/assets/home/carousel/partners/partner6.png";
 import partner7 from "@/assets/home/carousel/partners/partners7.png";
 
 // Button assets
@@ -217,7 +217,7 @@ export const Partners = () => {
           alt="Carousel Imag 1"
           height={121}
           width={73}
-          className="mx-10 w-[119px] sm:w-[293px]"
+          className="mx-10 w-[119px] sm:w-[83px]"
         />
         <Image
           src={partner7}
