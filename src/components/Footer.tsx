@@ -7,7 +7,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import logo from "../assets/Logo.png";
 import footer from "../assets/footerbg.png";
 import Link from "next/link";
-import { Badge } from "./ui/badge";
+
 const Footer: React.FC = () => {
   return (
     <>
