@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
                   Address
                 </h1>
                 <p className="text-sm lg:text-base sm:text-[10px] text-[#F5F3ED]">
-                2nd FLOOR, PLOT NO.4, Minarch Tower, Sector 45, Gurgaon, Haryana - 122003
+                2nd FLOOR, PLOT NO.4, Minarch Tower, Sector 44, Gurgaon, Haryana - 122003
                 </p>
               </div>
               <div>

@@ -56,7 +56,7 @@ const GetStarted: React.FC = () => {
 
           {/* Buttons on the Right */}
           <div className=" hidden sm:flex custom-btn-desk absolute w-full sm:left-full sm:-translate-x-5  lg:right-4 sm:scale-[69%] md:scale-75 lg:scale-100 lg:translate-x-1/2 lg:top-1/2 lg:translate-y-4  items-end  space-y-4 gap-4 mb-10 ml-4    ">
-            <a href="https://cal.com/quiro">
+            <a href="https://cal.com/getquiro">
               <button className="bg-black relative  text-white  py-[13px] px-4 sm:px-8 md:px-10 rounded-lg flex items-center text-sm sm:text-base whitespace-nowrap">
                 Start for free
                 <FaLongArrowAltRight className="ml-2 text-white" />
