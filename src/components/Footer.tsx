@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
                   Address
                 </h1>
                 <p className="text-sm lg:text-base sm:text-[10px] text-[#F5F3ED]">
-                2nd FLOOR, PLOT NO.4, Minarch Tower, Sector 45, Gurgaon, Haryana - 122003
+                2nd FLOOR, PLOT NO.4, Minarch Tower, Sector 44, Gurgaon, Haryana - 122003
                 </p>
               </div>
               <div>
@@ -134,7 +134,7 @@ const Footer: React.FC = () => {
               <FaLinkedin className="text-xl lg:text-2xl cursor-pointer text-[#00413E]" />
             </a>
             <a
-              href="mailto:info@witsome.in"
+              href="mailto:info@quiro.in"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#000000] cursor-pointer"
