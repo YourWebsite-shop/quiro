@@ -7,7 +7,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import logo from "../assets/Logo.png";
 import footer from "../assets/footerbg.png";
 import Link from "next/link";
-import { Badge } from "./ui/badge";
+
 const Footer: React.FC = () => {
   return (
     <>
@@ -74,8 +74,7 @@ const Footer: React.FC = () => {
                   Address
                 </h1>
                 <p className="text-sm lg:text-base sm:text-[10px] text-[#F5F3ED]">
-                  2nd FLOOR, PLOT NO.4, Minarch Tower, Sector 45, Gurgaon,
-                  Haryana - 122003
+                2nd FLOOR, PLOT NO.4, Minarch Tower, Sector 45, Gurgaon, Haryana - 122003
                 </p>
               </div>
               <div>
@@ -173,6 +172,10 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
+      <h1 className=" text-center font-[400] text-lg text-[#00413ECC] pb-4">
+        Made with 💚 by{" "}
+        <a href="https://www.yourwebsite.shop/" className="underline">YourWebsite.shop</a>
+      </h1>
     </>
   );
 };
