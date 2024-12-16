@@ -93,7 +93,7 @@ const Form: React.FC = () => {
                   How can we help ?
                 </label>
                 <input
-                  type="email"
+                  type="text"
                   placeholder="Write your message here"
                   className="text-[8px] lg:text-[12px] focus:outline-none 3xl:text-[14px] 3xl:leading-[21px] lg:leading-[18px] font-[400] leading-[12px] border-b-[0.27px] sm:border-b-[0.5px] border-black w-full pb-[2.35px] bg-transparent mt-[14px]"
                 />
@@ -170,17 +170,17 @@ const Form: React.FC = () => {
 
           {/* Social Handle icons */}
           <div className="flex items-center mt-[31px] sm:mt-[44px] lg:mt-[78px] gap-[15px] ">
-            <a href="">
+            <a href="https://www.facebook.com/people/Quiro/61556699365682/">
               {" "}
               <FaFacebookF  className="lg:text-[20px]" />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/getquiro/">
               <PiInstagramLogoFill className="lg:text-[20px]" />
             </a>
-            <a href="">
+            <a href="https://x.com/getquiro">
               <FaXTwitter className="lg:text-[20px]" />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/getquiro/posts/?feedView=all">
               <FaLinkedinIn className="lg:text-[20px]"/>
             </a>
           </div>

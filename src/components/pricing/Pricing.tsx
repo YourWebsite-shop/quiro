@@ -59,7 +59,7 @@ const Pricing: React.FC = () => {
             </p>
             <div className="text-[8px] lg:text-[14px] 3xl:text-[16px] mt-[5.68px] lg:mt-[9px] 3xl:mt-[11px] font-[400] leading-[9.6px] lg:leading-[16.8px] 3xl:leading-[19.2px]">
               <span className="text-[32px] lg:text-[48px] 3xl:text-[64px] font-[500] leading-[38.4px] lg:leading-[57.6px] 3xl:leading-[76.8px] text-[#006B66]">
-                $0
+              ₹0
               </span>
               , Pay as you go
             </div>
@@ -164,7 +164,7 @@ const Pricing: React.FC = () => {
             </div>
             <div className="mt-[17px] lg:mt-[32.42px] 3xl:mt-[42px]">
               <a
-                href="https://cal.com/yashkumar"
+                href="https://cal.com/quiro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#000000] cursor-pointer"

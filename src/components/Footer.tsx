@@ -43,12 +43,12 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col items-start space-y-2">
+            <div className="flex flex-col items-start space-y-2 mr-20 sm:mr-0">
               <h1 className="font-semibold text-[16px] text-[#00413E] sm:text-[10px] lg:text-[24px] mb-3">
                 Resources
               </h1>
               <ul className="space-y-2">
-                <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px] relative">
+                <li className="text-[16px] lg:text-lg text-[#00413ECC] sm:text-[10px] relative ">
                   <div className="text-[10px] font-[500] leading-[15px] text-[#9E326D] absolute left-[110%] -top-2  border rounded-full w-max bg-[#f4e1e5] border-[#9E326D] pl-[5px] pt-[2px] pb-[3px] pr-[4px]">
                     Coming soon
                   </div>
@@ -154,25 +154,25 @@ const Footer: React.FC = () => {
             © 2024 Quiro Horizon Private Limited. All rights reserved.
           </p>
           <ul className="flex mx-auto sm:mx-0 space-x-4 mt-6 self-end">
-            <Link href={"/refund-policy"}>
-              <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC] hover:border-b-0">
+            <Link href={"https://quiro.notion.site/Refund-Cancellation-Policy-d0bdc5883c104dd094198e038b20ad6b"}>
+              <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm 3xl:text-[16px] border-b border-b-[#00413ECC] hover:border-b-0">
                 Refund Policy
               </li>
             </Link>
-            <Link href={"/terms-of-service"}>
-              <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC] hover:border-b-0">
+            <Link href={"https://quiro.notion.site/Terms-of-Service-af45704a9c39497198698e7047c1dd86"}>
+              <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm 3xl:text-[16px] border-b border-b-[#00413ECC] hover:border-b-0">
                 Terms & Condition
               </li>
             </Link>
-            <Link href={"/privacy-policy"}>
-              <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm border-b border-b-[#00413ECC] hover:border-b-0">
+            <Link href={"https://quiro.notion.site/Privacy-Policy-2ed849fde2934598aa68e033d6a6accf"}>
+              <li className="cursor-pointer hover:underline text-[#00413ECC] text-[10px] sm:text-[8px] lg:text-sm 3xl:text-[16px] border-b border-b-[#00413ECC] hover:border-b-0">
                 Privacy Policy
               </li>
             </Link>
           </ul>
         </div>
       </div>
-      <h1 className=" text-center font-[400] text-lg text-[#00413ECC] pb-4">
+      <h1 className=" text-center font-[400] sm:text-lg text-[10px] text-[#00413ECC] pb-4">
         Made with 💚 by{" "}
         <a href="https://www.yourwebsite.shop/" className="underline">YourWebsite.shop</a>
       </h1>
