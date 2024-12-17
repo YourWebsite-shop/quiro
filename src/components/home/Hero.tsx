@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
           priority={true}
         />
         <h2 className="text-[#000000] font-[600] sm:text-[36px] lg:text-[40px] 3xl:text-[53px] text-center z-10 leading-[24px] sm:leading-[43.2px] lg:leading-[48.2px] 3xl:leading-[67.2px] text-[20px]  sm:pb-[38px] lg:pb-[41px] pb-[23px]">
-          Redifining Your <br /> Stay & Dining{" "}
+          Redefining Your <br /> Stay & Dining{" "}
           <div className="text-[#00413E] inline relative">
             Experience{" "}
             <Image
