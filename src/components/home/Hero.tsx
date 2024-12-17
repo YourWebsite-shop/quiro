@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
           </button>
 
           <a
-            href="https://cal.com/quiro"
+            href="https://cal.com/getquiro"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#F5F3ED] text-[#00413E] font-[500] justify-center border border-[#00413E] text-center text-[12px] sm:text-[15px] 3xl:text-[20px] 3xl:leading-[30px] sm:text-base shadow-[4px_4px_0_rgba(0,0,0,1)] sm:py-3 sm:px-[35px] pl-[44px] pr-[41px] pt-[8.29px] pb-[9.21px] rounded-[10px] flex items-center active:bg-[#E2E0D9] active:shadow-[4px_4px_0_rgba(0,0,0,1)] hover:shadow-none"

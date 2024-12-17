@@ -164,7 +164,7 @@ const Pricing: React.FC = () => {
             </div>
             <div className="mt-[17px] lg:mt-[32.42px] 3xl:mt-[42px]">
               <a
-                href="https://cal.com/quiro"
+                href="https://cal.com/getquiro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#000000] cursor-pointer"
