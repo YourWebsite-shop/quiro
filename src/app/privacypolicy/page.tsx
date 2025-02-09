@@ -29,8 +29,9 @@ const privacypolicy = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
           <p className="text-sm">
-            Witsome Tech Private Limited and/or its affiliates ("Quiro" the
-            "Company," "we," "us," and "our,") respect your privacy and are
+            Witsome Tech Private Limited and/or its affiliates
+            (&quot;Quiro&quot; the &quot;Company,&quot; &quot;we,&quot;
+            &quot;us,&quot; and &quot;our,&quot;) respect your privacy and are
             committed to protecting it through its compliance with its privacy
             policies. This policy describes:
           </p>
@@ -38,8 +39,9 @@ const privacypolicy = () => {
             <li>
               The types of information that Quiro may collect from you when you
               access or use its websites, applications, and other online
-              services (collectively, referred to as "Services");
+              services (collectively, referred to as &quot;Services&quot;);
             </li>
+
             <li>
               Its practices for collecting, using, maintaining, protecting, and
               disclosing that information.
@@ -51,14 +53,14 @@ const privacypolicy = () => {
             sent through or in connection with its Services.
           </p>
           <p className="text-sm mt-1">
-            Please read this policy carefully to understand Quiro's policies and
-            practices regarding your information and how Quiro will treat it. By
-            accessing or using its Services and/or registering for an account
-            with Quiro, you agree to this privacy policy and you are consenting
-            to Quiro's collection, use, disclosure, retention, and protection of
-            your personal information as described here. If you do not provide
-            the information Quiro requires, Quiro may not be able to provide all
-            of its Services to you.
+            Please read this policy carefully to understand Quiro&apos;s
+            policies and practices regarding your information and how Quiro will
+            treat it. By accessing or using its Services and/or registering for
+            an account with Quiro, you agree to this privacy policy and you are
+            consenting to Quiro&apos;s collection, use, disclosure, retention,
+            and protection of your personal information as described here. If
+            you do not provide the information Quiro requires, Quiro may not be
+            able to provide all of its Services to you.
           </p>
           <hr className="opacity-50 mt-2" />
         </section>
@@ -119,11 +121,12 @@ const privacypolicy = () => {
             The Information We Collect and How We Use It
           </h2>
           <p className="text-sm">
-            A "customer" refers to an individual or entity using our services,
-            such as end-users ordering food or making requests via our web app.
-            A "client" refers to businesses, like hotels or restaurants, that
-            utilize our app and services for their operations.
+            A &quot;customer&quot; refers to an individual or entity using our
+            services, such as end-users ordering food or making requests via our
+            web app. A &quot;client&quot; refers to businesses, like hotels or
+            restaurants, that utilize our app and services for their operations.
           </p>
+
           <hr className="opacity-50 mt-2" />
         </section>
 
@@ -138,10 +141,12 @@ const privacypolicy = () => {
           <ul className=" list-disc text-sm mt-4 pl-6">
             <li>
               <strong>Account Information:</strong> When individuals or entities
-              (referred to as "Customers") use our services, they provide
-              personal information such as names, email addresses, and other
-              relevant details during the registration process on our web app.
+              (referred to as &quot;Customers&quot;) use our services, they
+              provide personal information such as names, email addresses, and
+              other relevant details during the registration process on our web
+              app.
             </li>
+
             <li>
               <strong>Payment Information:</strong> Customers provide payment
               details, including credit card information and billing addresses,
@@ -149,7 +154,7 @@ const privacypolicy = () => {
             </li>
             <li>
               <strong>Customization Preferences:</strong> We collect information
-              about Customers' preferences and settings within the Quiro
+              about Customers&apos; preferences and settings within the Quiro
               platform to tailor our services to their specific requirements.
             </li>
           </ul>
@@ -264,7 +269,6 @@ const privacypolicy = () => {
               offers.
             </li>
           </ul>
-          
         </section>
 
         <section className="mb-8">
@@ -547,7 +551,7 @@ const privacypolicy = () => {
             or through other communication channels.
           </p>
           <p className="mt-1">
-            It's advisable to review this Privacy Policy periodically to stay
+            It&apos;s advisable to review this Privacy Policy periodically to stay
             informed about how we collect, use, and protect your information.
             Your continued use of the Quiro platform after any modifications to
             the Privacy Policy constitutes your acceptance of those changes.

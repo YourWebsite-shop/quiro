@@ -92,9 +92,10 @@ const refundpolicy = () => {
                 </li>
                 <li>
                   The final decision on refund approval rests with the{" "}
-                  <strong>property’s management</strong> after thoroughly
+                  <strong>property&apos;s management</strong> after thoroughly
                   reviewing the issue.
                 </li>
+
                 <li>
                   If the service was not delivered or was misrepresented, a{" "}
                   <strong>full refund</strong> may be issued.
@@ -107,7 +108,7 @@ const refundpolicy = () => {
               <ul className="ml-4 list-disc">
                 <li>
                   <strong>Step 1:</strong> <strong>Initiate Request:</strong>{" "}
-                  Contact the property’s staff in person or call us at{" "}
+                  Contact the property&apos;s staff in person or call us at{" "}
                   <strong>+91 9897510877</strong> to initiate your refund
                   request. Please provide your original transaction receipt and
                   a detailed explanation of the issue.
@@ -120,11 +121,12 @@ const refundpolicy = () => {
                 </li>
                 <li>
                   <strong>Step 3:</strong>{" "}
-                  <strong>Decision (5-7 Business Days):</strong> The property’s
-                  management will review your request, and you will be informed
-                  of the final decision within{" "}
+                  <strong>Decision (5-7 Business Days):</strong> The
+                  property&apos;s management will review your request, and you
+                  will be informed of the final decision within{" "}
                   <strong>5-7 business days</strong>.
                 </li>
+
                 <li>
                   <strong>Step 4:</strong>{" "}
                   <strong>Processing the Refund (7-14 Business Days):</strong>{" "}
@@ -184,8 +186,8 @@ const refundpolicy = () => {
                 </li>
                 <li>
                   Call us at <strong>+91 9897510877</strong> or visit the
-                  property’s reception to request a cancellation. Please have
-                  your booking details or transaction receipt ready.
+                  property&apos;s reception to request a cancellation. Please
+                  have your booking details or transaction receipt ready.
                 </li>
               </ul>
             </li>
@@ -203,7 +205,7 @@ const refundpolicy = () => {
                 <li>
                   <strong>Step 2:</strong>{" "}
                   <strong>Evaluation and Approval (0-3 Business Days):</strong>{" "}
-                  The property’s management will review your cancellation
+                  The property&apos;s management will review your cancellation
                   request within <strong>3 business days</strong> and decide
                   whether the cancellation can be processed.
                 </li>
@@ -220,7 +222,7 @@ const refundpolicy = () => {
             </li>
 
             <li className="mt-2">
-              <strong>Admin's Right to Cancel:</strong>
+              <strong>Admin&apos;s Right to Cancel:</strong>
               <ul className="ml-4 list-disc">
                 <li>
                   The <strong>admin reserves the right</strong> to cancel any
@@ -278,8 +280,6 @@ const refundpolicy = () => {
           </p>
           <hr className="opacity-50 mt-2" />
         </section>
-
-        
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">
@@ -367,13 +367,11 @@ const refundpolicy = () => {
           <hr className="opacity-50 mt-2" />
         </section>
 
-        
-
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Legal Disclaimer</h2>
           <p className="text-sm">
             This Refund Policy is governed by the laws of India. By using
-            Quiro's services, you agree to this policy and the terms and
+            Quiro&apos;s services, you agree to this policy and the terms and
             conditions stated herein. This policy does not affect your statutory
             rights.
           </p>
@@ -391,8 +389,6 @@ const refundpolicy = () => {
           </p>
           <hr className="opacity-50 mt-2" />
         </section>
-
-        
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
